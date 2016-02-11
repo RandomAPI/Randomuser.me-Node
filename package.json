@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "gulp"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -13,5 +14,11 @@
     "express": "~4.13.1",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.2"
   }
 }
