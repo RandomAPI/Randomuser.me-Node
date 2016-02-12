@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node server",
     "test": "gulp"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
+    "compression": "^1.6.1",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
     "ejs": "~2.3.3",
@@ -20,9 +21,13 @@
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-ejsmin": "0.0.1",
+    "gulp-exit": "0.0.2",
     "gulp-mocha": "^2.2.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.2",
-    "mocha": "^2.4.5"
+    "gulp-uglifyjs": "^0.6.2",
+    "mocha": "^2.4.5",
+    "mocha-clean": "^1.0.0",
+    "supertest": "^1.2.0"
   }
 }

@@ -1,11 +1,212 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+    <title>Random User Generator | API</title>
+    <!-- META -->
+    <meta charset='utf-8'>
+    <meta name="description" content="Random user generator is a FREE API for generating placeholder user information. Get profile photos, names, and more. It's like Lorem Ipsum, for people.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="dist/style.css">
+
+    <!-- JS -->
+    <script src="dist/all.js"></script>
+
+</head>
+<body class="">
+
+    <div id="navigation" class="">
+        <div class="nav_toggle">
+            <div class="icon">
+                <div></div><div></div><div></div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="index">Home</a></li>
+            <li><a href="photos">User Photos</a></li>
+            <li><a href="documentation">Documentation</a></li>
+            <li><a href="changelog">Change Log</a></li>
+            <li><a href="stats">Stats &amp; Graphs</a></li>
+            <li><a href="donate">Donate</a></li>
+            <li><a href="copyright">Copyright Notice</a></li>
+            <li class="blank"></li>
+            <li><a href="photoshop">Photoshop Extension</a></li>
+            <li><a href="sketch">Sketch Extension</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <h1>Random User Generator</h1>
+        <p>A free, <a id="openSource" href="https://github.com/randomapi">open-source</a> API for generating random user data. Like Lorem Ipsum, but for people. </p>
+        <a href="https://twitter.com/randomapi" class="twitter"><img src="img/twitter.png">Follow us @randomapi</a>
+    </header>
+
+    <div class="frame card_offset">
+        <div class="card">
+            <a href="redirect.php"><img src='img/poweredbywhite.png' width='47%'></a>
+            <div class="details">
+                <div class="user_photo horizontal_center" id="user_photo">
+                    <a href="javascript:getNewUser(api_url);" class="refresh">New</a>
+                    <img src="">
+                </div>
+                <p id="user_title">Hi, My name is</p>
+                <p id="user_value">...</p>
+            </div>
+
+            <ul class="values_list horizontal_center" id="values_list">
+                <li data-title="Hi, My name is"
+                    data-value="..."
+                    data-label="name"
+                    class="active"></li>
+                <li data-title="My email address is"
+                    data-value="..."
+                    data-label="email"
+                    data-caps="false"></li>
+                <li data-title="My birthday is"
+                    data-value="..."
+                    data-label="birthday"></li>
+                <li data-title="My address is"
+                    data-value="..."
+                    data-label="location"></li>
+                <li data-title="My phone number is"
+                    data-value="..."
+                    data-label="phone"></li>
+                <li data-title="My password is"
+                    data-value="..."
+                    data-label="pass"
+                    data-caps="false"></li>
+            </ul>
+        </div>
+  
+        <section class="advertisement">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:230px;height:200px"
+                data-ad-client="ca-pub-2036801804961954"
+                data-ad-slot="7646598623"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:230px;height:200px;margin:0 16px;"
+                data-ad-client="ca-pub-2036801804961954"
+                data-ad-slot="7646598623"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:230px;height:200px"
+                data-ad-client="ca-pub-2036801804961954"
+                data-ad-slot="7646598623"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </section>
+
+
+        <section>
+            <h2>How to use</h2>
+            <p>You can use AJAX or another method to ask RandomUser for a randomly generated user. If you are using JQuery, you can paste this code in your body to get started.</p>
+            <pre>
+$.ajax({
+  url: <span>'https://randomuser.me/api/'</span>,
+  dataType: <span>'json'</span>,
+  success: function(<span>data</span>){
+    console.log(<span>data</span>);
+  }
+});
+            </pre>
+        </section>
+
+        <section>
+            <h2>Results</h2>
+            <p>The application will provide you with a JSON, SQL, CSV, or YAML object that you can parse and apply to your application.</p>
+            <p>You can specify the format you want the results in using the <a href="documentation#format">format</a> parameter.</p>
+<pre>
+{
+  results: [{
+    user: {
+      gender: "<span class='gen_gender'>female</span>",
+      name: {
+        title: "<span class='gen_title'>ms</span>",
+        first: "<span class='gen_first_name'>manuela</span>",
+        last: "<span class='gen_last_name'>velasco</span>"
+      },
+      location: {
+        street: "<span class='gen_street'>1969 calle de alberto aguilera</span>",
+        city: "<span class='gen_city'>la coruña</span>",
+        state: "<span class='gen_state'>asturias</span>",
+        zip: "<span class='gen_zip'>56298</span>"
+      },
+      email: "<span class='gen_email_address'>manuela.velasco50@example.com</span>",
+      username: "<span class='gen_user'>heavybutterfly920</span>",
+      password: "<span class='gen_pass'>enterprise</span>",
+      salt: "<span class='gen_salt'>>egEn6YsO</span>",
+      md5: "<span class='gen_md5'>2dd1894ea9d19bf5479992da95713a3a</span>",
+      sha1: "<span class='gen_sha1'>ba230bc400723f470b68e9609ab7d0e6cf123b59</span>",
+      sha256: "<span class='gen_sha256'>f4f52bf8c5ad7fc759d1d4156b25a4c7b3d1e2eec6c92d80e508aa0b7946d4ba</span>",
+      registered: "<span class='gen_registered'>1303647245</span>",
+      dob: "<span class='gen_dob'>415458547</span>",
+      phone: "<span class='gen_phone'>994-131-106</span>",
+      cell: "<span class='gen_cell'>626-695-164</span>",
+      DNI: "<span class='gen_ssn'>52434048-I</span>",
+      picture: {
+        large: "<span class='gen_picture_large'>http://api.randomuser.me/portraits/women/39.jpg</span>",
+        medium: "<span class='gen_picture_medium'>http://api.randomuser.me/portraits/med/women/39.jpg</span>",
+        thumbnail: "<span class='gen_picture_thumbnail'>http://api.randomuser.me/portraits/thumb/women/39.jpg</span>",
+      },
+      version: "<span class='gen_version'>0.6</span>"
+      nationality: "<span class='gen_version'>ES</span>"
+    },
+    seed: "<span class='gen_seed'>graywolf</span>"
+  }]
+}
+</pre>
+        </section>
+        <section>
+            <h2>Thank you for helping us help you help us all</h2>
+            <p>Found a bug or have an idea?<br>Contribute to randomuser.me's database on our <a href="https://github.com/randomapi">Github Repo</a>.</p>
+            <h2>Contact Us</h2>
+            <p>If you have any questions/feedback or would like to get in touch with us, send us an email: support[at]randomapi[dot]com.</p>
+        </section>
+        <section class="cheat">
+            <p>&uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; B A</p>
+        </section>
+
+    </div>
+    <footer>
+        <div class="frame">
+            <h1>Random User Generator</h1>
+            <div class="block">
+                <div class="builder">
+                    <h3>Designed</h3>
+                    <a href="http://twitter.com/arronhunt"><img src="img/creator_arron.png" width="80px" alt="Designed by Arron Hunt" title="Designed by Arron Hunt" /></a>
+                </div>
+                <div class="builder">
+                    <h3>Developed</h3>
+                    <a href="http://twitter.com/solewolf1993"><img src="img/creator_keith.png" width="80px" alt="Developed by Keith Armstrong" title="Developed by Keith Armstrong" /></a>
+                </div>
+            </div>
+            <div class="block">
+            <h3>Copyright Notice</h3>
+            <p>All randomly generated photos are copyrighted under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en">Creative Commons BY-NC-SA 2.0</a> license. These photos were hand picked from Greg Peverill-Conti's <a href="http://www.flickr.com/photos/gregpc/">1,000 faces project</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-42942064-1', 'randomuser.me');
+          ga('send', 'pageview');
+    </script>
+
+</body>
 </html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Random User Generator | Stats &amp; Graphs</title>
+	<!-- META -->
+	<meta charset='utf-8'>
+	<meta name="description" content="Random user generator is a FREE API for generating placeholder user information. Get profile photos, names, and more. It's like Lorem Ipsum, for people.">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="dist/style.css">
+
+	<!-- JS -->
+	<script src="dist/all.js"></script>
+</head>
+<body class="stats">
+
+	<div id="navigation" class="">
+		<div class="nav_toggle">
+			<div class="icon">
+				<div></div><div></div><div></div>
+			</div>
+		</div>
+		<ul>
+		    <li><a href="index">Home</a></li>
+		    <li><a href="photos">User Photos</a></li>
+		    <li><a href="documentation">Documentation</a></li>
+		    <li><a href="changelog">Change Log</a></li>
+		    <li><a href="stats">Stats &amp; Graphs</a></li>
+		    <li><a href="donate">Donate</a></li>
+		    <li><a href="copyright">Copyright Notice</a></li>
+		    <li class="blank"></li>
+		    <li><a href="photoshop">Photoshop Extension</a></li>
+		    <li><a href="sketch">Sketch Extension</a></li>
+	  	</ul>
+	</div>
+
+	<header class="subpage">
+		<h1>Stats &amp; Graphs</h1>
+		<p>Check out how awesome we are!</p>
+		<a href="https://twitter.com/randomapi" class="twitter"><img src="img/twitter.png">Follow us @randomapi</a>
+	</header>
+
+	<div class="frame" style="margin-bottom: 100px;">
+		<section>
+			<h2>Last 30 days</h2>
+			<p>View our overall API requests for the past 30 days.</p>
+			<iframe src="https://randomuser.me/charts_iframe.php"></iframe>
+		</section>
+
+		<section>
+			<h2>Users Generated (total)</h2>
+			<span id="stat_total">...</span>
+		</section>
+
+		<section class="small push">
+			<h2>Users generated today</h2>
+			<span id="stat_today">...</span>
+		</section>
+
+		<section class="small">
+			<h2>30 day average</h2>
+			<span id="stat_thirty_avg">...</span>
+		</section>
+
+		<section class="small push">
+			<h2>PS Extension Downloads</h2>
+			<span id="stat_ps">...</span>
+		</section>
+
+		<section class="small">
+			<!-- <h2>API Uptime</h2> -->
+			<h2>API Load Average</h2>
+			<!-- <span id="uptime">...</span> -->
+			<span id="capacity">...</span>
+		</section>
+		<!--<section class="small push">
+			<h2>Photoshop Extension (CS6) Downloads</h2>
+			<span id="stat_ps_cs6">...</span>
+		</section>
+
+		<section class="small">
+			<h2>Photoshop Extension (CC) Downloads</h2>
+			<span id="stat_ps_cc">...</span>
+		</section>-->
+	</div>
+	<footer>
+		<div class="frame">
+			<h1>Random User Generator</h1>
+			<div class="block">
+				<div class="builder">
+					<h3>Designed</h3>
+					<a href="http://twitter.com/arronhunt"><img src="img/creator_arron.png" width="80px" alt="Designed by Arron Hunt" title="Designed by Arron Hunt" /></a>
+				</div>
+				<div class="builder">
+					<h3>Developed</h3>
+					<a href="http://twitter.com/solewolf1993"><img src="img/creator_keith.png" width="80px" alt="Developed by Keith Armstrong" title="Developed by Keith Armstrong" /></a>
+				</div>
+			</div>
+			<div class="block">
+			<h3>Copyright Notice</h3>
+			<p>All randomly generated photos are copyrighted under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en">Creative Commons BY-NC-SA 2.0</a> license. These photos were hand picked from Greg Peverill-Conti's <a href="http://www.flickr.com/photos/gregpc/">1,000 faces project</a>.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-42942064-1', 'randomuser.me');
+		  ga('send', 'pageview');
+	</script>
+
+</body>
+</html>
