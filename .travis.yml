@@ -7,6 +7,7 @@ node_js:
   - "0.10"
 before_script:
   - npm install -g gulp
+  - gulp build
 script: gulp spec
 services:
   - mongodb
