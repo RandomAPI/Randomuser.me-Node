@@ -1,0 +1,44 @@
+<% include ../snippets/header %>
+
+<body class="extension">
+
+  <% include ../snippets/nav %>
+
+  <% var subpageData = {title: "Photoshop Extension", subTitle: "Free Photoshop extension. Easily drag and drop random users into your PSDs"}; %>
+  <% include ../snippets/subpage %>
+
+  <div class="frame">
+
+    <div class="panel">
+      <iframe src="https://randomuser.me/extension/3.0.0/"></iframe>
+    </div>
+
+    <section id="download">
+      <ul class="download">
+        <li><a href="download.php?version=cs6">CS6</a></li>
+        <li><a href="download.php?version=2014">CC 2014-</a></li>
+        <li><a href="download.php?version=2015">CC 2015+</a></li>
+      </ul>
+    </section>
+
+    <section id="install">
+      <h2>How to Install</h2>
+      <h3>CS6 & CC 2014-</h3>
+      <p>Open the .zxp file with Adobe Extension Manager CC. Once the extension is installed, restart Photoshop and navigate to Window > Extensions > Random User Generator.</p>
+      <h3>CC 2015+</h3>
+      <p>Download the .zip file and follow the instructions in the README. Once the extension is installed, restart Photoshop and navigate to Window > Extensions > Random User Generator.</p>
+    </section>
+
+    <section id="usage">
+      <h2>How to use</h2>
+      <p>1. Use the toggle to generate male, female, or both gendered users.</p>
+      <p>2. Click and drag the profile photo into your Photoshop document. You can also right-click on the picture and select "Copy Image".</p>
+      <p>3. Highlight the name text and paste it into a text object on your document.</p>
+      <p>4. Press the "New Random User" button to generate a new random user</p>
+    </section>
+    <% include ../snippets/ads %>
+  </div>
+  <% include ../snippets/footer %>
+  <% include ../snippets/analytics %>
+</body>
+</html>

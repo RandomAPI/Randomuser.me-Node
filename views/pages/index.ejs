@@ -1,0 +1,122 @@
+<% include ../snippets/header %>
+<body class="">
+  <% include ../snippets/nav %>
+
+  <header>
+    <h1>Random User Generator</h1>
+    <p>A free, <a id="openSource" href="https://github.com/randomapi">open-source</a> API for generating random user data. Like Lorem Ipsum, but for people. </p>
+    <a href="https://twitter.com/randomapi" class="twitter"><img src="img/twitter.png">Follow us @randomapi</a>
+  </header>
+
+  <div class="frame card_offset">
+    <div class="card">
+      <a href="redirect.php"><img src='img/poweredbywhite.png' width='47%'></a>
+      <div class="details">
+        <div class="user_photo horizontal_center" id="user_photo">
+          <a href="javascript:getNewUser(api_url);" class="refresh">New</a>
+          <img src="">
+        </div>
+        <p id="user_title">Hi, My name is</p>
+        <p id="user_value">...</p>
+      </div>
+
+      <ul class="values_list horizontal_center" id="values_list">
+        <li data-title="Hi, My name is"
+          data-value="..."
+          data-label="name"
+          class="active"></li>
+        <li data-title="My email address is"
+          data-value="..."
+          data-label="email"
+          data-caps="false"></li>
+        <li data-title="My birthday is"
+          data-value="..."
+          data-label="birthday"></li>
+        <li data-title="My address is"
+          data-value="..."
+          data-label="location"></li>
+        <li data-title="My phone number is"
+          data-value="..."
+          data-label="phone"></li>
+        <li data-title="My password is"
+          data-value="..."
+          data-label="pass"
+          data-caps="false"></li>
+      </ul>
+    </div>
+  
+    <% include ../snippets/ads %>
+
+    <section>
+      <h2>How to use</h2>
+      <p>You can use AJAX or another method to ask RandomUser for a randomly generated user. If you are using JQuery, you can paste this code in your body to get started.</p>
+      <pre>
+$.ajax({
+  url: <span>'https://randomuser.me/api/'</span>,
+  dataType: <span>'json'</span>,
+  success: function(<span>data</span>){
+  console.log(<span>data</span>);
+  }
+});
+      </pre>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <p>The application will provide you with a JSON, SQL, CSV, or YAML object that you can parse and apply to your application.</p>
+      <p>You can specify the format you want the results in using the <a href="documentation#format">format</a> parameter.</p>
+<pre>
+{
+  results: [{
+  user: {
+    gender: "<span class='gen_gender'>female</span>",
+    name: {
+    title: "<span class='gen_title'>ms</span>",
+    first: "<span class='gen_first_name'>manuela</span>",
+    last: "<span class='gen_last_name'>velasco</span>"
+    },
+    location: {
+    street: "<span class='gen_street'>1969 calle de alberto aguilera</span>",
+    city: "<span class='gen_city'>la coruña</span>",
+    state: "<span class='gen_state'>asturias</span>",
+    zip: "<span class='gen_zip'>56298</span>"
+    },
+    email: "<span class='gen_email_address'>manuela.velasco50@example.com</span>",
+    username: "<span class='gen_user'>heavybutterfly920</span>",
+    password: "<span class='gen_pass'>enterprise</span>",
+    salt: "<span class='gen_salt'>>egEn6YsO</span>",
+    md5: "<span class='gen_md5'>2dd1894ea9d19bf5479992da95713a3a</span>",
+    sha1: "<span class='gen_sha1'>ba230bc400723f470b68e9609ab7d0e6cf123b59</span>",
+    sha256: "<span class='gen_sha256'>f4f52bf8c5ad7fc759d1d4156b25a4c7b3d1e2eec6c92d80e508aa0b7946d4ba</span>",
+    registered: "<span class='gen_registered'>1303647245</span>",
+    dob: "<span class='gen_dob'>415458547</span>",
+    phone: "<span class='gen_phone'>994-131-106</span>",
+    cell: "<span class='gen_cell'>626-695-164</span>",
+    DNI: "<span class='gen_ssn'>52434048-I</span>",
+    picture: {
+    large: "<span class='gen_picture_large'>http://api.randomuser.me/portraits/women/39.jpg</span>",
+    medium: "<span class='gen_picture_medium'>http://api.randomuser.me/portraits/med/women/39.jpg</span>",
+    thumbnail: "<span class='gen_picture_thumbnail'>http://api.randomuser.me/portraits/thumb/women/39.jpg</span>",
+    },
+    version: "<span class='gen_version'>0.6</span>"
+    nationality: "<span class='gen_version'>ES</span>"
+  },
+  seed: "<span class='gen_seed'>graywolf</span>"
+  }]
+}
+</pre>
+    </section>
+    <section>
+      <h2>Thank you for helping us help you help us all</h2>
+      <p>Found a bug or have an idea?<br>Contribute to randomuser.me's database on our <a href="https://github.com/randomapi">Github Repo</a>.</p>
+      <h2>Contact Us</h2>
+      <p>If you have any questions/feedback or would like to get in touch with us, send us an email: support[at]randomapi[dot]com.</p>
+    </section>
+    <section class="cheat">
+      <p>&uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; B A</p>
+    </section>
+  </div>
+  <% include ../snippets/footer %>
+  <% include ../snippets/analytics %>
+</body>
+</html>

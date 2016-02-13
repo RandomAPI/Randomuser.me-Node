@@ -1,0 +1,79 @@
+<% include ../snippets/header %>
+
+<body class="donate">
+
+  <% include ../snippets/nav %>
+
+  <% var subpageData = {title: "Donate", subTitle: "Help keep our API free by donating!"}; %>
+  <% include ../snippets/subpage %>
+
+  <div class="frame">
+
+    <section>
+      <div class="floating_icon">
+        <img src="img/img_donate.png" alt="Donate now!">
+      </div>
+    </section>
+
+    <section id="donate">
+      <h2>How can I donate?</h2>
+      <p>You can donate using our secure stripe donation button below. Please select your desired donation and click "Donate Now". But you're pretty smart and probably figured that out on your own didn't you?</p>
+
+      <script src="https://checkout.stripe.com/checkout.js"></script>
+
+      <div class="donate_form">
+        <div class="dropdown_frame">
+          <select id="donation_amount" class="dropdown">
+            <option value="100">$1.00</option>
+            <option value="200">$2.00</option>
+            <option value="404">$4.04</option>
+            <option value="500">$5.02</option>
+            <option value="1000">$10.00</option>
+            <option value="1337">$13.37</option>
+            <option value="2500">$25.00</option>
+            <option value="1000">$90.01</option>
+          </select>
+        </div>
+        <button id="donate_button" class="button">Donate Now</button>
+      </div>
+
+      <script>
+        var handler = StripeCheckout.configure({
+        key: 'pk_migDTfk5iGQSrQE0ONijdnKXB0P5Z',
+        image: 'img/donate_small.png',
+        token: function(token, args) {
+          // Use the token to create the charge with a server-side script.
+          // You can access the token ID with `token.id`
+        }
+        });
+        document.getElementById('donate_button').addEventListener('click', function(e) {
+        // Open Checkout with further options
+        handler.open({
+          name: 'Random User API',
+          description: 'Thanks for donating!',
+          amount: $('#donation_amount').val(),
+        });
+        e.preventDefault();
+        });
+      </script>
+
+      <p style="text-align: center;">Don't have your card details handy? <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QBRGZ79MNX9W6" target="_blank">Click here to donate via PayPal</a></p>
+
+    </section>
+
+    <section id="why">
+      <h2>Why should I donate?</h2>
+      <p>The Random User Generator API is a 100% free service and is paid for out of our own pockets. <strong>We generate up to a million random users a day</strong>, and the bandwidth involved to deliver that information is costly. Random User Generator will never require a paid subscription to use our service, and we strive to continue providing this service free to you for life. Donating isn't required, but it will help us continue to improve and enhance our service.</p>
+    </section>
+
+    <section class="advertisement">
+      <h2>Advertising</h2>
+      <p>Alternatively, we also earn money from you clicking on the verious advertisements you see on the site. If you aren't seeing ads, it's most likely because you are running an adblock service. We don't blame you, we hate ads too! However it would help us out a lot of you disabled your adblock service for our website.</p>
+      <p>If not, that's cool too. We love you either way.</p>
+    </section>
+    <% include ../snippets/ads %>
+  </div>
+  <% include ../snippets/footer %>
+  <% include ../snippets/analytics %>
+</body>
+</html>
