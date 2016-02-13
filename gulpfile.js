@@ -6,13 +6,13 @@ var exit       = require('gulp-exit');
 var minifyCss  = require('gulp-cssnano');
 var ejsmin     = require('gulp-ejsmin');
 
-gulp.task('default', ['testEnv', 'build'], function () {
+gulp.task('default', ['testEnv'], function () {
   return gulp.src('spec/randomuserTests.js', {read: false})
     .pipe(mocha({require: ['mocha-clean'], reporter: 'nyan'}))
     .pipe(exit());
 });
 
-gulp.task('spec', ['testEnv', 'build'], function () {
+gulp.task('spec', ['testEnv'], function () {
   return gulp.src('spec/randomuserTests.js', {read: false})
     .pipe(mocha({require: ['mocha-clean'], reporter: 'spec'}))
     .pipe(exit());
