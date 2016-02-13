@@ -17,7 +17,7 @@ var server       = http.createServer(app);
 var settings     = require('./settings');
 
 // view engine setup
-app.set('views', path.join(__dirname, 'viewsMin'));
+app.set('views', path.join(__dirname, '.viewsMin'));
 app.set('view engine', 'ejs');
 
 app.use(favicon(path.join(__dirname, 'public', 'img', 'favicon.png')));

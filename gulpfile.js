@@ -6,13 +6,13 @@ var exit       = require('gulp-exit');
 var minifyCss  = require('gulp-cssnano');
 var ejsmin     = require('gulp-ejsmin');
 
-gulp.task('default', ['testEnv'], function () {
+gulp.task('default', ['testEnv', 'build'], function () {
   return gulp.src('spec/randomuserTests.js', {read: false})
     .pipe(mocha({require: ['mocha-clean'], reporter: 'nyan'}))
     .pipe(exit());
 });
 
-gulp.task('spec', ['testEnv'], function () {
+gulp.task('spec', ['testEnv', 'build'], function () {
   return gulp.src('spec/randomuserTests.js', {read: false})
     .pipe(mocha({require: ['mocha-clean'], reporter: 'spec'}))
     .pipe(exit());
@@ -24,7 +24,7 @@ gulp.task('compress', function() {
     .pipe(gulp.dest('public/dist/'));
 });
 
-gulp.task('minify-css', function() {
+gulp.task('css', function() {
   return gulp.src('public/css/*.css')
     .pipe(concat('style.css'))
     .pipe(minifyCss({compatibility: 'ie8'}))
@@ -34,15 +34,15 @@ gulp.task('minify-css', function() {
 gulp.task('minify-ejs', function() {
   return gulp.src('views/*.ejs')
     .pipe(ejsmin())
-    .pipe(gulp.dest('viewsMin'))
+    .pipe(gulp.dest('.viewsMin'))
 })
 
 gulp.task('testEnv', function() {
     return process.env.spec = true;
 });
 
-gulp.task('build', ['compress', 'minify-css', 'minify-ejs']);
+gulp.task('build', ['compress', 'css', 'minify-ejs']);
 
-gulp.task('start', ['compress', 'minify-css', 'minify-ejs'], function() {
+gulp.task('start', ['compress', 'css', 'minify-ejs'], function() {
   require('./server');
 });

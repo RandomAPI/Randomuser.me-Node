@@ -11,7 +11,7 @@ describe('Randomuser.me', function() {
     server.on('listening', done);
   });
 
-  describe('website', function() {
+  describe('Website', function() {
     it('should return 200 when visiting home page (/)', function(done) {
       request(server).get('/').expect(200)
       .end(function (err, res) {
