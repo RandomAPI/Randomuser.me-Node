@@ -1,0 +1,31 @@
+carlow
+cavan
+clare
+cork
+cork city
+donegal
+dublin city
+dún laoghaire–rathdown
+fingal
+galway
+galway city
+kerry
+kildare
+kilkenny
+laois
+leitrim
+limerick
+longford
+louth
+mayo
+meath
+monaghan
+offaly
+roscommon
+sligo
+south dublin
+tipperary
+waterford
+westmeath
+wexford
+wicklow

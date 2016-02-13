@@ -1,14 +1,36 @@
 var expect  = require('chai').expect;
 var request = require('supertest');
 var server  = require('../app').server;
+var app      = require('../app').app;
+var api;
+
 var Request = require('../models/Request');
 
 describe('Randomuser.me', function() {
 
   // Start up Express server
   before(function(done) {
-    server.listen(3000);
-    server.on('listening', done);
+    require('../api/loadDatasets')(function(data) {
+      api = require('../api/api');
+      datasets = data;
+      server.listen(app.get('port'));
+      server.on('error', function(error) {
+        var bind = app.get('port');
+        switch (error.code) {
+          case 'EACCES':
+            console.error(bind + ' requires elevated privileges');
+            process.exit(1);
+            break;
+          case 'EADDRINUSE':
+            console.error(bind + ' is already in use');
+            process.exit(1);
+            break;
+          default:
+            throw error;
+        }
+      });
+      done();
+    });
   });
 
   describe('Website', function() {

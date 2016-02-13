@@ -1,0 +1,27 @@
+acre
+alagoas
+amapá
+amazonas
+bahia
+ceará
+distrito federal
+espírito santo
+goiás
+maranhão
+mato grosso
+mato grosso do sul
+minas gerais
+paraná
+paraíba
+pará
+pernambuco
+piauí
+rio de janeiro
+rio grande do norte
+rio grande do sul
+rondônia
+roraima
+santa catarina
+sergipe
+são paulo
+tocantins
