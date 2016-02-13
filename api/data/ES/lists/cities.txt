@@ -1,0 +1,58 @@
+albacete
+alcalá de henares
+alcobendas
+alicante
+almería
+arrecife
+barcelona
+bilbao
+burgos
+cartagena
+castellón de la plana
+ciudad real
+cuenca
+córdoba
+elche
+ferrol
+fuenlabrada
+gandía
+gijón
+granada
+guadalajara
+hospitalet de llobregat
+jerez de la frontera
+la coruña
+la palma
+las palmas de gran canaria
+logroño
+lorca
+lugo
+madrid
+murcia
+málaga
+mérida
+móstoles
+orense
+orihuela
+oviedo
+palma de mallorca
+pamplona
+parla
+pontevedra
+pozuelo de alarcón
+san sebastián
+san sebastián de los reyes
+santa cruz de tenerife
+santander
+santiago de compostela
+sevilla
+talavera de la reina
+toledo
+torrejón de ardoz
+torrente
+torrevieja
+valencia
+valladolid
+vigo
+vitoria
+zaragoza

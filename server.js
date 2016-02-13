@@ -1,46 +1,33 @@
-var server = require('./app').server;
-var app    = require('./app').app;
+var server   = require('./app').server;
+var app      = require('./app').app;
+var api;
 
-server.listen(app.get('port'));
-server.on('error', onError);
-server.on('listening', onListening);
+// Load in datasets before starting the server
+require('./api/loadDatasets')(function(data) {
+  api = require('./api/api');
+  datasets = data;
+  server.listen(app.get('port'));
+  server.on('error', function(error) {
+    var bind = app.get('port');
+    switch (error.code) {
+      case 'EACCES':
+        console.error(bind + ' requires elevated privileges');
+        process.exit(1);
+        break;
+      case 'EADDRINUSE':
+        console.error(bind + ' is already in use');
+        process.exit(1);
+        break;
+      default:
+        throw error;
+    }
+  });
 
-/**
- * Event listener for HTTP server "error" event.
- */
-
-function onError(error) {
-  if (error.syscall !== 'listen') {
-    throw error;
-  }
-
-  var bind = typeof port === 'string'
-    ? 'Pipe ' + app.get('port')
-    : 'Port ' + app.get('port');
-
-  // handle specific listen errors with friendly messages
-  switch (error.code) {
-    case 'EACCES':
-      console.error(bind + ' requires elevated privileges');
-      process.exit(1);
-      break;
-    case 'EADDRINUSE':
-      console.error(bind + ' is already in use');
-      process.exit(1);
-      break;
-    default:
-      throw error;
-  }
-}
-
-/**
- * Event listener for HTTP server "listening" event.
- */
-
-function onListening() {
-  var addr = server.address();
-  var bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port;
-  console.log('Listening on ' + bind);
-}
+  server.on('listening', function() {
+    var addr = server.address();
+    var bind = typeof addr === 'string'
+      ? 'pipe ' + addr
+      : 'port ' + addr.port;
+    console.log('Listening on ' + bind);
+  });
+});

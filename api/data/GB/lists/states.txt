@@ -1,0 +1,70 @@
+avon
+bedfordshire
+berkshire
+borders
+buckinghamshire
+cambridgeshire
+central
+cheshire
+cleveland
+clwyd
+cornwall
+county antrim
+county armagh
+county down
+county fermanagh
+county londonderry
+county tyrone
+cumbria
+derbyshire
+devon
+dorset
+dumfries and galloway
+durham
+dyfed
+east sussex
+essex
+fife
+gloucestershire
+grampian
+greater manchester
+gwent
+gwynedd county
+hampshire
+herefordshire
+hertfordshire
+highlands and islands
+humberside
+isle of wight
+kent
+lancashire
+leicestershire
+lincolnshire
+lothian
+merseyside
+mid glamorgan
+norfolk
+north yorkshire
+northamptonshire
+northumberland
+nottinghamshire
+oxfordshire
+powys
+rutland
+shropshire
+somerset
+south glamorgan
+south yorkshire
+staffordshire
+strathclyde
+suffolk
+surrey
+tayside
+tyne and wear
+warwickshire
+west glamorgan
+west midlands
+west sussex
+west yorkshire
+wiltshire
+worcestershire

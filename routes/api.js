@@ -4,7 +4,7 @@ var router  = express.Router();
 
 
 router.get('/', function(req, res, next) {
-  res.json({blah: 3});
+  res.json({datasets});
 });
 
 module.exports = router;
