@@ -1,0 +1,169 @@
+<% include ../snippets/header %>
+
+<body class="documentation">
+
+  <% include ../snippets/nav %>
+
+  <% var subpageData = {title: "Documentation", subTitle: "Documentation for the Random User Generator API"}; %>
+  <% include ../snippets/subpage %>
+
+  <div class="frame">
+    <section class="glossary">
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#howto">How to use</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#errors">Error Handling</a></li>
+        <li><a href="#multiple">Requesting multiple users</a></li>
+      </ul>
+      <ul>
+        <li><a href="#gender">Specifying a gender</a></li>
+        <li><a href="#seeds">Seeds</a></li>
+        <li><a href="#format">Formats</a></li>
+        <li><a href="#previous">Versioning</a></li>
+        <li><a href="#nationalities">Nationalities</a></li>
+      </ul>
+    </section>
+
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>In August 2013, we set out with a goal to create a free and easy to use service to generate random user data for application testing.</p>
+    </section>
+
+    <section id="howto">
+      <h2>How to use</h2>
+      <p>You can use AJAX to call the Random User Generator API and will receive a randomly generated user in return. If you are using jQuery, you can use the $.ajax() function in the code snippet below to get started.</p>
+      <pre>
+$.ajax({
+  url: <span>'https://randomuser.me/api/'</span>,
+  dataType: <span>'json'</span>,
+  success: function(<span>data</span>){
+  console.log(<span>data</span>);
+  }
+});
+      </pre>
+    </section>
+
+    <section id="results">
+      <h2>Results</h2>
+      <p>The API will provide you with a <a href="#format">formatted</a> object of your choice that you can parse and apply to your application.</p>
+      <p>JSON is the default format. You can request a different format using the <a href="#format">format parameter</a>.
+<pre>
+{
+  results: [{
+  user: {
+    gender: "<span class='gen_gender'>female</span>",
+    name: {
+    title: "<span class='gen_title'>ms</span>",
+    first: "<span class='gen_first_name'>manuela</span>",
+    last: "<span class='gen_last_name'>velasco</span>"
+    },
+    location: {
+    street: "<span class='gen_street'>1969 calle de alberto aguilera</span>",
+    city: "<span class='gen_city'>la coruña</span>",
+    state: "<span class='gen_state'>asturias</span>",
+    zip: "<span class='gen_zip'>56298</span>"
+    },
+    email: "<span class='gen_email_address'>manuela.velasco50@example.com</span>",
+    username: "<span class='gen_user'>heavybutterfly920</span>",
+    password: "<span class='gen_pass'>enterprise</span>",
+    salt: "<span class='gen_salt'>>egEn6YsO</span>",
+    md5: "<span class='gen_md5'>2dd1894ea9d19bf5479992da95713a3a</span>",
+    sha1: "<span class='gen_sha1'>ba230bc400723f470b68e9609ab7d0e6cf123b59</span>",
+    sha256: "<span class='gen_sha256'>f4f52bf8c5ad7fc759d1d4156b25a4c7b3d1e2eec6c92d80e508aa0b7946d4ba</span>",
+    registered: "<span class='gen_registered'>1303647245</span>",
+    dob: "<span class='gen_dob'>415458547</span>",
+    phone: "<span class='gen_phone'>994-131-106</span>",
+    cell: "<span class='gen_cell'>626-695-164</span>",
+    DNI: "<span class='gen_ssn'>52434048-I</span>",
+    picture: {
+    large: "<span class='gen_picture_large'>http://api.randomuser.me/portraits/women/39.jpg</span>",
+    medium: "<span class='gen_picture_medium'>http://api.randomuser.me/portraits/med/women/39.jpg</span>",
+    thumbnail: "<span class='gen_picture_thumbnail'>http://api.randomuser.me/portraits/thumb/women/39.jpg</span>",
+    },
+    version: "<span class='gen_version'>0.6</span>"
+    nationality: "<span class='gen_version'>ES</span>"
+  },
+  seed: "<span class='gen_seed'>graywolf</span>"
+  }]
+}
+</pre>
+    </section>
+
+    <section id="errors">
+      <h2>API Errors</h2>
+      <p>If our API service is offline or if we are experiencing server issues, we'll return a simple JSON object with an error.
+<pre>
+{
+  error: <span>"Uh oh, something has gone wrong. Please tweet us @randomapi about the issue. Thank you."</span>
+}
+</pre>
+    </section>
+
+    <section id="multiple"> 
+      <h2>Requesting Multiple Users</h2>
+      <p>Random User Generator allows you to fetch up to 2,000 generated users in one request using the results parameter.</p>
+<pre>
+http://api.randomuser.me/<span>?results=2000</span>
+</pre>
+      <p><a href="https://randomapi.com" target="_blank">RandomAPI</a> users, <b>including</b> free tiers, can generate up to <b>10,000</b> random users in one request.</p>
+      <p>Just specify your RandomAPI API key. Results generated from randomuser.me using your API key will <b>not</b> be counted against your RandomAPI daily results.</p>
+<pre>
+http://api.randomuser.me/?results=10000&<span>key=ABCD-1234-EFGH-5678</span>
+</pre>
+    </section>
+
+    <section id="gender">
+      <h2>Specifying a gender</h2>
+      <p>You can specify whether you would like to have only male or only female users generated by adding the gender parameter to your request. Valid values for the gender parameter are "male" or "female", or you may leave the parameter blank. Any other value will cause the system to return both male and female users.</p>
+<pre>
+http://api.randomuser.me/<span>?gender=female</span>
+</pre>
+    </section>
+
+    <section id="seeds">
+      <h2>Seeds</h2>
+      <p>Seeds allow you to always generate the same set of users. For example, the seed "foobar" will always return results for <a href="http://api.randomuser.me/0.4/?seed=foobar" target="_blank">Mathew Weaver</a> (for version 0.4). Seeds can be any string or sequence of characters.</p>
+<pre>
+http://api.randomuser.me/<span>?seed=foobar</span>
+</pre>
+    </section>
+
+    <section id="format">
+      <h2>Formats</h2>
+      <p>Starting with version 0.4.1, you can request the new formats: SQL, CSV, or YAML.</p>
+      <p>Just specify the format you would like returned by using the format parameter.</p>
+<pre>
+http://api.randomuser.me/<span>?format=csv</span>
+</pre>
+    </section>
+
+    <section id="previous">
+      <h2>Using previous versions</h2>
+      <p>When we release a new version the API, it could possibly break your application. By accessing the API via:</p>
+<pre>http://api.randomuser.me/</pre>
+      <p>The result that is returned automatically uses the latest version of the API.<br>
+      If you want to access a specific version of the API that won't be affected by updates, do this:</p>
+<pre>http://api.randomuser.me/<span>0.6</span>/</pre>
+    </section>
+
+    <section id="nationalities">
+      <h2>Nationalities</h2>
+      <p>Starting with version 0.5, you can request a different nationality of a randomuser.</p>
+      <p>Pictures won't be affected by this, but data such as location, cell/home phone, SSN/NINO/TFN, etc. will be more appropriate.</p>
+      <p>Currently, randomuser offers these nationalities:</p>
+      <ul>
+        <li>AU, BR, CA, CH, DE, ES, FI, FR, GB, IE, IR, NL, NZ, US</li>
+      </ul>
+      <p>You can specify a nationality like so:</p>
+<pre>
+http://api.randomuser.me/<span>?nat=gb</span>
+</pre>
+      <p>If you find a mistake with an API or would like to contribute to our database, feel free to visit our <a href="https://github.com/RandomAPI/Randomuser.me-Data">Github Repo</a>. We'd really appreciate it :)</p>
+    </section>
+    <% include ../snippets/ads %>
+  </div>
+  <% include ../snippets/footer %>
+  <% include ../snippets/analytics %>
+</body>
+</html>

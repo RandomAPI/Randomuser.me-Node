@@ -20,10 +20,10 @@ describe('Randomuser.me', function() {
       });
     });
 
-    it('should return 200 when visiting home page (/index)', function(done) {
-      request(server).get('/index').expect(200)
+    it('should return 301 when visiting home page (/index) and redirect to /', function(done) {
+      request(server).get('/index')
       .end(function (err, res) {
-        if (err) return done(err);
+        expect(res.header['location']).to.equal('/');
         done();
       });
     });

@@ -1,0 +1,103 @@
+<% include ../snippets/header %>
+
+<body class="changelog">
+
+  <% include ../snippets/nav %>
+
+  <% var subpageData = {title: "Change Log", subTitle: "API Changes & Updates"}; %>
+  <% include ../snippets/subpage %>
+
+  <div class="frame">
+    <section id="0.8">
+      <h2>Version 0.8</h2>
+      <span>2/4/2016</span>
+      <ul>
+        <li>User Generator is <a href="https://github.com/RandomAPI">open source</a>!</li>
+        <li>Added BR, CA, CH, DE, IR, and NZ</li>
+      </ul>
+    </section>
+    <section id="0.7">
+      <h2>Version 0.7</h2>
+      <span>7/27/2015</span>
+      <ul>
+        <li>Huge performance update</li>
+        <li>You can now generate up to 2,000 users per request now</li>
+      </ul>
+    </section>
+    <section id="0.6">
+      <h2>Version 0.6</h2>
+      <span>5/8/2015</span>
+      <ul>
+        <li>Fixed seed bug that didn't respect nationalities</li>
+        <li>Seed is returned on 1st result only and is meant to regenerate a request with multiple results.</li>
+        <li>Added AU, ES, FI, FR, IE, and NL</li>
+        <li>Fixed GB phone numbers, zipcodes, and changed SSN to NINO</li>
+        <li>RandomAPI members can now generate up to 1,000 results per call, <a href="documentation#multiple">Learn more</a></li>
+      </ul>
+    </section>
+    <section id="0.5">
+      <h2>Version 0.5</h2>
+      <span>3/3/2015</span>
+      <ul>
+        <li>Added nationalities</li>
+      </ul>
+    </section>
+    <section id="0.4.1">
+      <h2>Version 0.4.1</h2>
+      <span>9/12/2014</span>
+      <ul>
+        <li>Added new picture options (medium and thumbnail)</li>
+        <li><a href="documentation#format">New formats</a> added (sql, csv, and yaml)</li>
+      </ul>
+    </section>
+
+    <section id="0.4">
+      <h2>Version 0.4</h2>
+      <span>5/3/2014</span>
+      <ul>
+        <li>Redesigned and rebranded the Random User API website and platform</li>
+        <li>We doubled our profile photo database! We now return 100 male and 100 female portraits.</li>
+        <li>Salts now use strictly alphanumeric characters.</li>
+        <li>Restructured our file system to avoid redundancy</li>
+        <li>Optimized generator</li> 
+      </ul>
+    </section>
+
+    <section id="0.3">
+      <h2>Version 0.3</h2>
+      <span>1/14/2014</span>
+      <ul>
+        <li>Added Usernames, Salts, SHA-256 hash, registration date, and DoB fields</li>
+        <li>md5_hash and sha1_hash have been changed to md5 and sha1 respectively</li>
+      </ul>
+    </section>
+
+    <section id="0.2.1">
+      <h2>Version 0.2.1</h2>
+      <span>9/10/2013</span>
+      <ul>
+        <li>Fixed seed generation bug</li>
+      </ul>
+    </section>
+
+    <section id="0.2">
+      <h2>Version 0.2</h2>
+      <span>9/5/2013</span>
+      <ul>
+        <li>Request a specific gender using the `gender` parameter</li>
+      </ul>
+    </section>
+
+    <section id="0.1">
+      <h2>Version 0.1</h2>
+      <span>8/6/2013</span>
+      <ul>
+        <li>Initial public release</li>
+      </ul>
+    </section>
+    <% include ../snippets/ads %>
+  </div>
+  <% include ../snippets/footer %>
+  <% include ../snippets/analytics %>
+</body>
+</html>

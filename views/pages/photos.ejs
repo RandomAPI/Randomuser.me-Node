@@ -1,0 +1,68 @@
+<% include ../snippets/header %>
+
+<body class="photos">
+
+  <% include ../snippets/nav %>
+
+  <% var subpageData = {title: "Profile Photos", subTitle: "Don't want the data? Here's 200 friendly faces."}; %>
+  <% include ../snippets/subpage %>
+
+  <div class="frame">
+
+    <section id="men">
+      <h2>Gentlemen</h2>
+      <div id="photos_men"></div>
+    </section>
+
+    <section id="women">
+      <h2>Ladies</h2>
+      <div id="photos_women"></div>
+    </section>
+
+    <section id="lego">
+      <h2>Lego</h2>
+      <div id="photos_lego"></div>
+    </section>
+    <% include ../snippets/ads %>
+  </div>
+  <% include ../snippets/footer %>
+  <% include ../snippets/analytics %>
+  <script type="text/javascript">
+    var createImage = function(i, g){
+      var thephoto = document.createElement('img');
+        thephoto.src = 'https://randomuser.me/api/portraits/thumb/'+g+'/'+i+'.jpg';
+        $(thephoto).attr('data-int', i);
+        $(thephoto).attr('data-gender', g);
+
+       $('#photos_'+g).append(thephoto);
+    };
+
+    for(var i=0; i<=99; i++){
+      createImage(i, 'men');
+    }
+    for(var i=0; i<=95; i++){
+      createImage(i, 'women');
+    }
+    for(var i=0; i<=9; i++){
+      createImage(i, 'lego');
+    }
+
+    $("img").one('load', function() {
+      $(this).addClass('come_in');
+    }).each(function() {
+      if(this.complete) $(this).load();
+    });
+
+    $('img').click(function(){
+      $('#large_img').attr('src', 'https://randomuser.me/api/portraits/'+$(this).attr('data-gender')+'/'+$(this).attr('data-int')+'.jpg');
+      $('.modal_mask').fadeIn();
+    });
+
+    $('.modal_mask').click(function(){
+      $(this).fadeOut();
+      
+    });
+  </script>
+
+</body>
+</html>

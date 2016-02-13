@@ -31,18 +31,24 @@ gulp.task('css', function() {
     .pipe(gulp.dest('public/dist/'));
 });
 
-gulp.task('minify-ejs', function() {
-  return gulp.src('views/*.ejs')
+gulp.task('minify-ejs-pages', function() {
+  return gulp.src('views/pages/*.ejs')
     .pipe(ejsmin())
-    .pipe(gulp.dest('.viewsMin'))
-})
+    .pipe(gulp.dest('.viewsMin/pages'))
+});
+
+gulp.task('minify-ejs-snippets', function() {
+  return gulp.src('views/snippets/*.ejs')
+    .pipe(ejsmin())
+    .pipe(gulp.dest('.viewsMin/snippets'))
+});
 
 gulp.task('testEnv', function() {
     return process.env.spec = true;
 });
 
-gulp.task('build', ['compress', 'css', 'minify-ejs']);
+gulp.task('build', ['compress', 'css', 'minify-ejs-pages', 'minify-ejs-snippets']);
 
-gulp.task('start', ['compress', 'css', 'minify-ejs'], function() {
+gulp.task('start', ['compress', 'css', 'minify-ejs-pages', 'minify-ejs-snippets'], function() {
   require('./server');
 });

@@ -3,21 +3,33 @@ var express = require('express');
 var router  = express.Router();
 
 var views;
-fs.readdir('views', function(err, data) {;
+fs.readdir('.viewsMin/pages', function(err, data) {;
   views = data;
 });
 
+var titles = {
+  changelog: "Change Log",
+  copyright: "Copyright",
+  documentation: "Documentation",
+  donate: "Donate",
+  index: "Home",
+  photos: "Photos",
+  photoshop: "Photoshop Extension",
+  sketch: "Sketch Extension",
+  stats: "Statistics"
+};
+
 router.get('/', function(req, res, next) {
-  res.render('index');
+  res.render('pages/index', {title: "Home"});
 });
 
 router.get('/:page?', function(req, res, next) {
   var page = req.params.page;
-  
-  if (page === undefined) {
-    res.render('index');
+
+  if (page === "index") {
+    res.redirect(301, '/');
   } else if (views.indexOf(page + ".ejs") !== -1) {
-    res.render(page);
+    res.render('pages/' + page, {title: titles[page]});
   } else {
     next();
   }
