@@ -953,10 +953,7 @@ pre span {
 .stats section.ps {
   margin-top: 300px;
 }
-.stats section.ps {
-  
-}
-.stats span {
+.stats section span {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
