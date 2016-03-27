@@ -29,6 +29,7 @@
     "gulp-uglifyjs": "^0.6.2",
     "mocha": "^2.4.5",
     "mocha-clean": "^1.0.0",
-    "supertest": "^1.2.0"
+    "supertest": "^1.2.0",
+    "through2": "^2.0.1"
   }
 }
