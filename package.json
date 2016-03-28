@@ -16,6 +16,7 @@
     "lodash": "^4.3.0",
     "mongoose": "^4.4.3",
     "morgan": "~1.6.1",
+    "random-seed": "^0.3.0",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
