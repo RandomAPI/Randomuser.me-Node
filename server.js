@@ -1,6 +1,5 @@
 var server   = require('./app').server;
 var app      = require('./app').app;
-var api;
 
 // Load in datasets before starting the server
 require('./api/loadDatasets')(function(data) {
