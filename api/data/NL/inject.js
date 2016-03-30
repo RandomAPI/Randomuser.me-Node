@@ -1,15 +1,9 @@
-<?php
-class Inject {
-    public static function execute(&$contents, $random) {
-        $pic = $contents["picture"];
-        unset($contents["picture"]);
+module.exports = function(contents) {
+    var pic = contents.picture;
+    delete contents.picture;
 
-        $contents["phone"]   = "(" . call_user_func($random, 3, 3) . ")-" . call_user_func($random, 3, 3) . "-" . call_user_func($random, 3, 4);
-        $contents["cell"]    = "(" . call_user_func($random, 3, 3) . ")-" . call_user_func($random, 3, 3) . "-" . call_user_func($random, 3, 4);
-        $contents["BSN"]     = call_user_func($random, 3, 8);
-        $contents["picture"] = $pic;
-    }
-}
-
-$inject = new Inject;
-?>
+    contents.phone = "(" + random(3, 3) + ")-" + random(3, 3) + "-" + random(3, 4);
+    contents.cell = "(" + random(3, 3) + ")-" + random(3, 3) + "-" + random(3, 4);
+    contents.BSN = random(3, 8);
+    contents.picture = pic;
+};

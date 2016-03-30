@@ -2,7 +2,6 @@ var expect  = require('chai').expect;
 var request = require('supertest');
 var server  = require('../app').server;
 var app      = require('../app').app;
-var api;
 
 var Request = require('../models/Request');
 
@@ -11,24 +10,24 @@ describe('Randomuser.me', function() {
   // Start up Express server
   before(function(done) {
     require('../api/loadDatasets')(function(data) {
-      api = require('../api/api');
-      datasets = data;
-      server.listen(app.get('port'));
-      server.on('error', function(error) {
-        var bind = app.get('port');
-        switch (error.code) {
-          case 'EACCES':
-            console.error(bind + ' requires elevated privileges');
-            process.exit(1);
-            break;
-          case 'EADDRINUSE':
-            console.error(bind + ' is already in use');
-            process.exit(1);
-            break;
-          default:
-            throw error;
-        }
-      });
+      Generator = require('../api/api');
+        datasets = data;
+        server.listen(app.get('port'));
+        server.on('error', function(error) {
+          var bind = app.get('port');
+          switch (error.code) {
+            case 'EACCES':
+              console.error(bind + ' requires elevated privileges');
+              process.exit(1);
+              break;
+            case 'EADDRINUSE':
+              console.error(bind + ' is already in use');
+              process.exit(1);
+              break;
+            default:
+              throw error;
+          }
+        });
       done();
     });
   });
@@ -121,6 +120,140 @@ describe('Randomuser.me', function() {
       .end(function (err, res) {
         if (err) return done(err);
         done();
+      });
+    });
+
+    it('should return 1 user when visiting api route with no parameters (/api)', function(done) {
+      request(server).get('/api').expect(200)
+      .end(function (err, res) {
+        var result = JSON.parse(res.text);
+        expect(result.info.results).to.equal(1);
+        done();
+      });
+    });
+
+    describe('Nationality parameter testing - normal', function() {
+      it('should return 1 user from US when visiting api route with nat parameter set to US (/api?nat=US)', function(done) {
+        request(server).get('/api?nat=US').expect(200)
+        .end(function (err, res) {
+          var result = JSON.parse(res.text);
+          expect(result.results[0].info.nat).to.equal("US");
+          done();
+        });
+      });
+
+      it('should return 1 user from US when visiting api route with nationality parameter set to US (/api?nationality=US)', function(done) {
+        request(server).get('/api?nationality=US').expect(200)
+        .end(function (err, res) {
+          var result = JSON.parse(res.text);
+          expect(result.results[0].info.nat).to.equal("US");
+          done();
+        });
+      });
+
+      it('should return 1 user from US when visiting api route with nationality parameter set to US (/api?nationality=US)', function(done) {
+        request(server).get('/api?nationality=US').expect(200)
+        .end(function (err, res) {
+          var result = JSON.parse(res.text);
+          expect(result.results[0].info.nat).to.equal("US");
+          done();
+        });
+      });
+    });
+
+    describe('Nationality parameter testing - lowercase', function() {
+      it('should return 1 user from US when visiting api route with nat parameter set to us (/api?nat=us)', function(done) {
+        request(server).get('/api?nat=us').expect(200)
+        .end(function (err, res) {
+          var result = JSON.parse(res.text);
+          expect(result.results[0].info.nat).to.equal("US");
+          done();
+        });
+      });
+
+      it('should return 1 user from US when visiting api route with nationality parameter set to us (/api?nationality=us)', function(done) {
+        request(server).get('/api?nationality=us').expect(200)
+        .end(function (err, res) {
+          var result = JSON.parse(res.text);
+          expect(result.results[0].info.nat).to.equal("US");
+          done();
+        });
+      });
+    });
+
+    describe('Results parameter testing', function() {
+      it('should return 2 users when visiting api route with results parameter set to 2 (/api?results=2)', function(done) {
+        request(server).get('/api?results=2').expect(200)
+        .end(function (err, res) {
+          var result = JSON.parse(res.text);
+          expect(result.info.results).to.equal(2);
+          done();
+        });
+      });
+
+      it('should return 1 user when visiting api route with results parameter set to nothing (/api?results=)', function(done) {
+        request(server).get('/api?results=').expect(200)
+        .end(function (err, res) {
+          var result = JSON.parse(res.text);
+          expect(result.info.results).to.equal(1);
+          done();
+        });
+      });
+
+      it('should return 1 user when visiting api route with results parameter set to letters (/api?results=asdf)', function(done) {
+        request(server).get('/api?results=asdf').expect(200)
+        .end(function (err, res) {
+          var result = JSON.parse(res.text);
+          expect(result.info.results).to.equal(1);
+          done();
+        });
+      });
+
+      it('should return 1 user when visiting api route with results parameter set to negative number (/api?results=-1)', function(done) {
+        request(server).get('/api?results=-1').expect(200)
+        .end(function (err, res) {
+          var result = JSON.parse(res.text);
+          expect(result.info.results).to.equal(1);
+          done();
+        });
+      });
+
+      it('should return 1 user when visiting api route with results parameter set to excessive number (/api?results=10000)', function(done) {
+        request(server).get('/api?results=10000').expect(200)
+        .end(function (err, res) {
+          var result = JSON.parse(res.text);
+          expect(result.info.results).to.equal(1);
+          done();
+        });
+      });
+    });
+
+    describe('Lego parameter testing', function() {
+      it('should return 1 lego user when visiting api route with lego parameter set (/api?lego)', function(done) {
+        request(server).get('/api?lego').expect(200)
+        .end(function (err, res) {
+          var result = JSON.parse(res.text);
+          expect(result.results[0].info.nat).to.equal("LEGO");
+          done();
+        });
+      });
+
+      it('should return 1 lego user when visiting api route with lego parameter set to true (/api?lego=true)', function(done) {
+        request(server).get('/api?lego=true').expect(200)
+        .end(function (err, res) {
+          var result = JSON.parse(res.text);
+          expect(result.results[0].info.nat).to.equal("LEGO");
+          done();
+        });
+      });
+
+      it('should NOT return 1 lego user when visiting api route with lego parameter set to false (/api?lego=false)', function(done) {
+        request(server).get('/api?lego=false').expect(200)
+        .end(function (err, res) {
+          var result = JSON.parse(res.text);
+          expect(result.results[0].info.nat).to.not.equal("LEGO");
+          done();
+        });
       });
     });
   });
