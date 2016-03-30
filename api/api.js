@@ -15,7 +15,7 @@ var Generator = function(options) {
   options      = options || {};
   this.results = Number(options.results);
   this.seed    = options.seed || "";
-  this.lego    = options.lego || null;
+  this.lego    = typeof options.lego !== "undefined" && options.lego !== "false" ? true : false;
   this.gender  = options.gender || null;
   this.format  = options.format || "json";
   this.nat     = options.nat || options.nationality || null;
@@ -25,13 +25,13 @@ var Generator = function(options) {
   this.version = "1.0";
 
   // Sanitize values
-  if (isNaN(this.results)) this.results = 1;
+  if (isNaN(this.results) || this.results < 0 || this.results > 2000 || this.results === "") this.results = 1;
 
   if (this.gender !== "male" && this.gender !== "female" || this.seed !== null) {
     this.gender = null;
   }
 
-  if (this.lego !== null) this.nat = "LEGO";
+  if (this.lego) this.nat = "LEGO";
   else if (this.nat !== null && !(this.validNat(this.nat))) this.nat = null;
 
   if (this.seed.length === 18) {
@@ -45,7 +45,7 @@ var Generator = function(options) {
 };
 
 Generator.prototype.generate = function(results) {
-  this.results = results || this.results || 10;
+  this.results = results || this.results || 1;
 
   var output = [];
   var current, nat, inject;
