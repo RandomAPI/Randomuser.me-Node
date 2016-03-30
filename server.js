@@ -3,7 +3,7 @@ var app      = require('./app').app;
 
 // Load in datasets before starting the server
 require('./api/loadDatasets')(function(data) {
-  api = require('./api/api');
+  Generator = require('./api/api');
   datasets = data;
   server.listen(app.get('port'));
   server.on('error', function(error) {

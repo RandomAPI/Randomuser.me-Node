@@ -1,38 +1,34 @@
-<?php
-class Inject {
-    public static function execute(&$contents, $random) {
-        $pic = $contents["picture"];
-        unset($contents["picture"]);
+module.exports = function(contents) {
+    var pic = contents.picture;
+    delete contents.picture;
 
-        $dob = $contents["dob"];
-        $full_year = date("Y", $dob);
+    var dob = contents.dob;
+    var dobDate = new Date(Number(dob + "000"));
+    var full_year = dobDate.getFullYear();
 
-        $contents["phone"] = "0" . mt_rand(2, 9) . "-" . call_user_func($random, 3, 3) . "-" . call_user_func($random, 3, 3);
-        $contents["cell"]  = "04" . mt_rand(0, 9) . "-" . call_user_func($random, 3, 3) . "-" . call_user_func($random, 3, 2) . "-" . call_user_func($random, 3, 2);
+    contents.phone = "0" + range(2, 9) + "-" + random(3, 3) + "-" + random(3, 3);
+    contents.cell = "04" + range(0, 9) + "-" + random(3, 3) + "-" + random(3, 2) + "-" + random(3, 2);
 
-        $day   = date("d", $dob);
-        $month = date("m", $dob);
-        $year  = date("y", $dob);
+    var day = dobDate.getDay();
+    var month = dobDate.getMonth();
+    var year = String(full_year).substr(2, 2);
 
-        if ($full_year < 1900) {
-            $century = "+";
-        } else if ($year >= 1900 && $year < 2000) {
-            $century = "-";
-        } else {
-            $century = "A";
-        }
-
-        $zzz = call_user_func($random, 3, 2) .  ($contents["gender"] != "male" ? array(0, 2, 4, 6, 8)[mt_rand(0, 4)] : array(1, 3, 5, 7, 9)[mt_rand(0, 4)]);
-
-        $checksum_str = "0123456789ABCDEFHJKLMNPRSTUVWXY";
-        $cc = $checksum_str[($day . $month . $year . $zzz) % 31];
-
-        $hetu = $day . $month . $year . $century . $zzz . $cc;
-
-        $contents["HETU"]    = $hetu;
-        $contents["picture"] = $pic;
+    var century;
+    if (full_year < 1900) {
+        century = "+";
+    } else if (full_year >= 1900 && full_year < 2000) {
+        century = "-";
+    } else {
+        century = "A";
     }
-}
 
-$inject = new Inject;
-?>
+    var zzz = random(3, 2) + (contents.gender !== "male" ? randomItem([0, 2, 4, 6, 8]) : randomItem([1, 3, 5, 7, 9]));
+    var checksum_str = "0123456789ABCDEFHJKLMNPRSTUVWXY";
+
+    var cc = checksum_str[(day + month + year + zzz) % 31];
+
+    var hetu = day + month + year + century + zzz + cc;
+
+    contents.HETU = hetu;
+    contents.picture = pic;
+};
