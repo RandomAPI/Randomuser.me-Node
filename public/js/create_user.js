@@ -31,7 +31,7 @@ function getNewUser(location){
         user.picture = user.picture.replace(".me/", ".me/api/");
       
         // Assign Data
-        $('#user_photo img').attr('src', user.picture.replace("portraits/", "portraits/med/"));
+        $('#user_photo img').attr('src', user.picture.replace("portraits/", "portraits/"));
         
         $('li[data-label="name"]').attr('data-value', user.name.first+' '+user.name.last);
         $('#user_value').html(user.name.first+' '+user.name.last);

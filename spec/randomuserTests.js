@@ -2,7 +2,6 @@ var expect  = require('chai').expect;
 var request = require('supertest');
 var server  = require('../app').server;
 var app      = require('../app').app;
-var api;
 
 var Request = require('../models/Request');
 
