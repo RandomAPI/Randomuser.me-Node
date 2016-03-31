@@ -4,5 +4,10 @@ module.exports = function(contents) {
 
     contents.phone = "0" + random(3, 3) + "-" + random(3, 7);
     contents.cell = "017" + random(3, 1) + "-" + random(3, 7);
+
+    // TODO
+    contents.idName  = "";
+    contents.idValue = null;
+
     contents.picture = pic;
 };

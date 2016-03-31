@@ -75,7 +75,7 @@ Generator.prototype.generate = function(results) {
       street: range(1000, 9999) + " " + randomItem(datasets[nat].street),
       city: randomItem(datasets[nat].cities),
       state: randomItem(datasets[nat].states),
-      zip: range(10000, 99999)
+      postcode: range(10000, 99999)
     };
 
     current.email = name[0] + "." + name[1].replace(' ', '') + "@example.com";
@@ -85,8 +85,8 @@ Generator.prototype.generate = function(results) {
     current.md5      = crypto.createHash("md5").update(current.password + current.salt).digest("hex");
     current.sha1     = crypto.createHash("sha1").update(current.password + current.salt).digest("hex");
     current.sha256   = crypto.createHash("sha256").update(current.password + current.salt).digest("hex");
-    current["registered"] = range(915148800, this.constantTime);
-    current["dob"] = range(0, this.constantTime);
+    current.registered = range(915148800, this.constantTime);
+    current.dob = range(0, this.constantTime);
     if (nat != "LEGO") {
         var id = current.gender == "male" ? range(0, 99) : range(0, 96);
         var genderText = current.gender == "male" ? "men" : "women";
