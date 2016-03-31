@@ -25,7 +25,7 @@ module.exports = function(contents) {
 
     var code = "ABDEFGHJLNPQRSTUWXYZ";
 
-    var zips = [
+    var postcodes = [
       random(4, 1) + random(3, 1) + " " + random(3, 1) + code[range(0, 19)] + code[range(0, 19)],
       random(4, 2) + random(3, 1) + " " + random(3, 1) + code[range(0, 19)] + code[range(0, 19)],
       random(4, 1) + random(3, 2) + " " + random(3, 1) + code[range(0, 19)] + code[range(0, 19)],
@@ -34,7 +34,7 @@ module.exports = function(contents) {
       random(4, 1) + random(3, 1) + random(4, 1) + " " + random(3, 1) + code[range(0, 19)] + code[range(0, 19)]
     ];
 
-    contents.location.zip = randomItem(zips);
+    contents.location.postcode = randomItem(postcodes);
 
     contents.phone   = randomItem(phones);
     contents["cell"] = "07" + random(3, 2) + "-" + random(3, 3) + "-" + random(3, 3);
@@ -45,6 +45,7 @@ module.exports = function(contents) {
 
     nino = (nino_1[range(0, 19)] + nino_2[range(0, 18)] + " " + random(3, 2) + " " +  random(3, 2) + " " + random(3, 2) + " " + random(4, 1)).toUpperCase();
 
-    contents.NINO = nino;
+    contents.idName = "NINO";
+    contents.idValue = nino;
     contents.picture = pic;
 };

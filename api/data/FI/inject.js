@@ -29,6 +29,7 @@ module.exports = function(contents) {
 
     var hetu = day + month + year + century + zzz + cc;
 
-    contents.HETU = hetu;
+    contents.idName = "HETU";
+    contents.idValue = hetu;
     contents.picture = pic;
 };

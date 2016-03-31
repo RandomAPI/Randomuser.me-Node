@@ -10,6 +10,7 @@ module.exports = function(contents) {
     var month = dobDate.getMonth();
     var year  = String(dobDate.getFullYear()).substr(2, 2);
 
-    contents.INSEE = (contents.gender === "male" ? "1" : "2") + year + month + random(3, 8) + " " + random(3, 1) + range(0, 7);
+    contents.idName = "INSEE";
+    contents.idValue = (contents.gender === "male" ? "1" : "2") + year + month + random(3, 8) + " " + random(3, 1) + range(0, 7);
     contents.picture = pic;
 };
