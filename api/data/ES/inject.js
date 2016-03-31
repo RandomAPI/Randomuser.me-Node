@@ -1,10 +1,12 @@
-module.exports = function(contents) {
+module.exports = function(inc, contents) {
     var pic = contents.picture;
     delete contents.picture;
 
-    contents.phone = "9" + random(3, 2) + "-" + random(3, 3) + "-" + random(3, 3);
-    contents.cell = "6" + random(3, 2) + "-" + random(3, 3) + "-" + random(3, 3);
-    contents.idName  = "DNI";
-    contents.idValue = random(3, 8) + "-" + random(4, 1);
-    contents.picture = pic;
+    include(inc, "phone", "9" + random(3, 2) + "-" + random(3, 3) + "-" + random(3, 3));
+    include(inc, "cell", "6" + random(3, 2) + "-" + random(3, 3) + "-" + random(3, 3));
+    include(inc, "id", {
+        name: "DNI",
+        value: random(3, 8) + "-" + random(4, 1)
+    });
+    include(inc, "picture", pic);
 };

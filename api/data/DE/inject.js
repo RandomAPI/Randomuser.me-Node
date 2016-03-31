@@ -1,13 +1,12 @@
-module.exports = function(contents) {
+module.exports = function(inc, contents) {
     var pic = contents.picture;
     delete contents.picture;
 
-    contents.phone = "0" + random(3, 3) + "-" + random(3, 7);
-    contents.cell = "017" + random(3, 1) + "-" + random(3, 7);
-
-    // TODO
-    contents.idName  = "";
-    contents.idValue = null;
-
-    contents.picture = pic;
+    include(inc, "phone", "0" + random(3, 3) + "-" + random(3, 7));
+    include(inc, "cell", "017" + random(3, 1) + "-" + random(3, 7));
+    include(inc, "id", {
+        name: "",
+        value: null
+    });
+    include(inc, "picture", pic);
 };
