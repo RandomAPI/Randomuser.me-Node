@@ -10,5 +10,5 @@ module.exports = function(contents) {
 
     // Override common zip with AU range
     var oldStreet = contents.location.street;
-    contents.location.street = contents.location.street.replace(/(\d*) (.*)/, range(1,9999));
+    contents.location.street = contents.location.street.replace(/(\d+)/, range(1,9999));
 };
