@@ -1,7 +1,7 @@
 var expect  = require('chai').expect;
 var request = require('supertest');
 var server  = require('../app').server;
-var app      = require('../app').app;
+var app     = require('../app').app;
 
 var Request = require('../models/Request');
 
@@ -253,6 +253,43 @@ describe('Randomuser.me', function() {
           var result = JSON.parse(res.text);
           expect(result.results[0].info.nat).to.not.equal("LEGO");
           done();
+        });
+      });
+    });
+
+    describe('Seed parameter testing', function() {
+      it('should return same user when using same seed (random)', function(done) {
+        request(server).get('/api').expect(200)
+        .end(function (err, res) {
+          var result = res.text;
+
+          // Get the seed
+          var seed = JSON.parse(res.text).info.seed;
+
+          // Send 2nd request using same seed
+          request(server).get('/api/?seed=' + seed).expect(200)
+          .end(function (err, res) {
+            var result2 = res.text;
+
+            expect(result).to.equal(result2);
+            done();
+          });
+        });
+      });
+
+      it('should return same user when using same seed (provided)', function(done) {
+        request(server).get('/api/?seed=abcd').expect(200)
+        .end(function (err, res) {
+          var result = res.text;
+
+          // Send 2nd request using same seed
+          request(server).get('/api/?seed=abcd').expect(200)
+          .end(function (err, res) {
+            var result2 = res.text;
+
+            expect(result).to.equal(result2);
+            done();
+          });
         });
       });
     });
