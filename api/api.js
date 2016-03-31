@@ -19,7 +19,12 @@ var Generator = function(options) {
   this.gender  = options.gender || null;
   this.format  = options.format || "json";
   this.nat     = options.nat || options.nationality || null;
-  if (this.nat !== null) this.nat = this.nat.toUpperCase();
+
+  if (this.nat !== null && this.nat.indexOf(",") !== -1) {
+    this.nat = this.nat.split(',').filter((i) => i !== "");
+  }
+
+  if (this.nat !== null) this.nat = uppercaseify(this.nat);
   this.nats    = this.getNats(); // Returns array of nats
   this.constantTime = 1437996378;
   this.version = "1.0";
@@ -53,6 +58,9 @@ Generator.prototype.generate = function(results) {
   for (var i = 0; i < this.results; i++) {
     var current = {};
     nat = this.nat === null ? this.randomNat() : this.nat;
+    if (Array.isArray(nat)) {
+      nat = nat[range(0, nat.length-1)];
+    }
     inject = injects[nat];
     current.gender = randomItem(["male", "female"]);
 
@@ -107,7 +115,7 @@ Generator.prototype.generate = function(results) {
   var json = {
     results: output,
     info: {
-      seed: String(this.seed + (this.nat !== null ? pad((this.nats.indexOf(this.nat)).toString(16), 2) : "")),
+      seed: String(this.seed + (this.nat !== null && !Array.isArray(this.nat) ? pad((this.nats.indexOf(this.nat)).toString(16), 2) : "")),
       results: this.results,
       version: this.version
     }
@@ -144,7 +152,16 @@ Generator.prototype.randomNat = function() {
 };
 
 Generator.prototype.validNat = function(nat) {
-  return this.nats.indexOf(nat) !== -1;
+  if (Array.isArray(nat)) {
+    for (var i = 0; i < nat.length; i++) {
+      if (this.nats.indexOf(nat[i]) === -1) {
+        return false;
+      }
+    }
+  } else {
+    return this.nats.indexOf(nat) !== -1;
+  }
+  return true;
 };
 
 Generator.prototype.randomName = function(gender, nat) {
@@ -192,5 +209,15 @@ function pad(n, width, z) {
 range = function(min, max) {
   return min + mersenne.rand(max-min+1);
 };
+
+function uppercaseify(val) {
+  if (Array.isArray(val)) {
+    return val.map(function(str) {
+      return str.toUpperCase();
+    });
+  } else {
+    return val.toUpperCase();
+  }
+}
 
 module.exports = Generator;
