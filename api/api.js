@@ -25,7 +25,7 @@ var Generator = function(options) {
   this.version = "1.0";
 
   // Sanitize values
-  if (isNaN(this.results) || this.results < 0 || this.results > 2000 || this.results === "") this.results = 1;
+  if (isNaN(this.results) || this.results < 0 || this.results > 5000 || this.results === "") this.results = 1;
 
   if (this.gender !== "male" && this.gender !== "female" || this.seed !== null) {
     this.gender = null;
