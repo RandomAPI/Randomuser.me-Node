@@ -17,7 +17,7 @@ var Generator = function(options) {
   this.seed    = options.seed || "";
   this.lego    = typeof options.lego !== "undefined" && options.lego !== "false" ? true : false;
   this.gender  = options.gender || null;
-  this.format  = options.format || "json";
+  this.format  = options.format || options.fmt || "json";
   this.nat     = options.nat || options.nationality || null;
 
   if (this.nat !== null && this.nat.indexOf(",") !== -1) {
@@ -128,6 +128,8 @@ Generator.prototype.generate = function(results) {
     return YAML.stringify(json, 4);
   } else if (this.format === "xml") {
     return js2xmlparser("user", json);
+  } else if (this.format === "prettyjson") {
+    return JSON.stringify(json, null, 2);
   } else {
     return JSON.stringify(json);
   }
