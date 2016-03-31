@@ -35,7 +35,7 @@ var Generator = function(options) {
   else if (this.nat !== null && !(this.validNat(this.nat))) this.nat = null;
 
   if (this.seed.length === 18) {
-    this.nat = this.nats[parseInt(this.seed.substring(-2), 16)];
+    this.nat = this.nats[parseInt(this.seed.slice(-2), 16)];
   } else if (this.seed === "") {
     this.defaultSeed();
   }
