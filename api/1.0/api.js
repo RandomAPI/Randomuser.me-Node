@@ -29,6 +29,7 @@ var Generator = function(options) {
   this.gender  = options.gender || null;
   this.format  = options.format || options.fmt || "json";
   this.nat     = options.nat || options.nationality || null;
+  this.noInfo  = typeof options.noinfo !== "undefined" && options.lego !== "false" ? true : false;
 
   // Include all fields by default
   this.inc     = options.inc || originalFieldList;
@@ -151,6 +152,8 @@ Generator.prototype.generate = function(results) {
       version: this.version
     }
   };
+
+  if (this.noInfo) delete json.info;
 
   this.defaultSeed();
   this.seedRNG();
