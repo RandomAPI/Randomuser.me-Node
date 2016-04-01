@@ -27,11 +27,11 @@ function getNewUser(location){
       if(!data['error']){
         var user = data.results[0].user;
         // Update to SSL picture
-        user.picture = user.picture.replace("http://api.", "https://");
-        user.picture = user.picture.replace(".me/", ".me/api/");
+        user.picture = user.picture.replace('http://api.', 'https://');
+        user.picture = user.picture.replace('.me/', '.me/api/');
       
         // Assign Data
-        $('#user_photo img').attr('src', user.picture.replace("portraits/", "portraits/"));
+        $('#user_photo img').attr('src', user.picture.replace('portraits/', 'portraits/'));
         
         $('li[data-label="name"]').attr('data-value', user.name.first+' '+user.name.last);
         $('#user_value').html(user.name.first+' '+user.name.last);

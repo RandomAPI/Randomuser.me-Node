@@ -4,10 +4,10 @@ var router  = express.Router();
 var cors    = require('cors');
 var Request = require('../models/Request');
 
-var latestVersion = "1.0";
+var latestVersion = '1.0';
 
 router.get('/', cors(), function(req, res, next) {
-  genUser(req, res, "1.0");
+  genUser(req, res, '1.0');
 });
 
 router.get('/:version', cors(), function(req, res, next) {
@@ -23,7 +23,7 @@ function genUser(req, res, version) {
   var results = req.query.results || 1;
 
   new Generator[version](req.query).generate(function(output) {
-    var payload = {"bandwidth": output.length};
+    var payload = {'bandwidth': output.length};
     payload[version] = results;
 
     Request.findOrCreate({date: getDateTime()}, payload, function(err, obj, created) {
@@ -49,12 +49,12 @@ function getDateTime() {
   var year = date.getFullYear();
 
   var month = date.getMonth() + 1;
-  month = (month < 10 ? "0" : "") + month;
+  month = (month < 10 ? '0' : '') + month;
 
   var day  = date.getDate();
-  day = (day < 10 ? "0" : "") + day;
+  day = (day < 10 ? '0' : '') + day;
 
-  return year + "-" + pad(month, 2) + "-" + pad(day, 2);
+  return year + '-' + pad(month, 2) + '-' + pad(day, 2);
 }
 
 function pad(n, width, z) {
