@@ -1,14 +1,13 @@
-var mongoose = require('mongoose');
+var mongoose     = require('mongoose');
+var findOrCreate = require('mongoose-findorcreate')
 
 var requestSchema = mongoose.Schema({
     date: Date,
-    site: Number,
-    extension: Number,
-    sketch: Number,
-    chrome: Number,
-    total: Number,
-    "10": Number
+    "1_0": Number,
+    "bandwidth": Number
 });
+
+requestSchema.plugin(findOrCreate);
 
 var Request = mongoose.model('Request', requestSchema);
 

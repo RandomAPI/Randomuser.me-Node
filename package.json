@@ -19,6 +19,7 @@
     "md5": "^2.1.0",
     "mersenne": "0.0.3",
     "mongoose": "^4.4.3",
+    "mongoose-findorcreate": "^0.1.2",
     "morgan": "~1.6.1",
     "random-seed": "^0.3.0",
     "serve-favicon": "~2.3.0",
