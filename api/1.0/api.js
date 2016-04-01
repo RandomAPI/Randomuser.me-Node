@@ -2,12 +2,13 @@ var mersenne = require('mersenne');
 var crypto   = require("crypto");
 var YAML = require('yamljs');
 var js2xmlparser = require("js2xmlparser");
+var version = "1.0";
 
 // Load the datasets if not defined
-if (typeof datasets === "undefined") {
+if (typeof datasets[version] === "undefined") {
   require('./loadDatasets')(function(data, injectNats) {
-    datasets = data;
-    injects = injectNats;
+    datasets[version] = data;
+    injects[version]  = injectNats;
   });
 }
 
@@ -49,7 +50,7 @@ var Generator = function(options) {
   if (this.nat !== null) this.nat = uppercaseify(this.nat);
   this.nats    = this.getNats(); // Returns array of nats
   this.constantTime = 1437996378;
-  this.version = "1.0";
+  this.version = version;
 
   // Sanitize values
   if (isNaN(this.results) || this.results < 0 || this.results > 5000 || this.results === "") this.results = 1;
@@ -83,27 +84,27 @@ Generator.prototype.generate = function(results) {
     if (Array.isArray(nat)) {
       nat = nat[range(0, nat.length-1)];
     }
-    inject = injects[nat];
+    inject = injects[version][nat];
 
     this.include("gender", randomItem(["male", "female"]));
 
     var name = this.randomName(current.gender, nat);
     this.include("name", {
-      title: current.gender === "male" ? "mr" : randomItem(datasets.common.title),
+      title: current.gender === "male" ? "mr" : randomItem(datasets[version].common.title),
       first: name[0],
       last: name[1]
     });
 
     this.include("location", {
-      street: range(1000, 9999) + " " + randomItem(datasets[nat].street),
-      city: randomItem(datasets[nat].cities),
-      state: randomItem(datasets[nat].states),
+      street: range(1000, 9999) + " " + randomItem(datasets[version][nat].street),
+      city: randomItem(datasets[version][nat].cities),
+      state: randomItem(datasets[version][nat].states),
       postcode: range(10000, 99999)
     });
 
     this.include("email", name[0] + "." + name[1].replace(' ', '') + "@example.com");
-    this.include("username", randomItem(datasets.common.user1) + randomItem(datasets.common.user2) + range(100, 999));
-    this.include("password", randomItem(datasets.common.passwords));
+    this.include("username", randomItem(datasets[version].common.user1) + randomItem(datasets[version].common.user2) + range(100, 999));
+    this.include("password", randomItem(datasets[version].common.passwords));
     this.include("salt", random(2, 8));
 
     var salt = current.salt !== undefined ? current.salt : "";
@@ -198,12 +199,12 @@ Generator.prototype.validNat = function(nat) {
 
 Generator.prototype.randomName = function(gender, nat) {
   gender = gender === undefined ? randomItem(["male", "female"]) : gender;
-  return [randomItem(datasets[nat][gender + "_first"]), randomItem(datasets[nat]["last"])];
+  return [randomItem(datasets[version][nat][gender + "_first"]), randomItem(datasets[version][nat]["last"])];
 };
 
 Generator.prototype.getNats = function() {
   var exclude = ["common", "LEGO"];
-  var nats = Object.keys(datasets).filter(function(nat) {
+  var nats = Object.keys(datasets[version]).filter(function(nat) {
     return exclude.indexOf(nat) == -1;
   });
   return nats;
