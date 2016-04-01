@@ -21,21 +21,22 @@ function genUser(req, res, version) {
     return;
   }
   var results = req.query.results || 1;
-  var output  = new Generator[version](req.query).generate();
 
-  var payload = {"bandwidth": output.length};
-  payload[version] = results;
+  new Generator[version](req.query).generate(function(output) {
+    var payload = {"bandwidth": output.length};
+    payload[version] = results;
 
-  Request.findOrCreate({date: getDateTime()}, payload, function(err, obj, created) {
-    res.setHeader('Content-Type', 'application/json');
-    // Update record
-    if (!created) {
-      Request.update({date: getDateTime()}, {$inc: payload}, function(err, blah, a) {
+    Request.findOrCreate({date: getDateTime()}, payload, function(err, obj, created) {
+      res.setHeader('Content-Type', 'application/json');
+      // Update record
+      if (!created) {
+        Request.update({date: getDateTime()}, {$inc: payload}, function(err, blah, a) {
+          res.send(output);
+        });
+      } else {
         res.send(output);
-      });
-    } else {
-      res.send(output);
-    }
+      }
+    });
   });
 }
 

@@ -1,8 +1,9 @@
-var mersenne = require('mersenne');
-var crypto   = require("crypto");
-var YAML = require('yamljs');
+var mersenne     = require('mersenne');
+var crypto       = require("crypto");
+var YAML         = require('yamljs');
 var js2xmlparser = require("js2xmlparser");
-var version = "1.0";
+var converter    = require('json-2-csv');
+var version      = "1.0";
 
 // Load the datasets if not defined
 if (typeof datasets[version] === "undefined") {
@@ -22,12 +23,15 @@ var originalFieldArray = originalFieldList
                         .map((w) => w.trim().toLowerCase());
 
 var Generator = function(options) {
+  // Check for multiple vals
+  this.checkOptions(options);
+
   options      = options || {};
   this.results = Number(options.results);
   this.seed    = options.seed || "";
   this.lego    = typeof options.lego !== "undefined" && options.lego !== "false" ? true : false;
   this.gender  = options.gender || null;
-  this.format  = options.format || options.fmt || "json";
+  this.format  = (options.format || options.fmt || "json").toLowerCase();
   this.nat     = options.nat || options.nationality || null;
   this.noInfo  = typeof options.noinfo !== "undefined" && options.lego !== "false" ? true : false;
 
@@ -73,8 +77,8 @@ var Generator = function(options) {
   this.seedRNG();
 };
 
-Generator.prototype.generate = function(results) {
-  this.results = results || this.results || 1;
+Generator.prototype.generate = function(cb) {
+  this.results = this.results || 1;
 
   var output = [];
   var nat, inject;
@@ -159,13 +163,17 @@ Generator.prototype.generate = function(results) {
   this.seedRNG();
 
   if (this.format === "yaml") {
-    return YAML.stringify(json, 4);
+    cb(YAML.stringify(json, 4));
   } else if (this.format === "xml") {
-    return js2xmlparser("user", json);
+    cb(js2xmlparser("user", json));
   } else if (this.format === "prettyjson" || this.format === "pretty") {
-    return JSON.stringify(json, null, 2);
+    cb(JSON.stringify(json, null, 2));
+  } else if (this.format === "csv") {
+    converter.json2csv(json.results, function(err, csv) {
+      cb(csv);
+    });
   } else {
-    return JSON.stringify(json);
+    cb(JSON.stringify(json));
   }
 };
 
@@ -216,6 +224,15 @@ Generator.prototype.getNats = function() {
 Generator.prototype.include = function(field, value) {
   if (this.inc.indexOf(field) !== -1) {
     current[field] = value;
+  }
+};
+
+Generator.prototype.checkOptions = function(options) {
+  var keys = Object.keys(options);
+  for (var i = 0; i < keys.length; i++) {
+    if (Array.isArray(options[keys[i]])) {
+      options[keys[i]] = options[keys[i]][options[keys[i]].length-1];
+    }
   }
 };
 
