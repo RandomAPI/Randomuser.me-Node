@@ -7,46 +7,4 @@
  * Copyright 2011 - 2014 Tom McFarlin, http://tommcfarlin.com
  * Released under the MIT License
  */
-
-(function ( $ ) {
-	"use strict";
-
-	$.fn.konami = function( options ) {
-
-		var opts, masterKey, controllerCode, code;
-		opts = $.extend({}, $.fn.konami.defaults, options);
-
-		return this.each(function() {
-
-			controllerCode = [];
-
-			$( window ).keyup(function( evt ) {
-
-				code = evt.keyCode || evt.which;
-
-				if ( opts.code.length > controllerCode.push( code ) ) {
-					return;
-				} // end if
-
-				if ( opts.code.length < controllerCode.length ) {
-					controllerCode.shift();
-				} // end if
-
-				if ( opts.code.toString() !== controllerCode.toString() ) {
-					return;
-				} // end for
-
-				opts.cheat();
-
-			}); // end keyup
-
-		}); // end each
-
-	}; // end opts
-
-	$.fn.konami.defaults = {
-		code : [38,38,40,40,37,39,37,39,66,65],
-		cheat: null
-	};
-
-}( jQuery ));
+!function(n){"use strict";n.fn.konami=function(t){var e,o,i;return e=n.extend({},n.fn.konami.defaults,t),this.each(function(){o=[],n(window).keyup(function(n){i=n.keyCode||n.which,e.code.length>o.push(i)||(e.code.length<o.length&&o.shift(),e.code.toString()===o.toString()&&e.cheat())})})},n.fn.konami.defaults={code:[38,38,40,40,37,39,37,39,66,65],cheat:null}}(jQuery);

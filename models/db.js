@@ -1,8 +1,8 @@
 var mongoose = require('mongoose');
 var settings = require('../settings');
 
-module.exports = function(testEnv) {
-  var dbName = settings.db + (testEnv ? "-test" : "");
+module.exports = testEnv => {
+  var dbName = settings.db + (testEnv ? '-test' : '');
 
   mongoose.connect('mongodb://localhost/' + dbName);
   var db = mongoose.connection;

@@ -1,27 +1,30 @@
-var async    = require("async");
-var server   = require('./app').server;
-var app      = require('./app').app;
+var fs     = require('fs');
+
+var async  = require('async');
+var server = require('./app').server;
+var app    = require('./app').app;
+
 Generator = {};
 datasets  = {};
 injects   = {};
 
 // Load in all generators and datasets before starting the server
-async.parallel({
-  "1_0": function(callback) {
-    require('./api/1.0/loadDatasets')(function(data) {
-      Generator["1.0"] = require('./api/1.0/api');
-      datasets["1.0"]  = data;
-      callback();
-    });
-  }
-},
-function(err, results) {
+// Scan api folder for available versions
+var versions = fs.readdirSync('./api').filter(dir => dir !== '.DS_Store');
+
+async.forEachOf(versions, (value, key, callback) => {
+  require('./api/' + value + '/loadDatasets')(data => {
+    Generator[value] = require('./api/' + value + '/api');
+    datasets[value]  = data;
+    callback();
+  });
+}, function(err, results) {
     startServer();
 });
 
 function startServer() {
   server.listen(app.get('port'));
-  server.on('error', function(error) {
+  server.on('error', error => {
     var bind = app.get('port');
     switch (error.code) {
       case 'EACCES':
@@ -37,7 +40,7 @@ function startServer() {
     }
   });
 
-  server.on('listening', function() {
+  server.on('listening', () => {
     var addr = server.address();
     var bind = typeof addr === 'string'
       ? 'pipe ' + addr

@@ -8,27 +8,27 @@ fs.readdir('.viewsMin/pages', function(err, data) {;
 });
 
 var titles = {
-  changelog: "Change Log",
-  copyright: "Copyright",
-  documentation: "Documentation",
-  donate: "Donate",
-  index: "Home",
-  photos: "Photos",
-  photoshop: "Photoshop Extension",
-  sketch: "Sketch Extension",
-  stats: "Statistics"
+  changelog: 'Change Log',
+  copyright: 'Copyright',
+  documentation: 'Documentation',
+  donate: 'Donate',
+  index: 'Home',
+  photos: 'Photos',
+  photoshop: 'Photoshop Extension',
+  sketch: 'Sketch Extension',
+  stats: 'Statistics'
 };
 
 router.get('/', function(req, res, next) {
-  res.render('pages/index', {title: "Home"});
+  res.render('pages/index', {title: 'Home'});
 });
 
 router.get('/:page?', function(req, res, next) {
   var page = req.params.page;
 
-  if (page === "index") {
+  if (page === 'index') {
     res.redirect(301, '/');
-  } else if (views.indexOf(page + ".ejs") !== -1) {
+  } else if (views.indexOf(page + '.ejs') !== -1) {
     res.render('pages/' + page, {title: titles[page]});
   } else {
     next();
