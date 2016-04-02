@@ -151,8 +151,8 @@ Generator.prototype.generate = function(cb) {
     info: {
       seed: String(this.seed + (this.nat !== null && !Array.isArray(this.nat) ? pad((this.nats.indexOf(this.nat)).toString(16), 2) : '')),
       results: this.results,
-      inc: this.inc,
-      exc: this.exc,
+      //inc: this.inc,
+      //exc: this.exc,
       version: this.version
     }
   };

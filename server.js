@@ -1,5 +1,4 @@
 var fs     = require('fs');
-
 var async  = require('async');
 var server = require('./app').server;
 var app    = require('./app').app;

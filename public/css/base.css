@@ -987,6 +987,11 @@ pre span {
   display: inline-block;
   padding: 10px 0;
 }
+
+.changelog section span#color {
+  color: #83ba43;
+}
+
 .donate .floating_icon {
   width: 100%;
   position: relative;
