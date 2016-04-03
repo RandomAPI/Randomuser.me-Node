@@ -38,11 +38,15 @@ function genUser(req, res, version) {
     }
 
     var payload = {'bandwidth': output.length};
-    payload[version] = results;
+    payload[version.replace('.', '_')] = results;
 
     Request.findOrCreate({date: getDateTime()}, payload, (err, obj, created) => {
       // Update record
-      if (!created) Request.update({date: getDateTime()}, {$inc: payload});
+      if (!created) {
+        Request.update({date: getDateTime()}, {$inc: payload}, (err) => {
+
+        });
+      }
 
       // Download or output file
       if (dl) {
