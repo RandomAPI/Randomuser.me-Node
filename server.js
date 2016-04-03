@@ -6,6 +6,7 @@ var app    = require('./app').app;
 Generator = {};
 datasets  = {};
 injects   = {};
+clients   = {};
 
 // Load in all generators and datasets before starting the server
 // Scan api folder for available versions
@@ -46,4 +47,9 @@ function startServer() {
       : 'port ' + addr.port;
     console.log('Listening on ' + bind);
   });
+
+  // Client limit reset
+  setInterval(() => {
+    clients = {};
+  }, settings.resetInterval);
 }
