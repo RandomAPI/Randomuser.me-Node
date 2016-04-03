@@ -13,9 +13,8 @@ if (typeof datasets[version] === 'undefined') {
   });
 }
 
-var originalFieldList = 'gender, name, location, email, username,\
-password, salt, md5, sha1, sha256, registered,\
-dob, phone, cell, id, picture, info';
+var originalFieldList = 'gender, name, location, email,\
+login, registered, dob, phone, cell, id, picture, nat';
 
 var originalFieldArray = originalFieldList
                         .split(',')
@@ -108,15 +107,16 @@ Generator.prototype.generate = function(cb) {
     });
 
     this.include('email', name[0] + '.' + name[1].replace(' ', '') + '@example.com');
-    this.include('username', randomItem(datasets[version].common.user1) + randomItem(datasets[version].common.user2) + range(100, 999));
-    this.include('password', randomItem(datasets[version].common.passwords));
-    this.include('salt', random(2, 8));
 
-    var salt = current.salt !== undefined ? current.salt : '';
-    this.include('md5', crypto.createHash('md5').update(current.password + salt).digest('hex'));
-    this.include('sha1', crypto.createHash('sha1').update(current.password + salt).digest('hex'));
-    this.include('sha256', crypto.createHash('sha256').update(current.password + salt).digest('hex'));
-
+    var salt = random(2, 8);
+    this.include('login', {
+      username: randomItem(datasets[version].common.user1) + randomItem(datasets[version].common.user2) + range(100, 999),
+      password: randomItem(datasets[version].common.passwords),
+      salt:     salt,
+      md5:      crypto.createHash('md5').update(current.password + salt).digest('hex'),
+      sha1:     crypto.createHash('sha1').update(current.password + salt).digest('hex'),
+      sha256:   crypto.createHash('sha256').update(current.password + salt).digest('hex')
+    });
     this.include('registered', range(915148800, this.constantTime));
     this.include('dob', range(0, this.constantTime));
 
@@ -137,11 +137,7 @@ Generator.prototype.generate = function(cb) {
 
     inject(this.inc, current);  // Inject unique fields for nationality
 
-    this.include('info', {
-      nat: nat,
-      //seed: String(this.seed + (this.nat !== null ? pad((this.nats.indexOf(this.nat)).toString(16), 2) : '')),
-      version: this.version
-    });
+    this.include('nat', nat);
 
     output.push(current);
   }
