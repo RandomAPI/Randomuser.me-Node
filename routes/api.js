@@ -6,32 +6,48 @@ var Request = require('../models/Request');
 
 var latestVersion = '1.0';
 
-router.get('/', cors(), function(req, res, next) {
+router.get('/', cors(), (req, res, next) => {
   genUser(req, res, '1.0');
 });
 
-router.get('/:version', cors(), function(req, res, next) {
+router.get('/:version', cors(), (req, res, next) => {
   genUser(req, res, req.params.version);
 });
 
 function genUser(req, res, version) {
   version = version || latestVersion;
+
+  // Version doesn't exist
   if (typeof Generator[version] === 'undefined') {
     res.sendStatus(404);
     return;
   }
-  var results = req.query.results || 1;
 
-  new Generator[version](req.query).generate(function(output) {
+  var results = req.query.results || 1;
+  var dl      = typeof req.query.dl !== 'undefined' || typeof req.query.download !== 'undefined' ? true : false;
+
+  new Generator[version](req.query).generate((output, ext) => {
+    var name = "tmp/" + String(new Date().getTime());
+
+    // Download - save file and update headers
+    if (dl) {
+      res.setHeader('Content-disposition', 'attachment; filename=download.' + ext);
+      fs.writeFileSync(name, output, 'utf8');
+    } else {
+      res.setHeader('Content-Type', 'application/json');
+    }
+
     var payload = {'bandwidth': output.length};
     payload[version] = results;
 
-    Request.findOrCreate({date: getDateTime()}, payload, function(err, obj, created) {
-      res.setHeader('Content-Type', 'application/json');
+    Request.findOrCreate({date: getDateTime()}, payload, (err, obj, created) => {
       // Update record
-      if (!created) {
-        Request.update({date: getDateTime()}, {$inc: payload}, function(err, blah, a) {
-          res.send(output);
+      if (!created) Request.update({date: getDateTime()}, {$inc: payload});
+
+      // Download or output file
+      if (dl) {
+        res.download(name, "download." + ext, err => {
+          fs.unlink(name);
         });
       } else {
         res.send(output);
@@ -39,9 +55,6 @@ function genUser(req, res, version) {
     });
   });
 }
-
-module.exports = router;
-
 
 function getDateTime() {
   var date = new Date();
@@ -62,3 +75,5 @@ function pad(n, width, z) {
   n = n + '';
   return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
 }
+
+module.exports = router;
