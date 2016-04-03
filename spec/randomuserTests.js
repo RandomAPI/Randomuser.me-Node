@@ -151,7 +151,7 @@ describe('Randomuser.me', () => {
         request(server).get('/api?nat=US').expect(200)
         .end((err, res) => {
           var result = JSON.parse(res.text);
-          expect(result.results[0].info.nat).to.equal('US');
+          expect(result.results[0].nat).to.equal('US');
           done();
         });
       });
@@ -160,7 +160,7 @@ describe('Randomuser.me', () => {
         request(server).get('/api?nationality=US').expect(200)
         .end((err, res) => {
           var result = JSON.parse(res.text);
-          expect(result.results[0].info.nat).to.equal('US');
+          expect(result.results[0].nat).to.equal('US');
           done();
         });
       });
@@ -169,7 +169,7 @@ describe('Randomuser.me', () => {
         request(server).get('/api?nationality=US').expect(200)
         .end((err, res) => {
           var result = JSON.parse(res.text);
-          expect(result.results[0].info.nat).to.equal('US');
+          expect(result.results[0].nat).to.equal('US');
           done();
         });
       });
@@ -180,7 +180,7 @@ describe('Randomuser.me', () => {
         request(server).get('/api?nat=us').expect(200)
         .end((err, res) => {
           var result = JSON.parse(res.text);
-          expect(result.results[0].info.nat).to.equal('US');
+          expect(result.results[0].nat).to.equal('US');
           done();
         });
       });
@@ -189,7 +189,7 @@ describe('Randomuser.me', () => {
         request(server).get('/api?nationality=us').expect(200)
         .end((err, res) => {
           var result = JSON.parse(res.text);
-          expect(result.results[0].info.nat).to.equal('US');
+          expect(result.results[0].nat).to.equal('US');
           done();
         });
       });
@@ -247,7 +247,7 @@ describe('Randomuser.me', () => {
         request(server).get('/api?lego').expect(200)
         .end((err, res) => {
           var result = JSON.parse(res.text);
-          expect(result.results[0].info.nat).to.equal('LEGO');
+          expect(result.results[0].nat).to.equal('LEGO');
           done();
         });
       });
@@ -256,7 +256,7 @@ describe('Randomuser.me', () => {
         request(server).get('/api?lego=true').expect(200)
         .end((err, res) => {
           var result = JSON.parse(res.text);
-          expect(result.results[0].info.nat).to.equal('LEGO');
+          expect(result.results[0].nat).to.equal('LEGO');
           done();
         });
       });
@@ -265,7 +265,7 @@ describe('Randomuser.me', () => {
         request(server).get('/api?lego=false').expect(200)
         .end((err, res) => {
           var result = JSON.parse(res.text);
-          expect(result.results[0].info.nat).to.not.equal('LEGO');
+          expect(result.results[0].nat).to.not.equal('LEGO');
           done();
         });
       });
