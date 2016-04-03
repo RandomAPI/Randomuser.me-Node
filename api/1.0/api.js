@@ -163,17 +163,17 @@ Generator.prototype.generate = function(cb) {
   this.seedRNG();
 
   if (this.format === 'yaml') {
-    cb(YAML.stringify(json, 4));
+    cb(YAML.stringify(json, 4), "yml");
   } else if (this.format === 'xml') {
-    cb(js2xmlparser('user', json));
+    cb(js2xmlparser('user', json), "xml");
   } else if (this.format === 'prettyjson' || this.format === 'pretty') {
-    cb(JSON.stringify(json, null, 2));
+    cb(JSON.stringify(json, null, 2), "json");
   } else if (this.format === 'csv') {
     converter.json2csv(json.results, (err, csv) => {
-      cb(csv);
+      cb(csv, "csv");
     });
   } else {
-    cb(JSON.stringify(json));
+    cb(JSON.stringify(json), "json");
   }
 };
 
