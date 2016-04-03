@@ -14,7 +14,7 @@ var api          = require('./routes/api');
 
 var app          = express();
 var server       = http.createServer(app);
-var settings     = require('./settings');
+settings         = require('./settings');
 
 // view engine setup
 app.set('views', path.join(__dirname, '.viewsMin'));

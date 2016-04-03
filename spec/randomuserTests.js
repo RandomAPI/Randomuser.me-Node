@@ -10,6 +10,7 @@ var Request = require('../models/Request');
 Generator = {};
 datasets  = {};
 injects   = {};
+clients   = {};
 
 describe('Randomuser.me', () => {
 
