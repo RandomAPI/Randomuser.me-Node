@@ -7,7 +7,7 @@ var Request = require('../models/Request');
 var latestVersion = '1.0';
 
 router.get('/', cors(), (req, res, next) => {
-  genUser(req, res, '1.0');
+  genUser(req, res, latestVersion);
 });
 
 router.get('/:version', cors(), (req, res, next) => {

@@ -19,6 +19,18 @@ async.forEachOf(versions, (value, key, callback) => {
     callback();
   });
 }, function(err, results) {
+    var gKeys = Object.keys(Generator);
+    var dKeys = Object.keys(datasets);
+    console.log("Loaded " + gKeys.length + " generator" + (gKeys.length == 1 ? "" : "s") + ".");
+    gKeys.forEach(key => {
+      var nats = "", count = 0;;
+      Object.keys(datasets[key]).filter(key => ["common", "LEGO"].indexOf(key) === -1).forEach(function(dkey) {
+        nats += dkey + " ";
+        count++;
+      });
+      console.log("• v" + key + " [" + count + "]: " + nats);
+    });
+    console.log("");
     startServer();
 });
 
