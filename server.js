@@ -50,6 +50,15 @@ function startServer() {
 
   // Client limit reset
   setInterval(() => {
+    var offenders = {};
+    Object.keys(clients).forEach(client => {
+      if (clients[client] >= settings.limit) {
+          offenders[client] = clients[client];
+      }
+    });
+    if (Object.keys(offenders).length > 0) console.log(offenders);
+
     clients = {};
+    global.gc();
   }, settings.resetInterval);
 }

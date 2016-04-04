@@ -15,7 +15,8 @@ router.get('/:version', cors(), (req, res, next) => {
 });
 
 function genUser(req, res, version) {
-  var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  var ip = req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+
   if (clients[ip] >= settings.limit) {
     res.status(503).json({
       error: "Whoa, slow down there. You've requested " + clients[ip] + " users in the last minute. Help us keep this service free and spare some bandwidth for other users please :)"
@@ -31,6 +32,8 @@ function genUser(req, res, version) {
   }
 
   var results = req.query.results || 1;
+  if (results > settings.maxResults || results < 1) results = 1;
+
   var dl      = typeof req.query.dl !== 'undefined' || typeof req.query.download !== 'undefined' ? true : false;
 
   if (!(ip in clients)) {
