@@ -29,7 +29,7 @@ router.get('/', (req, res, next) => {
                 "total": -1
             }}
         ],function(err, result) {
-          if (result !== null) {
+          if (result.length !== 0) {
             cb(err, {total: format(result[0].total), bandwidth: filesize(result[0].bandwidth)});
           } else {
             cb(err, {total: 0, bandwidth: filesize(0)});
@@ -48,7 +48,7 @@ router.get('/', (req, res, next) => {
             }},
             { "$limit": 30 }
         ],function(err, result) {
-          if (result !== null) {
+          if (result.length !== 0) {
             cb(err, {total: format(Math.round(result[0].total/30)), bandwidth: filesize(result[0].bandwidth)});
           } else {
             cb(err, {total: 0, bandwidth: filesize(0)});
