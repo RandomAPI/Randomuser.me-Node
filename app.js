@@ -11,6 +11,7 @@ var debug        = require('debug')('randomuser.me-node:server');
 var db           = require('./models/db')(process.env.spec);
 var index        = require('./routes/index');
 var api          = require('./routes/api');
+var stats        = require('./routes/stats');
 
 var app          = express();
 var server       = http.createServer(app);
@@ -31,6 +32,7 @@ app.use(compress());
 
 app.use('/', index);
 app.use('/api', api);
+app.use('/getStats', stats);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
