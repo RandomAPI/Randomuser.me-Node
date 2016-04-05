@@ -23,6 +23,7 @@ function genUser(req, res, version) {
     });
     return;
   }
+
   version = version || latestVersion;
 
   // Version doesn't exist
@@ -34,7 +35,7 @@ function genUser(req, res, version) {
   var results = req.query.results || 1;
   if (results > settings.maxResults || results < 1) results = 1;
 
-  var dl      = typeof req.query.dl !== 'undefined' || typeof req.query.download !== 'undefined' ? true : false;
+  var dl = typeof req.query.dl !== 'undefined' || typeof req.query.download !== 'undefined' ? true : false;
 
   if (!(ip in clients)) {
     clients[ip] = Number(results);
@@ -53,7 +54,10 @@ function genUser(req, res, version) {
       res.setHeader('Content-Type', 'application/json');
     }
 
-    var payload = {'bandwidth': output.length};
+    var payload = {
+      'bandwidth': output.length,
+      'total': results
+    };
     payload[version.replace('.', '_')] = results;
 
     Request.findOrCreate({date: getDateTime()}, payload, (err, obj, created) => {

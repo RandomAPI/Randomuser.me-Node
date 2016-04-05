@@ -15,6 +15,8 @@
     "debug": "~2.2.0",
     "ejs": "~2.3.3",
     "express": "~4.13.1",
+    "filesize": "^3.2.1",
+    "format-number": "^2.0.1",
     "js2xmlparser": "^1.0.0",
     "json-2-csv": "^2.0.18",
     "lodash": "^4.3.0",

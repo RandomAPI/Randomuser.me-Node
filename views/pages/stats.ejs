@@ -14,9 +14,14 @@
       <iframe src="https://randomuser.me/charts_iframe.php"></iframe>
     </section>
 
-    <section>
+    <section class="small push">
       <h2>Users Generated (total)</h2>
-      <span id="stat_total">...</span>
+      <span id="stat_total_users">...</span>
+    </section>
+
+    <section class="small">
+      <h2>Bandwidth (total)</h2>
+      <span id="stat_total_bandwidth">...</span>
     </section>
 
     <section class="small push">
@@ -30,15 +35,15 @@
     </section>
 
     <section class="small push">
-      <h2>PS Extension Downloads</h2>
-      <span id="stat_ps">...</span>
+      <h2>Bandwidth today</h2>
+      <span id="stat_today_bandwidth">...</span>
     </section>
 
     <section class="small">
       <!-- <h2>API Uptime</h2> -->
       <h2>API Load Average</h2>
       <!-- <span id="uptime">...</span> -->
-      <span id="capacity">...</span>
+      <span id="stat_loadavg">...</span>
     </section>
     <% include ../snippets/ads %>
   </div>
