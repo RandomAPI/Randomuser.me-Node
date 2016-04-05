@@ -33,6 +33,7 @@ var Generator = function(options) {
   this.format  = (options.format || options.fmt || 'json').toLowerCase();
   this.nat     = options.nat || options.nationality || null;
   this.noInfo  = typeof options.noinfo !== 'undefined' && options.lego !== 'false' ? true : false;
+  this.page    = Number(options.page) || 1;
 
   // Include all fields by default
   this.inc     = options.inc || originalFieldList;
@@ -71,6 +72,8 @@ var Generator = function(options) {
   } else if (this.seed === '') {
     this.defaultSeed();
   }
+
+  if (this.page < 0 || this.page > 10000) this.page = 1;
   ///////////////////
 
   this.seedRNG();
@@ -147,6 +150,7 @@ Generator.prototype.generate = function(cb) {
     info: {
       seed: String(this.seed + (this.nat !== null && !Array.isArray(this.nat) ? pad((this.nats.indexOf(this.nat)).toString(16), 2) : '')),
       results: this.results,
+      page: this.page,
       //inc: this.inc,
       //exc: this.exc,
       version: this.version
@@ -176,9 +180,11 @@ Generator.prototype.generate = function(cb) {
 
 Generator.prototype.seedRNG = function() {
   var seed = this.seed;
-  if (seed.length === 18) {
-      seed = seed.substring(0, 16);
+  if (this.seed.length === 18) {
+      seed = this.seed.substring(0, 16);
   }
+  seed = this.page !== 1 ? seed + String(this.page) : seed;
+
   seed = parseInt(crypto.createHash('md5').update(seed).digest('hex').substring(0, 8), 16);
   mersenne.seed(seed);
 };
