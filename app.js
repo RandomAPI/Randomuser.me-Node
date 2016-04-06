@@ -44,7 +44,7 @@ app.use(function(req, res, next) {
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
-  console.log(err);
+  console.log(err.stack.split('\n').filter(line => line.indexOf('node_modules') === -1).join('\n'));
   res.sendStatus(err.status || 500);
 });
 
