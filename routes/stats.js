@@ -69,7 +69,7 @@ router.get('/', (req, res, next) => {
 
 router.get('/charts', (req, res, next) => {
   Request.find({date: { $gte: getDateTime(30)}}, {date: 1, bandwidth: 1, total: 1, _id: 0}, (err, obj) => {
-    res.send(obj);
+    res.send(obj.map(row => { return {date: simpleDate(row.date), total: row.total, bandwidth: row.bandwidth}}));
   });
 });
 
@@ -92,6 +92,11 @@ function getDateTime(daysBack) {
     n = n + '';
     return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
   }
+}
+
+function simpleDate(date) {
+  var a = new Date(date);
+  return pad(a.getMonth(), 2) + "." + pad(a.getDate(), 2);
 }
 
 module.exports = router;
