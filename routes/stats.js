@@ -69,7 +69,7 @@ router.get('/', (req, res, next) => {
 
 router.get('/charts', (req, res, next) => {
   Request.find({date: { $gte: getDateTime(30)}}, {date: 1, bandwidth: 1, total: 1, _id: 0}, (err, obj) => {
-    res.send(obj.map(row => { return {date: simpleDate(row.date), total: row.total, bandwidth: row.bandwidth}}));
+    res.send(obj.map(row => { return {date: simpleDate(row.date), total: String(row.total).replace(',', ''), bandwidth: String(row.bandwidth).replace(',', '')}}));
   });
 });
 
