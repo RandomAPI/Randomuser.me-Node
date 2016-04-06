@@ -369,9 +369,6 @@ body {
 body.active {
   left: -300px;
 }
-body.active #navigation {
-  right: 300px;
-}
 .frame {
   max-width: 730px;
   margin: auto;
@@ -436,200 +433,294 @@ header a.twitter img {
     font-size: 32px;
   }
 }
-#navigation {
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
+
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar {
+  text-align: center;
   position: fixed;
-  width: 300px;
-  height: 100%;
-  right: 0px;
-  top: 0;
+  width: 100%;
+  height: 60px;
   background: #222;
   color: #fff;
-  z-index: 100;
-  -webkit-transform: translateX(300px);
-      -ms-transform: translateX(300px);
-          transform: translateX(300px);
-  -webkit-transition: all 0.25s ease-in-out;
-          transition: all 0.25s ease-in-out;
-  -webkit-animation: bounceHint 1s ease;
-          animation: bounceHint 1s ease;
+  z-index: 6;
 }
-#navigation.show {
-  -webkit-transform: translateX(0px);
-      -ms-transform: translateX(0px);
-          transform: translateX(0px);
-}
-#navigation ul {
+
+#navbar ul {
   list-style-type: none;
-  padding: 0px 30px;
-}
-#navigation ul li {
-  width: 100%;
-  height: 50px;
-  -webkit-transition: all 0.2s ease-out;
-          transition: all 0.2s ease-out;
-}
-#navigation ul li a:before {
-  content: '';
   display: inline-block;
-  width: 28px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+#navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+#navbar ul li {
   height: 24px;
   position: relative;
-  top: 5px;
-  margin-right: 10px;
-  background-image: url(../img/nav_icons.png);
+  color: #fff;
   background-repeat: no-repeat;
   -webkit-background-size: 27px 27px;
-          background-size: 27px;
+  background-size: 27px;
 }
-#navigation ul li:nth-child(2) a:before {
-  background-position: 0 -200px;
-}
-#navigation ul li:nth-child(3) a:before {
-  background-position: 0 -25px;
-}
-#navigation ul li:nth-child(4) a:before {
-  background-position: 0 -50px;
-}
-#navigation ul li:nth-child(5) a:before {
-  background-position: 0 -75px;
-}
-#navigation ul li:nth-child(6) a:before {
-  background-position: 0 -100px;
-}
-#navigation ul li:nth-child(7) a:before {
-  background-position: 0 -125px;
-}
-#navigation ul li:nth-child(9) a:before {
-  background-position: 0 -150px;
-}
-#navigation ul li:nth-child(10) a:before {
-  background-position: 0 -175px;
-}
-#navigation ul li:nth-child(10) {
-  opacity: 1;
-}
-#navigation ul li.blank:before {
-  display: none;
-}
-#navigation ul li:hover {
-  -webkit-transform: translateX(10px);
-      -ms-transform: translateX(10px);
-          transform: translateX(10px);
-}
-#navigation ul li a {
+
+#navbar ul li a{
   color: #fff;
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
 }
-.nav_toggle {
-  position: absolute;
-  left: -60px;
-  top: 0px;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  background: #2c2e31;
+
+#navbar ul li:before{
+  content: "";
+  margin: auto;
+  width: 27px; height: 23px;
+  display: block;
+  background-size: 27px;
+  background-image: url(https://randomuser.me/img/nav_icons.png);
 }
-.nav_toggle .icon {
-  width: 30px;
-  height: 22px;
-  margin: 18px auto;
-  position: relative;
+  
+#navbar ul li:nth-child(2):before {
+  background-position: 0 -200px;
 }
-.nav_toggle .icon div {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  -webkit-transform-origin: 0% 0%;
-      -ms-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-  -webkit-transition: all 0.2s ease-out;
-          transition: all 0.2s ease-out;
+#navbar ul li:nth-child(3):before {
+  background-position: 0 -25px;
 }
-.nav_toggle:hover .icon div {
-  -webkit-animation-name: hoverFeedback;
-          animation-name: hoverFeedback;
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-  animation-easing: ease-in;
+#navbar ul li:nth-child(4):before {
+  background-position: 0 -50px;
 }
-.nav_toggle div:nth-child(1) {
-  top: 0;
+#navbar ul li:nth-child(5):before {
+  background-position: 0 -75px;
 }
-.nav_toggle div:nth-child(2) {
-  top: 10px;
-  -webkit-animation-delay: .1s;
-          animation-delay: .1s;
+#navbar ul li:nth-child(6):before {
+  background-position: 0 -100px;
 }
-.nav_toggle div:nth-child(3) {
-  top: 20px;
-  width: 70%;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
+#navbar ul li:nth-child(7):before {
+  background-position: 0 -125px;
 }
-@-webkit-keyframes hoverFeedback {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  50% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
+#navbar ul li:nth-child(9):before {
+  background-position: 0 -150px;
 }
-@keyframes hoverFeedback {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  50% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
+#navbar ul li:nth-child(10):before {
+  background-position: 0 -175px;
 }
-body.active .nav_toggle .icon div {
-  -webkit-animation-name: none;
-          animation-name: none;
+#navbar ul li:nth-child(10):before {
+  opacity: .1;
 }
-body.active .nav_toggle .icon div:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  left: 5px;
+#navbar ul li.blank:before {
+  display: none;
 }
-body.active .nav_toggle .icon div:nth-child(2) {
-  top: 21px;
-  left: 5px;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-body.active .nav_toggle .icon div:nth-child(3) {
-  width: 0%;
-}
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 1145px) {
   body.active {
-    left: -260px;
+      left: -260px;
   }
-  body.active #navigation {
+  body.active #navbar {
     right: 300px;
   }
-  #navigation {
+  #navbar {
     width: 260px;
     right: 40px;
   }
-  #navigation ul {
+  #navbar ul {
     padding: 0 25px;
+  }
+  #navbar {
+    text-align: left;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    right: 0px;
+    top: 0;
+    background: #222;
+    color: #fff;
+    z-index: 100;
+    -webkit-transform: translateX(300px);
+        -ms-transform: translateX(300px);
+            transform: translateX(300px);
+    -webkit-transition: all 0.25s ease-in-out;
+            transition: all 0.25s ease-in-out;
+    -webkit-animation: bounceHint 1s ease;
+            animation: bounceHint 1s ease;
+  }
+  #navbar.show {
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  #navbar ul {
+    list-style-type: none;
+    padding: 0px 30px;
+  }
+  #navbar ul li {
+    width: 100%;
+    height: 50px;
+    -webkit-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+  }
+  #navbar ul li:before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 24px;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+    background-image: url(../img/nav_icons.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 27px 27px;
+            background-size: 27px;
+  }
+  #navbar ul li:nth-child(2):before {
+    background-position: 0 -200px;
+  }
+  #navbar ul li:nth-child(3):before {
+    background-position: 0 -25px;
+  }
+  #navbar ul li:nth-child(4):before {
+    background-position: 0 -50px;
+  }
+  #navbar ul li:nth-child(5):before {
+    background-position: 0 -75px;
+  }
+  #navbar ul li:nth-child(6):before {
+    background-position: 0 -100px;
+  }
+  #navbar ul li:nth-child(7):before {
+    background-position: 0 -125px;
+  }
+  #navbar ul li:nth-child(9):before {
+    background-position: 0 -150px;
+  }
+  #navbar ul li:nth-child(10):before {
+    background-position: 0 -175px;
+  }
+  #navbar ul li:nth-child(10) {
+    opacity: 1;
+  }
+  #navbar ul li.blank:before {
+    display: none;
+  }
+  #navbar ul li:hover {
+    -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  #navbar ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  #navbar {
+    width: 260px;
+    right: 40px;
+  }
+  #navbar ul {
+    padding: 0 25px;
+  }
+  .nav_toggle {
+    position: absolute;
+    left: -60px;
+    top: 0px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: #2c2e31;
+  }
+  .nav_toggle .icon {
+    width: 30px;
+    height: 22px;
+    margin: 18px auto;
+    position: relative;
+  }
+  .nav_toggle .icon div {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+  }
+  .nav_toggle:hover .icon div {
+    -webkit-animation-name: hoverFeedback;
+            animation-name: hoverFeedback;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    animation-easing: ease-in;
+  }
+  .nav_toggle div:nth-child(1) {
+    top: 0;
+  }
+  .nav_toggle div:nth-child(2) {
+    top: 10px;
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
+  }
+  .nav_toggle div:nth-child(3) {
+    top: 20px;
+    width: 70%;
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+  }
+  @-webkit-keyframes hoverFeedback {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+    50% {
+      -webkit-transform: translateX(-5px);
+              transform: translateX(-5px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes hoverFeedback {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+    50% {
+      -webkit-transform: translateX(-5px);
+              transform: translateX(-5px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  body.active .nav_toggle .icon div {
+    -webkit-animation-name: none;
+            animation-name: none;
+  }
+  body.active .nav_toggle .icon div:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    left: 5px;
+  }
+  body.active .nav_toggle .icon div:nth-child(2) {
+    top: 21px;
+    left: 5px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  body.active .nav_toggle .icon div:nth-child(3) {
+    width: 0%;
   }
 }
 .card_offset {
@@ -1005,7 +1096,7 @@ pre span {
           transform: translateY(0px);
   -webkit-animation: float 2s linear alternate infinite;
           animation: float 2s linear alternate infinite;
-  z-index: 5;
+  z-index: 1;
 }
 .donate .floating_icon:after {
   content: '';
