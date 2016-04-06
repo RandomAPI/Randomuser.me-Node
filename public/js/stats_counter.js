@@ -1,25 +1,23 @@
-function getStatsData(){
-  $.ajax({
-    url: 'getStats',
-    dataType: 'json',
-    async: false,
-    success: function(data){
-      // results = data['Total Users'];
-      if(!data['error']){
-        results = data;
-      }
+(function() {
+  if (window.location.href.indexOf('stats') !== -1) {
+    function getStatsData(cb){
+      var result = pegasus('getStats');
+      result.then(function(data) {
+        if(!data['error']){
+          cb(data);
+        }
+      });
     }
-  });
-  return results;
-}
 
-setInterval(function(){
-  var data = getStatsData()
-  $('#stat_total_users').html(data.all.total);
-  $('#stat_total_bandwidth').html(data.all.bandwidth);
-  $('#stat_today').html(data.today.total);
-  $('#stat_thirty_avg').html(data[30].total);
-  $('#stat_today_bandwidth').html(data.today.bandwidth);
-  //$('#uptime').html(data['Uptime']);
-  $('#stat_loadavg').html(data.load);
-}, 1000);
+    setInterval(function(){
+      getStatsData(function(data) {
+        document.getElementById('stat_total_users').innerHTML = data.all.total;
+        document.getElementById('stat_total_bandwidth').innerHTML = data.all.bandwidth;
+        document.getElementById('stat_today').innerHTML = data.today.total;
+        document.getElementById('stat_thirty_avg').innerHTML = data[30].total;
+        document.getElementById('stat_today_bandwidth').innerHTML = data.today.bandwidth;
+        document.getElementById('stat_loadavg').innerHTML = data.load;
+      });
+    }, 1000);
+  }
+})();

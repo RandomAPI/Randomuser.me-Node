@@ -1,10 +1,16 @@
-$(window).konami({
-    cheat: function() {
-    	api_url = 'https://randomuser.me/api/0.4/?lego&randomapi';
-    	getNewUser(api_url);
-    	$('header h1').html('Random Lego Generator');
-    	$('body').addClass('lego');
+(function() {
+  if (document.title.indexOf('Home') !== -1) {
+    var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
+    document.addEventListener('keydown', function(e) {
+      kkeys.push(e.keyCode);
 
-    	window.scrollTo(0, 0);
-    }
-});
+      if (kkeys.toString().indexOf(konami) >= 0) {
+        kkeys = [];
+        getNewUser();
+        document.getElementsByTagName('header')[0].getElementsByTagName('h1')[0].innerHTML = 'Random Lego Generator';
+        document.getElementsByTagName('body')[0].className += " lego";
+        window.scrollTo(0, 0);
+      }
+    });
+  }
+})();

@@ -42,16 +42,13 @@
         key: 'pk_migDTfk5iGQSrQE0ONijdnKXB0P5Z',
         image: 'img/donate_small.png',
         token: function(token, args) {
-          // Use the token to create the charge with a server-side script.
-          // You can access the token ID with `token.id`
         }
         });
         document.getElementById('donate_button').addEventListener('click', function(e) {
-        // Open Checkout with further options
         handler.open({
           name: 'Random User API',
           description: 'Thanks for donating!',
-          amount: $('#donation_amount').val(),
+          amount: document.getElementById('donation_amount').value
         });
         e.preventDefault();
         });

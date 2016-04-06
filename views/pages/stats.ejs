@@ -11,7 +11,7 @@
     <section>
       <h2>Last 30 days</h2>
       <p>View our overall API requests for the past 30 days.</p>
-      <iframe src="https://randomuser.me/charts_iframe.php"></iframe>
+      <div id="charts" style="width: 100%; height: 100%; margin: 0 auto"></div>
     </section>
 
     <section class="small push">
@@ -49,5 +49,6 @@
   </div>
   <% include ../snippets/footer %>
   <% include ../snippets/analytics %>
+  <script src="js/highcharts.js"></script>
 </body>
 </html>

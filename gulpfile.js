@@ -20,7 +20,7 @@ gulp.task('spec', ['testEnv'], () => {
 });
 
 gulp.task('compress', () => {
-  return gulp.src(['public/js/jquery.js', 'public/js/*.js'])
+  return gulp.src(['public/js/ready.min.js', 'public/js/pegasus.min.js', '!public/js/highcharts.js', 'public/js/*.js'])
     .pipe(uglify('all.js'))
     .pipe(gulp.dest('public/dist/'));
 });
