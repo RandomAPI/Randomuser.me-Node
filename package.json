@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "csv-parse": "^1.0.4",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.1",

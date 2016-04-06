@@ -2,6 +2,7 @@ var fs      = require('fs');
 var async   = require('async');
 var expect  = require('chai').expect;
 var request = require('supertest');
+var parse   = require('csv-parse');
 var server  = require('../app').server;
 var app     = require('../app').app;
 
@@ -305,6 +306,74 @@ describe('Randomuser.me', () => {
             expect(result).to.equal(result2);
             done();
           });
+        });
+      });
+    });
+
+    describe('Format parameter testing', () => {
+      it('should return JSON when no format specified', (done) => {
+        request(server).get('/api').expect(200)
+        .end((err, res) => {
+          try {
+            var result = res.text;
+            var json = JSON.parse(result);
+            done();
+          } catch (e) {}
+        });
+      });
+
+      it('should return JSON when JSON format specified', (done) => {
+        request(server).get('/api/?fmt=json').expect(200)
+        .end((err, res) => {
+          try {
+            var result = res.text;
+            var json = JSON.parse(result);
+            done();
+          } catch (e) {}
+        });
+      });
+
+      it('should return JSON when prettyjson format specified', (done) => {
+        request(server).get('/api/?fmt=prettyjson').expect(200)
+        .end((err, res) => {
+          try {
+            var result = res.text;
+            var json = JSON.parse(result);
+            done();
+          } catch (e) {}
+        });
+      });
+
+      it('should return JSON when pretty format specified', (done) => {
+        request(server).get('/api/?fmt=pretty').expect(200)
+        .end((err, res) => {
+          try {
+            var result = res.text;
+            var json = JSON.parse(result);
+            done();
+          } catch (e) {}
+        });
+      });
+
+      it('should return JSON when invalid format specified', (done) => {
+        request(server).get('/api/?fmt=blahblah').expect(200)
+        .end((err, res) => {
+          try {
+            var result = res.text;
+            var json = JSON.parse(result);
+            done();
+          } catch (e) {}
+        });
+      });
+
+      it('should return CSV when CSV format specified', (done) => {
+        request(server).get('/api/?fmt=csv').expect(200)
+        .end((err, res) => {
+          try {
+            parse(res.text, (err, text) => {
+              if (!err) done();
+            });
+          } catch(e) {}
         });
       });
     });
