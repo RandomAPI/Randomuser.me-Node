@@ -68,14 +68,14 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/charts', (req, res, next) => {
-  Request.find({date: { $gte: getDateTime(30)}}, {date: 1, bandwidth: 1, total: 1, _id: 0}, (err, obj) => {
+  Request.find({date: { $gte: getDateTime(30)}}, {date: 1, bandwidth: 1, total: 1, _id: 0}, {sort: {date: 1}}, (err, obj) => {
     res.send(obj.map(row => { return {date: simpleDate(row.date), total: String(row.total).replace(',', ''), bandwidth: String(row.bandwidth).replace(',', '')}}));
   });
 });
 
 function getDateTime(daysBack) {
   daysBack = daysBack || 0;
-  var date = new Date(new Date().getTime()-86400000*daysBack)
+  var date = new Date(new Date().getTime()-86400000*daysBack);
 
   var year = date.getFullYear();
 
@@ -96,7 +96,7 @@ function getDateTime(daysBack) {
 
 function simpleDate(date) {
   var a = new Date(date);
-  return pad(a.getMonth(), 2) + "." + pad(a.getDate(), 2);
+  return pad(a.getMonth()+1, 2) + "." + pad(a.getUTCDate(), 2);
 }
 
 module.exports = router;
