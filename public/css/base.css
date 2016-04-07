@@ -981,7 +981,6 @@ pre span {
   margin: 40px auto 100px auto;
   /* background: url(../img/panel.png); */
   -webkit-animation: comeIn 1s ease;
-  z-index: 5;
 }
 .extension .panel iframe {
   border: none;

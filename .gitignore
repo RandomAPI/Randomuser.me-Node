@@ -3,4 +3,4 @@ node_modules
 public/dist
 .viewsMin
 npm-debug.log
-public/downloads
+public/download
