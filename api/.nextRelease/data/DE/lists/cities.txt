@@ -1,0 +1,361 @@
+aachen
+ahrweiler
+aichach-friedberg
+altenburger land
+altenkirchen (westerwald)
+altötting
+alzey-worms
+amberg-sulzbach
+ammerland
+anhalt-bitterfeld
+annaberg
+ansbach
+aschaffenburg
+aue-schwarzenberg
+augsburg
+aurich
+bad doberan
+bad dürkheim
+bad kissingen
+bad kreuznach
+bad tölz-wolfratshausen
+baden-baden
+bamberg
+barnim
+bautzen
+bayreuth
+berchtesgadener land
+bergstraße
+berlin
+bernkastel-wittlich
+biberach
+bielefeld
+birkenfeld
+bitburg-prüm
+bochum
+bonn
+borken
+bottrop
+brandenburg an der havel
+braunschweig
+breisgau-hochschwarzwald
+bremen
+bremerhaven
+burgenland
+böblingen
+börde
+calw
+celle
+cham
+chemnitz
+chemnitzer land
+cloppenburg
+coburg
+coburg
+cochem-zell
+coesfeld
+cottbus/chosebuz
+cuxhaven
+dachau
+dahme-spreewald
+darmstadt
+darmstadt-dieburg
+daun
+deggendorf
+delitzsch
+delmenhorst
+demmin
+dessau-roßlau
+diepholz
+dillingen a.d. donau
+dingolfing-landau
+dithmarschen
+donau-ries
+dortmund
+dresden
+duisburg
+döbeln
+düren
+düsseldorf
+ebersberg
+eichsfeld
+eichstätt
+eisenach
+elbe-elster
+emden
+emmendingen
+emsland
+erding
+erfurt
+erlangen
+erlangen-höchstadt
+essen
+esslingen
+euskirchen
+flensburg
+forchheim
+frankenthal (pfalz)
+frankfurt (oder)
+frankfurt am main
+freiberg
+freiburg im breisgau
+freising
+freudenstadt
+freyung-grafenau
+friesland
+fulda
+fürstenfeldbruck
+fürth
+fürth
+ganderkesee
+garmisch-partenkirchen
+gelsenkirchen
+gera
+germersheim
+gießen
+gifhorn
+goslar
+gotha
+grafschaft bentheim
+greifswald
+greiz
+groß-gerau
+göppingen
+görlitz
+göttingen
+günzburg
+güstrow
+gütersloh
+hagen
+halle (saale)
+hamburg
+hameln
+hameln-pyrmont
+hamm
+hannover
+harburg
+harz
+hasbergen
+havelland
+haßberge
+heidelberg
+heidenheim
+heilbronn
+heinsberg
+helmstedt
+herford
+herne
+hersfeld-rotenburg
+herzogtum lauenburg
+hildburghausen
+hildesheim
+hof
+holzminden
+hoyerswerda
+höxter
+ingolstadt
+jena
+jerichower land
+kaiserslautern
+kamenz
+karlsruhe
+karlsruhe
+kassel
+kaufbeuren
+kelheim
+kempten (allgäu)
+kiel
+kitzingen
+kleve
+koblenz
+konstanz
+krefeld
+kronach
+kulmbach
+kusel
+köln
+landau i.d. pfalz
+landsberg a. lech
+landshut
+leer
+leipzig
+leipziger land
+leverkusen
+lichtenfels
+limburg-weilburg
+lindau-bodensee
+lippe
+ludwigsburg
+ludwigshafen a. rhein
+ludwigslust
+löbau-zittau
+lörrach
+lübeck
+lüchow-dannenberg
+lüneburg
+magdeburg
+main-spessart
+mainz
+mainz-bingen
+mannheim
+mansfeld-südharz
+marburg-biedenkopf
+mayen-koblenz
+mecklenburg-strelitz
+meißen
+memmingen
+merzig-wadern
+mettmann
+miesbach
+miltenberg
+minden-lübbecke
+mittweida
+märkisch-oderland
+mönchengladbach
+mühldorf a. inn
+mülheim a.d. ruhr
+münchen
+münster
+müritz
+neu-ulm
+neubrandenburg
+neuburg-schrobenhausen
+neumarkt i.d.opf.
+neumünster
+neunkirchen
+neuss
+neuwied
+nienburg (weser)
+nordfriesland
+nordhausen
+nordvorpommern
+nordwestmecklenburg
+northeim
+nürnberg
+nürnberger land
+oberallgäu
+oberhausen
+oberhavel
+oberspreewald-lausitz
+oder-spree
+offenbach
+offenbach am main
+oldenburg (oldenburg)
+olpe
+osnabrück
+ostallgäu
+osterholz
+osterode am harz
+ostholstein
+ostprignitz-ruppin
+ostvorpommern
+paderborn
+parchim
+passau
+peine
+pfaffenhofen a. d. ilm
+pforzheim
+pinneberg
+pirmasens
+plauen
+plön
+potsdam
+potsdam-mittelmark
+prignitz
+rastatt
+ravensburg
+recklinghausen
+regen
+regensburg
+remscheid
+rendsburg-eckernförde
+reutlingen
+rhön-grabfeld
+riesa-großenhain
+rosenheim
+rostock
+rotenburg (wümme)
+roth
+rottal-inn
+rottweil
+rügen
+saalfeld-rudolstadt
+saarlouis
+salzgitter
+salzland
+sankt wendel
+schaumburg
+schierbrok
+schleswig-flensburg
+schmalkalden-meiningen
+schwabach
+schwandorf
+schweinfurt
+schwerin
+schwäbisch hall
+segeberg
+siegen-wittgenstein
+sigmaringen
+soest
+solingen
+soltau-fallingbostel
+sonneberg
+speyer
+spree-neiße
+stade
+starnberg
+steinburg
+steinfurt
+stendal
+stollberg
+stormarn
+stralsund
+straubing
+straubing-bogen
+stuttgart
+suhl
+sächsische schweiz
+sömmerda
+südliche weinstraße
+südwestpfalz
+teltow-fläming
+tirschenreuth
+torgau-oschatz
+traunstein
+trier
+trier-saarburg
+tuttlingen
+tübingen
+uckermark
+uecker-randow
+uelzen
+ulm
+unna
+unterallgäu
+vechta
+verden
+viersen
+waldeck-frankenberg
+waldshut
+warendorf
+weiden i.d.opf.
+weilheim-schongau
+weimar
+weimarer land
+weißenburg-gunzenhausen
+wesel
+wesermarsch
+wiesbaden
+wilhelmshaven
+wismar
+wittenberg
+wittmund
+wolfenbüttel
+wolfsburg
+worms
+wunsiedel i. fichtelgebirge
+wuppertal
+würzburg
+zweibrücken
+zwickau
+zwickauer land

@@ -10,7 +10,7 @@ clients   = {};
 
 // Load in all generators and datasets before starting the server
 // Scan api folder for available versions
-var versions = fs.readdirSync('./api').filter(dir => dir !== '.DS_Store');
+var versions = fs.readdirSync('./api').filter(dir => ['.DS_Store', '.nextRelease'].indexOf(dir) === -1);
 
 async.forEachOf(versions, (value, key, callback) => {
   require('./api/' + value + '/loadDatasets')(data => {
