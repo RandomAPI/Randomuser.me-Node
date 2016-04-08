@@ -33,7 +33,7 @@ function genUser(req, res, version) {
   }
 
   var results = req.query.results || 1;
-  if (results > settings.maxResults || results < 1) results = 1;
+  if (results > settings.maxResults || results < 1 || isNaN(results)) results = 1;
 
   var dl = typeof req.query.dl !== 'undefined' || typeof req.query.download !== 'undefined' ? true : false;
 
