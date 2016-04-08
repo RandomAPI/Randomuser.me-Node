@@ -38,15 +38,15 @@ router.get('/', (req, res, next) => {
       },
       function(cb){
         Request.aggregate([
+            {
+              "$sort": { "date": -1}
+            },
+            { "$limit": 30 },
             {"$group": {
               "_id": 'total',
               "total": { $sum: "$total" },
               "bandwidth": { $sum: "$bandwidth" }
-            }},
-            { "$sort": {
-                "total": -1
-            }},
-            { "$limit": 30 }
+            }}
         ],function(err, result) {
           if (result.length !== 0) {
             cb(err, {total: format(Math.round(result[0].total/30)), bandwidth: filesize(result[0].bandwidth)});
