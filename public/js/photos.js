@@ -1,5 +1,5 @@
 (function() {
-  if (window.location.href.indexOf('photos') !== -1) {
+  if (window.location.href.match(/photos$/)) {
     domready(function() {
       var createImage = function(i, g) {
         var thephoto = document.createElement('img');
