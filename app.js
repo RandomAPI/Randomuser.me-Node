@@ -31,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(compress());
 
 app.use('/', index);
+app.use('/api/portraits', express.static('public/portraits'));
 app.use('/api', api);
 app.use('/getStats', stats);
 
