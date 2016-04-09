@@ -26,6 +26,16 @@ sort -u <file> -o <file>
 
 4\. Please don't submit requests that say "make this nationality". We will accept helpful contributions, but not orders :)
 
+### How to use
+
+1. Run `npm install`
+
+2. Make sure you have gulp installed globally (npm i -g gulp) and run `gulp build`
+
+3. Run `gulp` to verify all tests pass
+
+4. Start the server with `npm start`
+
 ### What if I want to add a new nationality?
 Go ahead! We will gladly accept new regions if they follow the guidelines above.
 Just place your files in a new directory in the `api/.nextRelease/data` folder with the appropriate 2 letter ISO Country Code (http://countrycode.org). Follow the format of the US folder for reference.
