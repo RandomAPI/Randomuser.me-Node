@@ -141,7 +141,7 @@ http://api.randomuser.me/<span>?seed=foobar</span>
       <p>We currently offer the following data formats:
       <ul>
         <li>JSON (default)</li>
-        <li>Pretty JSON - human readable JSON</li>
+        <li>PrettyJSON or pretty</li>
         <li>CSV</li>
         <li>YAML</li>
         <li>XML</li>
@@ -208,7 +208,7 @@ http://api.randomuser.me/<span>?page=3&results=10&seed=abc</span>
         <li>picture</li>
         <li>nat</li>
       </ul>
-      <p>If you only wanted the names,genders,and nats or users:</p>
+      <p>If you only wanted the names,genders,and nats of users:</p>
 <pre>
 http://api.randomuser.me/<span>?inc=gender,name,nat</span>
 </pre>
@@ -223,7 +223,13 @@ http://api.randomuser.me/<span>?exc=login</span>
       <p>Some extra parameters that you can add to a request.</p>
       <ul>
         <li><b>dl</b> - Download the results with the appropriate format extension.</li>
+<pre>
+http://api.randomuser.me/?results=25&nat=gb,us,es&fmt=csv&<span>dl</span>
+</pre>
         <li><b>noinfo</b> - If you only want the data, and don't care for seed, results, page, and version data.</li>
+<pre>
+http://api.randomuser.me/?results=5&inc=name,gender,nat&<span>noinfo</span>
+</pre>
       </ul>
       <p>If you find a mistake with an API or would like to contribute to our database, feel free to visit our <a href="https://github.com/RandomAPI/Randomuser.me-Data">Github Repo</a>. We'd really appreciate it :)</p>
     </section>
