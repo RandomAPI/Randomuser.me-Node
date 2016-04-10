@@ -43,6 +43,10 @@ function genUser(req, res, version) {
     clients[ip] += Number(results);
   }
 
+  if (req.query.extension === "true") {
+    req.query.nat = "us,gb"
+  }
+
   new Generator[version](req.query).generate((output, ext) => {
     var name = "tmp/" + String(new Date().getTime());
 
@@ -74,7 +78,24 @@ function genUser(req, res, version) {
           fs.unlink(name);
         });
       } else {
-        res.send(output);
+        // Hacky PS extension formatting 
+        if (req.query.extension === "true") {
+          output = JSON.parse(output);
+          var extObj = {
+            results: [{
+                user: {
+                    picture: output.results[0].picture.large.replace('/api', ''),
+                    name: {
+                        first: output.results[0].name.first,
+                        last: output.results[0].name.last
+                    }
+                }
+            }]
+          };
+          res.send(extObj);
+        } else {
+          res.send(output);
+        }
       }
     });
   });
