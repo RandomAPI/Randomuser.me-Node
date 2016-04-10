@@ -60,7 +60,7 @@ var Generator = function(options) {
   // Sanitize values
   if (isNaN(this.results) || this.results < 0 || this.results > settings.maxResults || this.results === '') this.results = 1;
 
-  if (this.gender !== 'male' && this.gender !== 'female' || this.seed !== null) {
+  if (this.gender !== 'male' && this.gender !== 'female' || this.seed !== '') {
     this.gender = null;
   }
 
@@ -93,7 +93,7 @@ Generator.prototype.generate = function(cb) {
     }
     inject = injects[version][nat];
 
-    this.include('gender', randomItem(['male', 'female']));
+    this.include('gender', this.gender === null ? randomItem(['male', 'female']) : this.gender);
 
     var name = this.randomName(current.gender, nat);
     this.include('name', {
