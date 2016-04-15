@@ -50,6 +50,10 @@ function genUser(req, res, version) {
   new Generator[version](req.query).generate((output, ext) => {
     var name = "tmp/" + String(new Date().getTime());
 
+    if (typeof req.query.callback !== 'undefined' && ext === "json") {
+      output = String(req.query.callback) + "(" + output + ");";
+    }
+
     // Download - save file and update headers
     if (dl) {
       res.setHeader('Content-disposition', 'attachment; filename=download.' + ext);
@@ -83,13 +87,13 @@ function genUser(req, res, version) {
           output = JSON.parse(output);
           var extObj = {
             results: [{
-                user: {
-                    picture: output.results[0].picture.large.replace('/api', ''),
-                    name: {
-                        first: output.results[0].name.first,
-                        last: output.results[0].name.last
-                    }
+              user: {
+                picture: output.results[0].picture.large.replace('/api', ''),
+                name: {
+                  first: output.results[0].name.first,
+                  last: output.results[0].name.last
                 }
+              }
             }]
           };
           res.send(extObj);
