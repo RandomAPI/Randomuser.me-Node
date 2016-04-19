@@ -2,7 +2,10 @@ var mongoose     = require('mongoose');
 var findOrCreate = require('mongoose-findorcreate')
 
 var requestSchema = mongoose.Schema({
-    date: Date,
+    date: {
+        type: Date,
+        unique: true
+    },
     'total': Number,
     'extension': Number,
     'api': Number,
