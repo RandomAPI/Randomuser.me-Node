@@ -93,7 +93,7 @@ Generator.prototype.generate = function(cb) {
     }
     inject = injects[version][nat];
 
-    this.include('gender', this.gender === null ? randomItem(['male', 'female']) : this.gender);
+    current.gender = this.gender === null ? randomItem(['male', 'female']) : this.gender;
 
     var name = this.randomName(current.gender, nat);
     this.include('name', {
@@ -141,6 +141,11 @@ Generator.prototype.generate = function(cb) {
     inject(this.inc, current);  // Inject unique fields for nationality
 
     this.include('nat', nat);
+
+    // Gender hack - Remove gender if the user doesn't want it in the results
+    if (this.inc.indexOf('gender') === -1) {
+      delete current.gender;
+    }
 
     output.push(current);
   }
