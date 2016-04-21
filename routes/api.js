@@ -59,12 +59,15 @@ function genUser(req, res, version) {
       res.setHeader('Content-disposition', 'attachment; filename=download.' + ext);
       fs.writeFileSync(name, output, 'utf8');
     } else {
-
-      if (ext === 'json'){
+      if (ext === 'json') {
         res.setHeader('Content-Type', 'application/json');
-      }else if (ext === 'xml'){
+      } else if (ext === 'xml') {
         res.setHeader('Content-Type', 'text/xml');
-      }else{
+      } else if (ext === 'yaml') {
+        res.setHeader('Content-Type', 'text/x-yaml');
+      } else if (ext === 'csv') {
+        res.setHeader('Content-Type', 'text/csv');
+      } else {
         res.setHeader('Content-Type', 'text/plain');
       }
     }
