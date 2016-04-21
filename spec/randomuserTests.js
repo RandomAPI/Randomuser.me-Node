@@ -376,6 +376,50 @@ describe('Randomuser.me', () => {
           } catch(e) {}
         });
       });
+
+      describe('MIME type testing', () => {
+        it('should return content type application/json when no format specified', (done) => {
+          request(server).get('/api').expect('Content-Type', /application\/json/)
+          .end((err, res) => {
+            if (!err) done();
+          });
+        });
+
+        it('should return content type application/json when JSON format specified', (done) => {
+          request(server).get('/api/?fmt=json').expect('Content-Type', /application\/json/)
+          .end((err, res) => {
+            if (!err) done();
+          });
+        });
+
+        it('should return content type application/json when pretty format specified', (done) => {
+          request(server).get('/api/?fmt=pretty').expect('Content-Type', /application\/json/)
+          .end((err, res) => {
+            if (!err) done();
+          });
+        });
+
+        it('should return content type text/xml when XML format specified', (done) => {
+          request(server).get('/api/?fmt=xml').expect('Content-Type', /text\/xml/)
+          .end((err, res) => {
+            if (!err) done();
+          });
+        });
+
+        it('should return content type text/x-yaml when YAML format specified', (done) => {
+          request(server).get('/api/?fmt=yaml').expect('Content-Type', /text\/x\-yaml/)
+          .end((err, res) => {
+            if (!err) done();
+          });
+        });
+
+        it('should return content type text/csv when CSV format specified', (done) => {
+          request(server).get('/api/?fmt=csv').expect('Content-Type', /text\/csv/)
+          .end((err, res) => {
+            if (!err) done();
+          });
+        });
+      });
     });
   });
 });

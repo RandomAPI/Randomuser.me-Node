@@ -168,7 +168,7 @@ Generator.prototype.generate = function(cb) {
   this.seedRNG();
 
   if (this.format === 'yaml') {
-    cb(YAML.stringify(json, 4), "yml");
+    cb(YAML.stringify(json, 4), "yaml");
   } else if (this.format === 'xml') {
     cb(js2xmlparser('user', json), "xml");
   } else if (this.format === 'prettyjson' || this.format === 'pretty') {
