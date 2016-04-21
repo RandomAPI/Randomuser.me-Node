@@ -59,7 +59,14 @@ function genUser(req, res, version) {
       res.setHeader('Content-disposition', 'attachment; filename=download.' + ext);
       fs.writeFileSync(name, output, 'utf8');
     } else {
-      res.setHeader('Content-Type', 'text/plain');
+
+      if (ext === 'json'){
+        res.setHeader('Content-Type', 'application/json');
+      }else if (ext === 'xml'){
+        res.setHeader('Content-Type', 'text/xml');
+      }else{
+        res.setHeader('Content-Type', 'text/plain');
+      }
     }
 
     var payload = {
