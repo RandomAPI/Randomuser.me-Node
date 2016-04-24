@@ -7,6 +7,7 @@ var bodyParser   = require('body-parser');
 var http         = require('http');
 var compress     = require('compression');
 var debug        = require('debug')('randomuser.me-node:server');
+var cors         = require('cors');
 
 var db           = require('./models/db')(process.env.spec);
 var index        = require('./routes/index');
@@ -27,6 +28,7 @@ app.set('port', settings.port);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(compress());
 
@@ -45,7 +47,6 @@ app.use(function(req, res, next) {
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
-  console.log(err.stack.split('\n').filter(line => line.indexOf('node_modules') === -1).join('\n'));
   res.sendStatus(err.status || 500);
 });
 

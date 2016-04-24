@@ -1,16 +1,15 @@
 var fs      = require('fs');
 var express = require('express');
 var router  = express.Router();
-var cors    = require('cors');
 var Request = require('../models/Request');
 
 var latestVersion = '1.0';
 
-router.get('/', cors(), (req, res, next) => {
+router.get('/', (req, res, next) => {
   genUser(req, res, latestVersion);
 });
 
-router.get('/:version', cors(), (req, res, next) => {
+router.get('/:version', (req, res, next) => {
   genUser(req, res, req.params.version);
 });
 
