@@ -25,7 +25,7 @@ var requestSchema = mongoose.Schema({
     '1_0': Number,
     'bandwidth': Number
 });
-
+requestSchema.index({date: 1}, {unique: true});
 requestSchema.plugin(findOrCreate);
 
 var Request = mongoose.model('Request', requestSchema);
