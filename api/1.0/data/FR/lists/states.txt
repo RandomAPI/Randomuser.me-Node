@@ -1,5 +1,5 @@
 ain
-aisn
+aisne
 allier
 alpes-de-haute-provence
 alpes-maritimes
@@ -25,9 +25,9 @@ deux-sèvres
 dordogne
 doubs
 drôme
-essonne 91
+essonne
 eure
-eure-et-loir
+eure-et-loire
 finistère
 gard
 gers
