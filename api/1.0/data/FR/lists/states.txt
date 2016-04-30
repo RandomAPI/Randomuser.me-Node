@@ -27,7 +27,7 @@ doubs
 drôme
 essonne
 eure
-eure-et-loire
+eure-et-loir
 finistère
 gard
 gers
