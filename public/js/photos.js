@@ -10,14 +10,20 @@
         document.getElementById('photos_' + g).appendChild(thephoto);
       };
 
+      var menNums = randomNums(95);
+      var womenNums = randomNums(95);
+      var legoNums = randomNums(9); // Legos are people too
+
       for (var i = 0; i <= 99; i++) {
-        createImage(i, 'men');
+        createImage(menNums[i], 'men');
       }
+
       for (var i = 0; i <= 95; i++) {
-        createImage(i, 'women');
+        createImage(womenNums[i], 'women');
       }
+
       for (var i = 0; i <= 9; i++) {
-        createImage(i, 'lego');
+        createImage(legoNums[i], 'lego');
       }
 
       Array.prototype.slice.call(document.getElementsByTagName('img')).forEach(function(el) {
@@ -66,5 +72,27 @@
         requestAnimationFrame(fade);
       }
     })();
+  }
+
+  // It's <insert year here>, gotta be PC
+  function randomNums(amt) {
+    function shuffle(array) {
+      var m = array.length, t, i;
+
+      // While there remain elements to shuffle…
+      while (m) {
+
+        // Pick a remaining element
+        i = Math.floor(Math.random() * m--);
+
+        // And swap it with the current element.
+        t = array[m];
+        array[m] = array[i];
+        array[i] = t;
+      }
+
+      return array;
+    }
+    return shuffle(new Array(amt).fill(0).map(function(v, i) { return i; }));
   }
 })();

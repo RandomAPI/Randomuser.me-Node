@@ -14,20 +14,30 @@
 
   <div class="frame">
 
-    <section id="men">
-      <h2>Gentlemen</h2>
-      <div id="photos_men"></div>
-    </section>
-
+  <% if (Math.floor(Math.random() * 2) === 1) { %>
     <section id="women">
       <h2>Ladies</h2>
       <div id="photos_women"></div>
     </section>
-
+    <section id="men">
+      <h2>Gentlemen</h2>
+      <div id="photos_men"></div>
+    </section>
+  <% } else { %>
+    <section id="men">
+      <h2>Gentlemen</h2>
+      <div id="photos_men"></div>
+    </section>
+    <section id="women">
+      <h2>Ladies</h2>
+      <div id="photos_women"></div>
+    </section>
+  <% } %>
     <section id="lego">
       <h2>Lego</h2>
       <div id="photos_lego"></div>
     </section>
+
     <% include ../snippets/ads %>
   </div>
   <% include ../snippets/footer %>
