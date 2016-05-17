@@ -32,7 +32,10 @@ function genUser(req, res, version) {
   }
 
   var results = req.query.results || 1;
-  if (results > settings.maxResults || results < 1 || isNaN(results)) results = 1;
+  if (results > settings.maxResults || results < 1 || isNaN(results) || results % 1 !== 0) {
+    results = 1;
+    req.query.results = 1;
+  }
 
   var dl = typeof req.query.dl !== 'undefined' || typeof req.query.download !== 'undefined' ? true : false;
 
@@ -71,6 +74,8 @@ function genUser(req, res, version) {
       }
     }
 
+    res.setHeader('Cache-Control', 'no-cache');
+
     var payload = {
       'bandwidth': output.length,
       'total': results
@@ -97,7 +102,7 @@ function genUser(req, res, version) {
           var extObj = {
             results: [{
               user: {
-                picture: output.results[0].picture.large.replace('/api', ''),
+                picture: output.results[0].picture.large.replace('/api', '').replace('https', 'http'),
                 name: {
                   first: output.results[0].name.first,
                   last: output.results[0].name.last

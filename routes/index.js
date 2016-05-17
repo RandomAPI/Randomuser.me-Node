@@ -35,8 +35,8 @@ router.get('/:page?', function(req, res, next) {
   }
 });
 
-router.get('/download/version.php', function(req, res, next) {
-  res.json({"version": "2.0.5"});
+router.all('/download/version.php', function(req, res, next) {
+  res.json({"version": "3.0.0"});
 });
 
 module.exports = router;
