@@ -112,14 +112,16 @@ Generator.prototype.generate = function(cb) {
     this.include('email', name[0] + '.' + name[1].replace(/ /g, '') + '@example.com');
 
     var salt = random(2, 8);
+    var password = randomItem(datasets[version].common.passwords);
     this.include('login', {
       username: randomItem(datasets[version].common.user1) + randomItem(datasets[version].common.user2) + range(100, 999),
-      password: randomItem(datasets[version].common.passwords),
+      password,
       salt:     salt,
-      md5:      crypto.createHash('md5').update(current.password + salt).digest('hex'),
-      sha1:     crypto.createHash('sha1').update(current.password + salt).digest('hex'),
-      sha256:   crypto.createHash('sha256').update(current.password + salt).digest('hex')
+      md5:      crypto.createHash('md5').update(password + salt).digest('hex'),
+      sha1:     crypto.createHash('sha1').update(password + salt).digest('hex'),
+      sha256:   crypto.createHash('sha256').update(password + salt).digest('hex')
     });
+
     this.include('registered', range(915148800, this.constantTime));
     this.include('dob', range(0, this.constantTime));
 
