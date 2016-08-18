@@ -8,7 +8,18 @@
   <% include ../snippets/subpage %>
 
   <div class="frame">
-  <section id="1.0">
+    <section id="1.1">
+      <h2>Version 1.1</h2>
+      <span>8/18/2016</span>
+      <ul>
+        <li>Fixed HETU for FI</li>
+        <li>Fixed salt not being used in calculation for hashes (also hotfixed 1.0)</li>
+        <li>DOB and Registered use ISO 8601 time standards</li>
+        <li>DOB and Registered can't overlap in impossible ways</li>
+        <li>Added customizable <a href="documentation#passwords">password options</a></li>
+      </ul>
+    </section>
+    <section id="1.0">
       <h2>Version 1.0</h2>
       <span>4/7/2016</span>
       <ul>
@@ -22,11 +33,6 @@
         <li>Added DK and TR</li>
       </ul>
     </section>
-    <!--
-    <section id="0.9">
-      stuff
-    </section>
-    -->
     <section id="0.8">
       <h2>Version 0.8</h2>
       <span>2/4/2016</span>
@@ -48,7 +54,7 @@
       <span>5/8/2015</span>
       <ul>
         <li>Fixed seed bug that didn't respect nationalities</li>
-        <li>Seed is returned on 1st result only and is meant to regenerate a request with multiple results.</li>
+        <li>Seed is returned on 1st result only and is meant to regenerate a request with multiple results</li>
         <li>Added AU, ES, FI, FR, IE, and NL</li>
         <li>Fixed GB phone numbers, zipcodes, and changed SSN to NINO</li>
         <li>RandomAPI members can now generate up to 1,000 results per call, <a href="documentation#multiple">Learn more</a></li>
@@ -75,8 +81,8 @@
       <span>5/3/2014</span>
       <ul>
         <li>Redesigned and rebranded the Random User API website and platform</li>
-        <li>We doubled our profile photo database! We now return 100 male and 100 female portraits.</li>
-        <li>Salts now use strictly alphanumeric characters.</li>
+        <li>We doubled our profile photo database! We now return 100 male and 100 female portraits</li>
+        <li>Salts now use strictly alphanumeric characters</li>
         <li>Restructured our file system to avoid redundancy</li>
         <li>Optimized generator</li>
       </ul>
