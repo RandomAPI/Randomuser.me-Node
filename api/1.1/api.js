@@ -261,7 +261,7 @@ Generator.prototype.genPassword = function() {
   }
 
   let charsets = {
-    special: " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~",
+    special: " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~",
     upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
     lower: "abcdefghijklmnopqrstuvwxyz",
     number: "0123456789"
