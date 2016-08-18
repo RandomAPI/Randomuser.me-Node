@@ -22,6 +22,7 @@
     "lodash": "^4.3.0",
     "md5": "^2.1.0",
     "mersenne": "0.0.3",
+    "moment": "^2.14.1",
     "mongoose": "^4.4.3",
     "mongoose-findorcreate": "^0.1.2",
     "morgan": "~1.6.1",

@@ -1,0 +1,6 @@
+{random, special, 4, 1}{random, special, 2, 1} {random, special, 2, 1}{~gh7g04u}{~gh7g04u}
+{random, special, 4, 1}{random, special, 2, 1}{random, special, 4, 1} {random, special, 2, 1}{~gh7g04u}{~gh7g04u}
+{random, special, 4, 1}{random, special, 2, 2} {random, special, 2, 1}{~gh7g04u}{~gh7g04u}
+{random, special, 4, 2}{random, special, 2, 1} {random, special, 2, 1}{~gh7g04u}{~gh7g04u}
+{random, special, 4, 2}{random, special, 2, 1}{random, special, 4, 1} {random, special, 2, 1}{~gh7g04u}{~gh7g04u}
+{random, special, 4, 2}{random, special, 2, 2} {random, special, 2, 1}{~gh7g04u}{~gh7g04u}
