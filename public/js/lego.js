@@ -6,10 +6,10 @@
 
       if (kkeys.toString().indexOf(konami) >= 0) {
         kkeys = [];
-        getNewUser();
         document.getElementsByTagName('header')[0].getElementsByTagName('h1')[0].innerHTML = 'Random Lego Generator';
         document.getElementsByTagName('body')[0].className += " lego";
         window.scrollTo(0, 0);
+        getNewUser();
       }
     });
   }

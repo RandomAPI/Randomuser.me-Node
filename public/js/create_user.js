@@ -27,7 +27,12 @@
 })();
 
 function getNewUser(){
-  var result = pegasus('https://randomuser.me/api/0.4/?randomapi');
+  var lego = "";
+  if (document.body.classList.contains('lego')) {
+    lego = "&lego";
+  }
+
+  var result = pegasus('https://randomuser.me/api/0.4/?randomapi' + lego);
 
   result.then(function(data) {
     if(!data['error']){

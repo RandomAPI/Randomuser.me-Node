@@ -3,7 +3,7 @@ var express = require('express');
 var router  = express.Router();
 var Request = require('../models/Request');
 
-var latestVersion = '1.0';
+var latestVersion = '1.1';
 
 router.get('/', (req, res, next) => {
   genUser(req, res, latestVersion);
