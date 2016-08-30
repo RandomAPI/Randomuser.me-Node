@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400);
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -433,7 +435,6 @@ header a.twitter img {
     font-size: 32px;
   }
 }
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
 
 html {
   font-family: 'Ubuntu', sans-serif;
@@ -1352,4 +1353,39 @@ footer .block .builder {
 
 a {
     color: #0088AA;
+}
+
+section.sponsor {
+  text-align: center;
+  margin-bottom: -90px;
+  margin-top: 30px;
+}
+
+section.sponsor h2 {
+  color: #CCC;
+  font-size: 10pt;
+  text-transform: uppercase;
+}
+
+section.sponsor h3 {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20pt;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section.sponsor #learnmore {
+  width: 150px;
+  height: 50px;
+  margin-left: 20px;
+  border-radius: 3px;
+  background: #83ba43;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+
+section.sponsor #learnmore:hover {
+  background: #79b039;
 }
