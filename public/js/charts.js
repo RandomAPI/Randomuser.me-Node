@@ -12,7 +12,6 @@
         var bandwidth = data.map(function(date) {
           return Math.round(date.bandwidth/1024/1024*100)/100;
         });
-        console.log(dates, values, bandwidth);
         Highcharts.setOptions({
           lang: {
             thousandsSep: ","

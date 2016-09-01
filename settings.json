@@ -1,5 +1,6 @@
 {
   "port": 3000,
+  "socket": 8080,
   "db": "randomuser",
   "maxResults": 5000,
   "limit": 20000,

@@ -17,6 +17,7 @@ var stats        = require('./routes/stats');
 var app          = express();
 var server       = http.createServer(app);
 settings         = require('./settings');
+require('./sockets.js');
 
 // view engine setup
 app.set('views', path.join(__dirname, '.viewsMin'));

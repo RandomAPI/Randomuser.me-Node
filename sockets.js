@@ -5,10 +5,12 @@ var async    = require('async');
 var format   = require('format-number')();
 var filesize = require('filesize');
 var router   = express.Router();
-var Request  = require('../models/Request');
+var Request  = require('./models/Request');
+var io       = require('socket.io')(settings.socket);
 
-router.get('/', (req, res, next) => {
-  async.parallel([
+io.on('connection', socket => {
+  socket.on('stats', msg => {
+    async.parallel([
       function(cb){
         Request.findOne({date: getDateTime()}, (err, obj) => {
           if (obj !== null) {
@@ -55,21 +57,16 @@ router.get('/', (req, res, next) => {
           }
         });
       }
-  ],
-  // optional callback
-  function(err, results){
-      res.send({
+    ],
+    // optional callback
+    function(err, results) {
+      socket.emit('statsResults', {
         today: results[0],
         all: results[1],
         30: results[2],
         load: Math.round(os.loadavg()[0]*100) + "%"
       });
-  });
-});
-
-router.get('/charts', (req, res, next) => {
-  Request.find({date: { $gte: getDateTime(30)}}, {date: 1, bandwidth: 1, total: 1, _id: 0}, {sort: {date: 1}}, (err, obj) => {
-    res.send(obj.map(row => { return {date: simpleDate(row.date), total: String(row.total).replace(',', ''), bandwidth: String(row.bandwidth).replace(',', '')}}));
+    });
   });
 });
 
@@ -99,4 +96,4 @@ function simpleDate(date) {
   return pad(a.getMonth()+1, 2) + "." + pad(a.getUTCDate(), 2);
 }
 
-module.exports = router;
+module.exports = io;

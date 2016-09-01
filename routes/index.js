@@ -1,6 +1,7 @@
-var fs      = require('fs');
-var express = require('express');
-var router  = express.Router();
+var fs       = require('fs');
+var express  = require('express');
+var router   = express.Router();
+var settings = require('../settings');
 
 var views;
 fs.readdir('.viewsMin/pages', function(err, data) {;
@@ -29,7 +30,7 @@ router.get('/:page?', function(req, res, next) {
   if (page === 'index') {
     res.redirect(301, '/');
   } else if (views.indexOf(page + '.ejs') !== -1) {
-    res.render('pages/' + page, {title: titles[page]});
+    res.render('pages/' + page, {socket: ':' + settings.socket, title: titles[page]});
   } else {
     next();
   }

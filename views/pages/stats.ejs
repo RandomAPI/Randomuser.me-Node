@@ -1,6 +1,7 @@
 <% include ../snippets/header %>
 
 <body class="stats">
+  <server hidden><%=socket%></server>
 
   <% include ../snippets/nav %>
 
@@ -50,5 +51,6 @@
   <% include ../snippets/footer %>
   <% include ../snippets/analytics %>
   <script src="js/highcharts.js"></script>
+  <script src="js/socket.io.min.js"></script>
 </body>
 </html>
