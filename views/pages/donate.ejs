@@ -25,13 +25,12 @@
         <div class="dropdown_frame">
           <select id="donation_amount" class="dropdown">
             <option value="100">$1.00</option>
-            <option value="200">$2.00</option>
-            <option value="404">$4.04</option>
-            <option value="502">$5.02</option>
+            <option value="500">$5.00</option>
             <option value="1000">$10.00</option>
-            <option value="1337">$13.37</option>
-            <option value="2500">$25.00</option>
-            <option value="9001">$90.01</option>
+            <option value="1500">$15.00</option>
+            <option value="2000">$20.00</option>
+            <option value="5000">$50.00</option>
+            <option value="10000">$100.00</option>
           </select>
         </div>
         <button id="donate_button" class="button">Donate Now</button>
@@ -39,22 +38,37 @@
 
       <script>
         var handler = StripeCheckout.configure({
-        key: 'pk_migDTfk5iGQSrQE0ONijdnKXB0P5Z',
-        image: 'img/donate_small.png',
-        token: function(token, args) {
-        }
+          key: '<%=stripePublishKey%>',
+          image: 'img/donate_small.png',
+          token: function(token, args) {
+            token.price = Number(document.getElementById('donation_amount').value);
+
+            $.ajax({
+              type: 'POST',
+              url: '/donate',
+              data: { data: JSON.stringify(token) },
+              success: function(data) {
+                window.alert("Thanks for your donation!");
+              },
+              error: function(data) {
+                window.alert("There was a problem processing your donation. Please make sure your card information is valid and try again.");
+              }
+            });
+          }
         });
+
         document.getElementById('donate_button').addEventListener('click', function(e) {
-        handler.open({
-          name: 'Random User API',
-          description: 'Thanks for donating!',
-          amount: document.getElementById('donation_amount').value
-        });
-        e.preventDefault();
+          handler.open({
+            name: 'Random User API',
+            description: 'Thanks for donating!',
+            amount: Number(document.getElementById('donation_amount').value)
+          });
+          e.preventDefault();
         });
       </script>
 
-      <p style="text-align: center;">Don't have your card details handy? <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QBRGZ79MNX9W6" target="_blank">Click here to donate via PayPal</a></p>
+      <%//<p style="text-align: center;">Don't have your card details handy? <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QBRGZ79MNX9W6" target="_blank">Click here to donate via PayPal</a></p>%>
+
 
     </section>
 
