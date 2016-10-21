@@ -1143,10 +1143,10 @@ pre span {
   right: 15px;
   z-index: -1;
 }
-.donate .dropdown {
+.donate .donateInput {
   background: transparent;
-  width: 150px;
-  height: 50px;
+  width: 75px;
+  height: 27px;
   padding: 10px;
   font-size: 16px;
   line-height: 1;
@@ -1156,6 +1156,17 @@ pre span {
   -moz-appearance: none;
   outline: none;
   cursor: pointer;
+}
+.donate .comment {
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
 }
 .donate .button {
   width: 150px;
@@ -1201,7 +1212,7 @@ pre span {
             transform: scale(0.75);
   }
   .dropdown_frame,
-  .dropdown,
+  .donateInput,
   .button {
     width: 100% !important;
   }

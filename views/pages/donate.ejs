@@ -17,23 +17,14 @@
 
     <section id="donate">
       <h2>How can I donate?</h2>
-      <p>You can donate using our secure stripe donation button below. Please select your desired donation and click "Donate Now". But you're pretty smart and probably figured that out on your own didn't you?</p>
+      <p>You can donate using our secure Stripe donation button below. Please enter your desired donation and click "Donate Now". But you're pretty smart and probably figured that out on your own didn't you?</p>
 
       <script src="https://checkout.stripe.com/checkout.js"></script>
 
       <div class="donate_form">
-        <div class="dropdown_frame">
-          <select id="donation_amount" class="dropdown">
-            <option value="100">$1.00</option>
-            <option value="500">$5.00</option>
-            <option value="1000">$10.00</option>
-            <option value="1500">$15.00</option>
-            <option value="2000">$20.00</option>
-            <option value="5000">$50.00</option>
-            <option value="10000">$100.00</option>
-          </select>
-        </div>
-        <button id="donate_button" class="button">Donate Now</button>
+          $ <input class="donateInput" id="donation_amount" type="number" min="1.00" step="1.00" value="5.00" />
+        <button id="donate_button" class="button">Donate Now</button><br><br>
+        <textarea class="comment" rows="3" cols="60" id="comment" placeholder="Leave a comment"></textarea>
       </div>
 
       <script>
@@ -41,12 +32,12 @@
           key: '<%=stripePublishKey%>',
           image: 'img/donate_small.png',
           token: function(token, args) {
-            token.price = Number(document.getElementById('donation_amount').value);
+            token.price = Number(donationAmt());
 
             $.ajax({
               type: 'POST',
               url: '/donate',
-              data: { data: JSON.stringify(token) },
+              data: { data: JSON.stringify({token, comment: document.getElementById('comment').value}) },
               success: function(data) {
                 window.alert("Thanks for your donation!");
               },
@@ -61,10 +52,26 @@
           handler.open({
             name: 'Random User API',
             description: 'Thanks for donating!',
-            amount: Number(document.getElementById('donation_amount').value)
+            amount: Number(donationAmt())
           });
           e.preventDefault();
         });
+
+        function donationAmt() {
+          let input = document.getElementById('donation_amount');
+          let amt = input.value;
+
+          if (Number(amt) < 1) {
+            input.value = "1.00";
+            return 100;
+          } else if (amt.indexOf('.') === -1) {
+            input.value = amt + ".00";
+            return Number(amt)*100;
+          } else {
+            input.value = Number(amt).toFixed(2);
+            return Number((input.value*100).toFixed(0));
+          }
+        }
       </script>
 
       <%//<p style="text-align: center;">Don't have your card details handy? <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QBRGZ79MNX9W6" target="_blank">Click here to donate via PayPal</a></p>%>
@@ -74,17 +81,24 @@
 
     <section id="why">
       <h2>Why should I donate?</h2>
-      <p>The Random User Generator API is a 100% free service and is paid for out of our own pockets. <strong>We generate up to a million random users a day</strong>, and the bandwidth involved to deliver that information is costly. Random User Generator will never require a paid subscription to use our service, and we strive to continue providing this service free to you for life. Donating isn't required, but it will help us continue to improve and enhance our service.</p>
+      <p>The Random User Generator API is a 100% free service and is paid for out of our own pockets. <strong>We generate up to <span id='gen'>1,000,000</span> random users everyday</strong>, and the servers involved to deliver that information is costly. Random User Generator will never require a paid subscription to use our service, and we strive to continue providing this service free to you for life. Donating isn't required, but it will help us continue to improve and enhance our service.</p>
     </section>
 
     <section class="advertisement">
       <h2>Advertising</h2>
-      <p>Alternatively, we also earn money from you clicking on the verious advertisements you see on the site. If you aren't seeing ads, it's most likely because you are running an adblock service. We don't blame you, we hate ads too! However it would help us out a lot of you disabled your adblock service for our website.</p>
+      <p>Alternatively, we also earn money from you clicking on the various advertisements you see on the site. If you aren't seeing ads, it's most likely because you are running an adblock service. We don't blame you, we hate ads too! However it would help us out a lot of you disabled your adblock service for our website.</p>
       <p>If not, that's cool too. We love you either way.</p>
     </section>
     <% include ../snippets/ads %>
   </div>
   <% include ../snippets/footer %>
   <% include ../snippets/analytics %>
+  <script>
+    setInterval(() => {
+      $.get("getStats", data => {
+        document.getElementById('gen').innerHTML = data['30'].total;
+      });
+    }, 1000);
+  </script>
 </body>
 </html>

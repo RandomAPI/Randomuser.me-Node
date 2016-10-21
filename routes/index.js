@@ -44,10 +44,11 @@ router.post('/donate', function(req, res, next) {
   let data = JSON.parse(req.body.data);
 
   stripe.charges.create({
-    amount: data.price,
+    amount: data.token.price,
     currency: "usd",
-    source: data.id, // obtained with Stripe.js
-    description: "Donation from " + data.email
+    source: data.token.id, // obtained with Stripe.js
+    description: `Donation from ${data.token.email}
+${data.comment}`
   }, function(err, charge) {
     if (err) return res.sendStatus(400);
     else res.sendStatus(200);
