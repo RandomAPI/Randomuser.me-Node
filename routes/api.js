@@ -14,7 +14,7 @@ router.get('/:version', (req, res, next) => {
 });
 
 function genUser(req, res, version) {
-  var ip = req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  var ip = req.headers['cf-connecting-ip'] || req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 
   if (clients[ip] >= settings.limit) {
     res.status(503).json({
