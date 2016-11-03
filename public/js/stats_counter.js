@@ -10,9 +10,10 @@
       document.getElementById('stat_loadavg').innerHTML = data.load;
     });
     if (window.location.href.indexOf('stats') !== -1) {
+      socket.emit('stats');
       setInterval(function() {
-        socket.emit('stats')
-      }, 250);
+        socket.emit('stats');
+      }, 1000);
     }
   });
 })();

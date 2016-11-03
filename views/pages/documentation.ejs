@@ -29,6 +29,8 @@
       </ul>
     </section>
 
+    <% include ../snippets/ads %>
+
     <section id="intro">
       <h2>Introduction</h2>
       <p>In August 2013, we set out with a goal to create a free and easy to use service to generate random user data for application testing.</p>
@@ -113,7 +115,7 @@ $.ajax({
 </pre>
     </section>
 
-    <section id="multiple"> 
+    <section id="multiple">
       <h2>Requesting Multiple Users</h2>
       <p>Random User Generator allows you to fetch up to 5,000 generated users in one request using the <b>results</b> parameter.</p>
 <pre>
@@ -275,7 +277,6 @@ https://randomuser.me/api/?results=5&<span>callback=randomuserdata</span>
       </ul>
       <p>If you find a mistake with an API or would like to contribute to our database, feel free to visit our <a href="https://github.com/RandomAPI/Randomuser.me-Data">Github Repo</a>. We'd really appreciate it :)</p>
     </section>
-    <% include ../snippets/ads %>
   </div>
   <% include ../snippets/footer %>
   <% include ../snippets/analytics %>
