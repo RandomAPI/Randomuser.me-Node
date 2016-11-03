@@ -23,6 +23,7 @@ var requestSchema = mongoose.Schema({
     '0_7': Number,
     '0_8': Number,
     '1_0': Number,
+    '1_1': Number,
     'bandwidth': Number
 });
 requestSchema.index({date: 1}, {unique: true});
