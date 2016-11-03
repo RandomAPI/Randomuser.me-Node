@@ -88,7 +88,7 @@ function genUser(req, res, version) {
       clients[ip] += Number(req.query.results);
     }
 
-    return legRequest(`https://beta.randomapi.com/api/${legacy[version].hash}?noinfo&${qs.stringify(req.query)}`, (err, ret) => {
+    return legRequest(`https://api.randomapi.com/${legacy[version].hash}?noinfo&${qs.stringify(req.query)}`, (err, ret) => {
       if (req.query.fmt === 'json') {
         res.setHeader('Content-Type', 'application/json');
       } else if (req.query.fmt === 'xml') {
