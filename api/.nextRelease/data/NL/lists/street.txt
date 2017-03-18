@@ -1,0 +1,155 @@
+a.b.c.-straat
+abstederdijk
+achter de dom
+achter sint pieter
+adriaen van ostadelaan
+agnietenstraat
+alexander numankade
+ambachtstraat
+amsterdamse-straatweg
+amsterdamsestraatweg
+annastraat
+baden-powellweg
+berekuil
+billitonkade
+biltsche grift
+biltstraat
+blauwkapelseweg
+bokstraat
+bollenhofsestraat
+boothstraat
+boterstraat
+breedstraat
+burgemeester reigerstraat
+catharijnekade
+catharijnesingel
+choorstraat
+croeselaan
+croesestraat
+damstraat
+domplein
+domstraat
+donkere gaard
+donkerstraat
+dorstige hartsteeg
+drift
+eligenstraat
+f.c. dondersstraat
+furkabaan
+gansstraat
+ganzenmarkt
+gasthuisstraat
+geertekerkhof
+graadt van roggenweg
+groeneweg
+hamburgerstraat
+hanengeschrei
+hardebollenstraat
+haverstraat
+herenstraat
+hoefijzerstraat
+hoefsmederijpad
+hoefsmederijstraat
+hogelandsepark
+homeruslaan
+hoogt
+houtensepad
+israëlslaan
+jaarbeursplein
+jacobijnenstraat
+jan pieterszoon coenstraat
+jan van scorelstraat
+janskerkhof
+jutfaseweg
+kanaalstraat
+kanaalweg
+kapelstraat
+keistraat
+keizerstraat
+keulsekade
+kintgenshaven
+kleine singel
+korte lauwerstraat
+korte minrebroederstraat
+korte nieuwstraat
+kromme nieuwegracht
+kruisstraat
+lange lauwerstraat
+lange nieuwstraat
+lange viestraat
+ledig erf
+leidsekade
+leidseveer
+leidseweg
+lepelenburg
+lichte gaard
+lijnmarkt
+loeff berchmakerstraat
+lucasbolwerk
+majellapark
+maliebaan
+mariaplaats
+massegast
+minrebroederstraat
+monseigneur van de weteringstraat
+moreelsepark
+muntstraat
+nachtegaalstraat
+neude
+nicolaasweg
+nieuwe houtenseweg
+nieuwegracht
+nobeldwarsstraat
+nobelstraat
+oorsprongpark
+oosterkade
+oudegracht
+oudkerkhof
+paardenveld
+pieterskerkhof
+pieterstraat
+plompetorenbrug
+plompetorengracht
+poortstraat
+potterstraat
+predikherenkerkhof
+predikherenstraat
+prins hendriklaan
+ridderschapstraat
+rubenslaan
+servaasbolwerk
+servetstraat
+sint jacobsstraat
+springweg
+stadhuisbrug
+stadionlaan
+stadsbuitengracht
+steenweg
+sterrenburg
+tolsteegbrug
+trans
+twijnstraat
+twijnstraat aan de werf
+van asch van wijckskade
+van limburg stirumstraat
+veeartsenij-pad
+veeartsenijpad
+vismarkt
+vleutenseweg
+vondellaan
+voorstraat
+vredenburg
+waterlinieweg
+waterstraat
+wed
+westerkade
+westplein
+wijde begijnestraat
+wilhelminapark
+willem van noortplein
+wittevrouwensingel
+wittevrouwenstraat
+wulpstraat
+zadelstraat
+zonstraat
+zuilenstraat

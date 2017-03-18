@@ -1,0 +1,16 @@
+auckland
+bay of plenty
+canterbury
+gisborne
+hawke's bay
+manawatu-wanganui
+marlborough
+nelson
+northland
+otago
+southland
+taranaki
+tasman
+waikato
+wellington
+west coast

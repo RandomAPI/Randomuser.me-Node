@@ -1,0 +1,46 @@
+adelaide
+albany
+albury
+australian capital territory
+ballarat
+bathurst
+bendigo
+bowral
+brisbane
+bunbury
+bundaberg
+busselton
+cairns
+coffs harbour
+darwin
+devonport
+dubbo
+geelong
+geraldton
+gladstone
+hervey bay
+hobart
+kalgoorlie
+launceston
+mackay
+maitland
+melbourne
+mildura
+nowra
+orange
+perth
+port macquarie
+queanbeyan
+rockhampton
+shepparton
+sunshine coast
+sydney
+tamworth
+toowoomba
+townsville
+traralgon
+tweed
+wagga wagga
+warragul
+warrnambool
+wollongong
