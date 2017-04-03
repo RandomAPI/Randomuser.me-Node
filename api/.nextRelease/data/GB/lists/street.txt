@@ -1,10 +1,13 @@
 albert road
 alexander road
 broadway
+brick kiln road
+bridge road
 chester road
 church lane
 church road
 church street
+fairview road
 george street
 grange road
 green lane
@@ -25,6 +28,7 @@ new road
 new street
 north road
 north street
+oaks cross
 park avenue
 park lane
 park road
@@ -32,6 +36,7 @@ queen street
 queens road
 queensway
 richmond road
+rectory lane
 school lane
 south street
 springfield road
