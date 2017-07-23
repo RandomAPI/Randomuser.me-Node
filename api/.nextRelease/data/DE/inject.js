@@ -8,5 +8,9 @@ module.exports = (inc, contents) => {
         name: '',
         value: null
     });
+    include(inc, 'location', () => {
+        var oldStreet = contents.location.street.replace(/(\d+) /, '');
+        contents.location.street = oldStreet + ' ' + range(1, 200);
+    });
     include(inc, 'picture', pic);
 };
