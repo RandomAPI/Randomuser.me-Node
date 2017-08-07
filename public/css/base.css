@@ -474,13 +474,14 @@ html {
 }
 
 #navbar ul li a{
+  display: inline-block;
   color: #fff;
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
 }
 
-#navbar ul li:before{
+#navbar ul li a::before{
   content: "";
   margin: auto;
   width: 27px; height: 23px;
@@ -489,34 +490,34 @@ html {
   background-image: url(https://randomuser.me/img/nav_icons.png);
 }
   
-#navbar ul li:nth-child(2):before {
+#navbar ul li:nth-child(2) a::before {
   background-position: 0 -200px;
 }
-#navbar ul li:nth-child(3):before {
+#navbar ul li:nth-child(3) a::before {
   background-position: 0 -25px;
 }
-#navbar ul li:nth-child(4):before {
+#navbar ul li:nth-child(4) a::before {
   background-position: 0 -50px;
 }
-#navbar ul li:nth-child(5):before {
+#navbar ul li:nth-child(5) a::before {
   background-position: 0 -75px;
 }
-#navbar ul li:nth-child(6):before {
+#navbar ul li:nth-child(6) a::before {
   background-position: 0 -100px;
 }
-#navbar ul li:nth-child(7):before {
+#navbar ul li:nth-child(7) a::before {
   background-position: 0 -125px;
 }
-#navbar ul li:nth-child(9):before {
+#navbar ul li:nth-child(9) a::before {
   background-position: 0 -150px;
 }
-#navbar ul li:nth-child(10):before {
+#navbar ul li:nth-child(10) a::before {
   background-position: 0 -175px;
 }
-#navbar ul li:nth-child(10):before {
+#navbar ul li:nth-child(10) a::before {
   opacity: .1;
 }
-#navbar ul li.blank:before {
+#navbar ul li.blank a::before {
   display: none;
 }
 
@@ -567,7 +568,7 @@ html {
     -webkit-transition: all 0.2s ease-out;
             transition: all 0.2s ease-out;
   }
-  #navbar ul li:before {
+  #navbar ul li a::before {
     content: '';
     display: inline-block;
     width: 28px;
@@ -580,34 +581,34 @@ html {
     -webkit-background-size: 27px 27px;
             background-size: 27px;
   }
-  #navbar ul li:nth-child(2):before {
+  #navbar ul li:nth-child(2) a::before {
     background-position: 0 -200px;
   }
-  #navbar ul li:nth-child(3):before {
+  #navbar ul li:nth-child(3) a::before {
     background-position: 0 -25px;
   }
-  #navbar ul li:nth-child(4):before {
+  #navbar ul li:nth-child(4) a::before {
     background-position: 0 -50px;
   }
-  #navbar ul li:nth-child(5):before {
+  #navbar ul li:nth-child(5) a::before {
     background-position: 0 -75px;
   }
-  #navbar ul li:nth-child(6):before {
+  #navbar ul li:nth-child(6) a::before {
     background-position: 0 -100px;
   }
-  #navbar ul li:nth-child(7):before {
+  #navbar ul li:nth-child(7) a::before {
     background-position: 0 -125px;
   }
-  #navbar ul li:nth-child(9):before {
+  #navbar ul li:nth-child(9) a::before {
     background-position: 0 -150px;
   }
-  #navbar ul li:nth-child(10):before {
+  #navbar ul li:nth-child(10) a::before {
     background-position: 0 -175px;
   }
   #navbar ul li:nth-child(10) {
     opacity: 1;
   }
-  #navbar ul li.blank:before {
+  #navbar ul li.blank a::before {
     display: none;
   }
   #navbar ul li:hover {
