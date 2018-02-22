@@ -59,7 +59,7 @@ let legacy = {
 };
 
 function genUser(req, res, version) {
-  req.query.fmt = req.query.format;
+  req.query.fmt = req.query.fmt || req.query.format;
 
   var ip = req.headers['cf-connecting-ip'] || req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 
