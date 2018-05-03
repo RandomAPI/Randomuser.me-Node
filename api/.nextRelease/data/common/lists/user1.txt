@@ -1,3 +1,4 @@
+angry
 beautiful
 big
 black
@@ -6,12 +7,14 @@ brown
 crazy
 golden
 green
+happy
 heavy
 lazy
 orange
 organic
 purple
 red
+sad
 silver
 small
 ticklish
