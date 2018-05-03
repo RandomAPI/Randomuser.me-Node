@@ -15,7 +15,7 @@ module.exports = (inc, contents) => {
     include(inc, 'cell', '(' + random(3, 3) + ')-' + random(3, 3) + '-' + random(3, 4));
     include(inc, 'id', {
         name: 'AVS',
-        value: '756.' + random(4, 4) + '.' + random(4, 4) + '.' + random(3, 2)
+        value: '756.' + random(3, 4) + '.' + random(3, 4) + '.' + random(3, 2)
     });
     include(inc, 'picture', pic);
 };
