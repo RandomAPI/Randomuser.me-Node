@@ -43,17 +43,31 @@ router.get('/:page?', function(req, res, next) {
 router.post('/donate', function(req, res, next) {
   let data = JSON.parse(req.body.data);
 
-  stripe.charges.create({
-    amount: data.token.price,
-    currency: "usd",
-    source: data.token.id, // obtained with Stripe.js
-    description: `Donation from ${data.token.email}
-${data.comment}`
-  }, function(err, charge) {
-    if (err) return res.sendStatus(400);
-    else res.sendStatus(200);
-  });
+  if (!badEmail(data.token.email)) {
+    stripe.charges.create({
+      amount: data.token.price,
+      currency: "usd",
+      source: data.token.id, // obtained with Stripe.js
+      description: `Donation from ${data.token.email} - ${data.comment}`
+    }, function(err, charge) {
+      if (err) return res.sendStatus(400);
+      else res.sendStatus(200);
+    });
+  } else {
+    console.log(`Bad donation email: ${data.token.email} - ${data.comment}`);
+    res.sendStatus(400);
+  }
 
+  function badEmail(email) {
+    let blacklist = [
+      "angelic.com", "bayer.ca", "comic.com", "comsat.com", "email.com",
+      "form.com", "hot.com", "just.com", "linux.org", "love.com",
+      "magic.com", "mixmail.com", "post.com", "sua.com", "techie.com",
+      "usa.com", "usa.net", "outlook.es"
+    ];
+
+    return blacklist.indexOf(email.match(/@(.*)/)[1]) !== -1;
+  }
 });
 
 router.all('/download/version.php', function(req, res, next) {
