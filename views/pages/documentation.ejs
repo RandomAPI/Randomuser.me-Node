@@ -61,45 +61,60 @@ $.ajax({
       "gender": "<span>male</span>",
       "name": {
         "title": "<span>mr</span>",
-        "first": "<span>romain</span>",
-        "last": "<span>hoogmoed</span>"
+        "first": "<span>rolf</span>",
+        "last": "<span>hegdal</span>"
       },
       "location": {
-        "street": "<span>1861 jan pieterszoon coenstraat</span>",
-        "city": "<span>maasdriel</span>",
-        "state": "<span>zeeland</span>",
-        "postcode": <span>69217</span>
+        "street": "<span>ljan terrasse 346</span>",
+        "city": "<span>vear</span>",
+        "state": "<span>rogaland</span>",
+        "postcode": "<span>3095</span>",
+        "coordinates": {
+          "latitude": "<span>54.8646</span>",
+          "longitude": "<span>-97.3136</span>"
+        },
+        "timezone": {
+          "offset": "<span>-10:00</span>",
+          "description": "<span>Hawaii</span>"
+        }
       },
-      "email": "<span>romain.hoogmoed@example.com</span>",
+      "email": "<span>rolf.hegdal@example.com</span>",
       "login": {
-        "username": "<span>lazyduck408</span>",
-        "password": "<span>jokers</span>",
-        "salt": "<span>UGtRFz4N</span>",
-        "md5": "<span>6d83a8c084731ee73eb5f9398b923183</span>",
-        "sha1": "<span>cb21097d8c430f2716538e365447910d90476f6e</span>",
-        "sha256": "<span>5a9b09c86195b8d8b01ee219d7d9794e2abb6641a2351850c49c309f1fc204a0</span>"
+        "uuid": "<span>c4168eac-84b8-46ea-b735-c9da9bfb97fd</span>",
+        "username": "<span>bluefrog786</span>",
+        "password": "<span>ingrid</span>",
+        "salt": "<span>GtRFz4NE</span>",
+        "md5": "<span>5c581c5748fc8c35bd7f16eac9efbb55</span>",
+        "sha1": "<span>c3feb8887abed9ec1561b9aa2c9f58de21d1d3d9</span>",
+        "sha256": "<span>684c478a98b43f1ef1703b35b8bbf61b27dbc93d52acd515e141e97e04447712</span>"
       },
-      "dob": "<span>1983-07-14 07:29:45</span>",
-      "registered": "<span>2010-09-24 02:10:42</span>",
-      "phone": "<span>(656)-976-4980</span>",
-      "cell": "<span>(065)-247-9303</span>",
+      "dob": {
+        "date": "<span>1975-11-12T06:34:44Z</span>",
+        "age": <span>42</span>
+      },
+      "registered": {
+        "date": <span>"2015-11-04T22:09:36Z</span>",
+        "age": <span>2</span>
+      },
+      "phone": "<span>66976498</span>",
+      "cell": "<span>40652479</span>",
       "id": {
-        "name": "<span>BSN</span>",
-        "value": "<span>04242023</span>"
+        "name": "<span>FN</span>",
+        "value": "<span>12117533881</span>"
       },
       "picture": {
-        "large": "<span>https://randomuser.me/api/portraits/men/83.jpg</span>",
-        "medium": "<span>https://randomuser.me/api/portraits/med/men/83.jpg</span>",
-        "thumbnail": "<span>https://randomuser.me/api/portraits/thumb/men/83.jpg</span>"
+        "large": "<span>https://randomuser.me/api/portraits/men/65.jpg</span>",
+        "medium": "<span>https://randomuser.me/api/portraits/med/men/65.jpg</span>",
+        "thumbnail": "<span>https://randomuser.me/api/portraits/thumb/men/65.jpg</span>"
       },
-      "nat": "<span>NL</span>"
+      "nat": "<span>NO</span>"
     }
   ],
   "info": {
     "seed": "<span>2da87e9305069f1d</span>",
     "results": <span>1</span>,
     "page": <span>1</span>,
-    "version": "<span>1.1</span>"
+    "version": "<span>1.2</span>"
   }
 }
 </pre>
@@ -197,7 +212,7 @@ https://randomuser.me/api/<span>?format=csv</span>
 <pre>https://randomuser.me/api/</pre>
       <p>The result that is returned automatically uses the latest version of the API.<br>
       If you want to access a specific version of the API that won't be affected by updates, do this:</p>
-<pre>https://randomuser.me/api/<span>1.1</span>/</pre>
+<pre>https://randomuser.me/api/<span>1.2</span>/</pre>
     </section>
 
     <section id="nationalities">
@@ -208,6 +223,7 @@ https://randomuser.me/api/<span>?format=csv</span>
       <ul>
         <li>v1.0: AU, BR, CA, CH, DE, DK, ES, FI, FR, GB, IE, IR, NL, NZ, TR, US</li>
         <li>v1.1: AU, BR, CA, CH, DE, DK, ES, FI, FR, GB, IE, IR, NL, NZ, TR, US</li>
+        <li>v1.2: AU, BR, CA, CH, DE, DK, ES, FI, FR, GB, IE, IR, NO, NL, NZ, TR, US</li>
       </ul>
       <p>You can specify a nationality like so:</p>
 <pre>
