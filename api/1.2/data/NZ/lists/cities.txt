@@ -1,0 +1,24 @@
+auckland
+blenheim
+christchurch
+dunedin
+gisborne
+greymouth
+hamilton
+hastings
+invercargill
+lower hutt
+masterton
+napier
+nelson
+new plymouth
+palmerston north
+porirua
+rotorua
+taupo
+tauranga
+timaru
+upper hutt
+wellington
+whanganui
+whangarei

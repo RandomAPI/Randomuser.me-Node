@@ -1,0 +1,28 @@
+aleksanterinkatu
+bulevardi
+esplanadi
+fredrikinkatu
+hatanpään valtatie
+hermiankatu
+hämeenkatu
+hämeentie
+itsenäisyydenkatu
+korkeavuorenkatu
+mannerheimintie
+mechelininkatu
+myllypuronkatu
+nordenskiöldinkatu
+otavalankatu
+pirkankatu
+pispalan valtatie
+pyynikintie
+rautatienkatu
+reijolankatu
+rotuaari
+satakennankatu
+siilitie
+suvantokatu
+tahmelantie
+tehtaankatu
+verkatehtaankatu
+visiokatu

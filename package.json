@@ -15,6 +15,7 @@
     "debug": "~2.2.0",
     "ejs": "^2.5.7",
     "express": "~4.13.1",
+    "faker": "^4.1.0",
     "filesize": "^3.2.1",
     "format-number": "^2.0.1",
     "js2xmlparser": "^1.0.0",

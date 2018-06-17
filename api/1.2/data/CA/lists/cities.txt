@@ -1,0 +1,90 @@
+alma
+armstrong
+aylmer
+bath
+beaumont
+belmont
+borden
+brockton
+burlington
+cadillac
+campbellton
+carleton
+cartwright
+charlottetown
+chatham
+chelsea
+chesterville
+chipman
+clinton
+cochrane
+cornwall
+cumberland
+deer lake
+delisle
+delta
+dorchester
+elgin
+enterprise
+fauquier
+field
+flatrock
+fountainbleu
+georgetown
+glenwood
+grand falls
+greenwood
+hampstead
+hampton
+havelock
+hudson
+inverness
+inwood
+jasper
+keswick
+killarney
+kingston
+lafontaine
+lasalle
+lloydminster
+lumsden
+maidstone
+maitland
+melbourne
+minto
+new glasgow
+notre dame de lourdes
+oakville
+odessa
+port elgin
+princeton
+radisson
+red rock
+richmond
+russell
+sandy lake
+selkirk
+shelbourne
+sherbrooke
+sidney
+souris
+south river
+southampton
+springfield
+st. antoine
+st. george
+stirling
+stratford
+summerside
+sutton
+tecumseh
+trenton
+trout lake
+vanier
+victoria
+waterloo
+wellington
+westport
+windsor
+winfield
+woodstock

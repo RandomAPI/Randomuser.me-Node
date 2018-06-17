@@ -1,0 +1,2181 @@
+aach
+aachen
+aalen
+abenberg
+abensberg
+achern
+achim
+adelsheim
+adenau
+adorf/vogtl.
+ahaus
+ahlen
+ahrensburg
+ahrweiler
+aichach
+aichach-friedberg
+aichtal
+aken (elbe)
+albstadt
+alfeld (leine)
+allendorf (lumda)
+allstedt
+alpirsbach
+alsdorf
+alsfeld
+alsleben (saale)
+altdorf bei nürnberg
+altena
+altenberg
+altenburg
+altenburger land
+altenkirchen (westerwald)
+altensteig
+altentreptow
+altlandsberg
+altötting
+alzenau
+alzey
+alzey-worms
+amberg
+amberg-sulzbach
+ammerland
+amorbach
+amöneburg
+andernach
+angermünde
+anhalt-bitterfeld
+anklam
+annaberg
+annaberg-buchholz
+annaburg
+annweiler am trifels
+ansbach
+apolda
+arendsee (altmark)
+arneburg
+arnis
+arnsberg
+arnstadt
+arnstein
+artern/unstrut
+arzberg
+aschaffenburg
+aschersleben
+asperg
+attendorn
+aub
+aue
+aue-schwarzenberg
+auerbach in der oberpfalz
+auerbach/vogtl.
+augsburg
+augustusburg
+aulendorf
+auma-weidatal
+aurich
+aßlar
+babenhausen
+bacharach
+backnang
+bad aibling
+bad arolsen
+bad belzig
+bad bentheim
+bad bergzabern
+bad berka
+bad berleburg
+bad berneck im fichtelgebirge
+bad bevensen
+bad bibra
+bad blankenburg
+bad bramstedt
+bad breisig
+bad brückenau
+bad buchau
+bad camberg
+bad colberg-heldburg
+bad doberan
+bad driburg
+bad düben
+bad dürkheim
+bad dürrenberg
+bad dürrheim
+bad elster
+bad ems
+bad fallingbostel
+bad frankenhausen/kyffhäuser
+bad freienwalde (oder)
+bad friedrichshall
+bad gandersheim
+bad gottleuba-berggießhübel
+bad griesbach im rottal
+bad harzburg
+bad herrenalb
+bad hersfeld
+bad homburg vor der höhe
+bad honnef
+bad hönningen
+bad iburg
+bad karlshafen
+bad kissingen
+bad kreuznach
+bad krozingen
+bad könig
+bad königshofen im grabfeld
+bad köstritz
+bad kötzting
+bad laasphe
+bad langensalza
+bad lauchstädt
+bad lausick
+bad lauterberg im harz
+bad liebenstein
+bad liebenwerda
+bad liebenzell
+bad lippspringe
+bad lobenstein
+bad marienberg (westerwald)
+bad mergentheim
+bad muskau
+bad münder am deister
+bad münstereifel
+bad nauheim
+bad nenndorf
+bad neuenahr-ahrweiler
+bad neustadt an der saale
+bad oeynhausen
+bad oldesloe
+bad orb
+bad pyrmont
+bad rappenau
+bad reichenhall
+bad rodach
+bad sachsa
+bad salzdetfurth
+bad salzuflen
+bad salzungen
+bad saulgau
+bad schandau
+bad schmiedeberg
+bad schussenried
+bad schwalbach
+bad schwartau
+bad segeberg
+bad sobernheim
+bad soden am taunus
+bad soden-salmünster
+bad sooden-allendorf
+bad staffelstein
+bad sulza
+bad säckingen
+bad sülze
+bad teinach-zavelstein
+bad tennstedt
+bad tölz
+bad tölz-wolfratshausen
+bad urach
+bad vilbel
+bad waldsee
+bad wildbad
+bad wildungen
+bad wilsnack
+bad wimpfen
+bad windsheim
+bad wurzach
+bad wörishofen
+bad wünnenberg
+baden-baden
+baesweiler
+baiersdorf
+balingen
+ballenstedt
+balve
+bamberg
+barby
+bargteheide
+barmstedt
+barnim
+barntrup
+barsinghausen
+barth
+baruth/mark
+bassum
+battenberg (eder)
+baumholder
+baunach
+baunatal
+bautzen
+bayreuth
+bebra
+beckum
+bedburg
+beelitz
+beerfelden
+beeskow
+beilngries
+beilstein
+belgern-schildau
+bendorf
+bensheim
+berching
+berchtesgadener land
+berga/elster
+bergen
+bergen auf rügen
+bergheim
+bergisch gladbach
+bergkamen
+bergneustadt
+bergstraße
+berka/werra
+berlin
+bernau bei berlin
+bernburg (saale)
+bernkastel-kues
+bernkastel-wittlich
+bernsdorf
+bernstadt a. d. eigen
+bersenbrück
+besigheim
+betzdorf
+betzenstein
+beverungen
+bexbach
+biberach
+biberach an der riß
+biedenkopf
+bielefeld
+biesenthal
+bietigheim-bissingen
+billerbeck
+bingen am rhein
+birkenfeld
+bischofsheim an der rhön
+bischofswerda
+bismark (altmark)
+bitburg
+bitburg-prüm
+bitterfeld-wolfen
+blankenburg (harz)
+blankenhain
+blaubeuren
+blaustein
+bleckede
+bleicherode
+blieskastel
+blomberg
+blumberg
+bobingen
+bocholt
+bochum
+bockenem
+bodenwerder
+bogen
+boizenburg/elbe
+bonn
+bonndorf im schwarzwald
+bopfingen
+boppard
+borgentreich
+borgholzhausen
+borken
+borkum
+borna
+bornheim
+bottrop
+boxberg
+brackenheim
+brake (unterweser)
+brakel
+bramsche
+brand-erbisdorf
+brandenburg an der havel
+brandis
+braubach
+braunfels
+braunlage
+braunsbedra
+braunschweig
+breckerfeld
+bredstedt
+breisach am rhein
+breisgau-hochschwarzwald
+bremen
+bremerhaven
+bremervörde
+bretten
+breuberg
+brilon
+brotterode-trusetal
+bruchköbel
+bruchsal
+brunsbüttel
+bräunlingen
+brück
+brüel
+brühl
+brüssow
+buchen (odenwald)
+buchholz in der nordheide
+buchloe
+buckow (märkische schweiz)
+burg
+burg stargard
+burgau
+burgbernheim
+burgdorf
+burgenland
+burghausen
+burgkunstadt
+burglengenfeld
+burgstädt
+burgwedel
+burladingen
+burscheid
+buttelstedt
+buttstädt
+butzbach
+buxtehude
+bärnau
+böblingen
+böhlen
+bönnigheim
+börde
+bückeburg
+büdelsdorf
+büdingen
+bühl
+bünde
+büren
+bürgel
+bürstadt
+bützow
+calau
+calbe (saale)
+calw
+castrop-rauxel
+celle
+cham
+chemnitz
+chemnitzer land
+clausthal-zellerfeld
+clingen
+cloppenburg
+coburg
+cochem
+cochem-zell
+coesfeld
+colditz
+coswig
+coswig (anhalt)
+cottbus
+cottbus/chosebuz
+crailsheim
+creglingen
+creuzburg
+creußen
+crimmitschau
+crivitz
+cuxhaven
+dachau
+dahlen
+dahme-spreewald
+dahme/mark
+dahn
+damme
+dannenberg (elbe)
+dargun
+darmstadt
+darmstadt-dieburg
+dassel
+dassow
+datteln
+daun
+deggendorf
+deidesheim
+delbrück
+delitzsch
+delmenhorst
+demmin
+dessau-roßlau
+detmold
+dettelbach
+dieburg
+diemelstadt
+diepholz
+dierdorf
+dietenheim
+dietfurt an der altmühl
+dietzenbach
+diez
+dillenburg
+dillingen a.d. donau
+dillingen an der donau
+dillingen/saar
+dingelstädt
+dingolfing
+dingolfing-landau
+dinkelsbühl
+dinklage
+dinslaken
+dippoldiswalde
+dissen am teutoburger wald
+dithmarschen
+ditzingen
+doberlug-kirchhain
+dohna
+dommitzsch
+donau-ries
+donaueschingen
+donauwörth
+donzdorf
+dorfen
+dormagen
+dornburg-camburg
+dornhan
+dornstetten
+dorsten
+dortmund
+dransfeld
+drebkau
+dreieich
+drensteinfurt
+dresden
+drolshagen
+duderstadt
+duisburg
+döbeln
+döbern
+dömitz
+dülmen
+düren
+düsseldorf
+ebeleben
+eberbach
+ebermannstadt
+ebern
+ebersbach an der fils
+ebersbach-neugersdorf
+ebersberg
+eberswalde
+eckartsberga
+eckernförde
+edenkoben
+egeln
+eggenfelden
+eggesin
+ehingen (donau)
+ehrenfriedersdorf
+eibelstadt
+eibenstock
+eichsfeld
+eichstätt
+eilenburg
+einbeck
+eisenach
+eisenberg
+eisenberg (pfalz)
+eisenhüttenstadt
+eisfeld
+eisleben
+eislingen/fils
+elbe-elster
+ellingen
+ellrich
+ellwangen (jagst)
+elmshorn
+elsdorf
+elsfleth
+elsterberg
+elsterwerda
+elstra
+elterlein
+eltmann
+eltville am rhein
+elzach
+elze
+emden
+emmelshausen
+emmendingen
+emmerich am rhein
+emsdetten
+emsland
+endingen am kaiserstuhl
+engen
+enger
+ennepetal
+ennigerloh
+eppelheim
+eppingen
+eppstein
+erbach
+erbach (odenwald)
+erbendorf
+erding
+erftstadt
+erfurt
+erkelenz
+erkner
+erkrath
+erlangen
+erlangen-höchstadt
+erlenbach am main
+erlensee
+erwitte
+eschborn
+eschenbach in der oberpfalz
+eschershausen
+eschwege
+eschweiler
+esens
+espelkamp
+essen
+esslingen
+esslingen am neckar
+ettenheim
+ettlingen
+euskirchen
+eutin
+falkenberg/elster
+falkensee
+falkenstein/harz
+falkenstein/vogtl.
+fehmarn
+fellbach
+felsberg
+feuchtwangen
+filderstadt
+finsterwalde
+fladungen
+flensburg
+florstadt
+flöha
+flörsheim am main
+forchheim
+forchtenberg
+forst (lausitz)
+frankenau
+frankenberg (eder)
+frankenberg/sa.
+frankenthal (pfalz)
+frankfurt (oder)
+frankfurt am main
+franzburg
+frauenstein
+frechen
+freiberg
+freiberg am neckar
+freiburg im breisgau
+freilassing
+freinsheim
+freising
+freital
+freren
+freudenberg
+freudenstadt
+freyburg (unstrut)
+freystadt
+freyung
+freyung-grafenau
+fridingen an der donau
+friedberg
+friedland
+friedrichroda
+friedrichsdorf
+friedrichshafen
+friedrichstadt
+friedrichsthal
+friesack
+friesland
+friesoythe
+fritzlar
+frohburg
+fröndenberg/ruhr
+fulda
+furth im wald
+furtwangen im schwarzwald
+fürstenau
+fürstenberg/havel
+fürstenfeldbruck
+fürstenwalde/spree
+fürth
+füssen
+gadebusch
+gaggenau
+gaildorf
+gammertingen
+ganderkesee
+garbsen
+garching bei münchen
+gardelegen
+garding
+garmisch-partenkirchen
+gartz (oder)
+garz/rügen
+gau-algesheim
+gebesee
+gedern
+geesthacht
+geestland
+gefell
+gefrees
+gehrden
+gehren
+geilenkirchen
+geisa
+geiselhöring
+geisenfeld
+geisenheim
+geisingen
+geislingen
+geislingen an der steige
+geithain
+geldern
+gelnhausen
+gelsenkirchen
+gemünden (wohra)
+gemünden am main
+gengenbach
+genthin
+georgsmarienhütte
+gera
+gerabronn
+gerbstedt
+geretsried
+geringswalde
+gerlingen
+germering
+germersheim
+gernsbach
+gernsheim
+gerolstein
+gerolzhofen
+gersfeld (rhön)
+gersthofen
+gescher
+geseke
+gevelsberg
+geyer
+giengen an der brenz
+gießen
+gifhorn
+ginsheim-gustavsburg
+gladbeck
+gladenbach
+glashütte
+glauchau
+glinde
+glücksburg (ostsee)
+glückstadt
+gnoien
+goch
+goldberg
+goldkronach
+golßen
+gommern
+goslar
+gotha
+grabow
+grafenau
+grafenwöhr
+grafing bei münchen
+grafschaft bentheim
+gransee
+grebenau
+grebenstein
+greding
+greifswald
+greiz
+greußen
+greven
+grevenbroich
+grevesmühlen
+griesheim
+grimma
+grimmen
+groitzsch
+gronau (leine)
+gronau (westf.)
+groß-bieberau
+groß-gerau
+groß-umstadt
+großalmerode
+großbottwar
+großbreitenbach
+großenehrich
+großenhain
+großräschen
+großröhrsdorf
+großschirma
+gräfenberg
+gräfenhainichen
+gräfenthal
+gröditz
+gröningen
+grünberg
+grünhain-beierfeld
+grünsfeld
+grünstadt
+guben
+gudensberg
+gummersbach
+gundelfingen an der donau
+gundelsheim
+gunzenhausen
+göppingen
+görlitz
+göttingen
+gößnitz
+güglingen
+günzburg
+güsten
+güstrow
+gütersloh
+gützkow
+haan
+hachenburg
+hadamar
+hagen
+hagenbach
+hagenow
+haiger
+haigerloch
+hainichen
+haiterbach
+halberstadt
+haldensleben
+halle (saale)
+halle (westf.)
+hallenberg
+hallstadt
+haltern am see
+halver
+hamburg
+hameln
+hameln-pyrmont
+hamm
+hammelburg
+hamminkeln
+hanau
+hann. münden
+hannover
+harburg
+harburg (schwaben)
+hardegsen
+haren (ems)
+harsewinkel
+hartenstein
+hartha
+harz
+harzgerode
+hasbergen
+haselünne
+haslach im kinzigtal
+hattersheim am main
+hattingen
+hatzfeld (eder)
+hausach
+hauzenberg
+havelberg
+havelland
+havelsee
+hayingen
+haßberge
+haßfurt
+hechingen
+hecklingen
+heide
+heideck
+heidelberg
+heidenau
+heidenheim
+heidenheim an der brenz
+heilbad heiligenstadt
+heilbronn
+heiligenhafen
+heiligenhaus
+heilsbronn
+heimbach
+heimsheim
+heinsberg
+heitersheim
+heldrungen
+helmbrechts
+helmstedt
+hemau
+hemer
+hemmingen
+hemmoor
+hemsbach
+hennef (sieg)
+hennigsdorf
+heppenheim (bergstraße)
+herbolzheim
+herborn
+herbrechtingen
+herbstein
+herdecke
+herdorf
+herford
+heringen (werra)
+heringen/helme
+hermeskeil
+hermsdorf
+herne
+herrenberg
+herrieden
+herrnhut
+hersbruck
+hersfeld-rotenburg
+herten
+herzberg (elster)
+herzberg am harz
+herzogenaurach
+herzogenrath
+herzogtum lauenburg
+hessisch lichtenau
+hessisch oldendorf
+hettingen
+hettstedt
+heubach
+heusenstamm
+hilchenbach
+hildburghausen
+hilden
+hildesheim
+hillesheim
+hilpoltstein
+hirschau
+hirschberg
+hirschhorn (neckar)
+hitzacker (elbe)
+hochheim am main
+hockenheim
+hof
+hofgeismar
+hofheim am taunus
+hofheim in unterfranken
+hohen neuendorf
+hohenberg an der eger
+hohenleuben
+hohenmölsen
+hohenstein-ernstthal
+hohnstein
+hollfeld
+holzgerlingen
+holzminden
+homberg (efze)
+homberg (ohm)
+homburg
+horb am neckar
+horn-bad meinberg
+hornbach
+hornberg
+horstmar
+hoya
+hoyerswerda
+hungen
+husum
+höchstadt an der aisch
+höchstädt an der donau
+höhr-grenzhausen
+hörstel
+höxter
+hückelhoven
+hückeswagen
+hüfingen
+hünfeld
+hürth
+ibbenbüren
+ichenhausen
+idar-oberstein
+idstein
+illertissen
+ilmenau
+ilsenburg (harz)
+ilshofen
+immenhausen
+immenstadt im allgäu
+ingelfingen
+ingelheim am rhein
+ingolstadt
+iphofen
+iserlohn
+isny im allgäu
+isselburg
+itzehoe
+jarmen
+jena
+jerichow
+jerichower land
+jessen (elster)
+jever
+joachimsthal
+johanngeorgenstadt
+jöhstadt
+jülich
+jüterbog
+kaarst
+kahla
+kaisersesch
+kaiserslautern
+kalbe (milde)
+kalkar
+kaltenkirchen
+kaltennordheim
+kamen
+kamenz
+kamp-lintfort
+kandel
+kandern
+kappeln
+karben
+karlsruhe
+karlstadt
+kassel
+kastellaun
+katzenelnbogen
+kaub
+kaufbeuren
+kehl
+kelbra (kyffhäuser)
+kelheim
+kelkheim (taunus)
+kellinghusen
+kelsterbach
+kemberg
+kemnath
+kempen
+kempten (allgäu)
+kenzingen
+kerpen
+ketzin/havel
+kevelaer
+kiel
+kierspe
+kindelbrück
+kirchberg
+kirchberg (hunsrück)
+kirchberg an der jagst
+kirchen (sieg)
+kirchenlamitz
+kirchhain
+kirchheim unter teck
+kirchheimbolanden
+kirn
+kirtorf
+kitzingen
+kitzscher
+kleve
+klingenberg am main
+klingenthal
+klötze
+klütz
+knittlingen
+koblenz
+kohren-sahlis
+kolbermoor
+konstanz
+konz
+korbach
+korntal-münchingen
+kornwestheim
+korschenbroich
+kraichtal
+krakow am see
+kranichfeld
+krautheim
+krefeld
+kremmen
+krempe
+kreuztal
+kronach
+kronberg im taunus
+kroppenstedt
+krumbach (schwaben)
+kröpelin
+kulmbach
+kupferberg
+kuppenheim
+kusel
+kyllburg
+kyritz
+kölleda
+köln
+königs wusterhausen
+königsberg in bayern
+königsbrunn
+königsbrück
+königsee-rottenbach
+königslutter am elm
+königstein (sächsische schweiz)
+königstein im taunus
+königswinter
+könnern
+köthen (anhalt)
+kühlungsborn
+külsheim
+künzelsau
+laage
+laatzen
+ladenburg
+lage
+lahnstein
+lahr/schwarzwald
+laichingen
+lambrecht (pfalz)
+lampertheim
+landau an der isar
+landau i.d. pfalz
+landau in der pfalz
+landsberg
+landsberg a. lech
+landsberg am lech
+landshut
+landstuhl
+langelsheim
+langen
+langenau
+langenburg
+langenfeld (rheinland)
+langenhagen
+langenselbold
+langenzenn
+langewiesen
+lassan
+laubach
+laucha an der unstrut
+lauchhammer
+lauchheim
+lauda-königshofen
+lauenburg/elbe
+lauf an der pegnitz
+laufen
+laufenburg (baden)
+lauffen am neckar
+lauingen (donau)
+laupheim
+lauscha
+lauta
+lauter-bernsbach
+lauterbach
+lauterecken
+lauterstein
+lebach
+lebus
+leer
+leer (ostfriesland)
+lehesten
+lehrte
+leichlingen (rheinland)
+leimen
+leinefelde-worbis
+leinfelden-echterdingen
+leipheim
+leipzig
+leipziger land
+leisnig
+lemgo
+lengenfeld
+lengerich
+lennestadt
+lenzen
+leonberg
+leun
+leuna
+leutenberg
+leutershausen
+leutkirch im allgäu
+leverkusen
+lich
+lichtenau
+lichtenberg
+lichtenfels
+lichtenstein/sa.
+liebenau
+liebenwalde
+lieberose
+liebstadt
+limbach-oberfrohna
+limburg an der lahn
+limburg-weilburg
+lindau (bodensee)
+lindau-bodensee
+linden
+lindenberg im allgäu
+lindenfels
+lindow (mark)
+lingen (ems)
+linnich
+linz am rhein
+lippe
+lippstadt
+lohmar
+lohne (oldenburg)
+lohr am main
+loitz
+lollar
+lommatzsch
+lorch
+lorsch
+lucka
+luckau
+luckenwalde
+ludwigsburg
+ludwigsfelde
+ludwigshafen a. rhein
+ludwigshafen am rhein
+ludwigslust
+ludwigsstadt
+lugau
+lunzenau
+lychen
+löbau
+löbau-zittau
+löffingen
+löhne
+löningen
+lörrach
+löwenstein
+lößnitz
+lübbecke
+lübben (spreewald)
+lübbenau/spreewald
+lübeck
+lübtheen
+lübz
+lüchow (wendland)
+lüchow-dannenberg
+lüdenscheid
+lüdinghausen
+lügde
+lüneburg
+lünen
+lütjenburg
+lützen
+magdala
+magdeburg
+mahlberg
+main-spessart
+mainbernheim
+mainburg
+maintal
+mainz
+mainz-bingen
+malchin
+malchow
+manderscheid
+mannheim
+mansfeld
+mansfeld-südharz
+marbach am neckar
+marburg
+marburg-biedenkopf
+marienberg
+marienmünster
+markdorf
+markgröningen
+markkleeberg
+markneukirchen
+markranstädt
+marktbreit
+marktheidenfeld
+marktleuthen
+marktoberdorf
+marktredwitz
+marktsteft
+marl
+marlow
+marne
+marsberg
+maulbronn
+maxhütte-haidhof
+mayen
+mayen-koblenz
+mechernich
+meckenheim
+mecklenburg-strelitz
+medebach
+meerane
+meerbusch
+meersburg
+meinerzhagen
+meiningen
+meisenheim
+meißen
+meldorf
+melle
+mellrichstadt
+melsungen
+memmingen
+menden (sauerland)
+mendig
+mengen
+meppen
+merkendorf
+merseburg
+merzig
+merzig-wadern
+meschede
+mettmann
+metzingen
+meuselwitz
+meyenburg
+meßkirch
+meßstetten
+michelstadt
+miesbach
+miltenberg
+mindelheim
+minden
+minden-lübbecke
+mirow
+mittenwalde
+mitterteich
+mittweida
+moers
+monheim
+monheim am rhein
+monschau
+montabaur
+moosburg an der isar
+moringen
+mosbach
+munderkingen
+munster
+murrhardt
+märkisch buchholz
+märkisch-oderland
+möckern
+möckmühl
+mölln
+mönchengladbach
+mörfelden-walldorf
+mössingen
+mücheln (geiseltal)
+mügeln
+mühlacker
+mühlberg/elbe
+mühldorf a. inn
+mühldorf am inn
+mühlhausen/thüringen
+mühlheim am main
+mühlheim an der donau
+mülheim a.d. ruhr
+mülheim an der ruhr
+mülheim-kärlich
+müllheim
+müllrose
+münchberg
+müncheberg
+münchen
+münchenbernsdorf
+münnerstadt
+münsingen
+münster
+münstermaifeld
+münzenberg
+müritz
+nabburg
+nagold
+naila
+nassau
+nastätten
+nauen
+naumburg
+naumburg (saale)
+naunhof
+nebra (unstrut)
+neckarbischofsheim
+neckargemünd
+neckarsteinach
+neckarsulm
+neresheim
+netphen
+nettetal
+netzschkau
+neu-anspach
+neu-isenburg
+neu-ulm
+neubrandenburg
+neubukow
+neubulach
+neuburg an der donau
+neuburg-schrobenhausen
+neudenau
+neuenburg am rhein
+neuenbürg
+neuenhaus
+neuenrade
+neuenstadt am kocher
+neuenstein
+neuerburg
+neuffen
+neuhaus am rennweg
+neukalen
+neukirchen
+neukirchen-vluyn
+neukloster
+neumark
+neumarkt i.d.opf.
+neumarkt in der oberpfalz
+neumarkt-sankt veit
+neumünster
+neunburg vorm wald
+neunkirchen
+neuruppin
+neusalza-spremberg
+neuss
+neustadt
+neustadt (dosse)
+neustadt am kulm
+neustadt am rübenberge
+neustadt an der aisch
+neustadt an der donau
+neustadt an der orla
+neustadt an der waldnaab
+neustadt an der weinstraße
+neustadt bei coburg
+neustadt in holstein
+neustadt in sachsen
+neustadt-glewe
+neustrelitz
+neusäß
+neutraubling
+neuwied
+neuötting
+nidda
+niddatal
+nidderau
+nideggen
+niebüll
+niedenstein
+nieder-olm
+niederkassel
+niedernhall
+niederstetten
+niederstotzingen
+nieheim
+niemegk
+nienburg (saale)
+nienburg (weser)
+nienburg/weser
+nierstein
+niesky
+nittenau
+norden
+nordenham
+norderney
+norderstedt
+nordfriesland
+nordhausen
+nordhorn
+nordvorpommern
+nordwestmecklenburg
+northeim
+nortorf
+nossen
+nördlingen
+nürnberg
+nürnberger land
+nürtingen
+ober-ramstadt
+oberallgäu
+oberasbach
+oberharz am brocken
+oberhausen
+oberhavel
+oberhof
+oberkirch
+oberkochen
+oberlungwitz
+obermoschel
+obernburg am main
+oberndorf am neckar
+obernkirchen
+oberriexingen
+oberspreewald-lausitz
+obertshausen
+oberursel (taunus)
+oberviechtach
+oberweißbach/thür. wald
+oberwesel
+oberwiesenthal
+ochsenfurt
+ochsenhausen
+ochtrup
+oder-spree
+oderberg
+oebisfelde-weferlingen
+oederan
+oelde
+oelsnitz/erzgeb.
+oelsnitz/vogtl.
+oer-erkenschwick
+oerlinghausen
+oestrich-winkel
+oettingen in bayern
+offenbach
+offenbach am main
+offenburg
+ohrdruf
+olbernhau
+olching
+oldenburg (oldb)
+oldenburg (oldenburg)
+oldenburg in holstein
+olfen
+olpe
+olsberg
+oppenau
+oppenheim
+oranienbaum-wörlitz
+oranienburg
+orlamünde
+ornbau
+ortenberg
+ortrand
+oschatz
+oschersleben (bode)
+osnabrück
+ostallgäu
+osterburg (altmark)
+osterburken
+osterfeld
+osterhofen
+osterholz
+osterholz-scharmbeck
+osterode am harz
+osterwieck
+ostfildern
+ostheim vor der rhön
+osthofen
+ostholstein
+ostprignitz-ruppin
+ostritz
+ostvorpommern
+otterberg
+otterndorf
+ottweiler
+overath
+owen
+paderborn
+papenburg
+pappenheim
+parchim
+parsberg
+pasewalk
+passau
+pattensen
+pausa-mühltroff
+pegau
+pegnitz
+peine
+peitz
+penig
+penkun
+penzberg
+penzlin
+perleberg
+petershagen
+pfaffenhofen a. d. ilm
+pfaffenhofen an der ilm
+pfarrkirchen
+pforzheim
+pfreimd
+pfullendorf
+pfullingen
+pfungstadt
+philippsburg
+pinneberg
+pirmasens
+pirna
+plattling
+plau am see
+plaue
+plauen
+plettenberg
+pleystein
+plochingen
+plön
+pockau-lengefeld
+pocking
+pohlheim
+polch
+porta westfalica
+potsdam
+potsdam-mittelmark
+pottenstein
+preetz
+premnitz
+prenzlau
+pressath
+preußisch oldendorf
+prichsenstadt
+prignitz
+pritzwalk
+prüm
+puchheim
+pulheim
+pulsnitz
+putbus
+putlitz
+pößneck
+püttlingen
+quakenbrück
+quedlinburg
+querfurt
+quickborn
+rabenau
+radeberg
+radebeul
+radeburg
+radevormwald
+radolfzell am bodensee
+raguhn-jeßnitz
+rahden
+rain
+ramstein-miesenbach
+ranis
+ransbach-baumbach
+rastatt
+rastenberg
+rathenow
+ratingen
+ratzeburg
+rauenberg
+raunheim
+rauschenberg
+ravensburg
+ravenstein
+recklinghausen
+rees
+regen
+regensburg
+regis-breitingen
+rehau
+rehburg-loccum
+rehna
+reichelsheim (wetterau)
+reichenbach im vogtland
+reichenbach/o.l.
+reinbek
+reinfeld (holstein)
+reinheim
+remagen
+remda-teichel
+remscheid
+remseck am neckar
+renchen
+rendsburg
+rendsburg-eckernförde
+rennerod
+renningen
+rerik
+rethem (aller)
+reutlingen
+rheda-wiedenbrück
+rhede
+rheinau
+rheinbach
+rheinberg
+rheinböllen
+rheine
+rheinfelden (baden)
+rheinsberg
+rheinstetten
+rhens
+rhinow
+rhön-grabfeld
+ribnitz-damgarten
+richtenberg
+riedenburg
+riedlingen
+riedstadt
+rieneck
+riesa
+riesa-großenhain
+rietberg
+rinteln
+rochlitz
+rockenhausen
+rodalben
+rodenberg
+rodewisch
+rodgau
+roding
+romrod
+ronneburg
+ronnenberg
+rosbach vor der höhe
+rosenfeld
+rosenheim
+rosenthal
+rostock
+rotenburg (wümme)
+rotenburg an der fulda
+roth
+rothenburg ob der tauber
+rothenburg/o.l.
+rothenfels
+rottal-inn
+rottenburg a.d.laaber
+rottenburg am neckar
+rottweil
+roßleben
+roßwein
+rudolstadt
+ruhla
+ruhland
+runkel
+rutesheim
+röbel/müritz
+rödental
+rödermark
+römhild
+rösrath
+rötha
+röthenbach an der pegnitz
+röttingen
+rötz
+rüdesheim am rhein
+rügen
+rüsselsheim am main
+rüthen
+saalburg-ebersdorf
+saalfeld-rudolstadt
+saalfeld/saale
+saarbrücken
+saarburg
+saarlouis
+sachsenhagen
+sachsenheim
+salzgitter
+salzkotten
+salzland
+salzwedel
+sandau (elbe)
+sandersdorf-brehna
+sangerhausen
+sankt augustin
+sankt goar
+sankt goarshausen
+sankt wendel
+sarstedt
+sassenberg
+sassnitz
+sayda
+schalkau
+schauenstein
+schaumburg
+scheer
+scheibenberg
+scheinfeld
+schelklingen
+schenefeld
+scheßlitz
+schieder-schwalenberg
+schierbrok
+schifferstadt
+schillingsfürst
+schiltach
+schirgiswalde-kirschau
+schkeuditz
+schkölen
+schleiden
+schleiz
+schleswig
+schleswig-flensburg
+schlettau
+schleusingen
+schlieben
+schlitz
+schlotheim
+schloß holte-stukenbrock
+schlüchtern
+schlüsselfeld
+schmalkalden
+schmalkalden-meiningen
+schmallenberg
+schmölln
+schnackenburg
+schnaittenbach
+schneeberg
+schneverdingen
+schongau
+schopfheim
+schorndorf
+schortens
+schotten
+schramberg
+schraplau
+schriesheim
+schrobenhausen
+schrozberg
+schwaan
+schwabach
+schwabmünchen
+schwaigern
+schwalbach am taunus
+schwalmstadt
+schwandorf
+schwanebeck
+schwarzenbach am wald
+schwarzenbach an der saale
+schwarzenbek
+schwarzenberg/erzgeb.
+schwarzenborn
+schwarzheide
+schwedt/oder
+schweich
+schweinfurt
+schwelm
+schwentinental
+schwerin
+schwerte
+schwetzingen
+schwäbisch gmünd
+schwäbisch hall
+schömberg
+schönau
+schönau im schwarzwald
+schönberg
+schönebeck (elbe)
+schöneck/vogtl.
+schönewalde
+schöningen
+schönsee
+schönwald
+schöppenstedt
+schüttorf
+sebnitz
+seehausen (altmark)
+seeland
+seelow
+seelze
+seesen
+segeberg
+sehnde
+seifhennersdorf
+selb
+selbitz
+seligenstadt
+selm
+selters (westerwald)
+senden
+sendenhorst
+senftenberg
+seßlach
+siegburg
+siegen
+siegen-wittgenstein
+sigmaringen
+simbach am inn
+simmern/hunsrück
+sindelfingen
+singen (hohentwiel)
+sinsheim
+sinzig
+soest
+solingen
+solms
+soltau
+soltau-fallingbostel
+sondershausen
+sonneberg
+sonnewalde
+sonthofen
+sontra
+spaichingen
+spalt
+spangenberg
+speicher (eifel)
+spenge
+speyer
+spree-neiße
+spremberg
+springe
+sprockhövel
+st. blasien
+st. georgen im schwarzwald
+st. ingbert
+st. wendel
+stade
+stadt wehlen
+stadtallendorf
+stadtbergen
+stadthagen
+stadtilm
+stadtlengsfeld
+stadtlohn
+stadtoldendorf
+stadtprozelten
+stadtroda
+stadtsteinach
+starnberg
+staufen im breisgau
+staufenberg
+stavenhagen
+staßfurt
+stein
+steinach
+steinau an der straße
+steinbach (taunus)
+steinbach-hallenberg
+steinburg
+steinfurt
+steinheim
+steinheim an der murr
+stendal
+sternberg
+stockach
+stolberg (rheinland)
+stollberg
+stollberg/erzgeb.
+stolpen
+storkow (mark)
+stormarn
+straelen
+stralsund
+strasburg (uckermark)
+straubing
+straubing-bogen
+strausberg
+strehla
+stromberg
+stutensee
+stuttgart
+stößen
+stühlingen
+suhl
+sulingen
+sulz am neckar
+sulzbach-rosenberg
+sulzbach/saar
+sulzburg
+sundern (sauerland)
+syke
+sächsische schweiz
+sömmerda
+südliche weinstraße
+südliches anhalt
+südwestpfalz
+süßen
+tambach-dietharz
+tangerhütte
+tangermünde
+tann (rhön)
+tanna
+tauberbischofsheim
+taucha
+taunusstein
+tecklenburg
+tegernsee
+telgte
+teltow
+teltow-fläming
+templin
+tengen
+tessin
+teterow
+tettnang
+teublitz
+teuchern
+teupitz
+teuschnitz
+thale
+thalheim/erzgeb.
+thannhausen
+tharandt
+themar
+thum
+tirschenreuth
+titisee-neustadt
+tittmoning
+todtnau
+torgau
+torgau-oschatz
+torgelow
+tornesch
+traben-trarbach
+traunreut
+traunstein
+trebbin
+trebsen/mulde
+treffurt
+trendelburg
+treuchtlingen
+treuen
+treuenbrietzen
+triberg im schwarzwald
+tribsees
+trier
+trier-saarburg
+triptis
+trochtelfingen
+troisdorf
+trossingen
+trostberg
+tuttlingen
+twistringen
+töging am inn
+tönisvorst
+tönning
+tübingen
+uckermark
+uebigau-wahrenbrück
+uecker-randow
+ueckermünde
+uelzen
+uetersen
+uffenheim
+uhingen
+ulm
+ulmen
+ulrichstein
+ummerstadt
+unkel
+unna
+unterallgäu
+unterschleißheim
+usedom
+usingen
+uslar
+vacha
+vaihingen an der enz
+vallendar
+varel
+vechta
+velbert
+velburg
+velden
+velen
+vellberg
+vellmar
+velten
+verden
+verden (aller)
+veringenstadt
+verl
+versmold
+vetschau/spreewald
+viechtach
+viernheim
+viersen
+villingen-schwenningen
+vilsbiburg
+vilseck
+vilshofen an der donau
+visselhövede
+vlotho
+voerde (niederrhein)
+vogtsburg im kaiserstuhl
+vohburg an der donau
+vohenstrauß
+volkach
+volkmarsen
+vreden
+vöhrenbach
+vöhringen
+völklingen
+wachenheim an der weinstraße
+wadern
+waghäusel
+wahlstedt
+waiblingen
+waibstadt
+waischenfeld
+waldbröl
+waldeck
+waldeck-frankenberg
+waldenbuch
+waldenburg
+waldershof
+waldheim
+waldkappel
+waldkirch
+waldkirchen
+waldkraiburg
+waldmünchen
+waldsassen
+waldshut
+waldshut-tiengen
+walldorf
+walldürn
+wallenfels
+walsrode
+waltershausen
+waltrop
+wanfried
+wangen im allgäu
+wanzleben-börde
+warburg
+waren (müritz)
+warendorf
+warin
+warstein
+wassenberg
+wasserburg am inn
+wassertrüdingen
+wasungen
+wedel
+weener
+wegberg
+wegeleben
+wehr
+weida
+weiden i.d.opf.
+weiden in der oberpfalz
+weikersheim
+weil am rhein
+weil der stadt
+weilburg
+weilheim an der teck
+weilheim in oberbayern
+weilheim-schongau
+weimar
+weimarer land
+weingarten
+weinheim
+weinsberg
+weinstadt
+weismain
+weiterstadt
+weißenberg
+weißenburg in bayern
+weißenburg-gunzenhausen
+weißenfels
+weißenhorn
+weißensee
+weißenstadt
+weißenthurm
+weißwasser/o.l.
+welzheim
+welzow
+wemding
+wendlingen am neckar
+werben (elbe)
+werdau
+werder (havel)
+werdohl
+werl
+werlte
+wermelskirchen
+wernau (neckar)
+werne
+werneuchen
+wernigerode
+wertheim
+werther (westf.)
+wertingen
+wesel
+wesenberg
+wesermarsch
+wesselburen
+wesseling
+westerburg
+westerstede
+wetter
+wetter (ruhr)
+wettin-löbejün
+wetzlar
+widdern
+wiehe
+wiehl
+wiesbaden
+wiesensteig
+wiesloch
+wiesmoor
+wildau
+wildberg
+wildenfels
+wildeshausen
+wilhelmshaven
+wilkau-haßlau
+willebadessen
+willich
+wilsdruff
+wilster
+wilthen
+windischeschenbach
+windsbach
+winnenden
+winsen (luhe)
+winterberg
+wipperfürth
+wirges
+wismar
+wissen
+witten
+wittenberg
+wittenberge
+wittenburg
+wittichenau
+wittingen
+wittlich
+wittmund
+wittstock/dosse
+witzenhausen
+woldegk
+wolfach
+wolfenbüttel
+wolfhagen
+wolframs-eschenbach
+wolfratshausen
+wolfsburg
+wolfstein
+wolgast
+wolkenstein
+wolmirstedt
+worms
+wriezen
+wunsiedel
+wunsiedel i. fichtelgebirge
+wunstorf
+wuppertal
+wurzbach
+wurzen
+wustrow (wendland)
+wyk auf föhr
+wächtersbach
+wörrstadt
+wörth am main
+wörth am rhein
+wörth an der donau
+wülfrath
+würselen
+würzburg
+xanten
+zahna-elster
+zarrentin am schaalsee
+zehdenick
+zeil am main
+zeitz
+zell (mosel)
+zell am harmersbach
+zell im wiesental
+zella-mehlis
+zerbst/anhalt
+zeulenroda-triebes
+zeven
+ziegenrück
+zierenberg
+ziesar
+zirndorf
+zittau
+zossen
+zschopau
+zweibrücken
+zwenkau
+zwickau
+zwickauer land
+zwiesel
+zwingenberg
+zwönitz
+zörbig
+zülpich
+öhringen
+östringen
+übach-palenberg
+überlingen

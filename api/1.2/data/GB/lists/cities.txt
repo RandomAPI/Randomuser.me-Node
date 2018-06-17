@@ -1,0 +1,66 @@
+aberdeen
+armagh
+bangor
+bath
+belfast
+birmingham
+bradford
+brighton and hove
+bristol
+cambridge
+canterbury
+cardiff
+carlisle
+chester
+chichester
+city of london
+coventry
+derby
+dundee
+durham
+edinburgh
+ely
+exeter
+glasgow
+gloucester
+hereford
+inverness
+kingston upon hull
+leeds
+leicester
+lichfield
+lincoln
+lisburn
+liverpool
+londonderry
+manchester
+newcastle upon tyne
+newport
+newry
+norwich
+nottingham
+oxford
+peterborough
+plymouth
+portsmouth
+preston
+ripon
+salford
+salisbury
+sheffield
+southampton
+stevenage
+st albans
+st davids
+stirling
+stoke-on-trent
+sunderland
+swansea
+truro
+wakefield
+wells
+westminster
+winchester
+wolverhampton
+worcester
+york

@@ -1,0 +1,22 @@
+akershus
+aust-agder
+bergen
+buskerud
+description
+finnmark - finnmárku
+hedmark
+hordaland
+møre og romsdal
+nord-trøndelag
+nordland
+oppland
+oslo
+rogaland
+sogn og fjordane
+sør-trøndelag
+telemark
+troms - romsa
+trøndelag
+vest-agder
+vestfold
+østfold
