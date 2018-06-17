@@ -5,7 +5,7 @@ module.exports = (inc, contents) => {
   include(inc, 'phone', randomItem([2, 3, 5, 6, 7, 8]) + random(3, 7));
   include(inc, 'cell', randomItem([4, 9]) + random(3, 7));
   include(inc, 'id', () => {
-    const dobDate = new Date(contents.dob),
+    const dobDate = new Date(contents.dob.date),
         dobISO = dobDate.toISOString(),
         birthDate = dobISO.substr(8, 2) + dobISO.substr(5, 2) + dobISO.substr(2, 2);
 

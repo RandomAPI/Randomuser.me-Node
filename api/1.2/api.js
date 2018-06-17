@@ -1,5 +1,6 @@
 /*
   Fixed DOB and Registration dates to use ISO 8601 standard (yyyy-mm-ddThh:mm:ssZ)
+  DOB and Registration dates are now objects that include age
   Street numbers range from 1-9999
   Add coordinates to location
   Add timezone to location
@@ -68,7 +69,7 @@ var Generator = function(options) {
 
   if (this.nat !== null) this.nat = uppercaseify(this.nat);
   this.nats  = this.getNats(); // Returns array of nats
-  this.constantTime = 1471295130;
+  this.constantTime = 1529272048;
   this.version = version;
 
   // Sanitize values
@@ -144,8 +145,17 @@ Generator.prototype.generate = function(cb) {
     });
 
     let dob = range(-800000000000, this.constantTime*1000 - 86400000*365*21);
-    this.include('dob', moment(dob).format('YYYY-MM-DDTHH:mm:ss\\Z'));
-    this.include('registered', moment(range(1016688461000, this.constantTime*1000)).format('YYYY-MM-DDTHH:mm:ss\\Z'));
+    let dobDate = moment(dob).format('YYYY-MM-DDTHH:mm:ss\\Z');
+    this.include('dob', {
+      date: dobDate,
+      age:  moment().diff(dobDate, 'years')
+    });
+
+    let regDate = moment(range(1016688461000, this.constantTime*1000)).format('YYYY-MM-DDTHH:mm:ss\\Z');
+    this.include('registered', {
+      date: regDate,
+      age: moment().diff(regDate, 'years')
+    });
 
     let id, genderText
     if (nat != 'LEGO') {
