@@ -39,7 +39,7 @@ module.exports = (inc, contents) => {
       } else if (year >= 1900 && year <= 1999) {
         no = 499 - range(0, 499);
       }
-      if ( ((no & 1) && isMale) || (!(no & 1) && !isMale) ) {
+      if ( ((no & 1) && !isMale) || (!(no & 1) && isMale) ) {
         no--;
       }
       no = pad(String(no), 3);

@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  mongodb:
+    image: 'bitnami/mongodb:latest'
+    ports:
+      - "27017:27017"
+  app:
+    image: node:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    depends_on:
+      - "mongodb"
+    command: |
+      bash -c "cd /app
+               sed -i 's/localhost/mongodb/g' models/db.js
+               npm install
+               npm start"
