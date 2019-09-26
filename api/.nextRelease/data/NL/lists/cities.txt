@@ -1,393 +1,2461 @@
-'s-hertogenbosch
-aa en hunze
-aalburg
+Expr1000
+1e exloermond
+2e exloermond
+2e valthermond
+aadorp
+aagtekerke
+aalden
 aalsmeer
+aalsmeerderbrug
+aalst gld
+aalsum
 aalten
-achtkarspelen
+aardenburg
+aarlanderveen
+aarle-rixtel
+aartswoud
+abbega
+abbekerk
+abbenbroek
+abbenes
+abcoude
+achlum
+achterveld
+achthuizen
+achtmaal
+acquoy
+adorp
+aduard
+aerdenhout
+aerdt
+afferden gld
+afferden lb
+agelo
+akersloot
+akkrum
+akmarijp
+albergen
 alblasserdam
-albrandswaard
+alde leie
+aldeboarn
+aldtsjerk
+alem
 alkmaar
+allingawier
 almelo
+almen
 almere
+almkerk
 alphen aan den rijn
-alphen-chaam
-ameland
+alphen gld
+alphen nb
+alteveer gem de wolden
+alteveer gem hoogeveen
+alteveer gem noordenveld
+alteveer gn
+altforst
+ambt delden
+ameide
+amen
+america
+amerongen
 amersfoort
+ammerstol
+ammerzoden
+amstelhoek
 amstelveen
+amstenrade
 amsterdam
+amsterdam-duivendrecht
+andel
+andelst
+anderen
+andijk
+ane
+anerveen
+anevelde
+angeren
+angerlo
+anjum
+ankeveen
+anloo
+anna paulowna
+annen
+annerveenschekanaal
+ansen
 apeldoorn
+appelscha
+appeltern
 appingedam
+arcen
+arkel
+arnemuiden
 arnhem
+arrien
+arum
+asch
+asperen
 assen
+assendelft
 asten
+augsbuurt
+augustinusga
+austerlitz
+avenhorn
+axel
+azewijn
+baaiduinen
+baaium
+baak
+baambrugge
+baard
+baarland
 baarle-nassau
+baarlo lb
+baarlo ov
 baarn
+baars
+babberich
+babylonienbroek
+bad nieuweschans
+badhoevedorp
+baexem
+baflo
+bakel
+bakhuizen
+bakkeveen
+balgoij
+balinge
+balk
+balkbrug
+balloerveld
+balloo
+ballum
+baneheide
+banholt
+bant
+bantega
+barchem
 barendrecht
+barger-compascuum
 barneveld
+barsingerhorn
+basse
+batenburg
+bathmen
+bavel
+bavel ac
+bears fr
 bedum
-beek
-beemster
+beegden
+beek en donk
+beek gem montferland
+beek lb
+beekbergen
+beek-ubbergen
+beemte broekland
+beers nb
+beerta
+beerze
+beerzerveld
+beesd
 beesel
-bellingwedde
+beets nh
+beetsterzwaag
+beilen
+beinsdorp
+belfeld
+bellingwolde
+beltrum
+belt-schutsloot
+bemelen
+bemmel
+beneden-leeuwen
+bennebroek
+bennekom
+benneveld
+benningbroek
+benschop
+bentelo
+benthuizen
+bentveld
+berg en dal
+berg en terblijt
+bergambacht
 bergeijk
-bergen
+bergen aan zee
+bergen lb
+bergen nh
 bergen op zoom
-berkelland
-bernheze
+bergentheim
+bergharen
+berghem
+bergschenhoek
+beringe
+berkel en rodenrijs
+berkel-enschot
+berkenwoude
+berkhout
+berlicum nb
+berltsum
+bern
 best
-beuningen
+beugen
+beuningen gld
+beuningen ov
+beusichem
+beutenaken
 beverwijk
-binnenmaas
+biddinghuizen
+bierum
+biervliet
+biest-houtakker
+biezenmortel
+biggekerke
+bilthoven
+bingelrade
+bitgum
+bitgummole
 bladel
+blankenham
 blaricum
+blauwestad
+blauwhuis
+bleiswijk
+blesdijke
+bleskensgraaf ca
+blessum
+blije
+blijham
+blitterswijck
 bloemendaal
-bodegraven-reeuwijk
+blokker
+blokzijl
+boazum
+bocholtz
+bodegraven
 boekel
-borger-odoorn
+boelenslaan
+boer
+boerakker
+boerakker gem leek
+boesingheliede
+boijl
+boksum
+bolsward
+bontebok
+boornbergum
+boornzwaag
+borculo
+borger
+borgercompagnie
+borgsweer
+born
 borne
-borsele
+bornerbroek
+bornwird
+borssele
+bosch en duin
+boschoord
+boskoop
+bosschenhoofd
+botlek rotterdam
+bourtange
+bovenkarspel
+boven-leeuwen
+bovensmilde
 boxmeer
 boxtel
+braamt
+brakel
+brandwijk
+brantgum
 breda
+bredevoort
+breedenbroek
+breezand
+breezanddijk
+breskens
+breukelen ut
+breukeleveen
 brielle
-bronckhorst
+briltil
+britsum
+britswert
+broek fr
+broek in waterland
+broek op langedijk
+broekhuizen dr
+broekhuizen lb
+broekhuizenvorst
+broekland ov
+broeksterwald
+bronkhorst
+bronneger
+bronnegerveen
+brouwershaven
+bruchem
+brucht
+bruchterveld
+bruinehaar
+bruinisse
 brummen
 brunssum
+bruntinge
+buchten
+budel
+budel-dorplein
+budel-schoot
+buggenum
+buinen
+buinerveen
+buitenkaag
+buitenpost
+bunde
+bunne
 bunnik
-bunschoten
-buren
+bunschoten-spakenburg
+burdaard
+buren fr
+buren gld
+burgerbrug
+burgerveen
+burgh-haamstede
+burgum
+burgwerd
+burum
 bussum
+buurmalsen
+cadier en keer
+cadzand
+callantsoog
 capelle aan den ijssel
+castelre
+castenray
+casteren
 castricum
+chaam
+clinge
 coevorden
-cranendonck
-cromstrijen
+colijnsplaat
+collendoorn
+colmschate
+cornwerd
+cothen
+creil
+cromvoirt
+cruquius
 cuijk
 culemborg
+daarle
+daarlerveen
+dalem
+dalen
+dalerpeel
+dalerveen
 dalfsen
-dantumadiel
+dalmsholte
+damwald
+darp
 de bilt
-de friese meren
-de marne
-de ronde venen
-de wolden
+de blesse
+de bult
+de cocksdorp
+de falom
+de glind
+de goorn
+de groeve
+de heen
+de heurne
+de hoef
+de hoeve
+de kiel
+de klomp
+de knipe
+de koog
+de krim
+de kwakel
+de lier
+de lutte
+de meern
+de moer
+de mortel
+de pol
+de punt
+de rijp
+de rips
+de schiphorst
+de steeg
+de tike
+de veenhoop
+de waal
+de weere
+de westereen
+de wijk
+de wilgen
+de wilp gn
+de woude
+de zilk
+dearsum
+dedemsvaart
+dedgum
+deelen
+deest
+deil
+deinum
+delden
+delfgauw
+delfstrahuizen
 delft
 delfzijl
-den haag
+delwijnen
+den andel
+den bommel
+den burg
+den dolder
+den dungen
+den ham gn
+den ham ov
 den helder
+den hoorn texel
+den hoorn zh
+den horn
+den hout nb
+den ilp
+den oever
+den velde
+denekamp
 deurne
+deurningen
+deurze
 deventer
+didam
 diemen
-dinkelland
+diepenheim
+diepenveen
+dieren
+diessen
+diever
+dieverbrug
+diffelen
+dijken
+dinteloord
+dinxperlo
+diphoorn
+dirkshorn
+dirksland
+dodewaard
+doenrade
 doesburg
 doetinchem
+doezum
+dokkum
+doldersum
+domburg
+donderen
 dongen
-dongeradeel
+dongjum
+doniaga
+donkerbroek
+doorn
+doornenburg
+doornspijk
+doorwerth
 dordrecht
-drechterland
+dorst
+drachten
+drachtstercompagnie
+dreischor
+drempt
+dreumel
+driebergen-rijsenburg
+drieborg
+driebruggen
+driehuis nh
+driehuizen
+driel
+driewegen
+driezum
+drijber
 drimmelen
+drogeham
+drogteropslagen
+drongelen
+dronryp
 dronten
+drouwen
+drouwenermond
+drouwenerveen
+drunen
 druten
 duiven
-echt-susteren
-edam-volendam
-ede
+duivendrecht
+duizel
+dussen
+dwingeloo
+eagum
+earnewald
+easterein
+easterlittens
+eastermar
+easterwierrum
+echt
+echteld
+echten dr
+echten fr
+echtenerbrug
+eck en wiel
+eckelrade
+edam
+ede gld
+ederveen
+ee
+eede zld
+eefde
+eelde
+eelderwolde
+eemdijk
 eemnes
-eemsmond
+eemshaven
+een
+eenrum
+eenum
+een-west
+eerbeek
 eersel
-eijsden-margraten
+ees
+eesergroen
+eeserveen
+eesterga
+eesveen
+eethen
+eext
+eexterveen
+eexterveenschekanaal
+eexterzandvoort
+egchel
+egmond aan den hoef
+egmond aan zee
+egmond-binnen
+eibergen
+eijsden
 eindhoven
+einighausen
+ekehaar
+elahuizen
 elburg
+eldersloo
+eleveld
+elim
+elkenrade
+ell
+ellecom
+ellemeet
+ellertshaar
+ellewoutsdijk
+elp
+elsendorp
+elshout
+elsloo fr
+elsloo lb
+elspeet
+elst gld
+elst ut
+emmeloord
 emmen
+emmer-compascuum
+empe
+emst
+engwierum
 enkhuizen
+ens
 enschede
+enspijk
+enter
+enumatil
 epe
+epen
+eppenhuizen
+epse
+erica
+erichem
+erlecom
+erm
 ermelo
+erp
+esbeek
+esch
+escharen
+espel
+est
+etten gld
 etten-leur
-ferwerderadiel
-franekeradeel
+europoort rotterdam
+eursinge
+eursinge gem de wolden
+everdingen
+evertsoord
+ewijk
+exloerveen
+exloo
+exmorra
+eygelshoven
+eys
+ezinge
+farmsum
+feanwalden
+feerwerd
+feinsum
+ferwert
+ferwoude
+fijnaart
+finsterwolde
+firdgum
+fleringen
+fluitenberg
+fochteloo
+follega
+folsgare
+formerum
+foudgum
+foxhol
+foxwolde
+franeker
+frederiksoord
+friens
+frieschepalen
+froombosch
+gaanderen
+gaast
+gaastmeer
+galder
+gameren
+gapinge
+garderen
+garmerwolde
+garminge
+garnwerd
+garrelsweer
+garsthuizen
+garyp
+gassel
+gasselte
+gasselternijveen
+gasselternijveenschemond
+gastel
+gasteren
+gauw
+geelbroek
+geerdijk
+geersdijk
 geertruidenberg
+geervliet
+gees
+geesbrug
+geesteren gld
+geesteren ov
+geeuwenbrug
+geffen
+geijsteren
 geldermalsen
-geldrop-mierlo
-gemert-bakel
+gelderswoude
+geldrop
+geleen
+gellicum
+gelselaar
+gemert
+gemonde
+genderen
+gendringen
+gendt
+genemuiden
 gennep
-giessenlanden
-gilze en rijen
-goeree-overflakkee
+gerkesklooster
+gersloot
+geulle
+giesbeek
+giessen
+giessenburg
+gieten
+gieterveen
+giethmen
+giethoorn
+gilze
+ginnum
+glane
+glimmen
+godlinze
+goedereede
+goenga
+goengahuizen
 goes
+goingarijp
 goirle
+goor
 gorinchem
+gorredijk
+gorssel
 gouda
+gouderak
+goudriaan
+goudswaard
+goutum
+graauw
+grafhorst
+graft
+gramsbergen
+grashoek
+grathem
 grave
+greonterp
+grevenbicht
+griendtsveen
+grijpskerk
+grijpskerke
+groede
+groenekan
+groeningen
+groenlo
 groesbeek
+groessen
+groet
+grolloo
 groningen
+gronsveld
+groot-ammers
+grootebroek
 grootegast
-gulpen-wittem
+grootschermer
+grou
+grubbenvorst
+gulpen
+guttecoven
+gytsjerk
+haaften
 haaksbergen
+haalderen
 haaren
+haarle gem hellendoorn
+haarle gem tubbergen
 haarlem
-haarlemmerliede en spaarnwoude
-haarlemmermeer
-halderberge
+haarlemmerliede
+haarlo
+haarsteeg
+haarzuilens
+haastrecht
+haelen
+hagestein
+haghorst
+haler
+halfweg nh
+hall
+halle
+hallum
+halsteren
+handel
+hank
+hansweert
+hantum
+hantumeruitburen
+hantumhuizen
+hapert
+haps
+harbrinkhoek
 hardenberg
 harderwijk
 hardinxveld-giessendam
-haren
+haren gn
+haren nb
+harfsen
+harich
+haringhuizen
+harkema
+harkstede
 harlingen
+harmelen
+harreveld
+harskamp
+hartwerd
+haskerdijken
+haskerhorne
+hasselt
 hattem
+hattemerbroek
+haule
+haulerwijk
+hauwert
+havelte
+havelterberg
+hazerswoude-dorp
+hazerswoude-rijndijk
+hedel
+hee
+heeg
+heel
+heelsum
+heelweg
+heemserveen
 heemskerk
 heemstede
+heenvliet
 heerde
 heerenveen
+heerewaarden
 heerhugowaard
+heerjansdam
+heerle
 heerlen
-heeze-leende
+heesch
+heesselt
+heeswijk-dinther
+heeten
+heeze
+hegebeintum
+hegelsom
+hei- en boeicop
+heibloem
+heide
+heijen
+heijenrath
+heijningen
+heikant
+heilig landstichting
+heiligerlee
 heiloo
+heinenoord
+heinkenszand
+heino
+hekelingen
+hekendorp
+helden
+helenaveen
 hellendoorn
 hellevoetsluis
+hellouw
+hellum
 helmond
+helvoirt
+hem
+hemelum
+hemmen
+hempens
+hemrik
 hendrik-ido-ambacht
-hengelo
-het bildt
+hengelo gld
+hengelo ov
+hengevelde
+hengstdijk
+hensbroek
+herbaijum
+herkenbosch
+herkingen
+hernen
+herpen
+herten
+hertme
+herveld
+herwen
+herwijnen
+heteren
+heukelom nb
+heukelum
 heumen
-heusden
+heusden gem asten
+heusden gem heusden
+heveadorp
+heythuysen
+hezingen
+hiaure
+hichtum
+hidaard
+hierden
+hieslum
+hijken
+hijum
+hilaard
 hillegom
 hilvarenbeek
 hilversum
-hof van twente
-hollands kroon
+hindeloopen
+hinnaard
+hippolytushoef
+hitzum
+hobrede
+hoedekenskerke
+hoek
+hoek van holland
+hoenderloo
+hoensbroek
+hoenzadriel
+hoevelaken
+hoeven
+hoge hexel
+hollandsche rading
+hollandscheveld
+hollum
+holsloot
+holten
+holthees
+holtheme
+holthone
+holtum
+holwerd
+holwierde
+hommerts
+homoet
+honselersdijk
+hoofddorp
+hoofdplaat
+hoog soeren
+hoogblokland
+hooge mierde
+hooge zwaluwe
+hoogeloon
+hoogenweg
+hoogerheide
+hoogersmilde
 hoogeveen
-hoogezand-sappemeer
-hoorn
-horst aan de maas
+hoogezand
+hooghalen
+hoogkarspel
+hoog-keppel
+hoogland
+hooglanderveen
+hoogmade
+hoogvliet rotterdam
+hoogwoud
+hoorn nh
+hoorn terschelling
+hoornaar
+hoornsterzwaag
+horn
+hornhuizen
+horssen
+horst
 houten
+houtigehage
+houwerzijl
+huijbergen
+huis ter heide dr
+huis ter heide ut
+huisduinen
+huissen
 huizen
+huizinge
+hulsberg
+hulsel
+hulshorst
 hulst
-ijsselstein
-kaag en braassem
+hulten
+hummelo
+huns
+hunsel
+hurdegaryp
+hurwenen
+idaerd
+idsegahuizum
+idskenhuizen
+idzega
+iens
+ijhorst
+ijlst
+ijmuiden
+ijsselham
+ijsselmuiden
+ijsselstein ut
+ijzendijke
+ijzendoorn
+ilpendam
+indijk
+ingber
+ingelum
+ingen
+it heidenskip
+itens
+ittervoort
+jaarsveld
+jabeek
+jannum
+jellum
+jelsum
+jirnsum
+jislum
+jisp
+jistrum
+jonkerslan
+jonkersvaart
+joppe
+jorwert
+joure
+jouswier
+jubbega
+julianadorp
+jutrijp
+kaag
+kaard
+kaatsheuvel
+kalenberg
+kallenkote
+kamerik
 kampen
+kamperland
+kamperveen
+kantens
+kapel avezaath
+kapel-avezaath buren
 kapelle
-katwijk
+kapellebrug
+katlijk
+kats
+kattendijke
+katwijk nb
+katwijk zh
+katwoude
+kedichem
+keijenborg
+kekerdom
+kelpen-oler
+kerk avezaath tiel
+kerk-avezaath
+kerkdriel
+kerkenveld
 kerkrade
-koggenland
-kollumerland en nieuwkruisland
-korendijk
+kerkwerve
+kerkwijk
+kessel lb
+kesteren
+kiel-windeweer
+kilder
+kimswerd
+kinderdijk
+kinnum
+klaaswaal
+klarenbeek
+klazienaveen
+klazienaveen-noord
+klein zundert
+klijndijk
+klimmen
+kloetinge
+klooster lidlum
+kloosterburen
+kloosterhaar
+kloosterzande
+klundert
+knegsel
+koarnjum
+kockengen
+koedijk
+koekange
+koewacht
+kolderwolde
+kolham
+kolhorn
+kollum
+kollumerpomp
+kollumerzwaag
+kommerzijl
+koningsbosch
+koningslust
+koog aan de zaan
+kootstertille
+kootwijk
+kootwijkerbroek
+kornhorn
+kornwerderzand
+kortehemmen
+kortenhoef
+kortgene
+koudekerk aan den rijn
+koudekerke
+koudum
+koufurderrige
+krabbendijke
+kraggenburg
+kreileroord
+krewerd
+krimpen aan de lek
 krimpen aan den ijssel
-krimpenerwaard
-laarbeek
-landerd
+kring van dorth
+krommenie
+kronenberg
+kropswolde
+kruiningen
+kruisland
+kubaard
+kudelstaart
+kuinre
+kuitaart
+kwadendamme
+kwadijk
+kwintsheul
+laag zuthem
+laag-keppel
+laag-soeren
+lage mierde
+lage vuursche
+lage zwaluwe
+lageland
+lambertschaag
+lamswaarde
+landerum
 landgraaf
+landhorst
 landsmeer
-langedijk
-lansingerland
-laren
+langbroek
+langedijke
+langelille
+langelo dr
+langenboom
+langerak zh
+langeveen
+langeweg
+langezwaag
+langweer
+laren gld
+laren nh
+lathum
+lattrop-breklenkamp
+lauwersoog
+lauwerzijl
+ledeacker
 leek
+leende
+leens
+leerbroek
 leerdam
+leermens
+leersum
 leeuwarden
-leeuwarderadeel
+legemeer
 leiden
 leiderdorp
-leidschendam-voorburg
+leidschendam
+leimuiden
+leimuiderbrug
+lekkerkerk
+lekkum
+lellens
 lelystad
-leudal
+lemele
+lemelerveld
+lemiers
+lemmer
+lengel
+lent
+leons
+lepelstraat
+lettelbert
+lettele
+leunen
+leur
 leusden
-lingewaal
-lingewaard
+leuth
+leutingewolde
+leuvenheim
+leveroy
+lewedorp
+lexmond
+lichtaard
+lichtenvoorde
+liempde
+lienden
+lierderholthuis
+lieren
+lierop
+lies
+lieshout
+liessel
+lievelde
+lieveren
+lijnden
+limbricht
+limmen
+linde dr
+linden
+linne
+linschoten
+lioessens
+lippenhuizen
 lisse
-littenseradiel
+lisserbroek
+lith
+lithoijen
+lobith
 lochem
+loenen aan de vecht
+loenen gld
+loenersloot
+loenga
+loerbeek
+lollum
+lomm
+longerhouw
+loo gld
+loon
 loon op zand
+loosbroek
+loosdrecht
+loozen
 lopik
+lopikerkapel
 loppersum
+losdorp
 losser
-maasdriel
-maasgouw
+lottum
+lucaswolde
+luddeweer
+luinjeberd
+lunteren
+lutjebroek
+lutjegast
+lutjewinkel
+luttelgeest
+lutten
+luttenberg
+luxwoude
+luyksgestel
+lytsewierrum
+maarheeze
+maarn
+maarsbergen
+maarssen
+maartensdijk
+maasbommel
+maasbracht
+maasbree
+maasdam
+maasdijk
+maashees
+maasland
 maassluis
 maastricht
+maastricht-airport
+maasvlakte rotterdam
+macharen
+made
+makkinga
+makkum fr
+malden
+mander
+manderveen
+mantgum
+mantinge
+maren-kessel
+margraten
+maria hoop
+mariahout
+mariaparochie
+marienberg
+marienheem
+marienvelde
+marijenkampen
+markelo
+marken
+markenbinnen
+marknesse
+marle
+marrum
+marsum
 marum
+marwijksoord
+mastenbroek
+matsloot
+maurik
+mechelen
 medemblik
+meeden
+meedhuizen
+meerkerk
+meerlo
 meerssen
-menameradiel
-menterwolde
+meerstad
+meeuwen
+megchelen
+megen
+meijel
+melderslo
+melick
+meliskerke
+melissant
+menaam
+mensingeweer
 meppel
+meppen
+merkelbeek
+merselo
+meteren
+meterik
+metslawier
+mheer
+middelaar
 middelburg
-midden-delfland
-midden-drenthe
-mill en sint hubert
+middelharnis
+middelie
+middelstum
+middenbeemster
+middenmeer
+midlaren
+midlum
+midsland
+midwolda
+midwolde
+midwoud
+miedum
+mierlo
+mijdrecht
+mijnsheerenland
+mildam
+milheeze
+mill
+millingen aan de rijn
+milsbeek
+minnertsga
+mirns
+moddergat
 moerdijk
-molenwaard
-montferland
+moergestel
+moerkapelle
+moerstraten
+molenaarsgraaf
+molenhoek lb
+molenschot
+molkwerum
+monnickendam
+monster
 montfoort
-mook en middelaar
+montfort
+mook
+mookhoek
+moordrecht
+moorveld
+morra
 muiden
+muiderberg
+munein
+munnekeburen
+munnekezijl
+munstergeleen
+muntendam
+mussel
+musselkanaal
+naaldwijk
 naarden
-neder-betuwe
+nagele
+nederasselt
+nederhemert
+nederhorst den berg
+nederland
 nederweert
+nederweert-eind
+neede
+neer
 neerijnen
+neeritter
+neerkant
+nes ameland
+nes gem dongeradeel
+nes gem heerenveen
+netersel
+netterden
+niawier
+nibbixwoud
+niebert
+niehove
+niekerk de marne
+niekerk grootegast
+nietap
+nieuw annerveen
+nieuw beerta
+nieuw- en sint joosland
+nieuw heeten
+nieuw namen
+nieuw scheemda
+nieuwaal
+nieuw-amsterdam
+nieuw-balinge
+nieuw-beijerland
+nieuw-buinen
+nieuw-dordrecht
+nieuwdorp zld
+nieuwe niedorp
+nieuwe pekela
+nieuwe wetering
+nieuwebrug
+nieuwediep
 nieuwegein
+nieuwehorne
+nieuwendijk nb
+nieuwer ter aa
+nieuwerbrug aan den rijn
+nieuwerkerk
+nieuwerkerk ad ijssel
+nieuweroord
+nieuwersluis
+nieuweschoot
+nieuwe-tonge
 nieuwkoop
-nijkerk
+nieuwkuijk
+nieuwland
+nieuwlande
+nieuwlande coevorden
+nieuw-lekkerland
+nieuwleusen
+nieuwolda
+nieuwpoort
+nieuw-roden
+nieuw-schoonebeek
+nieuwstadt
+nieuwveen
+nieuw-vennep
+nieuwvliet
+nieuw-vossemeer
+nieuw-weerdinge
+niezijl
+niftrik
+nigtevecht
+nij altoenae
+nij beets
+nijbroek
+nijeberkoop
+nijega
+nijehaske
+nijeholtpade
+nijeholtwolde
+nijelamer
+nijemirdum
+nijensleek
+nijetrijne
+nijeveen
+nijhuizum
+nijkerk gld
+nijkerkerveen
+nijland
+nijlande
 nijmegen
-nissewaard
-noord-beveland
-noordenveld
-noordoostpolder
-noordwijk
+nijverdal
+nispen
+nisse
+nistelrode
+noardburgum
+nooitgedacht
+noorbeek
+noordbeemster
+noordbroek
+noordeinde gld
+noordeinde nh
+noordeloos
+noorden
+noordgouwe
+noordhoek
+noordhorn
+noordlaren
+noord-scharwoude
+noordscheschut
+noord-sleen
+noordwelle
+noordwijk gn
+noordwijk zh
 noordwijkerhout
-nuenen, gerwen en nederwetten
+noordwolde fr
+noordwolde gn
+nootdorp
+norg
+notter
+nuenen
+nuis
+nuland
+numansdorp
+nunhem
 nunspeet
 nuth
+nutter
+obbicht
+obdam
+ochten
+odijk
+odiliapeel
+odoorn
+odoornerveen
+oeffelt
 oegstgeest
+oene
+oentsjerk
+offingawier
+ohe en laak
+oijen
+oirlo
+oirsbeek
 oirschot
 oisterwijk
-oldambt
+okkenbroek
+olburgen
+oldeberkoop
 oldebroek
+oldeholtpade
+oldeholtwolde
+oldehove
+oldekerk
+oldelamer
+oldemarkt
 oldenzaal
-olst-wijhe
+oldenzijl
+oldeouwer
+oldetrijne
+olst
+olterterp
+ommel
 ommen
-onderbanken
-oost gelre
-oosterhout
-ooststellingwerf
+ommeren
+onderdendam
+onna
+onnen
+onstwedde
+ooij
+ooltgensplaat
+oost west en middelbeers
+oostburg
+oostdijk
+oosteind
+oosterbeek
+oosterbierum
+oosterblokker
+oosterend nh
+oosterend terschelling
+oosterhesselen
+oosterhout gld
+oosterhout nb
+oosterland
+oosterleek
+oosternieland
+oosternijkerk
+oosterstreek
+oosterwijk
+oosterwijtwerd
+oosterwolde fr
+oosterwolde gld
+oosterzee
+oost-graftdijk
+oosthem
+oosthuizen
+oostkapelle
+oostknollendam
+oostrum fr
+oostrum lb
+oost-souburg
+oostvoorne
+oostwold gem leek
+oostwold gem oldambt
+oostwoud
 oostzaan
+ootmarsum
+opeinde
+opende
+ophemert
+opheusden
+opijnen
+oploo
 opmeer
-opsterland
+oppenhuizen
+opperdoes
+oranje
+oranjewoud
+orvelte
+ospel
 oss
+ossendrecht
+ossenisse
+ossenwaard ut
+ossenzijl
+oterleek
+otterlo
+ottersum
+ottoland
+oud ade
+oud annerveen
+oud gastel
+oud ootmarsum
+oud zuilen
+oud-alblas
 oud-beijerland
-oude ijsselstreek
-ouder-amstel
+ouddorp zh
+oude meer
+oude niedorp
+oude pekela
+oude wetering
+oude willem
+oudebildtzijl
+oudega de fryske marren
+oudega gem smallingerlnd
+oudega sudwest-fryslan
+oudehaske
+oudehorne
+oudelande
+oudemirdum
+oudemolen dr
+oudemolen nb
+oudenbosch
+oudendijk nh
+oudenhoorn
+ouderkerk aan de amstel
+ouderkerk aan den ijssel
+oudeschans
+oudeschild
+oudeschip
+oudeschoot
+oudesluis
+oude-tonge
 oudewater
-overbetuwe
+oudezijl
+oudkarspel
+oudorp nh
+oud-vossemeer
+oudwoude
+ouwerkerk
+ouwsterhaule
+ouwster-nijega
+overasselt
+overberg
+overdinkel
+overloon
+overschild
+overslag
+overveen
+ovezande
+paasloo
+paesens
+pannerden
+panningen
+papekop
 papendrecht
-peel en maas
-pekela
-pijnacker-nootdorp
+papenhoven
+papenvoort
+parrega
+paterswolde
+peest
+peins
+peize
+peperga
+pernis rotterdam
+persingen
+pesse
+petten
+philippine
+piaam
+piershil
+pieterburen
+pietersbierum
+pieterzijl
+pijnacker
+pingjum
+plasmolen
+poederoijen
+poeldijk
+polsbroek
+poortugaal
+poortvliet
+poppenwier
+posterholt
+prinsenbeek
+puiflijk
+punthorst
+purmer
 purmerend
+purmerland
+puth
+putte
 putten
+puttershoek
 raalte
-reimerswaal
+raamsdonk
+raamsdonksveer
+raard
+radewijk
+radio kootwijk
+raerd
+randwijk
+ransdaal
+rasquert
+ravenstein
+ravenswaaij
+ravenswoud
+readtsjerk
+reahus
+reduzum
+reek
+reeuwijk
+reijmerstok
+reitsum
+rekken
+renesse
 renkum
 renswoude
-reusel-de mierden
+ressen
+retranchement
+reusel
+reutum
+reuver
+rha
 rheden
+rhee
+rheeze
+rheezerveen
 rhenen
+rhenoy
+rhoon
 ridderkerk
-rijnwaarden
-rijssen-holten
-rijswijk
-roerdalen
+ried
+riel
+rien
+riethoven
+rietmolen
+rijen
+rijkevoort
+rijkevoort-de walsert
+rijnsaterwoude
+rijnsburg
+rijpwetering
+rijs
+rijsbergen
+rijsenhout
+rijssen
+rijswijk gld
+rijswijk nb
+rijswijk zh
+rilland
+rinsumageast
+ritthem
+rockanje
+roden
+roderesch
+roderwolde
+roelofarendsveen
 roermond
+rogat
+roggel
+rohel
+rolde
+roodeschool
 roosendaal
+roosteren
+rosmalen
+rossum gld
+rossum ov
+roswinkel
+rotstergaast
+rotsterhaule
 rotterdam
+rotterdam-albrandswaard
+rottevalle
+rottum fr
+rottum gn
+rouveen
+rozenburg nh
+rozenburg zh
 rozendaal
 rucphen
+ruigahuizen
+ruinen
+ruinerwold
+rumpt
+rutten
+ruurlo
+ryptsjerk
+'s gravenmoer
+saaksum
+saasveld
+saaxumhuizen
+sambeek
+sandfirden
+santpoort-noord
+santpoort-zuid
+sappemeer
+sas van gent
+sassenheim
+sauwerd
 schagen
-scherpenzeel
+schagerbrug
+schaijk
+schalkhaar
+schalkwijk
+schalsum
+schardam
+scharendijke
+scharmer
+scharnegoutum
+scharsterbrug
+scharwoude
+scheemda
+scheerwolde
+schellinkhout
+schelluinen
+schermerhorn
+scherpenisse
+scherpenzeel fr
+scherpenzeel gld
+schettens
+scheulder
 schiedam
 schiermonnikoog
+schijf
 schijndel
+schildwolde
+schimmert
+schin op geul
 schinnen
-schouwen-duiveland
+schinveld
+schipborg
+schiphol
+schiphol-rijk
+schipluiden
+schokland
+schoondijke
+schoonebeek
+schoonhoven
+schoonloo
+schoonoord
+schoonrewoerd
+schoorl
+schore
+schouwerzijl
+schraard
+schuinesloot
+sebaldeburen
+sellingen
+serooskerke schouwen
+serooskerke walcheren
+sevenum
+sexbierum
+'s-graveland
+'s-gravendeel
+'s-gravenhage
+'s-gravenpolder
+'s-gravenzande
+'s-heer abtskerke
+'s-heer arendskerke
+'s-heer hendrikskinderen
+'s-heerenberg
+'s-heerenbroek
+'s-heerenhoek
+'s-hertogenbosch
+sibculo
+sibrandabuorren
+sibrandahus
+siddeburen
+siebengewald
+siegerswoude
+sijbekarspel
+silvolde
+simonshaven
 simpelveld
+sinderen
+sint agatha
+sint annen
 sint anthonis
+sint geertruid
+sint hubert
+sint jansklooster
+sint jansteen
+sint joost
+sint kruis
+sint maarten
+sint maartensbrug
+sint maartensvlotbrug
+sint nicolaasga
+sint odilienberg
+sint pancras
+sint philipsland
+sint-annaland
+sintjohannesga
+sint-maartensdijk
 sint-michielsgestel
 sint-oedenrode
-sittard-geleen
+sirjansland
+sittard
+skingen
+slagharen
+slappeterp
+sleen
+sleeuwijk
+slenaken
 sliedrecht
+slijkenburg
+slijk-ewijk
 slochteren
+slootdorp
+sloten fr
 sluis
-smallingerland
+sluiskil
+smakt
+smalle ee
+smallebrugge
+smilde
+snakkerburen
+sneek
+snelrewaard
+snikzwaag
+soerendonk
 soest
+soesterberg
 someren
+sommelsdijk
 son en breugel
+sondel
+sonnega
+spaarndam
+spaarndam gem. haarlem
+spanbroek
+spanga
+spankeren
+spannum
+spaubeek
+spier
+spierdijk
+spijk gem lingewaal
+spijk gld
+spijk gn
+spijkenisse
+spijkerboor dr
+spijkerboor nh
+sprang-capelle
+sprundel
+spui
+st. willebrord
+st.-annaparochie
+st.-jacobiparochie
+stad aan 't haringvliet
 stadskanaal
+stampersgat
+standdaarbuiten
 staphorst
-stede broec
-steenbergen
-steenwijkerland
-stein
-stichtse vecht
+starnmeer
+startenhuizen
+startenhuizen lopp
+stavenisse
+stavoren
+stedum
+steenbergen dr
+steenbergen nb
+steendam
+steenderen
+steenenkamer
+steensel
+steenwijk
+steenwijkerwold
+stegeren
+steggerda
+stein lb
+stellendam
+sterksel
+stevensbeek
+stevensweert
+steyl
+stieltjeskanaal
+stiens
 stitswerd
+stokkum
+stolwijk
+stompetoren
+stoutenburg
+stoutenburg noord
+stramproy
+streefkerk
+striep
+strijbeek
 strijen
-súdwest-fryslân
+strijensas
+stroe
+stroobos
+stuifzand
+stuifzand gem m-drenthe
+sumar
+surhuisterveen
+surhuizum
+susteren
+suwald
+swalmen
+sweikhuizen
+swichum
+swifterbant
+swolgen
+'t goy
+'t haantje
+'t harde
+'t loo oldebroek
+'t veld
+'t waar
+'t zand nh
+'t zandt gn
+taarlo
+teeffelen
+teerns
+tegelen
 ten boer
+ten post
+ter aar
+ter aard
+ter apel
+ter apelkanaal
+ter heijde
+ter idzard
+terband
+terborg
+terheijden
+terherne
+terhole
+terkaple
+termunten
+termunterzijl
+ternaard
 terneuzen
-terschelling
-texel
-teylingen
+teroele
+terschuur
+tersoal
+terwispel
+terwolde
+teteringen
+teuge
+thesinge
 tholen
+thorn
 tiel
+tiendeveen
+tienhoven ut
+tienhoven zh
+tienray
+tijnje
 tilburg
+tilligte
+tinallinge
+tinte
+tirns
+tjalhuizum
+tjalleberd
+tjerkgaast
+tjerkwerd
+tjuchem
+tolbert
+toldijk
+tolkamer
+tollebeek
+tonden
+toornwerd
+tricht
+triemen
+tripscompagnie
 tubbergen
-twenterand
+tuil
+tuitjenhorn
+tuk
+tull en 't waal
+twello
+twijzel
+twijzelerheide
+twisk
 tynaarlo
-tytsjerksteradiel
+tytsjerk
+tzum
+tzummarum
+ubbena
+ubbergen
+uddel
 uden
+udenhout
+uffelte
+ugchelen
+uitdam
 uitgeest
 uithoorn
+uithuizen
+uithuizermeeden
+uitwellingerga
+uitwijk
+ulestraten
+ulft
+ulicoten
+ulrum
+ulvenhout
+ulvenhout ac
+ureterp
 urk
+urmond
+ursem
+ursem gem alkmaar
+usquert
 utrecht
-utrechtse heuvelrug
 vaals
-valkenburg aan de geul
+vaassen
+valburg
+valkenburg lb
+valkenburg zh
 valkenswaard
+valthe
+valthermond
+varik
+varsselder
+varsseveld
+vasse
+veelerveen
+veen
 veendam
 veenendaal
+veenhuizen
+veeningen
+veenklooster
+veenoord
 veere
+veessen
+vegelinsoord
 veghel
+velddriel
+velden
 veldhoven
-velsen
+velp gld
+velp nb
+velsen-noord
+velsen-zuid
+velserbroek
+venebrugge
+venhorst
+venhuizen
 venlo
 venray
-vianen
+ven-zelderheide
+vessem
+vethuizen
+veulen
+vianen nb
+vianen ut
+vierakker
+vierhouten
+vierhuizen
+vierlingsbeek
+vierpolders
+vijfhuizen
+vijlen
+vilsteren
+vinkega
+vinkel
+vinkenbuurt
+vinkeveen
+visvliet
 vlaardingen
 vlagtwedde
+vledder
+vledderveen dr
+vledderveen gn
+vleuten
 vlieland
+vlierden
+vlijmen
 vlissingen
+vlist
+vlodrop
 voerendaal
+vogelenzang
+vogelwaarde
+volendam
+volkel
+vollenhove
+vondelingenplaat rt
+voorburg
+voorhout
 voorschoten
-voorst
+voorst gem voorst
+voorst oude ijsselstreek
+voorthuizen
+vorchten
+vorden
+vorstenbosch
+vortum-mullem
+vragender
+vredenheim
+vredepeel
+vreeland
+vries
+vriescheloo
+vriezenveen
+vroomshoop
+vrouwenakker
+vrouwenparochie
+vrouwenpolder
 vught
+vuren
+waaksens gem litt
+waal
 waalre
 waalwijk
+waarde
+waardenburg
+waarder
+waardhuizen
+waarland
+waaxens gem dongeradeel
+wachtum
 waddinxveen
+wadenoijen
+wagenberg
+wagenborgen
 wageningen
+walem
+walsoorden
+walterswald
+wamel
+wanneperveen
+wanroij
+wanssum
+wanswert
+wapenveld
+wapse
+wapserveen
+warder
+warffum
+warfhuizen
+warfstermolen
+warmenhuizen
+warmond
+warns
+warnsveld
+warstiens
+warten
+waskemeer
+waspik
 wassenaar
-waterland
+wateren
+watergang
+waterhuizen
+wateringen
+waterlandkerkje
+waverveen
+wedde
+weerselo
 weert
 weesp
+wehe-den hoorn
+wehl
+weidum
+weiteveen
+wekerom
+well gld
+well lb
+wellerlooi
+welsum
+wemeldinge
+wenum wiesel
+wergea
 werkendam
-west maas en waal
-westerveld
+werkhoven
+wernhout
+wervershoof
+wesepe
+wessem
+westbeemster
+westbroek
+westdorp
+westdorpe
+westendorp
+westerbeek
+westerbork
+westerbroek
+westeremden
+westergeest
+westerhaar-vriezenv wijk
+westerhoven
+westerland
+westerlee gn
+westernieland
+westervelde
 westervoort
-westland
-weststellingwerf
-westvoorne
+westerwijtwerd
+west-graftdijk
+westhem
+westhoek
+westkapelle
+westknollendam
+westmaas
+west-terschelling
+westwoud
+westzaan
+wetering
+weteringbrug
+wetsens
+wetsinge
+weurt
+wezep
+wezup
+wezuperbrug
+wichmond
+wier
 wierden
+wieringerwaard
+wieringerwerf
+wierum
 wijchen
-wijdemeren
+wijckel
+wijdenes
+wijdewormer
+wijhe
+wijk aan zee
 wijk bij duurstede
-winsum
+wijk en aalburg
+wijlre
+wijnaldum
+wijnandsrade
+wijnbergen
+wijngaarden zh
+wijnjewoude
+wijster
+wilbertoord
+wildervank
+wilhelminadorp
+wilhelminaoord
+willemsoord
+willemstad nb
+wilnis
+wilp gld
+wilsum
+winde
+windraak
+winkel
+winneweer
+winschoten
+winssen
+winsum fr
+winsum gn
+wintelre
 winterswijk
+winterswijk brinkheurne
+winterswijk corle
+winterswijk henxel
+winterswijk huppel
+winterswijk kotten
+winterswijk meddo
+winterswijk miste
+winterswijk ratum
+winterswijk woold
+wirdum fr
+wirdum gn
+wissenkerke
+witharen
+witmarsum
+witte paarden
+wittelte
+wittem
+witteveen
+wiuwert
+wjelsryp
 woensdrecht
 woerden
-wormerland
+woerdense verlaat
+wognum
+woldendorp
+wolfheze
+wolphaartsdijk
+wolsum
+woltersum
+wolvega
+wommels
+wons
+workum
+wormer
+wormerveer
+woubrugge
+woudbloem
 woudenberg
 woudrichem
-zaanstad
+woudsend
+wouw
+wouwse plantage
+wyns
+wytgaard
+yde
+yerseke
+ypecolsga
+ysbrechtum
+ysselsteyn lb
+zaamslag
+zaandam
+zaandijk
+zalk
 zaltbommel
+zandberg dr
+zandeweer
+zandhuizen
+zandpol
 zandvoort
-zederik
-zeevang
+zeddam
+zeegse
+zeeland
+zeerijp
 zeewolde
+zegge
+zegveld
+zeijen
+zeijerveen
+zeijerveld
 zeist
+zelhem
+zenderen
+zennewijnen
+zetten
 zevenaar
+zevenbergen
+zevenbergschen hoek
+zevenbergschen hoek dri
+zevenhoven
+zevenhuizen gn
+zevenhuizen zh
+zierikzee
+zieuwent
+zijderveld
+zijdewind
+zijldijk
+zoelen
+zoelmond
 zoetermeer
 zoeterwoude
+zonnemaire
+zorgvlied
+zoutelande
+zoutkamp
+zuid-beijerland
+zuidbroek
+zuiddorpe
+zuidermeer
+zuiderwoude
 zuidhorn
-zuidplas
+zuidlaarderveen
+zuidland
+zuidlaren
+zuidoostbeemster
+zuid-scharwoude
+zuidschermer
+zuidveen
+zuidveld
+zuidvelde
+zuidwolde dr
+zuidwolde gn
+zuidzande
+zuilichem
+zuna
 zundert
+zurich
 zutphen
-zwartewaterland
+zuurdijk
+zwaag
+zwaagdijk-oost
+zwaagdijk-west
+zwaanshoek
+zwagerbosch
+zwammerdam
+zwanenburg
+zwartebroek
+zwartemeer
+zwartewaal
+zwartsluis
+zweeloo
+zweins
+zwiggelte
 zwijndrecht
+zwinderen
 zwolle
