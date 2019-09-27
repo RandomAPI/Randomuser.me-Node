@@ -1,18 +1,19 @@
-var fs      = require('fs');
-var qs      = require('qs');
-var express = require('express');
-var router  = express.Router();
-var Request = require('../models/Request');
-var legRequest = require('request');
+const fs         = require('fs');
+const util       = require('util');
+const writeFile  = util.promisify(fs.writeFile);
+const unlink     = util.promisify(fs.unlink);
+const qs         = require('qs');
+const express    = require('express');
+const router     = express.Router();
+const settings   = require('../settings');
+const Request    = require('../models/Request');
+const legRequest = require('request');
+const store      = require('../store');
 
-var latestVersion = '1.2';
+router.use('/portraits', express.static('public/portraits'));
 
-router.get('/', (req, res, next) => {
-  genUser(req, res, latestVersion);
-});
-
-router.get('/:version', (req, res, next) => {
-  genUser(req, res, req.params.version);
+router.get('/:version?', (req, res, next) => {
+  genUser(req, res, req.params.version || settings.latestVersion);
 });
 
 let legacy = {
@@ -58,37 +59,37 @@ let legacy = {
   }
 };
 
-function genUser(req, res, version) {
+async function genUser(req, res, version) {
+  let clients = store.get('clients');
   req.query.fmt = req.query.fmt || req.query.format;
 
-  var ip = req.headers['cf-connecting-ip'] || req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  const ip = req.headers['cf-connecting-ip'] || req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 
-  if (clients[ip] >= settings.limit) {
-    res.status(503).json({
-      error: "Whoa, slow down there. You've requested " + clients[ip] + " users in the last minute. Help us keep this service free and spare some bandwidth for other users please :)"
+  if (process.env.spec !== "true" && clients[ip] >= settings.limit) {
+    console.log(process.env.spec);
+    return res.status(503).json({
+      error: `Whoa, ease up there cowboy. You've requested ${clients[ip]} users in the last minute. Help us keep this service free and spare some bandwidth for other users please :)`
     });
-    return;
   }
-
-  version = version || latestVersion;
 
   // Legacy versions
   if (version in legacy) {
-    req.query.results = req.query.results || 1;
+    let results = req.query.results || 1;
 
-    var results = req.query.results;
-    if (results > legacy[version].max || results < 1 || isNaN(results) || results % 1 !== 0) {
+    if (results > legacy[version].max || results < 1 || isNaN(results) || !Number.isInteger(+results)) {
       results = 1;
-      req.query.results = 1;
     }
+
+    // Update query results for passing to randomapi
+    req.query.results = results;
 
     if (!(ip in clients)) {
-      clients[ip] = Number(req.query.results);
+      clients[ip] = Number(results);
     } else {
-      clients[ip] += Number(req.query.results);
+      clients[ip] += Number(results);
     }
 
-    return legRequest(`https://api.randomapi.com/${legacy[version].hash}?noinfo&${qs.stringify(req.query)}`, (err, ret) => {
+    return legRequest(`https://api.randomapi.com/${legacy[version].hash}?noinfo&${qs.stringify(req.query)}`, async (err, ret) => {
       if (req.query.fmt === 'json') {
         res.setHeader('Content-Type', 'application/json');
       } else if (req.query.fmt === 'xml') {
@@ -103,37 +104,41 @@ function genUser(req, res, version) {
 
       res.setHeader('Cache-Control', 'no-cache');
 
-      var payload = {
+      const payload = {
         'bandwidth': ret.body.length,
-        'total': req.query.results
+        'total': results
       };
-      payload[version.replace(/\./g, '_')] = req.query.results;
+      payload[version.replace(/\./g, '_')] = results;
 
-      Request.findOrCreate({date: getDateTime()}, payload, (err, obj, created) => {
-        // Update record
-        if (!created) {
-          Request.update({date: getDateTime()}, {$inc: payload}, (err) => {
-
-          });
+      let doc = await Request.findOneAndUpdate(
+        {date: getDateTime()},
+        {$setOnInsert: payload},
+        {
+          returnOriginal: false,
+          upsert: true,
         }
-        res.send(ret.body)
-      });
+      );
+  
+      if (doc !== null) {
+        await Request.updateOne({date: getDateTime()}, {$inc: payload});
+      }
+      res.send(ret.body)
     });
   }
 
   // Version doesn't exist
-  if (typeof Generator[version] === 'undefined') {
+  if (typeof (store.get('generators'))[version] === 'undefined') {
     res.sendStatus(404);
     return;
   }
 
-  var results = req.query.results || 1;
-  if (results > settings.maxResults || results < 1 || isNaN(results) || results % 1 !== 0) {
+  let results = req.query.results || 1;
+  if (results > settings.maxResults || results < 1 || isNaN(results) || results === "") {
     results = 1;
-    req.query.results = 1;
   }
+  req.query.results = results;
 
-  var dl = typeof req.query.dl !== 'undefined' || typeof req.query.download !== 'undefined' ? true : false;
+  let dl = typeof req.query.dl !== 'undefined' || typeof req.query.download !== 'undefined' ? true : false;
 
   if (!(ip in clients)) {
     clients[ip] = Number(results);
@@ -141,89 +146,94 @@ function genUser(req, res, version) {
     clients[ip] += Number(results);
   }
 
+  // PS Extension - only use us & gb nats
   if (req.query.extension === "true") {
     req.query.nat = "us,gb"
   }
 
-  new Generator[version](req.query).generate((output, ext) => {
-    var name = "tmp/" + String(new Date().getTime());
+  // Generate random user using specified generator
+  let {output, ext} = await (store.get('generators')[version]).generate(req.query);
 
-    if (typeof req.query.callback !== 'undefined' && ext === "json") {
-      output = String(req.query.callback) + "(" + output + ");";
-    }
+  let downloadName = "tmp/" + String(new Date().getTime());
 
-    // Download - save file and update headers
-    if (dl) {
-      res.setHeader('Content-disposition', 'attachment; filename=download.' + ext);
-      fs.writeFileSync(name, output, 'utf8');
+  if (typeof req.query.callback !== 'undefined' && ext === "json") {
+    output = String(req.query.callback) + "(" + output + ");";
+  }
+
+  // Download - save file and update headers
+  if (dl) {
+    res.setHeader('Content-disposition', 'attachment; filename=download.' + ext);
+    await writeFile(downloadName, output, 'utf8');
+  } else {
+    if (ext === 'json') {
+      res.setHeader('Content-Type', 'application/json');
+    } else if (ext === 'xml') {
+      res.setHeader('Content-Type', 'text/xml');
+    } else if (ext === 'yaml') {
+      res.setHeader('Content-Type', 'text/x-yaml');
+    } else if (ext === 'csv') {
+      res.setHeader('Content-Type', 'text/csv');
     } else {
-      if (ext === 'json') {
-        res.setHeader('Content-Type', 'application/json');
-      } else if (ext === 'xml') {
-        res.setHeader('Content-Type', 'text/xml');
-      } else if (ext === 'yaml') {
-        res.setHeader('Content-Type', 'text/x-yaml');
-      } else if (ext === 'csv') {
-        res.setHeader('Content-Type', 'text/csv');
-      } else {
-        res.setHeader('Content-Type', 'text/plain');
-      }
+      res.setHeader('Content-Type', 'text/plain');
     }
+  }
 
-    res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Cache-Control', 'no-cache');
 
-    var payload = {
-      'bandwidth': output.length,
-      'total': results
-    };
-    payload[version.replace(/\./g, '_')] = results;
+  let payload = {
+    'bandwidth': output.length,
+    'total': results
+  };
+  payload[version.replace(/\./g, '_')] = results;
 
-    Request.findOrCreate({date: getDateTime()}, payload, (err, obj, created) => {
-      // Update record
-      if (!created) {
-        Request.update({date: getDateTime()}, {$inc: payload}, (err) => {
+  let doc = await Request.findOneAndUpdate(
+    {date: getDateTime()},
+    {$setOnInsert: payload},
+    {
+      returnOriginal: true,
+      upsert: true,
+    }
+  );
 
-        });
-      }
+  if (doc !== null) {
+    await Request.updateOne({date: getDateTime()}, {$inc: payload});
+  }
 
-      // Download or output file
-      if (dl) {
-        res.download(name, "download." + ext, err => {
-          fs.unlink(name);
-        });
-      } else {
-        // Hacky PS extension formatting
-        if (req.query.extension === "true") {
-          output = JSON.parse(output);
-          var extObj = {
-            results: [{
-              user: {
-                picture: output.results[0].picture.large.replace('/api', '').replace('https', 'http'),
-                name: {
-                  first: output.results[0].name.first,
-                  last: output.results[0].name.last
-                }
-              }
-            }]
-          };
-          res.send(extObj);
-        } else {
-          res.send(output);
-        }
-      }
+  // Download or output file
+  if (dl) {
+    res.download(downloadName, "download." + ext, async () => {
+      await unlink(downloadName);
     });
-  });
+  } else {
+    // Hacky PS extension formatting
+    if (req.query.extension === "true") {
+      output = JSON.parse(output);
+      var extObj = {
+        results: [{
+          user: {
+            picture: output.results[0].picture.large.replace('/api', '').replace('https', 'http'),
+            name: {
+              first: output.results[0].name.first,
+              last: output.results[0].name.last
+            }
+          }
+        }]
+      };
+      res.send(extObj);
+    } else {
+      res.send(output);
+    }
+  }
 }
 
 function getDateTime() {
-  var date = new Date();
+  const date = new Date();
+  const year = date.getFullYear();
 
-  var year = date.getFullYear();
-
-  var month = date.getMonth() + 1;
+  let month = date.getMonth() + 1;
   month = (month < 10 ? '0' : '') + month;
 
-  var day  = date.getDate();
+  let day = date.getDate();
   day = (day < 10 ? '0' : '') + day;
 
   return year + '-' + pad(month, 2) + '-' + pad(day, 2);
