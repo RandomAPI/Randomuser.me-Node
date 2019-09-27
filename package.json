@@ -7,7 +7,7 @@
     "build": "gulp build",
     "test": "spec=true mocha --exit --reporter nyan spec/index.js",
     "specTest": "spec=true mocha --exit --reporter spec spec/index.js",
-    "ciTest": "spec=true nyc mocha spec/index.js"
+    "ciTest": "spec=true nyc mocha --exit spec/index.js"
   },
   "dependencies": {
     "async": "^2.0.0-rc.2",
