@@ -1,6 +1,6 @@
 # Randomuser.me-Node
 [![Build Status](https://travis-ci.org/RandomAPI/Randomuser.me-Node.svg?branch=master)](https://travis-ci.org/RandomAPI/Randomuser.me-Node)
-[![Stories in Ready](https://badge.waffle.io/RandomAPI/Randomuser.me-Node.png?label=ready&title=Ready)](https://waffle.io/RandomAPI/Randomuser.me-Node)
+[![codecov](https://codecov.io/gh/RandomAPI/Randomuser.me-Node/branch/master/graph/badge.svg)](https://codecov.io/gh/RandomAPI/Randomuser.me-Node)
 
 ### About
 This is the source code that powers the randomuser.me User Generator.
