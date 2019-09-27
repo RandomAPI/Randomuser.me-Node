@@ -5,8 +5,9 @@
   "scripts": {
     "start": "node --expose-gc app",
     "build": "gulp build",
-    "test": "spec=true nyc mocha spec/index.js",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "test": "spec=true mocha --exit --reporter nyan spec/index.js",
+    "specTest": "spec=true mocha --exit --reporter spec spec/index.js",
+    "ciTest": "spec=true nyc mocha spec/index.js"
   },
   "dependencies": {
     "async": "^2.0.0-rc.2",

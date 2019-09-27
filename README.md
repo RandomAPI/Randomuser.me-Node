@@ -26,13 +26,18 @@ sort -u <file> -o <file>
 
 4\. Please don't submit requests that say "make this nationality". We will accept helpful contributions, but not orders :)
 
+### Requirements
+
+Node v9.0.0+
+MongoDB
+
 ### How to use
 
 1. Run `npm install`
 
-2. Make sure you have gulp installed globally (npm i -g gulp) and run `gulp build`
+2. Run `npm run build` to build views and minify js/css
 
-3. Run `gulp` to verify all tests pass
+3. Run `npm test` and verify all tests pass
 
 4. Start the server with `npm start`
 
