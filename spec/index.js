@@ -30,7 +30,7 @@ describe('Randomuser.me', function() {
   
   describe('API', () => {
     describe('General', api.bind(this, server));
-    describe('Legacy versions <1.0', legacy.bind(this, server));
+    describe.skip('Legacy versions <1.0', legacy.bind(this, server));
 
     describe('Modern versions >=1.0', () => {
       describe('General', modern.bind(this, server))
