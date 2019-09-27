@@ -1,0 +1,31 @@
+{"offset": "-12:00", "description": "Eniwetok, Kwajalein"}
+{"offset": "-11:00", "description": "Midway Island, Samoa"}
+{"offset": "-10:00", "description": "Hawaii"}
+{"offset": "-9:00", "description": "Alaska"}
+{"offset": "-8:00", "description": "Pacific Time (US & Canada)"}
+{"offset": "-7:00", "description": "Mountain Time (US & Canada)"}
+{"offset": "-6:00", "description": "Central Time (US & Canada), Mexico City"}
+{"offset": "-5:00", "description": "Eastern Time (US & Canada), Bogota, Lima"}
+{"offset": "-4:00", "description": "Atlantic Time (Canada), Caracas, La Paz"}
+{"offset": "-3:30", "description": "Newfoundland"}
+{"offset": "-3:00", "description": "Brazil, Buenos Aires, Georgetown"}
+{"offset": "-2:00", "description": "Mid-Atlantic"}
+{"offset": "-1:00", "description": "Azores, Cape Verde Islands"}
+{"offset": "0:00", "description": "Western Europe Time, London, Lisbon, Casablanca"}
+{"offset": "+1:00", "description": "Brussels, Copenhagen, Madrid, Paris"}
+{"offset": "+2:00", "description": "Kaliningrad, South Africa"}
+{"offset": "+3:00", "description": "Baghdad, Riyadh, Moscow, St. Petersburg"}
+{"offset": "+3:30", "description": "Tehran"}
+{"offset": "+4:00", "description": "Abu Dhabi, Muscat, Baku, Tbilisi"}
+{"offset": "+4:30", "description": "Kabul"}
+{"offset": "+5:00", "description": "Ekaterinburg, Islamabad, Karachi, Tashkent"}
+{"offset": "+5:30", "description": "Bombay, Calcutta, Madras, New Delhi"}
+{"offset": "+5:45", "description": "Kathmandu"}
+{"offset": "+6:00", "description": "Almaty, Dhaka, Colombo"}
+{"offset": "+7:00", "description": "Bangkok, Hanoi, Jakarta"}
+{"offset": "+8:00", "description": "Beijing, Perth, Singapore, Hong Kong"}
+{"offset": "+9:00", "description": "Tokyo, Seoul, Osaka, Sapporo, Yakutsk"}
+{"offset": "+9:30", "description": "Adelaide, Darwin"}
+{"offset": "+10:00", "description": "Eastern Australia, Guam, Vladivostok"}
+{"offset": "+11:00", "description": "Magadan, Solomon Islands, New Caledonia"}
+{"offset": "+12:00", "description": "Auckland, Wellington, Fiji, Kamchatka"}

@@ -1,9 +1,11 @@
+const {random, randomItem, pad, range, uppercaseify, include,} = require('../../api');
+
 module.exports = (inc, contents) => {
-    var pic = contents.picture;
+    const pic = contents.picture;
     delete contents.picture;
 
-    include(inc, 'phone', () => {
-      var phones = [
+    include(inc, contents, 'phone', () => {
+      const phones = [
         '01' + random(3, 3) + ' ' + random(3, 5),
         '01' + random(3, 3) + ' ' + random(3, 6),
         '011' + random(3, 1) + random(3, 3) + ' ' + random(3, 3) + ' ' +  random(3, 4),
@@ -27,12 +29,12 @@ module.exports = (inc, contents) => {
       contents.phone = randomItem(phones);
     });
 
-    include(inc, 'cell', '07' + random(3, 2) + '-' + random(3, 3) + '-' + random(3, 3));
+    include(inc, contents, 'cell', '07' + random(3, 2) + '-' + random(3, 3) + '-' + random(3, 3));
 
-    include(inc, 'location', () => {
-      var code = 'ABDEFGHJLNPQRSTUWXYZ';
+    include(inc, contents, 'location', () => {
+      const code = 'ABDEFGHJLNPQRSTUWXYZ';
 
-      var postcodes = [
+      const postcodes = [
         random(4, 1) + random(3, 1) + ' ' + random(3, 1) + code[range(0, 19)] + code[range(0, 19)],
         random(4, 2) + random(3, 1) + ' ' + random(3, 1) + code[range(0, 19)] + code[range(0, 19)],
         random(4, 1) + random(3, 2) + ' ' + random(3, 1) + code[range(0, 19)] + code[range(0, 19)],
@@ -44,7 +46,7 @@ module.exports = (inc, contents) => {
       contents.location.postcode = randomItem(postcodes);
     });
 
-    include(inc, 'id', () => {
+    include(inc, contents, 'id', () => {
       nino_1 = 'abceghjklmnoprstwxyz';
       nino_2 = 'abceghjklmnprstwxyz';
 
@@ -56,5 +58,5 @@ module.exports = (inc, contents) => {
       };
     });
 
-    include(inc, 'picture', pic);
+    include(inc, contents, 'picture', pic);
 };

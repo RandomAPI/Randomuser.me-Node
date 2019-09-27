@@ -1,19 +1,21 @@
+const {random, randomItem, pad, range, uppercaseify, include,} = require('../../api');
+
 module.exports = (inc, contents) => {
-    var pic = contents.picture;
+    const pic = contents.picture;
     delete contents.picture;
 
-    include(inc, 'phone', '0' + range(0, 9) + '-' + range(0, 9) + random(3, 3) + '-' + random(3, 4));
-    include(inc, 'cell', '04' + random(3, 2) + '-' + random(3, 3) + '-' + random(3, 3));
-    include(inc, 'id', {
+    include(inc, contents, 'phone', '0' + range(0, 9) + '-' + range(0, 9) + random(3, 3) + '-' + random(3, 4));
+    include(inc, contents, 'cell', '04' + random(3, 2) + '-' + random(3, 3) + '-' + random(3, 3));
+    include(inc, contents, 'id', {
         name: 'TFN',
         value: random(3, 9)
     });
-    include(inc, 'picture', pic);
-    include(inc, 'location', () => {
+    include(inc, contents, 'picture', pic);
+    include(inc, contents, 'location', () => {
         contents.location.postcode = range(200, 9999); // Override common postcode with AU range
 
         // Override common postcode with AU range
-        var oldStreet = contents.location.street;
+        const oldStreet = contents.location.street;
         contents.location.street = contents.location.street.replace(/(\d+)/, range(1,9999));
     });
 };
