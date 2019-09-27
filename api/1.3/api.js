@@ -4,6 +4,7 @@
   More street/city names for NL dataset
   Fixed Norwegian id generation bug
   Fixed Switzerland phone number format
+  Add country name to location block
 */
 
 const fs           = require('fs');
@@ -154,6 +155,7 @@ class Generator {
           street: range(1, 9999) + ' ' + randomItem(this.datasets[nat].street),
           city: randomItem(this.datasets[nat].cities),
           state: randomItem(this.datasets[nat].states),
+          country: this.fullNatName(nat),
           postcode: range(10000, 99999),
           coordinates: {
             latitude: faker.address.latitude(),
@@ -369,6 +371,28 @@ class Generator {
     }
   
     return password;
+  }
+
+  fullNatName(nat) {
+    let mapping = {
+      AU: "australia",
+      BR: "brazil",
+      CA: "canada",
+      CH: "switzerland",
+      DE: "germany",
+      DK: "denmark",
+      ES: "spain",
+      FI: "finland",
+      FR: "france",
+      GB: "united kingdom",
+      IE: "ireland",
+      IR: "iran",
+      NL: "netherlands",
+      NZ: "new zealand",
+      TR: "turkey",
+      US: "united states",
+    };
+    return mapping[nat];
   }
 }
 
