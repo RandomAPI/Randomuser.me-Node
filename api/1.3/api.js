@@ -3,6 +3,7 @@
   Email addresses are now transliterated
   More street/city names for NL dataset
   Fixed Norwegian id generation bug
+  Fixed Switzerland phone number format
 */
 
 const fs           = require('fs');

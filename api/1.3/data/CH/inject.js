@@ -13,8 +13,9 @@ module.exports = (inc, contents) => {
         contents.location.postcode = range(1000, 9999);
     });
 
-    include(inc, contents, 'phone', '(' + random(3, 3) + ')-' + random(3, 3) + '-' + random(3, 4));
-    include(inc, contents, 'cell', '(' + random(3, 3) + ')-' + random(3, 3) + '-' + random(3, 4));
+    let prefix = ['075', '076', '077', '078', '079'];
+    include(inc, contents, 'phone', `${randomItem(prefix)} ${random(3, 3)} ${random(3, 2)} ${random(3, 2)}`);
+    include(inc, contents, 'cell', `${randomItem(prefix)} ${random(3, 3)} ${random(3, 2)} ${random(3, 2)}`);
     include(inc, contents, 'id', {
         name: 'AVS',
         value: '756.' + random(3, 4) + '.' + random(3, 4) + '.' + random(3, 2)
