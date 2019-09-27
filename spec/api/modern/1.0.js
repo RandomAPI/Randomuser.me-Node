@@ -11,12 +11,17 @@ module.exports = (server, version=defVersion) => {
     'cell', 'id', 'picture', 'nat'
   ];
   
-  const nats = [
+  let nats = [
     'AU', 'BR', 'CA', 'CH',
     'DE', 'DK', 'ES', 'FI',
     'FR', 'GB', 'IE', 'IR',
     'NL', 'NZ', 'TR', 'US'
   ];
+
+  // Include NO nat for versions 1.2+
+  if (version !== "1.0" && version !== "1.1") {
+    nats.push('NO');
+  }
 
   // Include fields
   describe(`Include fields`, () => {
