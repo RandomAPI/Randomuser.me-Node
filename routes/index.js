@@ -36,7 +36,13 @@ const titles = {
     if (page === 'index') {
       res.redirect(301, '/');
     } else if (views.indexOf(page + '.ejs') !== -1) {
-      res.render('pages/' + page, {socket: ':' + settings.socket, title: titles[page], stripePublishKey: settings.stripePublishKey, stats: store.get('stats')['30'].total});
+      res.render('pages/' + page, {
+        socket: ':' + settings.socket,
+        title: titles[page],
+        stripePublishKey: settings.stripePublishKey,
+        stats: store.get('stats')['30'].total,
+        latestVersion: settings.latestVersion
+      });
     } else {
       next();
     }
