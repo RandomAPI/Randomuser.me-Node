@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-Expr1000
-1e exloermond
-2e exloermond
-2e valthermond
-aadorp
-aagtekerke
-aalden
-aalsmeer
-aalsmeerderbrug
-aalst gld
-aalsum
-aalten
-=======
 's gravenmoer
 's-graveland
 's-gravendeel
@@ -54,7 +40,6 @@ aalst gld
 aalsum
 aalten
 aalzum
->>>>>>> Made copy of v1.3 for .nextRelease
 aardenburg
 aarlanderveen
 aarle-rixtel
@@ -64,20 +49,6 @@ abbekerk
 abbenbroek
 abbenes
 abcoude
-<<<<<<< HEAD
-achlum
-achterveld
-achthuizen
-achtmaal
-acquoy
-adorp
-aduard
-aerdenhout
-aerdt
-afferden gld
-afferden lb
-agelo
-=======
 absdale
 abshoven
 achlum
@@ -101,16 +72,12 @@ afferden gld
 afferden lb
 agelo
 aijen
->>>>>>> Made copy of v1.3 for .nextRelease
 akersloot
 akkrum
 akmarijp
 albergen
 alblasserdam
-<<<<<<< HEAD
-=======
 albrandswaard
->>>>>>> Made copy of v1.3 for .nextRelease
 alde leie
 aldeboarn
 aldtsjerk
@@ -121,52 +88,35 @@ almelo
 almen
 almere
 almkerk
-<<<<<<< HEAD
-alphen aan den rijn
-alphen gld
-alphen nb
-=======
 alphen
 alphen aan den rijn
 alphen gld
 alphen nb
 alphen-chaam
 alteveer
->>>>>>> Made copy of v1.3 for .nextRelease
 alteveer gem de wolden
 alteveer gem hoogeveen
 alteveer gem noordenveld
 alteveer gn
 altforst
-<<<<<<< HEAD
-ambt delden
-ameide
-=======
 alverna
 ambt delden
 amby
 ameide
 ameland
->>>>>>> Made copy of v1.3 for .nextRelease
 amen
 america
 amerongen
 amersfoort
 ammerstol
 ammerzoden
-<<<<<<< HEAD
-=======
 ampsen
->>>>>>> Made copy of v1.3 for .nextRelease
 amstelhoek
 amstelveen
 amstenrade
 amsterdam
 amsterdam-duivendrecht
-<<<<<<< HEAD
-=======
 amsweer
->>>>>>> Made copy of v1.3 for .nextRelease
 andel
 andelst
 anderen
@@ -178,18 +128,12 @@ angeren
 angerlo
 anjum
 ankeveen
-<<<<<<< HEAD
-anloo
-anna paulowna
-annen
-=======
 ankum
 anloo
 anna jacobapolder
 anna paulowna
 annen
 annerveensche kanaal
->>>>>>> Made copy of v1.3 for .nextRelease
 annerveenschekanaal
 ansen
 apeldoorn
@@ -197,41 +141,28 @@ appelscha
 appeltern
 appingedam
 arcen
-<<<<<<< HEAD
-arkel
-=======
 archem
 arkel
 armhoede
->>>>>>> Made copy of v1.3 for .nextRelease
 arnemuiden
 arnhem
 arrien
 arum
 asch
 asperen
-<<<<<<< HEAD
-assen
-assendelft
-=======
 assel
 asselt
 assen
 assendelft
 assum
->>>>>>> Made copy of v1.3 for .nextRelease
 asten
 augsbuurt
 augustinusga
 austerlitz
 avenhorn
-<<<<<<< HEAD
-axel
-=======
 avest
 axel
 azelo
->>>>>>> Made copy of v1.3 for .nextRelease
 azewijn
 baaiduinen
 baaium
@@ -277,13 +208,6 @@ bavel ac
 bears fr
 bedum
 beegden
-<<<<<<< HEAD
-beek en donk
-beek gem montferland
-beek lb
-beekbergen
-beek-ubbergen
-=======
 beek
 beek en donk
 beek gem montferland
@@ -291,7 +215,6 @@ beek lb
 beek-ubbergen
 beekbergen
 beemster
->>>>>>> Made copy of v1.3 for .nextRelease
 beemte broekland
 beers nb
 beerta
@@ -304,16 +227,10 @@ beetsterzwaag
 beilen
 beinsdorp
 belfeld
-<<<<<<< HEAD
-bellingwolde
-beltrum
-belt-schutsloot
-=======
 bellingwedde
 bellingwolde
 belt-schutsloot
 beltrum
->>>>>>> Made copy of v1.3 for .nextRelease
 bemelen
 bemmel
 beneden-leeuwen
@@ -329,10 +246,7 @@ berg en dal
 berg en terblijt
 bergambacht
 bergeijk
-<<<<<<< HEAD
-=======
 bergen
->>>>>>> Made copy of v1.3 for .nextRelease
 bergen aan zee
 bergen lb
 bergen nh
@@ -344,24 +258,16 @@ bergschenhoek
 beringe
 berkel en rodenrijs
 berkel-enschot
-<<<<<<< HEAD
-=======
 berkelland
->>>>>>> Made copy of v1.3 for .nextRelease
 berkenwoude
 berkhout
 berlicum nb
 berltsum
 bern
-<<<<<<< HEAD
-best
-beugen
-=======
 bernheze
 best
 beugen
 beuningen
->>>>>>> Made copy of v1.3 for .nextRelease
 beuningen gld
 beuningen ov
 beusichem
@@ -375,10 +281,7 @@ biezenmortel
 biggekerke
 bilthoven
 bingelrade
-<<<<<<< HEAD
-=======
 binnenmaas
->>>>>>> Made copy of v1.3 for .nextRelease
 bitgum
 bitgummole
 bladel
@@ -399,10 +302,7 @@ blokzijl
 boazum
 bocholtz
 bodegraven
-<<<<<<< HEAD
-=======
 bodegraven-reeuwijk
->>>>>>> Made copy of v1.3 for .nextRelease
 boekel
 boelenslaan
 boer
@@ -417,20 +317,14 @@ boornbergum
 boornzwaag
 borculo
 borger
-<<<<<<< HEAD
-=======
 borger-odoorn
->>>>>>> Made copy of v1.3 for .nextRelease
 borgercompagnie
 borgsweer
 born
 borne
 bornerbroek
 bornwird
-<<<<<<< HEAD
-=======
 borsele
->>>>>>> Made copy of v1.3 for .nextRelease
 borssele
 bosch en duin
 boschoord
@@ -438,13 +332,8 @@ boskoop
 bosschenhoofd
 botlek rotterdam
 bourtange
-<<<<<<< HEAD
-bovenkarspel
-boven-leeuwen
-=======
 boven-leeuwen
 bovenkarspel
->>>>>>> Made copy of v1.3 for .nextRelease
 bovensmilde
 boxmeer
 boxtel
@@ -472,10 +361,7 @@ broekhuizen lb
 broekhuizenvorst
 broekland ov
 broeksterwald
-<<<<<<< HEAD
-=======
 bronckhorst
->>>>>>> Made copy of v1.3 for .nextRelease
 bronkhorst
 bronneger
 bronnegerveen
@@ -500,15 +386,10 @@ buitenpost
 bunde
 bunne
 bunnik
-<<<<<<< HEAD
-bunschoten-spakenburg
-burdaard
-=======
 bunschoten
 bunschoten-spakenburg
 burdaard
 buren
->>>>>>> Made copy of v1.3 for .nextRelease
 buren fr
 buren gld
 burgerbrug
@@ -522,33 +403,22 @@ buurmalsen
 cadier en keer
 cadzand
 callantsoog
-<<<<<<< HEAD
-=======
 camerig
 camperduin
 capelle
->>>>>>> Made copy of v1.3 for .nextRelease
 capelle aan den ijssel
 castelre
 castenray
 casteren
 castricum
-<<<<<<< HEAD
-=======
 catrijp
 catsop
->>>>>>> Made copy of v1.3 for .nextRelease
 chaam
 clinge
 coevorden
 colijnsplaat
 collendoorn
 colmschate
-<<<<<<< HEAD
-cornwerd
-cothen
-creil
-=======
 cornjum
 cornwerd
 cortenoever
@@ -557,7 +427,6 @@ cottessen
 cranendonck
 creil
 cromstrijen
->>>>>>> Made copy of v1.3 for .nextRelease
 cromvoirt
 cruquius
 cuijk
@@ -571,20 +440,14 @@ dalerveen
 dalfsen
 dalmsholte
 damwald
-<<<<<<< HEAD
-=======
 dantumadiel
->>>>>>> Made copy of v1.3 for .nextRelease
 darp
 de bilt
 de blesse
 de bult
 de cocksdorp
 de falom
-<<<<<<< HEAD
-=======
 de friese meren
->>>>>>> Made copy of v1.3 for .nextRelease
 de glind
 de goorn
 de groeve
@@ -600,10 +463,7 @@ de krim
 de kwakel
 de lier
 de lutte
-<<<<<<< HEAD
-=======
 de marne
->>>>>>> Made copy of v1.3 for .nextRelease
 de meern
 de moer
 de mortel
@@ -611,10 +471,7 @@ de pol
 de punt
 de rijp
 de rips
-<<<<<<< HEAD
-=======
 de ronde venen
->>>>>>> Made copy of v1.3 for .nextRelease
 de schiphorst
 de steeg
 de tike
@@ -625,10 +482,7 @@ de westereen
 de wijk
 de wilgen
 de wilp gn
-<<<<<<< HEAD
-=======
 de wolden
->>>>>>> Made copy of v1.3 for .nextRelease
 de woude
 de zilk
 dearsum
@@ -649,10 +503,7 @@ den bommel
 den burg
 den dolder
 den dungen
-<<<<<<< HEAD
-=======
 den haag
->>>>>>> Made copy of v1.3 for .nextRelease
 den ham gn
 den ham ov
 den helder
@@ -678,10 +529,7 @@ diever
 dieverbrug
 diffelen
 dijken
-<<<<<<< HEAD
-=======
 dinkelland
->>>>>>> Made copy of v1.3 for .nextRelease
 dinteloord
 dinxperlo
 diphoorn
@@ -697,10 +545,7 @@ doldersum
 domburg
 donderen
 dongen
-<<<<<<< HEAD
-=======
 dongeradeel
->>>>>>> Made copy of v1.3 for .nextRelease
 dongjum
 doniaga
 donkerbroek
@@ -712,10 +557,7 @@ dordrecht
 dorst
 drachten
 drachtstercompagnie
-<<<<<<< HEAD
-=======
 drechterland
->>>>>>> Made copy of v1.3 for .nextRelease
 dreischor
 drempt
 dreumel
@@ -751,16 +593,6 @@ easterlittens
 eastermar
 easterwierrum
 echt
-<<<<<<< HEAD
-echteld
-echten dr
-echten fr
-echtenerbrug
-eck en wiel
-eckelrade
-edam
-ede gld
-=======
 echt-susteren
 echteld
 echten
@@ -775,7 +607,6 @@ edam-volendam
 ede
 ede gld
 edens
->>>>>>> Made copy of v1.3 for .nextRelease
 ederveen
 ee
 eede zld
@@ -785,20 +616,6 @@ eelderwolde
 eemdijk
 eemnes
 eemshaven
-<<<<<<< HEAD
-een
-eenrum
-eenum
-een-west
-eerbeek
-eersel
-ees
-eesergroen
-eeserveen
-eesterga
-eesveen
-eethen
-=======
 eemsmond
 eemster
 een
@@ -822,7 +639,6 @@ eesveen
 eethen
 eexsterveen
 eexsterveensche kanaal
->>>>>>> Made copy of v1.3 for .nextRelease
 eext
 eexterveen
 eexterveenschekanaal
@@ -831,38 +647,16 @@ egchel
 egmond aan den hoef
 egmond aan zee
 egmond-binnen
-<<<<<<< HEAD
-eibergen
-eijsden
-=======
 egmondermeer
 eibergen
 eierland
 eijsden
 eijsden-margraten
->>>>>>> Made copy of v1.3 for .nextRelease
 eindhoven
 einighausen
 ekehaar
 elahuizen
 elburg
-<<<<<<< HEAD
-eldersloo
-eleveld
-elim
-elkenrade
-ell
-ellecom
-ellemeet
-ellertshaar
-ellewoutsdijk
-elp
-elsendorp
-elshout
-elsloo fr
-elsloo lb
-elspeet
-=======
 elden
 eldersloo
 eldrik
@@ -886,39 +680,28 @@ elsloo fr
 elsloo lb
 elspeet
 elst
->>>>>>> Made copy of v1.3 for .nextRelease
 elst gld
 elst ut
 emmeloord
 emmen
 emmer-compascuum
 empe
-<<<<<<< HEAD
-emst
-=======
 empel
 emst
 engelbert
 engelen
 engelum
->>>>>>> Made copy of v1.3 for .nextRelease
 engwierum
 enkhuizen
 ens
 enschede
-<<<<<<< HEAD
-=======
 enschot
->>>>>>> Made copy of v1.3 for .nextRelease
 enspijk
 enter
 enumatil
 epe
 epen
-<<<<<<< HEAD
-=======
 eperheide
->>>>>>> Made copy of v1.3 for .nextRelease
 eppenhuizen
 epse
 erica
@@ -931,17 +714,6 @@ esbeek
 esch
 escharen
 espel
-<<<<<<< HEAD
-est
-etten gld
-etten-leur
-europoort rotterdam
-eursinge
-eursinge gem de wolden
-everdingen
-evertsoord
-ewijk
-=======
 espelo
 est
 etenaken
@@ -957,35 +729,24 @@ evertsoord
 ewijcksluis van
 ewijk
 exel
->>>>>>> Made copy of v1.3 for .nextRelease
 exloerveen
 exloo
 exmorra
 eygelshoven
 eys
-<<<<<<< HEAD
-ezinge
-=======
 eyserheide
 ezinge
 ezumazijl
->>>>>>> Made copy of v1.3 for .nextRelease
 farmsum
 feanwalden
 feerwerd
 feinsum
-<<<<<<< HEAD
-ferwert
-ferwoude
-fijnaart
-=======
 ferwerd
 ferwerderadiel
 ferwert
 ferwoude
 fijnaart
 finkum
->>>>>>> Made copy of v1.3 for .nextRelease
 finsterwolde
 firdgum
 fleringen
@@ -994,12 +755,6 @@ fochteloo
 follega
 folsgare
 formerum
-<<<<<<< HEAD
-foudgum
-foxhol
-foxwolde
-franeker
-=======
 fort
 foudgum
 foxham
@@ -1007,29 +762,20 @@ foxhol
 foxwolde
 franeker
 franekeradeel
->>>>>>> Made copy of v1.3 for .nextRelease
 frederiksoord
 friens
 frieschepalen
 froombosch
 gaanderen
-<<<<<<< HEAD
-=======
 gaarkeuken
->>>>>>> Made copy of v1.3 for .nextRelease
 gaast
 gaastmeer
 galder
 gameren
-<<<<<<< HEAD
-gapinge
-garderen
-=======
 gammelke
 gapinge
 garderen
 garijp
->>>>>>> Made copy of v1.3 for .nextRelease
 garmerwolde
 garminge
 garnwerd
@@ -1038,73 +784,44 @@ garsthuizen
 garyp
 gassel
 gasselte
-<<<<<<< HEAD
-=======
 gasselter-nijveensche-mond
 gasselterboerveen
->>>>>>> Made copy of v1.3 for .nextRelease
 gasselternijveen
 gasselternijveenschemond
 gastel
 gasteren
-<<<<<<< HEAD
-gauw
-geelbroek
-geerdijk
-=======
 gasthuis
 gauw
 geelbroek
 geerdijk
 geersbroek
->>>>>>> Made copy of v1.3 for .nextRelease
 geersdijk
 geertruidenberg
 geervliet
 gees
 geesbrug
-<<<<<<< HEAD
-=======
 geesteren
->>>>>>> Made copy of v1.3 for .nextRelease
 geesteren gld
 geesteren ov
 geeuwenbrug
 geffen
 geijsteren
-<<<<<<< HEAD
-geldermalsen
-gelderswoude
-geldrop
-=======
 gelderingen
 geldermalsen
 gelderswoude
 geldrop
 geldrop-mierlo
->>>>>>> Made copy of v1.3 for .nextRelease
 geleen
 gellicum
 gelselaar
 gemert
-<<<<<<< HEAD
-=======
 gemert-bakel
->>>>>>> Made copy of v1.3 for .nextRelease
 gemonde
 genderen
 gendringen
 gendt
 genemuiden
 gennep
-<<<<<<< HEAD
-gerkesklooster
-gersloot
-geulle
-giesbeek
-giessen
-giessenburg
-=======
 genum
 gerkesklooster
 gerner
@@ -1120,30 +837,21 @@ giessen
 giessenburg
 giessendam
 giessenlanden
->>>>>>> Made copy of v1.3 for .nextRelease
 gieten
 gieterveen
 giethmen
 giethoorn
 gilze
-<<<<<<< HEAD
-ginnum
-glane
-=======
 gilze en rijen
 ginnum
 glane
 glanerbrug
->>>>>>> Made copy of v1.3 for .nextRelease
 glimmen
 godlinze
 goedereede
 goenga
 goengahuizen
-<<<<<<< HEAD
-=======
 goeree-overflakkee
->>>>>>> Made copy of v1.3 for .nextRelease
 goes
 goingarijp
 goirle
@@ -1151,33 +859,22 @@ goor
 gorinchem
 gorredijk
 gorssel
-<<<<<<< HEAD
-=======
 gortel
->>>>>>> Made copy of v1.3 for .nextRelease
 gouda
 gouderak
 goudriaan
 goudswaard
-<<<<<<< HEAD
-goutum
-graauw
-=======
 gouerak
 goutum
 graauw
 graetheide
->>>>>>> Made copy of v1.3 for .nextRelease
 grafhorst
 graft
 gramsbergen
 grashoek
 grathem
 grave
-<<<<<<< HEAD
-=======
 greffelkamp
->>>>>>> Made copy of v1.3 for .nextRelease
 greonterp
 grevenbicht
 griendtsveen
@@ -1187,21 +884,6 @@ groede
 groenekan
 groeningen
 groenlo
-<<<<<<< HEAD
-groesbeek
-groessen
-groet
-grolloo
-groningen
-gronsveld
-groot-ammers
-grootebroek
-grootegast
-grootschermer
-grou
-grubbenvorst
-gulpen
-=======
 groenveld
 groesbeek
 groessen
@@ -1223,7 +905,6 @@ grouw
 grubbenvorst
 gulpen
 gulpen-wittem
->>>>>>> Made copy of v1.3 for .nextRelease
 guttecoven
 gytsjerk
 haaften
@@ -1234,11 +915,8 @@ haarle gem hellendoorn
 haarle gem tubbergen
 haarlem
 haarlemmerliede
-<<<<<<< HEAD
-=======
 haarlemmerliede en spaarnwoude
 haarlemmermeer
->>>>>>> Made copy of v1.3 for .nextRelease
 haarlo
 haarsteeg
 haarzuilens
@@ -1246,10 +924,7 @@ haastrecht
 haelen
 hagestein
 haghorst
-<<<<<<< HEAD
-=======
 halderberge
->>>>>>> Made copy of v1.3 for .nextRelease
 haler
 halfweg nh
 hall
@@ -1268,10 +943,7 @@ harbrinkhoek
 hardenberg
 harderwijk
 hardinxveld-giessendam
-<<<<<<< HEAD
-=======
 haren
->>>>>>> Made copy of v1.3 for .nextRelease
 haren gn
 haren nb
 harfsen
@@ -1318,10 +990,7 @@ heesselt
 heeswijk-dinther
 heeten
 heeze
-<<<<<<< HEAD
-=======
 heeze-leende
->>>>>>> Made copy of v1.3 for .nextRelease
 hegebeintum
 hegelsom
 hei- en boeicop
@@ -1353,10 +1022,7 @@ hemmen
 hempens
 hemrik
 hendrik-ido-ambacht
-<<<<<<< HEAD
-=======
 hengelo
->>>>>>> Made copy of v1.3 for .nextRelease
 hengelo gld
 hengelo ov
 hengevelde
@@ -1372,18 +1038,12 @@ hertme
 herveld
 herwen
 herwijnen
-<<<<<<< HEAD
-=======
 het bildt
->>>>>>> Made copy of v1.3 for .nextRelease
 heteren
 heukelom nb
 heukelum
 heumen
-<<<<<<< HEAD
-=======
 heusden
->>>>>>> Made copy of v1.3 for .nextRelease
 heusden gem asten
 heusden gem heusden
 heveadorp
@@ -1413,13 +1073,9 @@ hoensbroek
 hoenzadriel
 hoevelaken
 hoeven
-<<<<<<< HEAD
-hoge hexel
-=======
 hof van twente
 hoge hexel
 hollands kroon
->>>>>>> Made copy of v1.3 for .nextRelease
 hollandsche rading
 hollandscheveld
 hollum
@@ -1437,10 +1093,7 @@ honselersdijk
 hoofddorp
 hoofdplaat
 hoog soeren
-<<<<<<< HEAD
-=======
 hoog-keppel
->>>>>>> Made copy of v1.3 for .nextRelease
 hoogblokland
 hooge mierde
 hooge zwaluwe
@@ -1450,24 +1103,15 @@ hoogerheide
 hoogersmilde
 hoogeveen
 hoogezand
-<<<<<<< HEAD
-hooghalen
-hoogkarspel
-hoog-keppel
-=======
 hoogezand-sappemeer
 hooghalen
 hoogkarspel
->>>>>>> Made copy of v1.3 for .nextRelease
 hoogland
 hooglanderveen
 hoogmade
 hoogvliet rotterdam
 hoogwoud
-<<<<<<< HEAD
-=======
 hoorn
->>>>>>> Made copy of v1.3 for .nextRelease
 hoorn nh
 hoorn terschelling
 hoornaar
@@ -1476,10 +1120,7 @@ horn
 hornhuizen
 horssen
 horst
-<<<<<<< HEAD
-=======
 horst aan de maas
->>>>>>> Made copy of v1.3 for .nextRelease
 houten
 houtigehage
 houwerzijl
@@ -1500,10 +1141,7 @@ huns
 hunsel
 hurdegaryp
 hurwenen
-<<<<<<< HEAD
-=======
 idaard
->>>>>>> Made copy of v1.3 for .nextRelease
 idaerd
 idsegahuizum
 idskenhuizen
@@ -1514,11 +1152,6 @@ ijlst
 ijmuiden
 ijsselham
 ijsselmuiden
-<<<<<<< HEAD
-ijsselstein ut
-ijzendijke
-ijzendoorn
-=======
 ijsselstein
 ijsselstein ut
 ijzendijke
@@ -1527,38 +1160,27 @@ ijzeren
 ijzerlo
 ijzevoorde
 illikhoven
->>>>>>> Made copy of v1.3 for .nextRelease
 ilpendam
 indijk
 ingber
 ingelum
 ingen
-<<<<<<< HEAD
-it heidenskip
-itens
-=======
 irnsum
 it heidenskip
 itens
 itnes
 itteren
 ittersum
->>>>>>> Made copy of v1.3 for .nextRelease
 ittervoort
 jaarsveld
 jabeek
 jannum
-<<<<<<< HEAD
-jellum
-jelsum
-=======
 janum
 jellum
 jelsum
 jipsingboermussel
 jipsingboertange
 jipsinghuizen
->>>>>>> Made copy of v1.3 for .nextRelease
 jirnsum
 jislum
 jisp
@@ -1566,29 +1188,12 @@ jistrum
 jonkerslan
 jonkersvaart
 joppe
-<<<<<<< HEAD
-=======
 jorwerd
->>>>>>> Made copy of v1.3 for .nextRelease
 jorwert
 joure
 jouswier
 jubbega
 julianadorp
-<<<<<<< HEAD
-jutrijp
-kaag
-kaard
-kaatsheuvel
-kalenberg
-kallenkote
-kamerik
-kampen
-kamperland
-kamperveen
-kantens
-kapel avezaath
-=======
 junne
 jutphaas
 jutrijp
@@ -1611,28 +1216,19 @@ kamperzeedijk
 kantens
 kapel avezaath
 kapel-avezaath
->>>>>>> Made copy of v1.3 for .nextRelease
 kapel-avezaath buren
 kapelle
 kapellebrug
 katlijk
 kats
 kattendijke
-<<<<<<< HEAD
-=======
 katwijk
 katwijk aan de rijn
 katwijk aan zee
->>>>>>> Made copy of v1.3 for .nextRelease
 katwijk nb
 katwijk zh
 katwoude
 kedichem
-<<<<<<< HEAD
-keijenborg
-kekerdom
-kelpen-oler
-=======
 keent
 keijenborg
 keinsmerbrug
@@ -1642,7 +1238,6 @@ kelmond
 kelpen
 kelpen-oler
 kerbuurt
->>>>>>> Made copy of v1.3 for .nextRelease
 kerk avezaath tiel
 kerk-avezaath
 kerkdriel
@@ -1650,11 +1245,6 @@ kerkenveld
 kerkrade
 kerkwerve
 kerkwijk
-<<<<<<< HEAD
-kessel lb
-kesteren
-kiel-windeweer
-=======
 kessel
 kessel lb
 kesseleik
@@ -1666,7 +1256,6 @@ kibbelveen
 kiel-windeweer
 kijkduin
 kijkuit
->>>>>>> Made copy of v1.3 for .nextRelease
 kilder
 kimswerd
 kinderdijk
@@ -1675,27 +1264,19 @@ klaaswaal
 klarenbeek
 klazienaveen
 klazienaveen-noord
-<<<<<<< HEAD
-klein zundert
-=======
 klein dochteren
 klein genhout
 klein ulsda
 klein zundert
 kleine huisjes
 kleverskerke
->>>>>>> Made copy of v1.3 for .nextRelease
 klijndijk
 klimmen
 kloetinge
 klooster lidlum
-<<<<<<< HEAD
-kloosterburen
-=======
 klooster-lidlum
 kloosterburen
 kloosterdijk
->>>>>>> Made copy of v1.3 for .nextRelease
 kloosterhaar
 kloosterzande
 klundert
@@ -1705,38 +1286,26 @@ kockengen
 koedijk
 koekange
 koewacht
-<<<<<<< HEAD
-=======
 kogerpolder
 koggenland
 kolderveen
 kolderveense bovenboer
->>>>>>> Made copy of v1.3 for .nextRelease
 kolderwolde
 kolham
 kolhorn
 kollum
-<<<<<<< HEAD
-=======
 kollumerland en nieuwkruisland
->>>>>>> Made copy of v1.3 for .nextRelease
 kollumerpomp
 kollumerzwaag
 kommerzijl
 koningsbosch
 koningslust
-<<<<<<< HEAD
-=======
 koninngslust
->>>>>>> Made copy of v1.3 for .nextRelease
 koog aan de zaan
 kootstertille
 kootwijk
 kootwijkerbroek
-<<<<<<< HEAD
-=======
 korendijk
->>>>>>> Made copy of v1.3 for .nextRelease
 kornhorn
 kornwerderzand
 kortehemmen
@@ -1745,30 +1314,16 @@ kortgene
 koudekerk aan den rijn
 koudekerke
 koudum
-<<<<<<< HEAD
-koufurderrige
-krabbendijke
-kraggenburg
-=======
 koufurderigge
 koufurderrige
 krabbendam
 krabbendijke
 kraggenburg
 kranenburg
->>>>>>> Made copy of v1.3 for .nextRelease
 kreileroord
 krewerd
 krimpen aan de lek
 krimpen aan den ijssel
-<<<<<<< HEAD
-kring van dorth
-krommenie
-kronenberg
-kropswolde
-kruiningen
-kruisland
-=======
 krimpenerwaard
 kring van dorth
 krommenie
@@ -1780,48 +1335,32 @@ kruisdijk
 kruisland
 kruispolderhaven
 kruisweg
->>>>>>> Made copy of v1.3 for .nextRelease
 kubaard
 kudelstaart
 kuinre
 kuitaart
-<<<<<<< HEAD
-=======
 kunrade
->>>>>>> Made copy of v1.3 for .nextRelease
 kwadendamme
 kwadijk
 kwintsheul
 laag zuthem
 laag-keppel
 laag-soeren
-<<<<<<< HEAD
-=======
 laaghalen
 laaghalerveen
 laarbeek
->>>>>>> Made copy of v1.3 for .nextRelease
 lage mierde
 lage vuursche
 lage zwaluwe
 lageland
 lambertschaag
 lamswaarde
-<<<<<<< HEAD
-=======
 landerd
->>>>>>> Made copy of v1.3 for .nextRelease
 landerum
 landgraaf
 landhorst
 landsmeer
 langbroek
-<<<<<<< HEAD
-langedijke
-langelille
-langelo dr
-langenboom
-=======
 langedijk
 langedijke
 langelille
@@ -1829,26 +1368,19 @@ langelo
 langelo dr
 langenboom
 langeraar
->>>>>>> Made copy of v1.3 for .nextRelease
 langerak zh
 langeveen
 langeweg
 langezwaag
 langweer
-<<<<<<< HEAD
-=======
 lankhorst
 lansingerland
 laren
->>>>>>> Made copy of v1.3 for .nextRelease
 laren gld
 laren nh
 lathum
 lattrop-breklenkamp
-<<<<<<< HEAD
-=======
 lauradorp
->>>>>>> Made copy of v1.3 for .nextRelease
 lauwersoog
 lauwerzijl
 ledeacker
@@ -1859,13 +1391,6 @@ leerbroek
 leerdam
 leermens
 leersum
-<<<<<<< HEAD
-leeuwarden
-legemeer
-leiden
-leiderdorp
-leidschendam
-=======
 leesten
 leeuwarden
 leeuwarderadeel
@@ -1876,7 +1401,6 @@ leiden
 leiderdorp
 leidschendam
 leidschendam-voorburg
->>>>>>> Made copy of v1.3 for .nextRelease
 leimuiden
 leimuiderbrug
 lekkerkerk
@@ -1887,14 +1411,6 @@ lemele
 lemelerveld
 lemiers
 lemmer
-<<<<<<< HEAD
-lengel
-lent
-leons
-lepelstraat
-lettelbert
-lettele
-=======
 lemselo
 lengel
 lent
@@ -1906,20 +1422,12 @@ lettelbert
 lettele
 leudal
 leuken
->>>>>>> Made copy of v1.3 for .nextRelease
 leunen
 leur
 leusden
 leuth
 leutingewolde
 leuvenheim
-<<<<<<< HEAD
-leveroy
-lewedorp
-lexmond
-lichtaard
-lichtenvoorde
-=======
 leuvenum
 leveroy
 lewedorp
@@ -1929,7 +1437,6 @@ lheebroek
 lichtaard
 lichtenvoorde
 lichtmis
->>>>>>> Made copy of v1.3 for .nextRelease
 liempde
 lienden
 lierderholthuis
@@ -1942,14 +1449,6 @@ lievelde
 lieveren
 lijnden
 limbricht
-<<<<<<< HEAD
-limmen
-linde dr
-linden
-linne
-linschoten
-lioessens
-=======
 limmel
 limmen
 linde
@@ -1963,47 +1462,32 @@ lintelo
 lintvelde
 lioessens
 lions
->>>>>>> Made copy of v1.3 for .nextRelease
 lippenhuizen
 lisse
 lisserbroek
 lith
 lithoijen
-<<<<<<< HEAD
-lobith
-lochem
-=======
 littenseradiel
 lobith
 lochem
 loenen
->>>>>>> Made copy of v1.3 for .nextRelease
 loenen aan de vecht
 loenen gld
 loenersloot
 loenga
 loerbeek
-<<<<<<< HEAD
-lollum
-lomm
-longerhouw
-=======
 loil
 lollum
 lomm
 longerhouw
 lonneker
 loo
->>>>>>> Made copy of v1.3 for .nextRelease
 loo gld
 loon
 loon op zand
 loosbroek
 loosdrecht
-<<<<<<< HEAD
-=======
 loosduinen
->>>>>>> Made copy of v1.3 for .nextRelease
 loozen
 lopik
 lopikerkapel
@@ -2018,10 +1502,7 @@ lunteren
 lutjebroek
 lutjegast
 lutjewinkel
-<<<<<<< HEAD
-=======
 lutkewierum
->>>>>>> Made copy of v1.3 for .nextRelease
 luttelgeest
 lutten
 luttenberg
@@ -2029,30 +1510,17 @@ luxwoude
 luyksgestel
 lytsewierrum
 maarheeze
-<<<<<<< HEAD
-maarn
-maarsbergen
-maarssen
-=======
 maarland
 maarn
 maarsbergen
 maarssen
 maarssenbroek
->>>>>>> Made copy of v1.3 for .nextRelease
 maartensdijk
 maasbommel
 maasbracht
 maasbree
 maasdam
 maasdijk
-<<<<<<< HEAD
-maashees
-maasland
-maassluis
-maastricht
-maastricht-airport
-=======
 maasdriel
 maasgouw
 maashees
@@ -2062,20 +1530,14 @@ maassluis
 maastricht
 maastricht-airport
 maasvlakte
->>>>>>> Made copy of v1.3 for .nextRelease
 maasvlakte rotterdam
 macharen
 made
 makkinga
-<<<<<<< HEAD
-makkum fr
-malden
-=======
 makkum
 makkum fr
 malden
 mamelis
->>>>>>> Made copy of v1.3 for .nextRelease
 mander
 manderveen
 mantgum
@@ -2083,11 +1545,8 @@ mantinge
 maren-kessel
 margraten
 maria hoop
-<<<<<<< HEAD
-=======
 mariaheide
 mariahoop
->>>>>>> Made copy of v1.3 for .nextRelease
 mariahout
 mariaparochie
 marienberg
@@ -2098,18 +1557,12 @@ markelo
 marken
 markenbinnen
 marknesse
-<<<<<<< HEAD
-marle
-marrum
-marsum
-=======
 markvelde
 marle
 marrum
 marssum
 marsum
 martenshoek
->>>>>>> Made copy of v1.3 for .nextRelease
 marum
 marwijksoord
 mastenbroek
@@ -2123,24 +1576,15 @@ meerkerk
 meerlo
 meerssen
 meerstad
-<<<<<<< HEAD
-=======
 meerveld
 meerveldhoven
 meessen
->>>>>>> Made copy of v1.3 for .nextRelease
 meeuwen
 megchelen
 megen
 meijel
 melderslo
 melick
-<<<<<<< HEAD
-meliskerke
-melissant
-menaam
-mensingeweer
-=======
 melick en herkenbosch
 meliskerke
 melissant
@@ -2149,28 +1593,18 @@ menaldum
 menameradiel
 mensingeweer
 menterwolde
->>>>>>> Made copy of v1.3 for .nextRelease
 meppel
 meppen
 merkelbeek
 merselo
-<<<<<<< HEAD
-=======
 merslo
 merum
 mesch
->>>>>>> Made copy of v1.3 for .nextRelease
 meteren
 meterik
 metslawier
 mheer
 middelaar
-<<<<<<< HEAD
-middelburg
-middelharnis
-middelie
-middelstum
-=======
 middelbeers
 middelbert
 middelburg
@@ -2180,7 +1614,6 @@ middelrode
 middelstum
 midden-delfland
 midden-drenthe
->>>>>>> Made copy of v1.3 for .nextRelease
 middenbeemster
 middenmeer
 midlaren
@@ -2191,13 +1624,6 @@ midwolde
 midwoud
 miedum
 mierlo
-<<<<<<< HEAD
-mijdrecht
-mijnsheerenland
-mildam
-milheeze
-mill
-=======
 mierlo-hout
 mijdrecht
 mijnsheerenland
@@ -2207,7 +1633,6 @@ milheeze
 mill
 mill en sint hubert
 millingen a/d rijn
->>>>>>> Made copy of v1.3 for .nextRelease
 millingen aan de rijn
 milsbeek
 minnertsga
@@ -2218,16 +1643,6 @@ moergestel
 moerkapelle
 moerstraten
 molenaarsgraaf
-<<<<<<< HEAD
-molenhoek lb
-molenschot
-molkwerum
-monnickendam
-monster
-montfoort
-montfort
-mook
-=======
 molenend
 molenhoek
 molenhoek lb
@@ -2242,17 +1657,10 @@ montfoort
 montfort
 mook
 mook en middelaar
->>>>>>> Made copy of v1.3 for .nextRelease
 mookhoek
 moordrecht
 moorveld
 morra
-<<<<<<< HEAD
-muiden
-muiderberg
-munein
-munnekeburen
-=======
 muggenbeet
 muiden
 muiderberg
@@ -2260,7 +1668,6 @@ mukkekeburen
 munein
 munnekeburen
 munnekemoer
->>>>>>> Made copy of v1.3 for .nextRelease
 munnekezijl
 munstergeleen
 muntendam
@@ -2269,29 +1676,14 @@ musselkanaal
 naaldwijk
 naarden
 nagele
-<<<<<<< HEAD
-=======
 nattenhoven
 neck
 neder-betuwe
->>>>>>> Made copy of v1.3 for .nextRelease
 nederasselt
 nederhemert
 nederhorst den berg
 nederland
 nederweert
-<<<<<<< HEAD
-nederweert-eind
-neede
-neer
-neerijnen
-neeritter
-neerkant
-nes ameland
-nes gem dongeradeel
-nes gem heerenveen
-netersel
-=======
 nederweert eind
 nederweert-eind
 nederwetten
@@ -2309,7 +1701,6 @@ nes gem heerenveen
 nessersluis
 netersel
 nettelhorst
->>>>>>> Made copy of v1.3 for .nextRelease
 netterden
 niawier
 nibbixwoud
@@ -2317,25 +1708,6 @@ niebert
 niehove
 niekerk de marne
 niekerk grootegast
-<<<<<<< HEAD
-nietap
-nieuw annerveen
-nieuw beerta
-nieuw- en sint joosland
-nieuw heeten
-nieuw namen
-nieuw scheemda
-nieuwaal
-nieuw-amsterdam
-nieuw-balinge
-nieuw-beijerland
-nieuw-buinen
-nieuw-dordrecht
-nieuwdorp zld
-nieuwe niedorp
-nieuwe pekela
-nieuwe wetering
-=======
 niersen
 nietap
 nieuw annerveen
@@ -2378,15 +1750,10 @@ nieuwe niedorp
 nieuwe pekela
 nieuwe wetering
 nieuwe-tonge
->>>>>>> Made copy of v1.3 for .nextRelease
 nieuwebrug
 nieuwediep
 nieuwegein
 nieuwehorne
-<<<<<<< HEAD
-nieuwendijk nb
-nieuwer ter aa
-=======
 nieuwendam
 nieuwendijk
 nieuwendijk nb
@@ -2394,42 +1761,19 @@ nieuwenhagen
 nieuwenhoorn
 nieuwer ter aa
 nieuwerbrug
->>>>>>> Made copy of v1.3 for .nextRelease
 nieuwerbrug aan den rijn
 nieuwerkerk
 nieuwerkerk ad ijssel
 nieuweroord
 nieuwersluis
-<<<<<<< HEAD
-nieuweschoot
-nieuwe-tonge
-=======
 nieuweschans
 nieuweschild
 nieuweschoot
->>>>>>> Made copy of v1.3 for .nextRelease
 nieuwkoop
 nieuwkuijk
 nieuwland
 nieuwlande
 nieuwlande coevorden
-<<<<<<< HEAD
-nieuw-lekkerland
-nieuwleusen
-nieuwolda
-nieuwpoort
-nieuw-roden
-nieuw-schoonebeek
-nieuwstadt
-nieuwveen
-nieuw-vennep
-nieuwvliet
-nieuw-vossemeer
-nieuw-weerdinge
-niezijl
-niftrik
-nigtevecht
-=======
 nieuwleusden
 nieuwleusen
 nieuwolda
@@ -2442,7 +1786,6 @@ nifterik
 niftrik
 nigtevecht
 nigteveld
->>>>>>> Made copy of v1.3 for .nextRelease
 nij altoenae
 nij beets
 nijbroek
@@ -2456,39 +1799,25 @@ nijemirdum
 nijensleek
 nijetrijne
 nijeveen
-<<<<<<< HEAD
-nijhuizum
-=======
 nijeveense bovenboer
 nijezijl
 nijhuizum
 nijkerk
->>>>>>> Made copy of v1.3 for .nextRelease
 nijkerk gld
 nijkerkerveen
 nijland
 nijlande
 nijmegen
-<<<<<<< HEAD
-nijverdal
-nispen
-nisse
-=======
 nijnsel
 nijswiller
 nijverdal
 nispen
 nisse
 nissewaard
->>>>>>> Made copy of v1.3 for .nextRelease
 nistelrode
 noardburgum
 nooitgedacht
 noorbeek
-<<<<<<< HEAD
-noordbeemster
-noordbroek
-=======
 noord deurningen
 noord-beveland
 noord-scharwoude
@@ -2499,24 +1828,10 @@ noordbergum
 noordbroek
 noorddijk
 noordeinde
->>>>>>> Made copy of v1.3 for .nextRelease
 noordeinde gld
 noordeinde nh
 noordeloos
 noorden
-<<<<<<< HEAD
-noordgouwe
-noordhoek
-noordhorn
-noordlaren
-noord-scharwoude
-noordscheschut
-noord-sleen
-noordwelle
-noordwijk gn
-noordwijk zh
-noordwijkerhout
-=======
 noordenveld
 noordgouwe
 noordhoek
@@ -2532,17 +1847,13 @@ noordwijk gn
 noordwijk zh
 noordwijkerhout
 noordwolde
->>>>>>> Made copy of v1.3 for .nextRelease
 noordwolde fr
 noordwolde gn
 nootdorp
 norg
 notter
 nuenen
-<<<<<<< HEAD
-=======
 nuenen, gerwen en nederwetten
->>>>>>> Made copy of v1.3 for .nextRelease
 nuis
 nuland
 numansdorp
@@ -2570,10 +1881,7 @@ oirschot
 oisterwijk
 okkenbroek
 olburgen
-<<<<<<< HEAD
-=======
 oldambt
->>>>>>> Made copy of v1.3 for .nextRelease
 oldeberkoop
 oldebroek
 oldeholtpade
@@ -2587,32 +1895,22 @@ oldenzijl
 oldeouwer
 oldetrijne
 olst
-<<<<<<< HEAD
-=======
 olst-wijhe
->>>>>>> Made copy of v1.3 for .nextRelease
 olterterp
 ommel
 ommen
 ommeren
-<<<<<<< HEAD
-=======
 onderbanken
->>>>>>> Made copy of v1.3 for .nextRelease
 onderdendam
 onna
 onnen
 onstwedde
 ooij
 ooltgensplaat
-<<<<<<< HEAD
-oost west en middelbeers
-=======
 oost gelre
 oost west en middelbeers
 oost-graftdijk
 oost-souburg
->>>>>>> Made copy of v1.3 for .nextRelease
 oostburg
 oostdijk
 oosteind
@@ -2622,10 +1920,7 @@ oosterblokker
 oosterend nh
 oosterend terschelling
 oosterhesselen
-<<<<<<< HEAD
-=======
 oosterhout
->>>>>>> Made copy of v1.3 for .nextRelease
 oosterhout gld
 oosterhout nb
 oosterland
@@ -2638,21 +1933,13 @@ oosterwijtwerd
 oosterwolde fr
 oosterwolde gld
 oosterzee
-<<<<<<< HEAD
-oost-graftdijk
-=======
->>>>>>> Made copy of v1.3 for .nextRelease
 oosthem
 oosthuizen
 oostkapelle
 oostknollendam
 oostrum fr
 oostrum lb
-<<<<<<< HEAD
-oost-souburg
-=======
 ooststellingwerf
->>>>>>> Made copy of v1.3 for .nextRelease
 oostvoorne
 oostwold gem leek
 oostwold gem oldambt
@@ -2668,10 +1955,7 @@ oploo
 opmeer
 oppenhuizen
 opperdoes
-<<<<<<< HEAD
-=======
 opsterland
->>>>>>> Made copy of v1.3 for .nextRelease
 oranje
 oranjewoud
 orvelte
@@ -2692,22 +1976,15 @@ oud ootmarsum
 oud zuilen
 oud-alblas
 oud-beijerland
-<<<<<<< HEAD
-ouddorp zh
-=======
 oud-vossemeer
 ouddorp zh
 oude ijsselstreek
->>>>>>> Made copy of v1.3 for .nextRelease
 oude meer
 oude niedorp
 oude pekela
 oude wetering
 oude willem
-<<<<<<< HEAD
-=======
 oude-tonge
->>>>>>> Made copy of v1.3 for .nextRelease
 oudebildtzijl
 oudega de fryske marren
 oudega gem smallingerlnd
@@ -2721,10 +1998,7 @@ oudemolen nb
 oudenbosch
 oudendijk nh
 oudenhoorn
-<<<<<<< HEAD
-=======
 ouder-amstel
->>>>>>> Made copy of v1.3 for .nextRelease
 ouderkerk aan de amstel
 ouderkerk aan den ijssel
 oudeschans
@@ -2732,23 +2006,10 @@ oudeschild
 oudeschip
 oudeschoot
 oudesluis
-<<<<<<< HEAD
-oude-tonge
-=======
->>>>>>> Made copy of v1.3 for .nextRelease
 oudewater
 oudezijl
 oudkarspel
 oudorp nh
-<<<<<<< HEAD
-oud-vossemeer
-oudwoude
-ouwerkerk
-ouwsterhaule
-ouwster-nijega
-overasselt
-overberg
-=======
 oudwoude
 ouwerkerk
 ouwster-nijega
@@ -2756,7 +2017,6 @@ ouwsterhaule
 overasselt
 overberg
 overbetuwe
->>>>>>> Made copy of v1.3 for .nextRelease
 overdinkel
 overloon
 overschild
@@ -2764,14 +2024,10 @@ overslag
 overveen
 ovezande
 paasloo
-<<<<<<< HEAD
-paesens
-=======
 padhuis
 paesens
 palemig
 panheel
->>>>>>> Made copy of v1.3 for .nextRelease
 pannerden
 panningen
 papekop
@@ -2779,13 +2035,6 @@ papendrecht
 papenhoven
 papenvoort
 parrega
-<<<<<<< HEAD
-paterswolde
-peest
-peins
-peize
-peperga
-=======
 passewaay
 paterswolde
 peel en maas
@@ -2797,15 +2046,11 @@ peizermade
 pekela
 peperga
 pernis
->>>>>>> Made copy of v1.3 for .nextRelease
 pernis rotterdam
 persingen
 pesse
 petten
-<<<<<<< HEAD
-=======
 pey
->>>>>>> Made copy of v1.3 for .nextRelease
 philippine
 piaam
 piershil
@@ -2813,27 +2058,18 @@ pieterburen
 pietersbierum
 pieterzijl
 pijnacker
-<<<<<<< HEAD
-=======
 pijnacker-nootdorp
 pikveld
->>>>>>> Made copy of v1.3 for .nextRelease
 pingjum
 plasmolen
 poederoijen
 poeldijk
 polsbroek
-<<<<<<< HEAD
-poortugaal
-poortvliet
-poppenwier
-=======
 polsbroekerdam
 poortugaal
 poortvliet
 poppenwier
 poppingawier
->>>>>>> Made copy of v1.3 for .nextRelease
 posterholt
 prinsenbeek
 puiflijk
@@ -2841,36 +2077,17 @@ punthorst
 purmer
 purmerend
 purmerland
-<<<<<<< HEAD
-=======
 putbroek
->>>>>>> Made copy of v1.3 for .nextRelease
 puth
 putte
 putten
 puttershoek
-<<<<<<< HEAD
-=======
 puttet
 quirijnstok
->>>>>>> Made copy of v1.3 for .nextRelease
 raalte
 raamsdonk
 raamsdonksveer
 raard
-<<<<<<< HEAD
-radewijk
-radio kootwijk
-raerd
-randwijk
-ransdaal
-rasquert
-ravenstein
-ravenswaaij
-ravenswoud
-readtsjerk
-reahus
-=======
 raath
 radewijk
 radio kootwijk
@@ -2888,31 +2105,22 @@ ravenswoud
 readtsjerk
 reahus
 rechteren
->>>>>>> Made copy of v1.3 for .nextRelease
 reduzum
 reek
 reeuwijk
 reijmerstok
-<<<<<<< HEAD
-reitsum
-rekken
-=======
 reimerswaal
 reitsum
 rekken
 remmerden
->>>>>>> Made copy of v1.3 for .nextRelease
 renesse
 renkum
 renswoude
 ressen
 retranchement
 reusel
-<<<<<<< HEAD
-=======
 reusel-de mierden
 reutje
->>>>>>> Made copy of v1.3 for .nextRelease
 reutum
 reuver
 rha
@@ -2922,10 +2130,7 @@ rheeze
 rheezerveen
 rhenen
 rhenoy
-<<<<<<< HEAD
-=======
 rhienderen
->>>>>>> Made copy of v1.3 for .nextRelease
 rhoon
 ridderkerk
 ried
@@ -2933,28 +2138,13 @@ riel
 rien
 riethoven
 rietmolen
-<<<<<<< HEAD
-=======
 riihem
 rijckholt
->>>>>>> Made copy of v1.3 for .nextRelease
 rijen
 rijkevoort
 rijkevoort-de walsert
 rijnsaterwoude
 rijnsburg
-<<<<<<< HEAD
-rijpwetering
-rijs
-rijsbergen
-rijsenhout
-rijssen
-rijswijk gld
-rijswijk nb
-rijswijk zh
-rilland
-rinsumageast
-=======
 rijnwaarden
 rijperkerk
 rijpwetering
@@ -2975,36 +2165,19 @@ rimburg
 rinnegom
 rinsumageast
 rinsumageest
->>>>>>> Made copy of v1.3 for .nextRelease
 ritthem
 rockanje
 roden
 roderesch
 roderwolde
 roelofarendsveen
-<<<<<<< HEAD
-=======
 roerdalen
->>>>>>> Made copy of v1.3 for .nextRelease
 roermond
 rogat
 roggel
 rohel
 rolde
 roodeschool
-<<<<<<< HEAD
-roosendaal
-roosteren
-rosmalen
-rossum gld
-rossum ov
-roswinkel
-rotstergaast
-rotsterhaule
-rotterdam
-rotterdam-albrandswaard
-rottevalle
-=======
 roodhuis
 roodkerk
 roordahuizum
@@ -3024,7 +2197,6 @@ rotterdam albrands
 rotterdam-albrandswaard
 rottevalle
 rottum
->>>>>>> Made copy of v1.3 for .nextRelease
 rottum fr
 rottum gn
 rouveen
@@ -3033,15 +2205,6 @@ rozenburg zh
 rozendaal
 rucphen
 ruigahuizen
-<<<<<<< HEAD
-ruinen
-ruinerwold
-rumpt
-rutten
-ruurlo
-ryptsjerk
-'s gravenmoer
-=======
 ruigezand
 ruigoord
 ruinen
@@ -3053,7 +2216,6 @@ rustenburg
 rutten
 ruurlo
 ryptsjerk
->>>>>>> Made copy of v1.3 for .nextRelease
 saaksum
 saasveld
 saaxumhuizen
@@ -3083,10 +2245,7 @@ schellinkhout
 schelluinen
 schermerhorn
 scherpenisse
-<<<<<<< HEAD
-=======
 scherpenzeel
->>>>>>> Made copy of v1.3 for .nextRelease
 scherpenzeel fr
 scherpenzeel gld
 schettens
@@ -3113,10 +2272,7 @@ schoonoord
 schoonrewoerd
 schoorl
 schore
-<<<<<<< HEAD
-=======
 schouwen-duiveland
->>>>>>> Made copy of v1.3 for .nextRelease
 schouwerzijl
 schraard
 schuinesloot
@@ -3126,21 +2282,6 @@ serooskerke schouwen
 serooskerke walcheren
 sevenum
 sexbierum
-<<<<<<< HEAD
-'s-graveland
-'s-gravendeel
-'s-gravenhage
-'s-gravenpolder
-'s-gravenzande
-'s-heer abtskerke
-'s-heer arendskerke
-'s-heer hendrikskinderen
-'s-heerenberg
-'s-heerenbroek
-'s-heerenhoek
-'s-hertogenbosch
-=======
->>>>>>> Made copy of v1.3 for .nextRelease
 sibculo
 sibrandabuorren
 sibrandahus
@@ -3169,14 +2310,6 @@ sint odilienberg
 sint pancras
 sint philipsland
 sint-annaland
-<<<<<<< HEAD
-sintjohannesga
-sint-maartensdijk
-sint-michielsgestel
-sint-oedenrode
-sirjansland
-sittard
-=======
 sint-maartensdijk
 sint-michielsgestel
 sint-oedenrode
@@ -3184,7 +2317,6 @@ sintjohannesga
 sirjansland
 sittard
 sittard-geleen
->>>>>>> Made copy of v1.3 for .nextRelease
 skingen
 slagharen
 slappeterp
@@ -3192,13 +2324,8 @@ sleen
 sleeuwijk
 slenaken
 sliedrecht
-<<<<<<< HEAD
-slijkenburg
-slijk-ewijk
-=======
 slijk-ewijk
 slijkenburg
->>>>>>> Made copy of v1.3 for .nextRelease
 slochteren
 slootdorp
 sloten fr
@@ -3207,10 +2334,7 @@ sluiskil
 smakt
 smalle ee
 smallebrugge
-<<<<<<< HEAD
-=======
 smallingerland
->>>>>>> Made copy of v1.3 for .nextRelease
 smilde
 snakkerburen
 sneek
@@ -3255,13 +2379,9 @@ startenhuizen
 startenhuizen lopp
 stavenisse
 stavoren
-<<<<<<< HEAD
-stedum
-=======
 stede broec
 stedum
 steenbergen
->>>>>>> Made copy of v1.3 for .nextRelease
 steenbergen dr
 steenbergen nb
 steendam
@@ -3269,27 +2389,18 @@ steenderen
 steenenkamer
 steensel
 steenwijk
-<<<<<<< HEAD
-steenwijkerwold
-stegeren
-steggerda
-=======
 steenwijkerland
 steenwijkerwold
 stegeren
 steggerda
 stein
->>>>>>> Made copy of v1.3 for .nextRelease
 stein lb
 stellendam
 sterksel
 stevensbeek
 stevensweert
 steyl
-<<<<<<< HEAD
-=======
 stichtse vecht
->>>>>>> Made copy of v1.3 for .nextRelease
 stieltjeskanaal
 stiens
 stitswerd
@@ -3318,44 +2429,20 @@ sweikhuizen
 swichum
 swifterbant
 swolgen
-<<<<<<< HEAD
-'t goy
-'t haantje
-'t harde
-'t loo oldebroek
-'t veld
-'t waar
-'t zand nh
-'t zandt gn
-=======
 súdwest-fryslân
->>>>>>> Made copy of v1.3 for .nextRelease
 taarlo
 teeffelen
 teerns
 tegelen
-<<<<<<< HEAD
-ten boer
-=======
 ten arlo
 ten boer
 ten esschen
->>>>>>> Made copy of v1.3 for .nextRelease
 ten post
 ter aar
 ter aard
 ter apel
 ter apelkanaal
 ter heijde
-<<<<<<< HEAD
-ter idzard
-terband
-terborg
-terheijden
-terherne
-terhole
-terkaple
-=======
 ter hole
 ter idzard
 terband
@@ -3369,23 +2456,11 @@ terhorne
 terhorst
 terkaple
 terlinden
->>>>>>> Made copy of v1.3 for .nextRelease
 termunten
 termunterzijl
 ternaard
 terneuzen
 teroele
-<<<<<<< HEAD
-terschuur
-tersoal
-terwispel
-terwolde
-teteringen
-teuge
-thesinge
-tholen
-thorn
-=======
 terschelling
 terschuur
 tersoal
@@ -3402,16 +2477,12 @@ thij
 tholen
 thorn
 tibma
->>>>>>> Made copy of v1.3 for .nextRelease
 tiel
 tiendeveen
 tienhoven ut
 tienhoven zh
 tienray
-<<<<<<< HEAD
-=======
 tietjerk
->>>>>>> Made copy of v1.3 for .nextRelease
 tijnje
 tilburg
 tilligte
@@ -3420,23 +2491,12 @@ tinte
 tirns
 tjalhuizum
 tjalleberd
-<<<<<<< HEAD
-=======
 tjarnsweer
->>>>>>> Made copy of v1.3 for .nextRelease
 tjerkgaast
 tjerkwerd
 tjuchem
 tolbert
 toldijk
-<<<<<<< HEAD
-tolkamer
-tollebeek
-tonden
-toornwerd
-tricht
-triemen
-=======
 tolduik
 tolkamer
 tollebeek
@@ -3449,31 +2509,21 @@ tricht
 triemen
 trimunt
 trintelen
->>>>>>> Made copy of v1.3 for .nextRelease
 tripscompagnie
 tubbergen
 tuil
 tuitjenhorn
 tuk
 tull en 't waal
-<<<<<<< HEAD
-twello
-=======
 tungelroy
 tweede valthermond
 twello
 twenterand
->>>>>>> Made copy of v1.3 for .nextRelease
 twijzel
 twijzelerheide
 twisk
 tynaarlo
 tytsjerk
-<<<<<<< HEAD
-tzum
-tzummarum
-ubbena
-=======
 tytsjerksteradiel
 tzum
 tzummarum
@@ -3481,7 +2531,6 @@ ubach over worms
 ubachsberg
 ubbena
 ubbenga
->>>>>>> Made copy of v1.3 for .nextRelease
 ubbergen
 uddel
 uden
@@ -3494,19 +2543,13 @@ uithoorn
 uithuizen
 uithuizermeeden
 uitwellingerga
-<<<<<<< HEAD
-=======
 uitwierde
->>>>>>> Made copy of v1.3 for .nextRelease
 uitwijk
 ulestraten
 ulft
 ulicoten
 ulrum
-<<<<<<< HEAD
-=======
 ulsda
->>>>>>> Made copy of v1.3 for .nextRelease
 ulvenhout
 ulvenhout ac
 ureterp
@@ -3515,23 +2558,11 @@ urmond
 ursem
 ursem gem alkmaar
 usquert
-<<<<<<< HEAD
-=======
 usselo
->>>>>>> Made copy of v1.3 for .nextRelease
 utrecht
+utrechtse heuvelrug
 vaals
 vaassen
-<<<<<<< HEAD
-valburg
-valkenburg lb
-valkenburg zh
-valkenswaard
-valthe
-valthermond
-varik
-varsselder
-=======
 vaesrade
 valburg
 valkenburg
@@ -3548,7 +2579,6 @@ varsen
 varssel
 varsselder
 varsselder veldhunten
->>>>>>> Made copy of v1.3 for .nextRelease
 varsseveld
 vasse
 veelerveen
@@ -3559,10 +2589,7 @@ veenhuizen
 veeningen
 veenklooster
 veenoord
-<<<<<<< HEAD
-=======
 veenwouden
->>>>>>> Made copy of v1.3 for .nextRelease
 veere
 veessen
 vegelinsoord
@@ -3570,13 +2597,6 @@ veghel
 velddriel
 velden
 veldhoven
-<<<<<<< HEAD
-velp gld
-velp nb
-velsen-noord
-velsen-zuid
-velserbroek
-=======
 veldhunten
 velp
 velp gld
@@ -3589,20 +2609,11 @@ velserbroek
 velswijk
 veltum
 ven-zelderheide
->>>>>>> Made copy of v1.3 for .nextRelease
 venebrugge
 venhorst
 venhuizen
 venlo
 venray
-<<<<<<< HEAD
-ven-zelderheide
-vessem
-vethuizen
-veulen
-vianen nb
-vianen ut
-=======
 verwolde
 vessem
 vethuizen
@@ -3611,7 +2622,6 @@ vianen
 vianen nb
 vianen ut
 vianent
->>>>>>> Made copy of v1.3 for .nextRelease
 vierakker
 vierhouten
 vierhuizen
@@ -3620,10 +2630,7 @@ vierpolders
 vijfhuizen
 vijlen
 vilsteren
-<<<<<<< HEAD
-=======
 vilt
->>>>>>> Made copy of v1.3 for .nextRelease
 vinkega
 vinkel
 vinkenbuurt
@@ -3632,17 +2639,11 @@ visvliet
 vlaardingen
 vlagtwedde
 vledder
-<<<<<<< HEAD
-vledderveen dr
-vledderveen gn
-vleuten
-=======
 vledderveen
 vledderveen dr
 vledderveen gn
 vleuten
 vlieghuis
->>>>>>> Made copy of v1.3 for .nextRelease
 vlieland
 vlierden
 vlijmen
@@ -3655,24 +2656,16 @@ vogelwaarde
 volendam
 volkel
 vollenhove
-<<<<<<< HEAD
-=======
 volthe
 vondelingenplaat
->>>>>>> Made copy of v1.3 for .nextRelease
 vondelingenplaat rt
 voorburg
 voorhout
 voorschoten
-<<<<<<< HEAD
-voorst gem voorst
-voorst oude ijsselstreek
-=======
 voorst
 voorst gem voorst
 voorst oude ijsselstreek
 voorstonden
->>>>>>> Made copy of v1.3 for .nextRelease
 voorthuizen
 vorchten
 vorden
@@ -3682,27 +2675,18 @@ vragender
 vredenheim
 vredepeel
 vreeland
-<<<<<<< HEAD
-vries
-vriescheloo
-vriezenveen
-=======
 vreeswijk
 vries
 vriescheloo
 vriezenveen
 vriezenveensewijk
 vrijhoeve-capelle
->>>>>>> Made copy of v1.3 for .nextRelease
 vroomshoop
 vrouwenakker
 vrouwenparochie
 vrouwenpolder
 vught
-<<<<<<< HEAD
-=======
 vuile riete
->>>>>>> Made copy of v1.3 for .nextRelease
 vuren
 waaksens gem litt
 waal
@@ -3748,10 +2732,7 @@ wateren
 watergang
 waterhuizen
 wateringen
-<<<<<<< HEAD
-=======
 waterland
->>>>>>> Made copy of v1.3 for .nextRelease
 waterlandkerkje
 waverveen
 wedde
@@ -3776,12 +2757,9 @@ wernhout
 wervershoof
 wesepe
 wessem
-<<<<<<< HEAD
-=======
 west maas en waal
 west-graftdijk
 west-terschelling
->>>>>>> Made copy of v1.3 for .nextRelease
 westbeemster
 westbroek
 westdorp
@@ -3797,30 +2775,18 @@ westerhoven
 westerland
 westerlee gn
 westernieland
-<<<<<<< HEAD
-westervelde
-westervoort
-westerwijtwerd
-west-graftdijk
-=======
 westerveld
 westervelde
 westervoort
 westerwijtwerd
->>>>>>> Made copy of v1.3 for .nextRelease
 westhem
 westhoek
 westkapelle
 westknollendam
-<<<<<<< HEAD
-westmaas
-west-terschelling
-=======
 westland
 westmaas
 weststellingwerf
 westvoorne
->>>>>>> Made copy of v1.3 for .nextRelease
 westwoud
 westzaan
 wetering
@@ -3839,10 +2805,7 @@ wieringerwerf
 wierum
 wijchen
 wijckel
-<<<<<<< HEAD
-=======
 wijdemeren
->>>>>>> Made copy of v1.3 for .nextRelease
 wijdenes
 wijdewormer
 wijhe
@@ -3871,10 +2834,7 @@ winkel
 winneweer
 winschoten
 winssen
-<<<<<<< HEAD
-=======
 winsum
->>>>>>> Made copy of v1.3 for .nextRelease
 winsum fr
 winsum gn
 wintelre
@@ -3913,10 +2873,7 @@ wommels
 wons
 workum
 wormer
-<<<<<<< HEAD
-=======
 wormerland
->>>>>>> Made copy of v1.3 for .nextRelease
 wormerveer
 woubrugge
 woudbloem
@@ -3930,57 +2887,38 @@ wytgaard
 yde
 yerseke
 ypecolsga
-<<<<<<< HEAD
-ysbrechtum
-=======
 ypsecolsga
 ysbrechtum
 ysselsteyn
->>>>>>> Made copy of v1.3 for .nextRelease
 ysselsteyn lb
 zaamslag
 zaandam
 zaandijk
-<<<<<<< HEAD
-zalk
-zaltbommel
-=======
 zaanstad
 zalk
 zaltbommel
 zandberg
->>>>>>> Made copy of v1.3 for .nextRelease
 zandberg dr
 zandeweer
 zandhuizen
 zandpol
 zandvoort
 zeddam
-<<<<<<< HEAD
-zeegse
-zeeland
-zeerijp
-=======
 zederik
 zeegse
 zeeland
 zeelst
 zeerijp
 zeevang
->>>>>>> Made copy of v1.3 for .nextRelease
 zeewolde
 zegge
 zegveld
 zeijen
 zeijerveen
 zeijerveld
-<<<<<<< HEAD
-zeist
-=======
 zeilberg
 zeist
 zeldam
->>>>>>> Made copy of v1.3 for .nextRelease
 zelhem
 zenderen
 zennewijnen
@@ -3990,10 +2928,7 @@ zevenbergen
 zevenbergschen hoek
 zevenbergschen hoek dri
 zevenhoven
-<<<<<<< HEAD
-=======
 zevenhuizen
->>>>>>> Made copy of v1.3 for .nextRelease
 zevenhuizen gn
 zevenhuizen zh
 zierikzee
@@ -4001,11 +2936,8 @@ zieuwent
 zijderveld
 zijdewind
 zijldijk
-<<<<<<< HEAD
-=======
 zijpersluis
 zijtaart
->>>>>>> Made copy of v1.3 for .nextRelease
 zoelen
 zoelmond
 zoetermeer
@@ -4015,16 +2947,11 @@ zorgvlied
 zoutelande
 zoutkamp
 zuid-beijerland
-<<<<<<< HEAD
-zuidbroek
-zuiddorpe
-=======
 zuid-scharwoude
 zuidbroek
 zuiddorpe
 zuideinde
 zuiderflevo
->>>>>>> Made copy of v1.3 for .nextRelease
 zuidermeer
 zuiderwoude
 zuidhorn
@@ -4032,22 +2959,11 @@ zuidlaarderveen
 zuidland
 zuidlaren
 zuidoostbeemster
-<<<<<<< HEAD
-zuid-scharwoude
-=======
 zuidplas
->>>>>>> Made copy of v1.3 for .nextRelease
 zuidschermer
 zuidveen
 zuidveld
 zuidvelde
-<<<<<<< HEAD
-zuidwolde dr
-zuidwolde gn
-zuidzande
-zuilichem
-zuna
-=======
 zuidwolde
 zuidwolde dr
 zuidwolde gn
@@ -4056,36 +2972,24 @@ zuidzange
 zuilichem
 zuna
 zunderdorp
->>>>>>> Made copy of v1.3 for .nextRelease
 zundert
 zurich
 zutphen
 zuurdijk
 zwaag
-<<<<<<< HEAD
-zwaagdijk-oost
-zwaagdijk-west
-=======
 zwaagdijk
 zwaagdijk-oost
 zwaagdijk-west
 zwaagwesteinde
->>>>>>> Made copy of v1.3 for .nextRelease
 zwaanshoek
 zwagerbosch
 zwammerdam
 zwanenburg
-<<<<<<< HEAD
-zwartebroek
-zwartemeer
-zwartewaal
-=======
 zwarsluis
 zwartebroek
 zwartemeer
 zwartewaal
 zwartewaterland
->>>>>>> Made copy of v1.3 for .nextRelease
 zwartsluis
 zweeloo
 zweins
