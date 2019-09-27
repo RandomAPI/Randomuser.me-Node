@@ -70,8 +70,9 @@ setInterval(() => {
   });
   if (Object.keys(offenders).length > 0) console.log(offenders);
 
-  store.set('clients', {});
-  global.gc();
+  clients = {};
+  store.set('clients', clients);
+  if (process.env.spec !== "true") global.gc();
 }, settings.resetInterval);
 
 function startServer() {
