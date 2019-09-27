@@ -3,7 +3,7 @@
   "db": "randomuser",
   "maxResults": 5000,
   "limit": 20000,
-  "resetInterval": 60000,
+  "resetInterval": 300000,
   "latestVersion": "1.3",
   "stripePublishKey": "",
   "stripePrivateKey": ""
