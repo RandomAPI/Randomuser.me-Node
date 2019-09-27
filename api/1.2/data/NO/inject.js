@@ -1,10 +1,12 @@
-module.exports = (inc, contents) => {
+const {random, randomItem, pad, range, uppercaseify, include,} = require('../../api');
+
+module.exports = (inc, contents, datasets) => {
   const pic = contents.picture;
   delete contents.picture;
 
-  include(inc, 'phone', randomItem([2, 3, 5, 6, 7, 8]) + random(3, 7));
-  include(inc, 'cell', randomItem([4, 9]) + random(3, 7));
-  include(inc, 'id', () => {
+  include(inc, contents, 'phone', randomItem([2, 3, 5, 6, 7, 8]) + random(3, 7));
+  include(inc, contents, 'cell', randomItem([4, 9]) + random(3, 7));
+  include(inc, contents, 'id', () => {
     const dobDate = new Date(contents.dob.date),
         dobISO = dobDate.toISOString(),
         birthDate = dobISO.substr(8, 2) + dobISO.substr(5, 2) + dobISO.substr(2, 2);
@@ -59,11 +61,11 @@ module.exports = (inc, contents) => {
     };
   });
 
-  include(inc, 'location', () => {
+  include(inc, contents, 'location', () => {
     const version = Object.keys(datasets).reverse()[0];
     const oldStreet = contents.location.street.replace(/(\d+) /, '');
     contents.location.street = oldStreet + ' ' + range(1, 9998);
-    contents.location.postcode = randomItem(datasets[version]['NO'].post_codes);
+    contents.location.postcode = randomItem(datasets['NO'].post_codes);
   });
-  include(inc, 'picture', pic);
+  include(inc, contents, 'picture', pic);
 };
