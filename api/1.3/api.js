@@ -375,22 +375,22 @@ class Generator {
 
   fullNatName(nat) {
     let mapping = {
-      AU: "australia",
-      BR: "brazil",
-      CA: "canada",
-      CH: "switzerland",
-      DE: "germany",
-      DK: "denmark",
-      ES: "spain",
-      FI: "finland",
-      FR: "france",
-      GB: "united kingdom",
-      IE: "ireland",
-      IR: "iran",
-      NL: "netherlands",
-      NZ: "new zealand",
-      TR: "turkey",
-      US: "united states",
+      AU: "Australia",
+      BR: "Brazil",
+      CA: "Canada",
+      CH: "Switzerland",
+      DE: "Germany",
+      DK: "Denmark",
+      ES: "Spain",
+      FI: "Finland",
+      FR: "France",
+      GB: "United Kingdom",
+      IE: "Ireland",
+      IR: "Iran",
+      NL: "Netherlands",
+      NZ: "New Zealand",
+      TR: "Turkey",
+      US: "United States",
     };
     return mapping[nat];
   }
