@@ -1,12 +1,15 @@
 language: node_js
 node_js:
+  - "9"
   - "10"
+  - "11"
+  - "12"
 env:
-  - CODECOV_TOKEN="f0dbb006-6aa1-425f-8604-77dec84da322" spec=true
+  - spec=true
 install:
   - npm install
 script:
-  - npm test
+  - npm run ciTest
   - codecov -f .nyc_output/*.json
 before_script:
   - npm run build
