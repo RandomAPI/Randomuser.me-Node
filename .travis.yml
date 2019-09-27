@@ -1,10 +1,14 @@
 language: node_js
 node_js:
-  - "6.4"
+  - "10"
+env:
+  - CODECOV_TOKEN="f0dbb006-6aa1-425f-8604-77dec84da322" spec=true
+install:
+  - npm install
+script:
+  - npm test
+  - codecov -f .nyc_output/*.json
 before_script:
-  - npm install -g gulp
-  - gulp build
-script: gulp spec
+  - npm run build
 services:
   - mongodb
-sudo: required
