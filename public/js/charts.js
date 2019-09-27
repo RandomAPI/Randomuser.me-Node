@@ -1,7 +1,7 @@
 (function() {
   domready(function() {
     if (window.location.href.indexOf('stats') !== -1) {
-      var result = pegasus('getStats/charts');
+      var result = pegasus('getStats');
       result.then(function(data) {
         var dates = data.map(function(date) {
           return date.date;

@@ -3,6 +3,7 @@ const async    = require('async');
 const format   = require('format-number')();
 const filesize = require('filesize');
 const Request  = require('./models/Request');
+const store    = require('./store');
 
 // Cache db stats
 let stats = {
@@ -12,6 +13,7 @@ let stats = {
   load: "0%",
 };
 
+updateStats();
 setInterval(updateStats, 2500);
 function updateStats() {
   async.parallel([
@@ -93,6 +95,7 @@ function updateStats() {
       30: results[2],
       load: Math.round(os.loadavg()[0] * 100) + "%"
     };
+    store.set('stats', stats);
   });
 }
 
