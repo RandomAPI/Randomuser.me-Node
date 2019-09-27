@@ -26,7 +26,6 @@
     "mersenne": "0.0.3",
     "moment": "^2.14.1",
     "mongoose": "^5.7.1",
-    "mongoose-findorcreate": "^0.1.2",
     "morgan": ">=1.9.1",
     "random-seed": "^0.3.0",
     "request": "^2.78.0",
