@@ -1,285 +1,324 @@
-var mersenne     = require('mersenne');
-var crypto       = require('crypto');
-var YAML         = require('yamljs');
-var js2xmlparser = require('js2xmlparser');
-var converter    = require('json-2-csv');
-var version      = '1.0';
+const fs           = require('fs');
+const util         = require('util');
+const readDir      = util.promisify(fs.readdir);
+const readFile     = util.promisify(fs.readFile);
+const path         = require('path');
+const mersenne     = require('mersenne');
+const crypto       = require('crypto');
+const YAML         = require('yamljs');
+const js2xmlparser = require('js2xmlparser');
+const converter    = require('json-2-csv');
+const settings     = require('../../settings');
+const version      = '1.0';
 
-// Load the datasets if not defined
-if (typeof datasets[version] === 'undefined') {
-  require('./loadDatasets')((data, injectNats) => {
-    datasets[version] = data;
-    injects[version]  = injectNats;
-  });
-}
+class Generator {
+  constructor() {
+    this.originalFields = [
+      'gender', 'name', 'location', 'email',
+      'login', 'registered', 'dob', 'phone',
+      'cell', 'id', 'picture', 'nat'
+    ];
+    this.constantTime = 1437996378;
+    this.version = version;
 
-var originalFieldList = 'gender, name, location, email,\
-login, registered, dob, phone, cell, id, picture, nat';
-
-var originalFieldArray = originalFieldList
-                        .split(',')
-                        .filter((i) => i !== '')
-                        .map((w) => w.trim().toLowerCase());
-
-var Generator = function(options) {
-  // Check for multiple vals
-  this.checkOptions(options);
-
-  options      = options || {};
-  this.results = Number(options.results);
-  this.seed    = options.seed || '';
-  this.lego    = typeof options.lego !== 'undefined' && options.lego !== 'false' ? true : false;
-  this.gender  = options.gender || null;
-  this.format  = (options.format || options.fmt || 'json').toLowerCase();
-  this.nat     = options.nat || options.nationality || null;
-  this.noInfo  = typeof options.noinfo !== 'undefined' && options.lego !== 'false' ? true : false;
-  this.page    = Number(options.page) || 1;
-
-  // Include all fields by default
-  this.inc     = options.inc || originalFieldList;
-  this.exc     = options.exc || '';
-
-  this.inc = this.inc.split(',').filter((i) => i !== '').map((w) => w.trim().toLowerCase());
-  this.exc = this.exc.split(',').filter((i) => i !== '').map((w) => w.trim().toLowerCase());
-
-  // Remove exclusions
-  this.inc = this.inc.filter((w) => this.exc.indexOf(w) === -1);
-
-  // Update exclusions list to inverse of inclusions
-  this.exc = originalFieldArray.filter((w) => this.inc.indexOf(w) === -1);
-
-  if (this.nat !== null) {
-    this.nat = this.nat.split(',').filter((i) => i !== '');
+    this.datasets = null;
+    this.injects = null;
   }
 
-  if (this.nat !== null) this.nat = uppercaseify(this.nat);
-  this.nats    = this.getNats(); // Returns array of nats
-  this.constantTime = 1437996378;
-  this.version = version;
+  // Executes on first generation - loads in nat datasets and inject scripts
+  async loadData() {
+    return new Promise(async (resolve, reject) => {
+      let data = {};
+      let injects = {};
 
-  // Sanitize values
-  if (isNaN(this.results) || this.results < 0 || this.results > settings.maxResults || this.results === '') this.results = 1;
+      let nats = await readDir(__dirname + '/data');
+      for (let i = 0; i < nats.length; i++) {
 
-  if (this.gender !== 'male' && this.gender !== 'female' || this.seed !== '') {
-    this.gender = null;
+        let nat = nats[i];
+        data[nat] = {};
+
+        if (nat !== 'common') {
+          injects[nat] = require(__dirname + '/data/' + nat + '/inject');
+        }
+
+        let lists = await readDir(__dirname + '/data/' + nat + '/lists');
+        for (let j = 0; j < lists.length; j++) {
+
+          let list = lists[j];
+          let contents = await readFile(__dirname + '/data/' + nat + '/lists/' + list, 'utf-8');
+          data[nat][path.basename(list, '.txt')] = contents.split('\n').slice(0, -1);
+
+        }
+      }
+      resolve([data, injects]);
+
+    });
   }
 
-  if (this.lego) this.nat = 'LEGO';
-  else if (this.nat !== null && !(this.validNat(this.nat))) this.nat = null;
-
-  if (this.seed.length === 18) {
-    this.nat = this.nats[parseInt(this.seed.slice(-2), 16)];
-  } else if (this.seed === '') {
-    this.defaultSeed();
-  }
-
-  if (this.page < 0 || this.page > 10000) this.page = 1;
-  ///////////////////
-
-  this.seedRNG();
-};
-
-Generator.prototype.generate = function(cb) {
-  this.results = this.results || 1;
-
-  var output = [];
-  var nat, inject;
-
-  for (var i = 0; i < this.results; i++) {
-    current = {};
-    nat = this.nat === null ? this.randomNat() : this.nat;
-    if (Array.isArray(nat)) {
-      nat = nat[range(0, nat.length-1)];
+  async init() {
+    if (this.datasets === null) {
+      [this.datasets, this.injects] = await this.loadData();
+      this.nats = this.getNats();
     }
-    inject = injects[version][nat];
-
-    current.gender = this.gender === null ? randomItem(['male', 'female']) : this.gender;
-
-    var name = this.randomName(current.gender, nat);
-    this.include('name', {
-      title: current.gender === 'male' ? 'mr' : randomItem(datasets[version].common.title),
-      first: name[0],
-      last: name[1]
-    });
-
-    this.include('location', {
-      street: range(1000, 9999) + ' ' + randomItem(datasets[version][nat].street),
-      city: randomItem(datasets[version][nat].cities),
-      state: randomItem(datasets[version][nat].states),
-      postcode: range(10000, 99999)
-    });
-
-    this.include('email', name[0] + '.' + name[1].replace(/ /g, '') + '@example.com');
-
-    var salt = random(2, 8);
-    var password = randomItem(datasets[version].common.passwords);
-    this.include('login', {
-      username: randomItem(datasets[version].common.user1) + randomItem(datasets[version].common.user2) + range(100, 999),
-      password,
-      salt:     salt,
-      md5:      crypto.createHash('md5').update(password + salt).digest('hex'),
-      sha1:     crypto.createHash('sha1').update(password + salt).digest('hex'),
-      sha256:   crypto.createHash('sha256').update(password + salt).digest('hex')
-    });
-
-    this.include('registered', range(915148800, this.constantTime));
-    this.include('dob', range(0, this.constantTime));
-
-    if (nat != 'LEGO') {
-        var id = current.gender == 'male' ? range(0, 99) : range(0, 96);
-        var genderText = current.gender == 'male' ? 'men' : 'women';
-    } else {
-        var id = range(0, 9);
-        var genderText = 'lego';
-    }
-    base = 'https://randomuser.me/api/';
-
-    this.include('picture', {
-      large: base + 'portraits/' + genderText + '/' + id + '.jpg',
-      medium: base + 'portraits/med/' + genderText + '/' + id + '.jpg',
-      thumbnail: base + 'portraits/thumb/' + genderText + '/' + id + '.jpg'
-    });
-
-    inject(this.inc, current);  // Inject unique fields for nationality
-
-    this.include('nat', nat);
-
-    // Gender hack - Remove gender if the user doesn't want it in the results
-    if (this.inc.indexOf('gender') === -1) {
-      delete current.gender;
-    }
-
-    output.push(current);
   }
 
-  var json = {
-    results: output,
-    info: {
-      seed: String(this.seed + (this.nat !== null && !Array.isArray(this.nat) ? pad((this.nats.indexOf(this.nat)).toString(16), 2) : '')),
-      results: this.results,
-      page: this.page,
-      //inc: this.inc,
-      //exc: this.exc,
-      version: this.version
-    }
-  };
+  // Returns random user object
+  async generate(options) {
+    options = options || {};
 
-  if (this.noInfo) delete json.info;
+    return new Promise((resolve, reject) => {
+      // Check for multiple vals
+      this.checkOptions(options);
+      
+      this.results = Number(options.results);
+      this.seed    = options.seed || '';
+      this.lego    = typeof options.lego !== 'undefined' && options.lego !== 'false' ? true : false;
+      this.gender  = options.gender || null;
+      this.format  = (options.format || options.fmt || 'json').toLowerCase();
+      this.nat     = options.nat || options.nationality || null;
+      this.noInfo  = typeof options.noinfo !== 'undefined' && options.lego !== 'false' ? true : false;
+      this.page    = Number(options.page) || 1;
 
-  this.defaultSeed();
-  this.seedRNG();
+      // Include all fields by default
+      this.inc     = options.inc || this.originalFields.join(', ');
+      this.exc     = options.exc || '';
 
-  if (this.format === 'yaml') {
-    cb(YAML.stringify(json, 4), "yaml");
-  } else if (this.format === 'xml') {
-    cb(js2xmlparser('user', json), "xml");
-  } else if (this.format === 'prettyjson' || this.format === 'pretty') {
-    cb(JSON.stringify(json, null, 2), "json");
-  } else if (this.format === 'csv') {
-    converter.json2csv(json.results, (err, csv) => {
-      cb(csv, "csv");
+      this.inc = this.inc.split(',').filter((i) => i !== '').map((w) => w.trim().toLowerCase());
+      this.exc = this.exc.split(',').filter((i) => i !== '').map((w) => w.trim().toLowerCase());
+
+      // Remove exclusions
+      this.inc = this.inc.filter((w) => this.exc.indexOf(w) === -1);
+
+      // Update exclusions list to inverse of inclusions
+      this.exc = this.originalFields.filter((w) => this.inc.indexOf(w) === -1);
+
+      if (this.nat !== null) {
+        this.nat = this.nat.split(',').filter((i) => i !== '');
+      }
+
+      if (this.nat !== null) this.nat = uppercaseify(this.nat);
+
+      // Sanitize values
+      if (isNaN(this.results) || this.results < 0 || this.results > settings.maxResults || this.results === '') this.results = 1;
+
+      if (this.gender !== 'male' && this.gender !== 'female' || this.seed !== '') {
+        this.gender = null;
+      }
+
+      if (this.lego) this.nat = 'LEGO';
+      else if (this.nat !== null && !(this.validNat(this.nat))) this.nat = null;
+
+      if (this.seed.length === 18) {
+        this.nat = this.nats[parseInt(this.seed.slice(-2), 16)];
+      } else if (this.seed === '') {
+        this.defaultSeed();
+      }
+
+      if (this.page < 0 || this.page > 10000) this.page = 1;
+      ///////////////////
+
+      this.seedRNG();
+    
+      let output = [];
+      let nat, inject;
+    
+      for (let i = 0; i < this.results; i++) {
+        this.current = {};
+        nat = this.nat === null ? this.randomNat() : this.nat;
+        if (Array.isArray(nat)) {
+          nat = nat[range(0, nat.length-1)];
+        }
+        inject = this.injects[nat];
+    
+        this.current.gender = this.gender === null ? randomItem(['male', 'female']) : this.gender;
+    
+        let name = this.randomName(this.current.gender, nat);
+        this.include('name', {
+          title: this.current.gender === 'male' ? 'mr' : randomItem(this.datasets.common.title),
+          first: name[0],
+          last: name[1]
+        });
+    
+        this.include('location', {
+          street: range(1000, 9999) + ' ' + randomItem(this.datasets[nat].street),
+          city: randomItem(this.datasets[nat].cities),
+          state: randomItem(this.datasets[nat].states),
+          postcode: range(10000, 99999)
+        });
+    
+        this.include('email', name[0] + '.' + name[1].replace(/ /g, '') + '@example.com');
+    
+        let salt = random(2, 8);
+        let password = randomItem(this.datasets.common.passwords);
+        this.include('login', {
+          username: randomItem(this.datasets.common.user1) + randomItem(this.datasets.common.user2) + range(100, 999),
+          password,
+          salt:   salt,
+          md5:    crypto.createHash('md5').update(password + salt).digest('hex'),
+          sha1:   crypto.createHash('sha1').update(password + salt).digest('hex'),
+          sha256: crypto.createHash('sha256').update(password + salt).digest('hex')
+        });
+    
+        this.include('registered', range(915148800, this.constantTime));
+        this.include('dob', range(0, this.constantTime));
+    
+        let id, genderText;
+        if (nat != 'LEGO') {
+            id = this.current.gender == 'male' ? range(0, 99) : range(0, 96);
+            genderText = this.current.gender == 'male' ? 'men' : 'women';
+        } else {
+            id = range(0, 9);
+            genderText = 'lego';
+        }
+        let base = 'https://randomuser.me/api/';
+    
+        this.include('picture', {
+          large: base + 'portraits/' + genderText + '/' + id + '.jpg',
+          medium: base + 'portraits/med/' + genderText + '/' + id + '.jpg',
+          thumbnail: base + 'portraits/thumb/' + genderText + '/' + id + '.jpg'
+        });
+    
+        inject(this.inc, this.current);  // Inject unique fields for nationality
+    
+        this.include('nat', nat);
+    
+        // Gender hack - Remove gender if the user doesn't want it in the results
+        if (this.inc.indexOf('gender') === -1) {
+          delete this.current.gender;
+        }
+    
+        output.push(this.current);
+      }
+    
+      let json = {
+        results: output,
+        info: {
+          seed: String(this.seed + (this.nat !== null && !Array.isArray(this.nat) ? pad((this.nats.indexOf(this.nat)).toString(16), 2) : '')),
+          results: this.results,
+          page: this.page,
+          version: this.version
+        }
+      };
+    
+      if (this.noInfo) delete json.info;
+    
+      if (this.format === 'yaml') {
+        resolve({output: YAML.stringify(json, 4), ext: "yaml"});
+      } else if (this.format === 'xml') {
+        resolve({output: js2xmlparser('user', json), ext: "xml"});
+      } else if (this.format === 'prettyjson' || this.format === 'pretty') {
+        resolve({output: JSON.stringify(json, null, 2), ext: "json"});
+      } else if (this.format === 'csv') {
+        converter.json2csv(json.results, (err, csv) => {
+          resolve({output: csv, ext: "csv"});
+        });
+      } else {
+        resolve({output: JSON.stringify(json), ext: "json"});
+      }
     });
-  } else {
-    cb(JSON.stringify(json), "json");
   }
-};
 
-
-Generator.prototype.seedRNG = function() {
-  var seed = this.seed;
-  if (this.seed.length === 18) {
+  // Seeds Mersenne Twister PRNG
+  seedRNG() {
+    let seed = this.seed;
+    if (this.seed.length === 18) {
       seed = this.seed.substring(0, 16);
+    }
+    seed = this.page !== 1 ? seed + String(this.page) : seed;
+  
+    seed = parseInt(crypto.createHash('md5').update(seed).digest('hex').substring(0, 8), 16);
+    mersenne.seed(seed);
   }
-  seed = this.page !== 1 ? seed + String(this.page) : seed;
-
-  seed = parseInt(crypto.createHash('md5').update(seed).digest('hex').substring(0, 8), 16);
-  mersenne.seed(seed);
-};
-
-Generator.prototype.defaultSeed = function() {
-  this.seed = random(1, 16);
-};
-
-Generator.prototype.randomNat = function() {
-  return this.nats[range(0, this.nats.length-1)];
-};
-
-Generator.prototype.validNat = function(nat) {
-  if (Array.isArray(nat)) {
-    for (var i = 0; i < nat.length; i++) {
-      if (this.nats.indexOf(nat[i]) === -1) {
-        return false;
+  
+  // Choose random seed
+  defaultSeed() {
+    this.seed = random(1, 16);
+  }
+  
+  // Return random nat to use
+  randomNat() {
+    return this.nats[range(0, this.nats.length - 1)];
+  }
+  
+  // Make sure nat is available
+  validNat(nat) {
+    if (Array.isArray(nat)) {
+      for (var i = 0; i < nat.length; i++) {
+        if (this.nats.indexOf(nat[i]) === -1) {
+          return false;
+        }
+      }
+    } else {
+      return this.nats.indexOf(nat) !== -1;
+    }
+    return true;
+  }
+  
+  randomName(gender, nat) {
+    gender = gender === undefined ? randomItem(['male', 'female']) : gender;
+    return [randomItem(this.datasets[nat][gender + '_first']), randomItem(this.datasets[nat]['last'])];
+  }
+  
+  // Return available nats
+  getNats() {
+    let exclude = ['common', 'LEGO'];
+    let nats = Object.keys(this.datasets).filter(nat => {
+      return exclude.indexOf(nat) == -1;
+    });
+    return nats;
+  }
+  
+  include(field, value) {
+    if (this.inc.indexOf(field) !== -1) {
+      this.current[field] = value;
+    }
+  }
+  
+  checkOptions(options) {
+    let keys = Object.keys(options);
+    for (let i = 0; i < keys.length; i++) {
+      if (Array.isArray(options[keys[i]])) {
+        options[keys[i]] = options[keys[i]][options[keys[i]].length-1];
       }
     }
-  } else {
-    return this.nats.indexOf(nat) !== -1;
   }
-  return true;
-};
+}
 
-Generator.prototype.randomName = function(gender, nat) {
-  gender = gender === undefined ? randomItem(['male', 'female']) : gender;
-  return [randomItem(datasets[version][nat][gender + '_first']), randomItem(datasets[version][nat]['last'])];
-};
-
-Generator.prototype.getNats = function() {
-  var exclude = ['common', 'LEGO'];
-  var nats = Object.keys(datasets[version]).filter(nat => {
-    return exclude.indexOf(nat) == -1;
-  });
-  return nats;
-};
-
-Generator.prototype.include = function(field, value) {
-  if (this.inc.indexOf(field) !== -1) {
-    current[field] = value;
-  }
-};
-
-Generator.prototype.checkOptions = function(options) {
-  var keys = Object.keys(options);
-  for (var i = 0; i < keys.length; i++) {
-    if (Array.isArray(options[keys[i]])) {
-      options[keys[i]] = options[keys[i]][options[keys[i]].length-1];
-    }
-  }
-};
-
-random = (mode, length) => {
-  var result = '';
-  var chars;
+function random(mode, length) {
+  let result = '';
+  let chars;
 
   if (mode == 1) {
-      chars = 'abcdef1234567890';
+    chars = 'abcdef1234567890';
   } else if (mode == 2) {
-      chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+    chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
   } else if (mode == 3) {
-      chars = '0123456789';
+    chars = '0123456789';
   } else if (mode == 4) {
-      chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   }
-  for (var i = 0; i < length; i++) {
-      result += chars[range(0, chars.length-1)];
+  for (let i = 0; i < length; i++) {
+    result += chars[range(0, chars.length-1)];
   }
 
   return result;
-};
+}
 
-randomItem = arr => {
+function randomItem(arr) {
   return arr[range(0, arr.length-1)];
-};
+}
 
-pad = (n, width, z) => {
+function pad (n, width, z) {
   z = z || '0';
   n = n + '';
   return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
 }
 
-range = (min, max) => {
+function range (min, max) {
   return min + mersenne.rand(max-min+1);
-};
+}
 
-uppercaseify = val => {
+function uppercaseify(val) {
   if (Array.isArray(val)) {
     return val.map(str => {
       return str.toUpperCase();
@@ -289,11 +328,19 @@ uppercaseify = val => {
   }
 }
 
-include = (inc, field, value) => {
+function include(inc, contents, field, value) {
   if (inc.indexOf(field) !== -1) {
     if (typeof value === 'function') value();
-    else current[field] = value;
+    else contents[field] = value;
   }
-};
+}
 
-module.exports = Generator;
+module.exports = {
+  Generator,
+  random,
+  randomItem,
+  pad,
+  range,
+  uppercaseify,
+  include,
+};
