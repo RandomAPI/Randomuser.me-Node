@@ -32,17 +32,14 @@ function getNewUser(){
     lego = "&lego";
   }
 
-  var result = pegasus('https://randomuser.me/api/0.4/?randomapi' + lego);
+  var result = pegasus('https://randomuser.me/api/?nat=us&randomapi' + lego);
 
   result.then(function(data) {
-    if(!data['error']){
-      var user = data.results[0].user;
-      // Update to SSL picture
-      user.picture = user.picture.replace('http://api.', 'https://');
-      user.picture = user.picture.replace('.me/', '.me/api/');
+    if (!data['error']){
+      var user = data.results[0];
 
       // Assign Data
-      document.getElementById('user_photo').getElementsByTagName('img')[0].src = user.picture;
+      document.getElementById('user_photo').getElementsByTagName('img')[0].src = user.picture.large;
       
       setData('name', user.name.first+' '+user.name.last);
 
@@ -50,11 +47,11 @@ function getNewUser(){
 
       setData('email', user.email);
 
-      var birthday = new Date(user.dob*1000);
+      var birthday = new Date(user.dob.date);
       setData('birthday', birthday.getMonth()+1+'/'+(birthday.getDay()+1)+'/19'+birthday.getYear());
       setData('location', user.location.street);
       setData('phone', user.cell);
-      setData('pass', user.password);
+      setData('pass', user.login.password);
     } else {
       // Error
     }

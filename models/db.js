@@ -1,11 +1,17 @@
-var mongoose = require('mongoose');
-var settings = require('../settings');
+const mongoose = require('mongoose');
+const settings = require('../settings');
 
 module.exports = testEnv => {
-  var dbName = settings.db + (testEnv ? '-test' : '');
+  const dbName = settings.db + (testEnv ? '-test' : '');
 
-  mongoose.connect('mongodb://localhost/' + dbName);
-  var db = mongoose.connection;
+  mongoose.connect('mongodb://localhost/' + dbName, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+  });
+  mongoose.set('useCreateIndex', true);
 
-  db.on('error', console.error.bind(console, 'connection error:'));
-}
+  const db = mongoose.connection;
+  db.on('connected', console.log.bind(console, '[database] Connected to MongoDB.'));
+  db.on('error', console.error.bind(console, '[database] Error occured while connecting to MongoDB.'));
+};

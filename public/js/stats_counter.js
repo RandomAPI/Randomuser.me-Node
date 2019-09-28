@@ -1,6 +1,6 @@
 (function() {
   domready(function() {
-    socket = io(document.getElementsByTagName('server')[0].innerHTML);
+    socket = io();
     socket.on('statsResults', function(data) {
       document.getElementById('stat_total_users').innerHTML = data.all.total;
       document.getElementById('stat_total_bandwidth').innerHTML = data.all.bandwidth;
@@ -13,7 +13,7 @@
       socket.emit('stats');
       setInterval(function() {
         socket.emit('stats');
-      }, 1000);
+      }, 2500);
     }
   });
 })();

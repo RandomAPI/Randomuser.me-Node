@@ -1,10 +1,12 @@
+const {random, randomItem, pad, range, uppercaseify, include,} = require('../../api');
+
 module.exports = (inc, contents) => {
     var pic = contents.picture;
     delete contents.picture;
 
-    include(inc, 'phone', '0' + range(2, 9) + '-' + random(3, 3) + '-' + random(3, 3));
-    include(inc, 'cell', '04' + range(0, 9) + '-' + random(3, 3) + '-' + random(3, 2) + '-' + random(3, 2));
-    include(inc, 'id', () => {
+    include(inc, contents, 'phone', '0' + range(2, 9) + '-' + random(3, 3) + '-' + random(3, 3));
+    include(inc, contents, 'cell', '04' + range(0, 9) + '-' + random(3, 3) + '-' + random(3, 2) + '-' + random(3, 2));
+    include(inc, contents, 'id', () => {
         var dob = contents.dob;
         var dobDate = new Date(Number(dob + '000'));
         var full_year = dobDate.getFullYear();
@@ -35,5 +37,5 @@ module.exports = (inc, contents) => {
         };
     });
 
-    include(inc, 'picture', pic);
+    include(inc, contents, 'picture', pic);
 };

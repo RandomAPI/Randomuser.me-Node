@@ -1,6 +1,6 @@
 # Randomuser.me-Node
 [![Build Status](https://travis-ci.org/RandomAPI/Randomuser.me-Node.svg?branch=master)](https://travis-ci.org/RandomAPI/Randomuser.me-Node)
-[![Stories in Ready](https://badge.waffle.io/RandomAPI/Randomuser.me-Node.png?label=ready&title=Ready)](https://waffle.io/RandomAPI/Randomuser.me-Node)
+[![codecov](https://codecov.io/gh/RandomAPI/Randomuser.me-Node/branch/master/graph/badge.svg)](https://codecov.io/gh/RandomAPI/Randomuser.me-Node)
 
 ### About
 This is the source code that powers the randomuser.me User Generator.
@@ -26,13 +26,18 @@ sort -u <file> -o <file>
 
 4\. Please don't submit requests that say "make this nationality". We will accept helpful contributions, but not orders :)
 
+### Requirements
+
+Node v9.0.0+
+MongoDB
+
 ### How to use
 
 1. Run `npm install`
 
-2. Make sure you have gulp installed globally (npm i -g gulp) and run `gulp build`
+2. Run `npm run build` to build views and minify js/css
 
-3. Run `gulp` to verify all tests pass
+3. Run `npm test` and verify all tests pass
 
 4. Start the server with `npm start`
 

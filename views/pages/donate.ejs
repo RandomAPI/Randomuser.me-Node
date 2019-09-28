@@ -22,6 +22,9 @@
       <script src="https://checkout.stripe.com/checkout.js"></script>
 
       <div class="donate_form">
+        <form action="?" method="POST">
+            <div id="recaptcha" style="display:inline-block"></div>
+        </form>
           $ <input class="donateInput" id="donation_amount" type="number" min="1.00" step="1.00" value="5.00" />
         <button id="donate_button" class="button">Donate Now</button><br><br>
         <textarea class="comment" rows="3" cols="60" id="comment" placeholder="Leave a comment"></textarea>
@@ -37,7 +40,7 @@
             $.ajax({
               type: 'POST',
               url: '/donate',
-              data: { data: JSON.stringify({token, comment: document.getElementById('comment').value}) },
+              data: { data: JSON.stringify({token, comment: document.getElementById('comment').value, recaptcha: grecaptcha.getResponse()}) },
               success: function(data) {
                 window.alert("Thanks for your donation!");
               },
@@ -81,7 +84,7 @@
 
     <section id="why">
       <h2>Why should I donate?</h2>
-      <p>The Random User Generator API is a 100% free service and is paid for out of our own pockets. <strong>We generate up to <span id='gen'>1,000,000</span> random users everyday</strong>, and the servers involved to deliver that information is costly. Random User Generator will never require a paid subscription to use our service, and we strive to continue providing this service free to you for life. Donating isn't required, but it will help us continue to improve and enhance our service.</p>
+      <p>The Random User Generator API is a 100% free service and is paid for out of our own pockets. <strong>We generate up to <span id='gen'><%-stats%></span> random users everyday</strong>, and the servers involved to deliver that information is costly. Random User Generator will never require a paid subscription to use our service, and we strive to continue providing this service free to you for life. Donating isn't required, but it will help us continue to improve and enhance our service.</p>
     </section>
 
     <section class="advertisement">
@@ -93,12 +96,24 @@
   </div>
   <% include ../snippets/footer %>
   <% include ../snippets/analytics %>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
   <script>
-    setInterval(() => {
-      $.get("getStats", data => {
-        document.getElementById('gen').innerHTML = data['30'].total;
-      });
-    }, 1000);
+  var onloadCallback = function() {
+    grecaptcha.render('recaptcha', {
+      'sitekey' : '6LeN-qUUAAAAALFyEP8fNstJZ9CT9hUWZ3RbcfZ6',
+      'callback': 'recaptchaCallback'
+    });
+    let btn = document.getElementById('donate_button');
+    btn.style.cursor = "not-allowed";
+    btn.style.opacity = .5;
+    btn.disabled = true;
+  };
+  function recaptchaCallback() {
+    let btn = document.getElementById('donate_button');
+    btn.style.cursor = "pointer";
+    btn.style.opacity = 1;
+    btn.disabled = false;
+  }
   </script>
 </body>
 </html>
