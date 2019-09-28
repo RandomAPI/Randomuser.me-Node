@@ -145,7 +145,7 @@ class Generator {
     
         let name = this.randomName(this.current.gender, nat);
         this.include('name', {
-          title: this.current.gender === 'male' ? 'mr' : randomItem(this.datasets.common.title),
+          title: this.current.gender === 'male' ? 'Mr' : randomItem(this.datasets.common.title),
           first: name[0],
           last: name[1]
         });
