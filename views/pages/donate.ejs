@@ -22,6 +22,9 @@
       <script src="https://checkout.stripe.com/checkout.js"></script>
 
       <div class="donate_form">
+        <form action="?" method="POST">
+            <div id="recaptcha" style="display:inline-block"></div>
+        </form>
           $ <input class="donateInput" id="donation_amount" type="number" min="1.00" step="1.00" value="5.00" />
         <button id="donate_button" class="button">Donate Now</button><br><br>
         <textarea class="comment" rows="3" cols="60" id="comment" placeholder="Leave a comment"></textarea>
@@ -37,7 +40,7 @@
             $.ajax({
               type: 'POST',
               url: '/donate',
-              data: { data: JSON.stringify({token, comment: document.getElementById('comment').value}) },
+              data: { data: JSON.stringify({token, comment: document.getElementById('comment').value, recaptcha: grecaptcha.getResponse()}) },
               success: function(data) {
                 window.alert("Thanks for your donation!");
               },
@@ -93,5 +96,24 @@
   </div>
   <% include ../snippets/footer %>
   <% include ../snippets/analytics %>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+  <script>
+  var onloadCallback = function() {
+    grecaptcha.render('recaptcha', {
+      'sitekey' : '6LeN-qUUAAAAALFyEP8fNstJZ9CT9hUWZ3RbcfZ6',
+      'callback': 'recaptchaCallback'
+    });
+    let btn = document.getElementById('donate_button');
+    btn.style.cursor = "not-allowed";
+    btn.style.opacity = .5;
+    btn.disabled = true;
+  };
+  function recaptchaCallback() {
+    let btn = document.getElementById('donate_button');
+    btn.style.cursor = "pointer";
+    btn.style.opacity = 1;
+    btn.disabled = false;
+  }
+  </script>
 </body>
 </html>

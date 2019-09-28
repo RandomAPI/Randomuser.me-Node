@@ -7,7 +7,7 @@ const express    = require('express');
 const router     = express.Router();
 const settings   = require('../settings');
 const Request    = require('../models/Request');
-const legRequest = require('request');
+const legRequest = require('request-promise-native');
 const store      = require('../store');
 
 router.use('/portraits', express.static('public/portraits'));
@@ -89,41 +89,42 @@ async function genUser(req, res, version) {
       clients[ip] += Number(results);
     }
 
-    return legRequest(`https://api.randomapi.com/${legacy[version].hash}?noinfo&${qs.stringify(req.query)}`, async (err, ret) => {
-      if (req.query.fmt === 'json') {
-        res.setHeader('Content-Type', 'application/json');
-      } else if (req.query.fmt === 'xml') {
-        res.setHeader('Content-Type', 'text/xml');
-      } else if (req.query.fmt === 'yaml') {
-        res.setHeader('Content-Type', 'text/x-yaml');
-      } else if (req.query.fmt === 'csv') {
-        res.setHeader('Content-Type', 'text/csv');
-      } else {
-        res.setHeader('Content-Type', 'text/plain');
+    const ret = await legRequest(`https://api.randomapi.com/${legacy[version].hash}?noinfo&${qs.stringify(req.query)}`);
+    if (req.query.fmt === 'json') {
+      res.setHeader('Content-Type', 'application/json');
+    } else if (req.query.fmt === 'xml') {
+      res.setHeader('Content-Type', 'text/xml');
+    } else if (req.query.fmt === 'yaml') {
+      res.setHeader('Content-Type', 'text/x-yaml');
+    } else if (req.query.fmt === 'csv') {
+      res.setHeader('Content-Type', 'text/csv');
+    } else {
+      res.setHeader('Content-Type', 'text/plain');
+    }
+
+    res.setHeader('Cache-Control', 'no-cache');
+
+    const payload = {
+      'bandwidth': ret.length,
+      'total': results
+    };
+    payload[version.replace(/\./g, '_')] = results;
+
+    let doc = await Request.findOneAndUpdate(
+      {date: getDateTime()},
+      {$setOnInsert: payload},
+      {
+        returnOriginal: false,
+        upsert: true,
       }
+    );
 
-      res.setHeader('Cache-Control', 'no-cache');
+    if (doc !== null) {
+      await Request.updateOne({date: getDateTime()}, {$inc: payload});
+    }
 
-      const payload = {
-        'bandwidth': ret.body.length,
-        'total': results
-      };
-      payload[version.replace(/\./g, '_')] = results;
-
-      let doc = await Request.findOneAndUpdate(
-        {date: getDateTime()},
-        {$setOnInsert: payload},
-        {
-          returnOriginal: false,
-          upsert: true,
-        }
-      );
-  
-      if (doc !== null) {
-        await Request.updateOne({date: getDateTime()}, {$inc: payload});
-      }
-      res.send(ret.body)
-    });
+    res.send(ret);
+    return;
   }
 
   // Version doesn't exist
