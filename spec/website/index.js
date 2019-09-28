@@ -59,7 +59,7 @@ module.exports = (server) => {
   });
 
   it('should return 200 when posting to /donate with valid info and valid email', async () => {
-    const res = await request(server).post('/donate').send({data: `{"token": {"email": "testing@gmail.com"}}`});
+    const res = await request(server).post('/donate').send({data: `{"recaptcha": "test", "token": {"email": "testing@gmail.com"}}`});
     expect(res.status).to.equal(200);
   });
 }
