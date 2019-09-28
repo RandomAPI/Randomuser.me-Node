@@ -152,7 +152,10 @@ class Generator {
 
         let timezone = JSON.parse(randomItem(this.datasets.common.timezones));
         this.include('location', {
-          street: range(1, 9999) + ' ' + randomItem(this.datasets[nat].street),
+          street: {
+            number: range(1, 9999),
+            name: randomItem(this.datasets[nat].street)
+          },
           city: randomItem(this.datasets[nat].cities),
           state: randomItem(this.datasets[nat].states),
           country: this.fullNatName(nat),

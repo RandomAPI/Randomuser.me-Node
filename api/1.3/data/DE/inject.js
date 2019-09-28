@@ -10,9 +10,5 @@ module.exports = (inc, contents) => {
         name: '',
         value: null
     });
-    include(inc, contents, 'location', () => {
-        const oldStreet = contents.location.street.replace(/(\d+) /, '');
-        contents.location.street = oldStreet + ' ' + range(1, 200);
-    });
     include(inc, contents, 'picture', pic);
 };
