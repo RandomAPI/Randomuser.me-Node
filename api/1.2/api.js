@@ -1,13 +1,13 @@
 /*
-  Fixed DOB and Registration dates to use ISO 8601 standard (yyyy-mm-ddThh:mm:ssZ)
-  DOB and Registration dates are now objects that include age
-  Street numbers range from 1-9999
-  Add coordinates to location
-  Add timezone to location
-  Add uuid to login
-  Fix AVS number format for CH
-  Add Norway data
-  Fix CA postal code format
+  • Fixed DOB and Registration dates to use ISO 8601 standard (yyyy-mm-ddThh:mm:ssZ)
+  • DOB and Registration dates are now objects that include age
+  • Street numbers range from 1-9999
+  • Add coordinates to location
+  • Add timezone to location
+  • Add uuid to login
+  • Fix AVS number format for CH
+  • Add Norway data
+  • Fix CA postal code format
 */
 
 const fs           = require('fs');

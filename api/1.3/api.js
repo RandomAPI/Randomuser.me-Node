@@ -1,10 +1,13 @@
 /*
-  Use native js dates instead of moment for ~60% increase in dates calculation
-  Email addresses are now transliterated
-  More street/city names for NL dataset
-  Fixed Norwegian id generation bug
-  Fixed Switzerland phone number format
-  Add country name to location block
+  • Use native js dates instead of moment for ~60% increase in dates calculation
+  • Email addresses are now transliterated
+  • More street/city names for NL dataset
+  • Add country name to location block
+  • Capitalized proper nouns
+  • Split street into number and name properties
+  • Fixed Norwegian id generation bug
+  • Fixed Switzerland phone number format
+  • Fixed Danish CPR number calculation
 */
 
 const fs           = require('fs');
