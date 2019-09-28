@@ -13,9 +13,5 @@ module.exports = (inc, contents) => {
     include(inc, contents, 'picture', pic);
     include(inc, contents, 'location', () => {
         contents.location.postcode = range(200, 9999); // Override common postcode with AU range
-
-        // Override common postcode with AU range
-        const oldStreet = contents.location.street;
-        contents.location.street = contents.location.street.replace(/(\d+)/, range(1,9999));
     });
 };

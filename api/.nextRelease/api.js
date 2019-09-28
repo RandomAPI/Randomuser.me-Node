@@ -1,10 +1,13 @@
 /*
-  Use native js dates instead of moment for ~60% increase in dates calculation
-  Email addresses are now transliterated
-  More street/city names for NL dataset
-  Fixed Norwegian id generation bug
-  Fixed Switzerland phone number format
-  Add country name to location block
+  • Use native js dates instead of moment for ~60% increase in dates calculation
+  • Email addresses are now transliterated
+  • More street/city names for NL dataset
+  • Add country name to location block
+  • Capitalized proper nouns
+  • Split street into number and name properties
+  • Fixed Norwegian id generation bug
+  • Fixed Switzerland phone number format
+  • Fixed Danish CPR number calculation
 */
 
 const fs           = require('fs');
@@ -145,14 +148,17 @@ class Generator {
     
         let name = this.randomName(this.current.gender, nat);
         this.include('name', {
-          title: this.current.gender === 'male' ? 'mr' : randomItem(this.datasets.common.title),
+          title: this.current.gender === 'male' ? 'Mr' : randomItem(this.datasets.common.title),
           first: name[0],
           last: name[1]
         });
 
         let timezone = JSON.parse(randomItem(this.datasets.common.timezones));
         this.include('location', {
-          street: range(1, 9999) + ' ' + randomItem(this.datasets[nat].street),
+          street: {
+            number: range(1, 9999),
+            name: randomItem(this.datasets[nat].street)
+          },
           city: randomItem(this.datasets[nat].cities),
           state: randomItem(this.datasets[nat].states),
           country: this.fullNatName(nat),
@@ -375,22 +381,22 @@ class Generator {
 
   fullNatName(nat) {
     let mapping = {
-      AU: "australia",
-      BR: "brazil",
-      CA: "canada",
-      CH: "switzerland",
-      DE: "germany",
-      DK: "denmark",
-      ES: "spain",
-      FI: "finland",
-      FR: "france",
-      GB: "united kingdom",
-      IE: "ireland",
-      IR: "iran",
-      NL: "netherlands",
-      NZ: "new zealand",
-      TR: "turkey",
-      US: "united states",
+      AU: "Australia",
+      BR: "Brazil",
+      CA: "Canada",
+      CH: "Switzerland",
+      DE: "Germany",
+      DK: "Denmark",
+      ES: "Spain",
+      FI: "Finland",
+      FR: "France",
+      GB: "United Kingdom",
+      IE: "Ireland",
+      IR: "Iran",
+      NL: "Netherlands",
+      NZ: "New Zealand",
+      TR: "Turkey",
+      US: "United States",
     };
     return mapping[nat];
   }

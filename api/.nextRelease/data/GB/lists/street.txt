@@ -1,55 +1,55 @@
-albert road
-alexander road
-broadway
-brick kiln road
-bridge road
-chester road
-church lane
-church road
-church street
-fairview road
-george street
-grange road
-green lane
-grove road
-high street
-highfield road
-king street
-kings road
-kingsway
-london road
-main road
-main street
-manchester road
-manor road
-mill lane
-mill road
-new road
-new street
-north road
-north street
-oaks cross
-park avenue
-park lane
-park road
-queen street
-queens road
-queensway
-richmond road
-rectory lane
-school lane
-south street
-springfield road
-st. john’s road
-stanley road
-station road
-the avenue
-the crescent
-the drive
-the green
-the grove
-victoria road
-victoria street
-west street
-windsor road
-york road
+Albert Road
+Alexander Road
+Broadway
+Brick Kiln Road
+Bridge Road
+Chester Road
+Church Lane
+Church Road
+Church Street
+Fairview Road
+George Street
+Grange Road
+Green Lane
+Grove Road
+High Street
+Highfield Road
+King Street
+Kings Road
+Kingsway
+London Road
+Main Road
+Main Street
+Manchester Road
+Manor Road
+Mill Lane
+Mill Road
+New Road
+New Street
+North Road
+North Street
+Oaks Cross
+Park Avenue
+Park Lane
+Park Road
+Queen Street
+Queens Road
+Queensway
+Richmond Road
+Rectory Lane
+School Lane
+South Street
+Springfield Road
+St. John’S Road
+Stanley Road
+Station Road
+The Avenue
+The Crescent
+The Drive
+The Green
+The Grove
+Victoria Road
+Victoria Street
+West Street
+Windsor Road
+York Road

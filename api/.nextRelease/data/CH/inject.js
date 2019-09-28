@@ -5,8 +5,8 @@ module.exports = (inc, contents) => {
     delete contents.picture;
 
     include(inc, contents, 'name', () => {
-        const femaleTitles = ['mademoiselle', 'madame'];
-        contents.name.title = contents.gender === 'male' ? 'monsieur' : randomItem(femaleTitles);
+        const femaleTitles = ['Mademoiselle', 'Madame'];
+        contents.name.title = contents.gender === 'male' ? 'Monsieur' : randomItem(femaleTitles);
     });
 
     include(inc, contents, 'location', () => {

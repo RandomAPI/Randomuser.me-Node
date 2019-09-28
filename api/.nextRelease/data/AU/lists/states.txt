@@ -1,8 +1,8 @@
-australian capital territory
-new south wales
-northern territory
-queensland
-south australia
-tasmania
-victoria
-western australia
+Australian Capital Territory
+New South Wales
+Northern Territory
+Queensland
+South Australia
+Tasmania
+Victoria
+Western Australia

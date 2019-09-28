@@ -62,8 +62,6 @@ module.exports = (inc, contents, datasets) => {
   });
 
   include(inc, contents, 'location', () => {
-    const oldStreet = contents.location.street.replace(/(\d+) /, '');
-    contents.location.street = oldStreet + ' ' + range(1, 9998);
     contents.location.postcode = randomItem(datasets['NO'].post_codes);
   });
   include(inc, contents, 'picture', pic);

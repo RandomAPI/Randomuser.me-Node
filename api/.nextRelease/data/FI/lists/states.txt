@@ -1,19 +1,19 @@
-central finland
-central ostrobothnia
-finland proper
-kainuu
-kymenlaakso
-lapland
-north karelia
-northern ostrobothnia
-northern savonia
-ostrobothnia
-pirkanmaa
-päijät-häme
-satakunta
-south karelia
-southern ostrobothnia
-southern savonia
-tavastia proper
-uusimaa
-åland
+Central Finland
+Central Ostrobothnia
+Finland Proper
+Kainuu
+Kymenlaakso
+Lapland
+North Karelia
+Northern Ostrobothnia
+Northern Savonia
+Ostrobothnia
+Pirkanmaa
+Päijät-Häme
+Satakunta
+South Karelia
+Southern Ostrobothnia
+Southern Savonia
+Tavastia Proper
+Uusimaa
+Åland

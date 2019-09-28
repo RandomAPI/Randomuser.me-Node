@@ -1,6 +1,6 @@
-danmark
-hovedstaden
-midtjylland
-nordjylland
-sjælland
-syddanmark
+Danmark
+Hovedstaden
+Midtjylland
+Nordjylland
+Sjælland
+Syddanmark
