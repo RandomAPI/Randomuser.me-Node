@@ -3,6 +3,7 @@ const async    = require('async');
 const format   = require('format-number')();
 const filesize = require('filesize');
 const Request  = require('./models/Request');
+const Load     = require('./models/Load');
 const store    = require('./store');
 const util     = require('./util');
 
@@ -13,6 +14,8 @@ let stats = {
   30: 0,
   load: "0%",
 };
+
+let lastMinCheck = -1;
 
 updateStats();
 setInterval(updateStats, 2500);
@@ -89,7 +92,7 @@ function updateStats() {
       });
     }
   ],
-  (err, results) => {
+  async (err, results) => {
     stats = {
       today: results[0],
       all: results[1],
@@ -97,27 +100,13 @@ function updateStats() {
       load: Math.round(os.loadavg()[0] * 100) + "%"
     };
     store.set('stats', stats);
+
+    let mins = new Date().getMinutes();
+    if (mins !== lastMinCheck) {
+      lastMinCheck = mins;
+      await Load.create({date: Date.now(), load: stats.load.slice(0, -1)});
+    }
   });
-}
-
-function getDateTime(daysBack) {
-  daysBack = daysBack || 0;
-  const date = new Date(new Date().getTime()-86400000*daysBack);
-  const year = date.getFullYear();
-
-  let month = date.getMonth() + 1;
-  month = (month < 10 ? '0' : '') + month;
-
-  let day  = date.getDate();
-  day = (day < 10 ? '0' : '') + day;
-
-  return year + '-' + pad(month, 2) + '-' + pad(day, 2);
-}
-
-function pad(n, width, z) {
-  z = z || '0';
-  n = n + '';
-  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
 }
 
 module.exports = (server) => {
