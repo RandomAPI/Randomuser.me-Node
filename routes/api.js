@@ -1,7 +1,6 @@
 const fs         = require('fs');
-const util       = require('util');
-const writeFile  = util.promisify(fs.writeFile);
-const unlink     = util.promisify(fs.unlink);
+const writeFile  = require('util').promisify(fs.writeFile);
+const unlink     = require('util').promisify(fs.unlink);
 const qs         = require('qs');
 const express    = require('express');
 const router     = express.Router();
@@ -9,6 +8,7 @@ const settings   = require('../settings');
 const Request    = require('../models/Request');
 const legRequest = require('request-promise-native');
 const store      = require('../store');
+const util       = require('../util');
 
 router.use('/portraits', express.static('public/portraits'));
 
@@ -111,7 +111,7 @@ async function genUser(req, res, version) {
     payload[version.replace(/\./g, '_')] = results;
 
     let doc = await Request.findOneAndUpdate(
-      {date: getDateTime()},
+      {date: util.getDateTime()},
       {$setOnInsert: payload},
       {
         returnOriginal: false,
@@ -120,7 +120,7 @@ async function genUser(req, res, version) {
     );
 
     if (doc !== null) {
-      await Request.updateOne({date: getDateTime()}, {$inc: payload});
+      await Request.updateOne({date: util.getDateTime()}, {$inc: payload});
     }
 
     res.send(ret);
@@ -188,7 +188,7 @@ async function genUser(req, res, version) {
   payload[version.replace(/\./g, '_')] = results;
 
   let doc = await Request.findOneAndUpdate(
-    {date: getDateTime()},
+    {date: util.getDateTime()},
     {$setOnInsert: payload},
     {
       returnOriginal: true,
@@ -197,7 +197,7 @@ async function genUser(req, res, version) {
   );
 
   if (doc !== null) {
-    await Request.updateOne({date: getDateTime()}, {$inc: payload});
+    await Request.updateOne({date: util.getDateTime()}, {$inc: payload});
   }
 
   // Download or output file
@@ -225,25 +225,6 @@ async function genUser(req, res, version) {
       res.send(output);
     }
   }
-}
-
-function getDateTime() {
-  const date = new Date();
-  const year = date.getFullYear();
-
-  let month = date.getMonth() + 1;
-  month = (month < 10 ? '0' : '') + month;
-
-  let day = date.getDate();
-  day = (day < 10 ? '0' : '') + day;
-
-  return year + '-' + pad(month, 2) + '-' + pad(day, 2);
-}
-
-function pad(n, width, z) {
-  z = z || '0';
-  n = n + '';
-  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
 }
 
 module.exports = router;

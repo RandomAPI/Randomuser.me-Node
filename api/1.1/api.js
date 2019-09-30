@@ -7,9 +7,8 @@
 */
 
 const fs           = require('fs');
-const util         = require('util');
-const readDir      = util.promisify(fs.readdir);
-const readFile     = util.promisify(fs.readFile);
+const readDir      = require('util').promisify(fs.readdir);
+const readFile     = require('util').promisify(fs.readFile);
 const path         = require('path');
 const mersenne     = require('mersenne');
 const moment       = require('moment');
@@ -17,6 +16,7 @@ const crypto       = require('crypto');
 const YAML         = require('yamljs');
 const js2xmlparser = require('js2xmlparser');
 const converter    = require('json-2-csv');
+const util         = require('../../util');
 const settings     = require('../../settings');
 const version      = '1.1';
 
@@ -204,7 +204,7 @@ class Generator {
       let json = {
         results: output,
         info: {
-          seed: String(this.seed + (this.nat !== null && !Array.isArray(this.nat) ? pad((this.nats.indexOf(this.nat)).toString(16), 2) : '')),
+          seed: String(this.seed + (this.nat !== null && !Array.isArray(this.nat) ? util.pad((this.nats.indexOf(this.nat)).toString(16), 2) : '')),
           results: this.results,
           page: this.page,
           version: this.version
@@ -373,12 +373,6 @@ function randomItem(arr) {
   return arr[range(0, arr.length-1)];
 }
 
-function pad (n, width, z) {
-  z = z || '0';
-  n = n + '';
-  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
-}
-
 function range (min, max) {
   return min + mersenne.rand(max-min+1);
 }
@@ -404,7 +398,7 @@ module.exports = {
   Generator,
   random,
   randomItem,
-  pad,
+  pad: util.pad,
   range,
   uppercaseify,
   include,

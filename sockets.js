@@ -4,6 +4,7 @@ const format   = require('format-number')();
 const filesize = require('filesize');
 const Request  = require('./models/Request');
 const store    = require('./store');
+const util     = require('./util');
 
 // Cache db stats
 let stats = {
@@ -19,7 +20,7 @@ function updateStats() {
   async.parallel([
     (cb) => {
       Request.findOne({
-        date: getDateTime()
+        date: util.getDateTime()
       }, (err, obj) => {
         if (obj !== null) {
           cb(err, {
