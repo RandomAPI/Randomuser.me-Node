@@ -100,7 +100,7 @@
   <script>
   var onloadCallback = function() {
     grecaptcha.render('recaptcha', {
-      'sitekey' : '6LeN-qUUAAAAALFyEP8fNstJZ9CT9hUWZ3RbcfZ6',
+      'sitekey' : '<%=googleCaptchaKey%>',
       'callback': 'recaptchaCallback'
     });
     let btn = document.getElementById('donate_button');

@@ -1,7 +1,7 @@
 const fs       = require('fs');
 const util     = require('util');
 const express  = require('express');
-const request  = require('request');
+const request  = require('request-promise-native');
 const store    = require('../store');
 const router   = express.Router();
 
@@ -41,6 +41,7 @@ const titles = {
         socket: ':' + settings.socket,
         title: titles[page],
         stripePublishKey: settings.stripePublishKey,
+        googleCaptchaKey: settings.googleCaptchaKey,
         stats: store.get('stats')['30'].total,
         latestVersion: settings.latestVersion
       });
@@ -50,22 +51,22 @@ const titles = {
   });
   
   router.post('/donate', async (req, res, next) => {
-    let data;
+    let data, captchaBody;
     try {
       data = JSON.parse(req.body.data);
-      let body = await request.post({
+      captchaBody = await request.post({
         url:'https://www.google.com/recaptcha/api/siteverify',
         form: {
-          secret: settings.googleCaptchaKey,
+          secret: settings.googleCaptchaSecretKey,
           response: data.recaptcha
         }
       });
-      body = JSON.parse(body);
+      captchaBody = JSON.parse(captchaBody);
+    if (process.env.spec === "true") captchaBody = {success: true};
     } catch (e) {
-      if (process.env.spec === "true") body = {success: true};
-      else return res.sendStatus(400);
+      if (process.env.spec === "true") throw e;
     }
-    if (body.success === true) {
+    if (captchaBody.success === true) {
       data = JSON.parse(req.body.data);
       stripe.charges.create({
         amount: data.token.price,
