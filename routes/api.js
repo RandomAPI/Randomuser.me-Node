@@ -66,7 +66,6 @@ async function genUser(req, res, version) {
   const ip = req.headers['cf-connecting-ip'] || req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 
   if (process.env.spec !== "true" && clients[ip] >= settings.limit) {
-    console.log(process.env.spec);
     return res.status(503).json({
       error: `Whoa, ease up there cowboy. You've requested ${clients[ip]} users in the last minute. Help us keep this service free and spare some bandwidth for other users please :)`
     });
