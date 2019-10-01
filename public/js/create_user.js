@@ -48,8 +48,8 @@ function getNewUser(){
       setData('email', user.email);
 
       var birthday = new Date(user.dob.date);
-      setData('birthday', birthday.getMonth()+1+'/'+(birthday.getDay()+1)+'/19'+birthday.getYear());
-      setData('location', user.location.street);
+      setData('birthday', birthday.getMonth() + 1 + '/' + (birthday.getDay() + 1) + '/19' + birthday.getYear());
+      setData('location', user.location.street.number + " " + user.location.street.name);
       setData('phone', user.cell);
       setData('pass', user.login.password);
     } else {
