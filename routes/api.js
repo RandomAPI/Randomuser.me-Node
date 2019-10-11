@@ -2,11 +2,11 @@ const fs         = require('fs');
 const writeFile  = require('util').promisify(fs.writeFile);
 const unlink     = require('util').promisify(fs.unlink);
 const qs         = require('qs');
+const legRequest = require('request-promise-native');
 const express    = require('express');
 const router     = express.Router();
 const settings   = require('../settings');
 const Request    = require('../models/Request');
-const legRequest = require('request-promise-native');
 const store      = require('../store');
 const util       = require('../util');
 
@@ -133,7 +133,7 @@ async function genUser(req, res, version) {
   }
 
   let results = req.query.results || 1;
-  if (results > settings.maxResults || results < 1 || isNaN(results) || results === "") {
+  if (results > settings.maxResults || results < 1 || isNaN(results) || !Number.isInteger(+results)) {
     results = 1;
   }
   req.query.results = results;

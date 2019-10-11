@@ -13,4 +13,10 @@ module.exports = (server) => {
     const result = JSON.parse(res.text);
     expect(result.info.version).to.equal(settings.latestVersion);
   });
+
+  it('should default to 1 instead of accepting floating point results values', async () => {
+    const res = await request(server).get(`/api/?results=${Math.random() * 25 + 5}`);
+    const result = JSON.parse(res.text);
+    expect(result.info.results).to.equal(1);
+  });
 }
