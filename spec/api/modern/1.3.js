@@ -16,6 +16,16 @@ module.exports = (server, version=defVersion) => {
         return user.email.indexOf(' ') === -1;
       })).to.equal(true);
     });
+
+    // Email addresses should be lowercase
+    it(`should be lowercase`, async () => {
+      const res = await request(server).get(`/api/${version}?results=5000&inc=email`);
+      const result = JSON.parse(res.text);
+
+      expect(result.results.every(user => {
+        return user.email.toLowerCase() === user.email;
+      })).to.equal(true);
+    });
   });
 
   // 1.3 should support all previous version features as well
