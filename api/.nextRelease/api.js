@@ -170,7 +170,7 @@ class Generator {
           timezone
         });
     
-        this.include('email', tr.transliterate(name[0]) + '.' + tr.transliterate(name[1]).replace(/ /g, '') + '@example.com');
+        this.include('email', tr.transliterate(`${name[0]}.${name[1]}`).replace(/ /g, '').toLowerCase() + '@example.com');
     
         let salt = random(2, 8);
         let password = this.password === undefined ? randomItem(this.datasets.common.passwords) : this.genPassword();
