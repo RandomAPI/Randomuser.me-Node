@@ -29,7 +29,7 @@ module.exports = (inc, contents) => {
       contents.phone = randomItem(phones);
     });
 
-    include(inc, contents, 'cell', '07' + random(3, 2) + '-' + random(3, 3) + '-' + random(3, 3));
+    include(inc, contents, 'cell', '07' + random(3, 3) + ' ' + random(3, 6));
 
     include(inc, contents, 'location', () => {
       const code = 'ABDEFGHJLNPQRSTUWXYZ';
