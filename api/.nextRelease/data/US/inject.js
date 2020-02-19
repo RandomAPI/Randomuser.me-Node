@@ -4,8 +4,8 @@ module.exports = (inc, contents) => {
     const pic = contents.picture;
     delete contents.picture;
 
-    include(inc, contents, 'phone', '(' + random(3, 3) + ')-' + random(3, 3) + '-' + random(3, 4));
-    include(inc, contents, 'cell', '(' + random(3, 3) + ')-' + random(3, 3) + '-' + random(3, 4));
+    include(inc, contents, 'phone', '(' + random(4, 1) + random(3, 2) + ') ' + random(4, 1) + random(3, 2) + '-' + random(3, 4));
+    include(inc, contents, 'cell', '(' + random(4, 1) + random(3, 2) + ') ' + random(4, 1) + random(3, 2) + '-' + random(3, 4));
     include(inc, contents, 'id', {
         name: 'SSN',
         value: random(3, 3) + '-' + random(3, 2) + '-' + random(3, 4)
