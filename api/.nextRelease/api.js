@@ -132,10 +132,10 @@ class Generator {
       ///////////////////
 
       this.seedRNG();
-    
+
       let output = [];
       let nat, inject;
-    
+
       for (let i = 0; i < this.results; i++) {
         this.current = {};
         nat = this.nat === null ? this.randomNat() : this.nat;
@@ -143,9 +143,9 @@ class Generator {
           nat = nat[range(0, nat.length-1)];
         }
         inject = this.injects[nat];
-    
+
         this.current.gender = this.gender === null ? randomItem(['male', 'female']) : this.gender;
-    
+
         let name = this.randomName(this.current.gender, nat);
         this.include('name', {
           title: this.current.gender === 'male' ? 'Mr' : randomItem(this.datasets.common.title),
@@ -169,9 +169,9 @@ class Generator {
           },
           timezone
         });
-    
+
         this.include('email', tr.transliterate(`${name[0]}.${name[1]}`).replace(/ /g, '').toLowerCase() + '@example.com');
-    
+
         let salt = random(2, 8);
         let password = this.password === undefined ? randomItem(this.datasets.common.passwords) : this.genPassword();
         this.include('login', {
@@ -183,7 +183,7 @@ class Generator {
           sha1:   crypto.createHash('sha1').update(password + salt).digest('hex'),
           sha256: crypto.createHash('sha256').update(password + salt).digest('hex')
         });
-    
+
         let dob = range(-800000000000, this.constantTime * 1000 - 86400000 * 365 * 21);
         let dobDate = new Date(dob);
 
@@ -197,7 +197,7 @@ class Generator {
           date: regDate.toISOString(),
           age: new Date().getFullYear() - regDate.getFullYear()
         });
-    
+
         let id, genderText;
         if (nat != 'LEGO') {
             id = this.current.gender == 'male' ? range(0, 99) : range(0, 96);
@@ -207,17 +207,17 @@ class Generator {
             genderText = 'lego';
         }
         let base = 'https://randomuser.me/api/';
-    
+
         this.include('picture', {
           large: base + 'portraits/' + genderText + '/' + id + '.jpg',
           medium: base + 'portraits/med/' + genderText + '/' + id + '.jpg',
           thumbnail: base + 'portraits/thumb/' + genderText + '/' + id + '.jpg'
         });
-    
+
         inject(this.inc, this.current, this.datasets);  // Inject unique fields for nationality
-    
+
         this.include('nat', nat);
-    
+
         // Gender hack - Remove gender if the user doesn't want it in the results
         if (this.inc.indexOf('gender') === -1) {
           delete this.current.gender;
@@ -227,10 +227,10 @@ class Generator {
         if (this.inc.indexOf('dob') === -1) {
           delete this.current.dob;
         }
-    
+
         output.push(this.current);
       }
-    
+
       let json = {
         results: output,
         info: {
@@ -240,9 +240,9 @@ class Generator {
           version: this.version
         }
       };
-    
+
       if (this.noInfo) delete json.info;
-    
+
       if (this.format === 'yaml') {
         resolve({output: YAML.stringify(json, 4), ext: "yaml"});
       } else if (this.format === 'xml') {
@@ -266,22 +266,22 @@ class Generator {
       seed = this.seed.substring(0, 16);
     }
     seed = this.page !== 1 ? seed + String(this.page) : seed;
-  
+
     seed = parseInt(crypto.createHash('md5').update(seed).digest('hex').substring(0, 8), 16);
     mersenne.seed(seed);
     faker.seed(seed);
   }
-  
+
   // Choose random seed
   defaultSeed() {
     this.seed = random(1, 16);
   }
-  
+
   // Return random nat to use
   randomNat() {
     return this.nats[range(0, this.nats.length - 1)];
   }
-  
+
   // Make sure nat is available
   validNat(nat) {
     if (Array.isArray(nat)) {
@@ -295,12 +295,12 @@ class Generator {
     }
     return true;
   }
-  
+
   randomName(gender, nat) {
     gender = gender === undefined ? randomItem(['male', 'female']) : gender;
     return [randomItem(this.datasets[nat][gender + '_first']), randomItem(this.datasets[nat]['last'])];
   }
-  
+
   // Return available nats
   getNats() {
     let exclude = ['common', 'LEGO'];
@@ -309,13 +309,13 @@ class Generator {
     });
     return nats;
   }
-  
+
   include(field, value) {
     if (this.inc.indexOf(field) !== -1) {
       this.current[field] = value;
     }
   }
-  
+
   checkOptions(options) {
     let keys = Object.keys(options);
     for (let i = 0; i < keys.length; i++) {
@@ -329,32 +329,32 @@ class Generator {
     if (this.password.length === 0) {
       return randomItem(this.datasets.common.passwords);
     }
-  
+
     let charsets = {
       special: " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~",
       upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
       lower: "abcdefghijklmnopqrstuvwxyz",
       number: "0123456789"
     };
-  
+
     // Parse sections
     let sections = ["special", "upper", "lower", "number"];
     let matches = this.password.split(',').filter(val => sections.indexOf(val) !== -1)
-  
+
     if (matches.length === 0) {
       return randomItem(this.datasets.common.passwords);
     }
-  
+
     matches = matches.filter((v,i,self) => self.indexOf(v) === i);
-  
+
     // Construct charset to choose from
     let charset = "";
     matches.forEach(match => {
       charset += charsets[match];
     });
-  
+
     let length = this.password.split(',').slice(-1)[0];
-  
+
     // Range
     let min, max;
     if (length.indexOf('-') !== -1) {
@@ -367,15 +367,15 @@ class Generator {
     }
     min = min > 64 || min < 1 || min === undefined || isNaN(min) ? 8 : min;
     max = max > 64 || max < 1 || max === undefined || isNaN(max) ? 64 : max;
-  
+
     let passLen = range(min, max);
-  
+
     // Generate password
     let password = "";
     for (let i = 0; i < passLen; i++) {
       password += String(charset[range(0, charset.length-1)]);
     }
-  
+
     return password;
   }
 
@@ -414,6 +414,8 @@ function random(mode, length) {
     chars = '0123456789';
   } else if (mode == 4) {
     chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  } else if (mode == 5) {
+    chars = '23456789';
   }
   for (let i = 0; i < length; i++) {
     result += chars[range(0, chars.length-1)];
