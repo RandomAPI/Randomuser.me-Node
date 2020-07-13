@@ -366,7 +366,7 @@ class Generator {
       max = min;
     }
     min = min > 64 || min < 1 || min === undefined || isNaN(min) ? 8 : min;
-    max = max > 64 || max < 1 || max === undefined || isNaN(max) ? 64 : max;
+    max = max > 64 || max < 1 || max === undefined || isNaN(max) || max < min ? 64 : max;
   
     let passLen = range(min, max);
   
