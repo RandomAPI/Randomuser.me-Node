@@ -25,7 +25,7 @@ class Generator {
     this.originalFields = [
       'gender', 'name', 'location', 'email',
       'login', 'registered', 'dob', 'phone',
-      'cell', 'id', 'picture', 'nat'
+      'cell', 'id', 'picture', 'nat', 'income'
     ];
     this.constantTime = 1471295130;
     this.version = version;
@@ -154,6 +154,16 @@ class Generator {
           city: randomItem(this.datasets[nat].cities),
           state: randomItem(this.datasets[nat].states),
           postcode: range(10000, 99999)
+        });
+
+        //Generated Random Income  and NonTaxble Income Values
+        let annualIncome = range(1000, 1000000);
+        //Non Taxable Income is less than annual income
+        let nonTableIncome = range(0, annualIncome);
+        //console.log(annualIncome);
+        this.include('income', {
+          income: annualIncome,
+          nonTableIncome: nonTableIncome
         });
     
         this.include('email', name[0] + '.' + name[1].replace(/ /g, '') + '@example.com');

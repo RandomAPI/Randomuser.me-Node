@@ -8,7 +8,7 @@ module.exports = (server, version=defVersion) => {
 
   const fields = ['gender', 'name', 'location', 'email',
     'login', 'registered', 'dob', 'phone',
-    'cell', 'id', 'picture', 'nat'
+    'cell', 'id', 'picture', 'nat', 'income'
   ];
   
   let nats = [

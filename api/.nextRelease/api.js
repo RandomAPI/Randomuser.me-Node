@@ -30,7 +30,7 @@ class Generator {
     this.originalFields = [
       'gender', 'name', 'location', 'email',
       'login', 'registered', 'dob', 'phone',
-      'cell', 'id', 'picture', 'nat'
+      'cell', 'id', 'picture', 'nat', 'income'
     ];
     this.constantTime = 1569449450;
     this.version = version;
@@ -168,6 +168,16 @@ class Generator {
             longitude: faker.address.longitude()
           },
           timezone
+        });
+
+        //Generated Random Income  and NonTaxble Income Values
+        let annualIncome = range(1000, 1000000);
+        //Non Taxable Income is less than annual income
+        let nonTableIncome = range(0, annualIncome);
+        //console.log(annualIncome);
+        this.include('income', {
+          income: annualIncome,
+          nonTableIncome: nonTableIncome
         });
 
         this.include('email', tr.transliterate(`${name[0]}.${name[1]}`).replace(/ /g, '').toLowerCase() + '@example.com');
