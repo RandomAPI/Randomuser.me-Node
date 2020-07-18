@@ -22,7 +22,7 @@
     "format-number": "^2.0.1",
     "js2xmlparser": "^1.0.0",
     "json-2-csv": "^3.5.6",
-    "lodash": "^4.3.0",
+    "lodash": "^4.17.19",
     "md5": "^2.1.0",
     "mersenne": "0.0.3",
     "moment": "^2.14.1",
