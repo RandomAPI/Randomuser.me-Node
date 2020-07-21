@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "codecov": "^3.6.1",
+    "codecov": "^3.7.1",
     "csv-parse": "^4.4.6",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.0",
