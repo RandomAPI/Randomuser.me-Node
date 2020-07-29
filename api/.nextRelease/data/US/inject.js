@@ -17,7 +17,7 @@ module.exports = (inc, contents) => {
     });
     include(inc, contents, 'income', {
         annualIncome: annualIncome,
-        nonTaxableIncome
+        nonTaxableIncome: nonTaxableIncome
     })
     include(inc, contents, 'picture', pic);
 };
