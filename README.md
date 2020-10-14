@@ -47,3 +47,14 @@ Just place your files in a new directory in the `api/.nextRelease/data` folder w
 
 ### How to contact us
 If you have any questions, feel free to ask us on our Twitter page [@randomapi](https://twitter.com/randomapi).
+
+### To Run Locally with Docker Compose
+
+```bash
+# runs mongo as a background container
+docker-compose up --build db -d
+# start the service
+docker-compose up --build randomuser
+# call the API
+curl -i localhost:3000/api/
+```

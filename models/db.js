@@ -3,8 +3,13 @@ const settings = require('../settings');
 
 module.exports = testEnv => {
   const dbName = settings.db + (testEnv ? '-test' : '');
+  const dbServer = settings.dbServer;
+  const credentials =
+    settings.dbUsername && settings.dbPassword
+      ? settings.dbUsername + ':' + settings.dbPassword + '@'
+      : '';
 
-  mongoose.connect('mongodb://localhost/' + dbName, {
+  mongoose.connect('mongodb://' + credentials + dbServer + '/' + dbName, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
