@@ -397,6 +397,7 @@ class Generator {
       NZ: "New Zealand",
       TR: "Turkey",
       US: "United States",
+      UA: "Ukranian",
     };
     return mapping[nat];
   }
