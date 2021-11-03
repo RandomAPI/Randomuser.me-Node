@@ -395,6 +395,7 @@ class Generator {
       IR: "Iran",
       NL: "Netherlands",
       NZ: "New Zealand",
+      RS: "Serbia",
       TR: "Turkey",
       US: "United States",
     };
