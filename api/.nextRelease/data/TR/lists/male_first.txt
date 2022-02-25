@@ -326,7 +326,7 @@ Seli̇m
 Selman
 Semen
 Semi̇h
-Sercan 
+Sercan
 Serdar
 Seretan
 Sergen
@@ -360,10 +360,10 @@ Süreyya
 Şansal
 Şarik
 Şehmuz
-Şen.......
+Şener
 Şi̇rzat
 Tan
-Tansel 
+Tansel
 Tarik
 Tarkan
 Tayfun
@@ -386,7 +386,7 @@ Tugay
 Tuna
 Tunca
 Tunç
-Tümer 
+Tümer
 Ufuk
 Uğur
 Ulubey
@@ -405,7 +405,7 @@ Uygar
 Uygur
 Uzay
 Ülke
-Ünal 
+Ünal
 Ürün
 Vadi̇
 Veri̇m
@@ -417,7 +417,7 @@ Yalman
 Yalvaç
 Yamaç
 Yaman
-Yardan 
+Yardan
 Yarin
 Yasi̇n
 Yaver
