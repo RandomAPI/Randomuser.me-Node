@@ -7,8 +7,8 @@ module.exports = (inc, contents) => {
     include(inc, contents, 'phone', '(' + random(3, 2) + ') ' + random(3, 4) + '-' + random(3, 4));
     include(inc, contents, 'cell', '(' + random(3, 2) + ') ' + random(3, 4) + '-' + random(3, 4));
     include(inc, contents, 'id', {
-        name: '',
-        value: null
+        name: 'CPF',
+        value: random(3, 3) + '.' + random(3, 3) + '.' + random(3, 3) + '-' + random(3, 2)
     });
     include(inc, contents, 'picture', pic);
 };
