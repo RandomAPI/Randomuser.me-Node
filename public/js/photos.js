@@ -6,7 +6,6 @@
         thephoto.src = 'https://randomuser.me/api/portraits/' + g + '/' + i + '.jpg';
         thephoto.setAttribute('data-int', i);
         thephoto.setAttribute('data-gender', g);
-        console.log(g);
         document.getElementById('photos_' + g).appendChild(thephoto);
       };
 
@@ -35,7 +34,6 @@
         el.addEventListener('click', function() {
           document.getElementById('large_img').setAttribute('src', 'https://randomuser.me/api/portraits/' + this.getAttribute('data-gender') + '/' + this.getAttribute('data-int') + '.jpg');
           fadeIn(document.getElementsByClassName('modal_mask')[0]);
-          console.log("fadein");
         });
       })
 

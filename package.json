@@ -1,19 +1,19 @@
 {
   "name": "randomuser.me-node",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "scripts": {
     "start": "node --expose-gc app",
     "build": "gulp build",
     "test": "spec=true mocha --exit --reporter nyan spec/index.js",
-    "specTest": "spec=true mocha --exit --reporter spec spec/index.js",
-    "ciTest": "spec=true nyc mocha --exit spec/index.js"
+    "specTest": "spec=true mocha --exit --reporter spec spec/index.js"
   },
   "dependencies": {
     "async": "^2.0.0-rc.2",
     "body-parser": "^1.19.0",
     "compression": "^1.6.1",
     "cors": "^2.7.1",
+    "dayjs": "^1.11.2",
     "debug": ">=2.6.9",
     "ejs": "^2.5.7",
     "express": "^4.17.1",
@@ -40,7 +40,6 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "codecov": "^3.6.1",
     "csv-parse": "^4.4.6",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.0",

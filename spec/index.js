@@ -14,6 +14,7 @@ const v10  = require('./api/modern/1.0');
 const v11  = require('./api/modern/1.1');
 const v12  = require('./api/modern/1.2');
 const v13  = require('./api/modern/1.3');
+const v14  = require('./api/modern/1.4');
 
 // Start up server
 before(function(done) {
@@ -30,7 +31,7 @@ describe('Randomuser.me', function() {
   
   describe('API', () => {
     describe('General', api.bind(this, server));
-    describe.skip('Legacy versions <1.0', legacy.bind(this, server));
+    describe('Legacy versions <1.0', legacy.bind(this, server));
 
     describe('Modern versions >=1.0', () => {
       describe('General', modern.bind(this, server))
@@ -38,6 +39,7 @@ describe('Randomuser.me', function() {
       describe('1.1', v11.bind(this, server));
       describe('1.2', v12.bind(this, server));
       describe('1.3', v13.bind(this, server));
+      describe('1.4', v14.bind(this, server));
     });
   });
 

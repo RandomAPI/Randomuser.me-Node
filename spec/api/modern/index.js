@@ -4,7 +4,7 @@ const settings = require('../../../settings');
 
 // No test coverage for 0.7 & 0.8 (php versions)
 const versions = [
-  "1.0", "1.1", "1.2", "1.3",
+  "1.0", "1.1", "1.2", "1.3", "1.4",
 ];
 module.exports = (server) => {
   versions.forEach((version) => {

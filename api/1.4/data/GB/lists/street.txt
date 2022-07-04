@@ -1,0 +1,55 @@
+Albert Road
+Alexander Road
+Broadway
+Brick Kiln Road
+Bridge Road
+Chester Road
+Church Lane
+Church Road
+Church Street
+Fairview Road
+George Street
+Grange Road
+Green Lane
+Grove Road
+High Street
+Highfield Road
+King Street
+Kings Road
+Kingsway
+London Road
+Main Road
+Main Street
+Manchester Road
+Manor Road
+Mill Lane
+Mill Road
+New Road
+New Street
+North Road
+North Street
+Oaks Cross
+Park Avenue
+Park Lane
+Park Road
+Queen Street
+Queens Road
+Queensway
+Richmond Road
+Rectory Lane
+School Lane
+South Street
+Springfield Road
+St. John’S Road
+Stanley Road
+Station Road
+The Avenue
+The Crescent
+The Drive
+The Green
+The Grove
+Victoria Road
+Victoria Street
+West Street
+Windsor Road
+York Road

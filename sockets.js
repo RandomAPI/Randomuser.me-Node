@@ -51,7 +51,7 @@ function updateStats() {
             "$sort": { "total": -1 }
           }
       ], (err, result) => {
-        if (result.length !== 0) {
+        if (result && result.length !== 0) {
           cb(err, {
             total: format(result[0].total),
             bandwidth: filesize(result[0].bandwidth, {
@@ -78,7 +78,7 @@ function updateStats() {
             }
           }
       ], (err, result) => {
-        if (result.length !== 0) {
+        if (result && result.length !== 0) {
           cb(err, {
             total: format(Math.round(result[0].total / 30)),
             bandwidth: filesize(result[0].bandwidth)
