@@ -1,0 +1,283 @@
+Abaetetuba
+Alagoinhas
+Almirante Tamandaré
+Alvorada
+Americana
+Ananindeua
+Angra dos Reis
+Anápolis
+Aparecida de Goiânia
+Apucarana
+Aracaju
+Araguari
+Araguaína
+Arapiraca
+Arapongas
+Araraquara
+Araras
+Araruama
+Araucária
+Araçatuba
+Atibaia
+Açailândia
+Bacabal
+Bagé
+Balneário Camboriú
+Barbacena
+Barra Mansa
+Barreiras
+Barretos
+Barueri
+Bauru
+Belford Roxo
+Belo Horizonte
+Belém
+Bento Gonçalves
+Betim
+Birigüi
+Blumenau
+Boa Vista
+Botucatu
+Bragança
+Bragança Paulista
+Brasília
+Brusque
+Cabo de Santo Agostinho
+Cabo Frio
+Cachoeirinha
+Cachoeiro de Itapemirim
+Camaragibe
+Camaçari
+Cametá
+Campina Grande
+Campinas
+Campo Grande
+Campo Largo
+Campos dos Goytacazes
+Canoas
+Caraguatatuba
+Carapicuíba
+Cariacica
+Caruaru
+Cascavel
+Castanhal
+Catanduva
+Caucaia
+Caxias
+Caxias do Sul
+Chapecó
+Codó
+Colatina
+Colombo
+Conselheiro Lafaiete
+Contagem
+Coronel Fabriciano
+Corumbá
+Cotia
+Crato
+Criciúma
+Cubatão
+Cuiabá
+Curitiba
+Diadema
+Divinópolis
+Dourados
+Duque de Caxias
+Embu
+Eunápolis
+Feira de Santana
+Ferraz de Vasconcelos
+Florianópolis
+Formosa
+Fortaleza
+Foz do Iguaçu
+Franca
+Francisco Morato
+Franco da Rocha
+Garanhuns
+Goiânia
+Governador Valadares
+Gravataí
+Guarapari
+Guarapuava
+Guaratinguetá
+Guarujá
+Guarulhos
+Hortolândia
+Ibirité
+Igarassu
+Ilhéus
+Imperatriz
+Indaiatuba
+Ipatinga
+Itabira
+Itaboraí
+Itabuna
+Itaguaí
+Itajaí
+Itapecerica da Serra
+Itapetininga
+Itapevi
+Itapipoca
+Itaquaquecetuba
+Itatiba
+Itu
+Jaboatão dos Guararapes
+Jacareí
+Jandira
+Jaraguá do Sul
+Jaú
+Jequié
+Ji-Paraná
+Joinville
+João Pessoa
+Juazeiro
+Juazeiro do Norte
+Juiz de Fora
+Jundiaí
+Lages
+Lauro de Freitas
+Limeira
+Linhares
+Londrina
+Luziânia
+Macapá
+Macaé
+Maceió
+Magé
+Manaus
+Marabá
+Maracanaú
+Maranguape
+Maricá
+Maringá
+Marituba
+Marília
+Mauá
+Mesquita
+Mogi das Cruzes
+Mogi Guaçu
+Montes Claros
+Mossoró
+Muriaé
+Natal
+Nilópolis
+Niterói
+Nossa Senhora do Socorro
+Nova Friburgo
+Nova Iguaçu
+Novo Hamburgo
+Olinda
+Osasco
+Ourinhos
+Palhoça
+Palmas
+Paranaguá
+Parauapebas
+Parintins
+Parnamirim
+Parnaíba
+Passo Fundo
+Passos
+Patos
+Patos de Minas
+Paulista
+Paulo Afonso
+Paço do Lumiar
+Pelotas
+Petrolina
+Petrópolis
+Pindamonhangaba
+Pinhais
+Piracicaba
+Ponta Grossa
+Porto Alegre
+Porto Seguro
+Porto Velho
+Pouso Alegre
+Poá
+Poços de Caldas
+Praia Grande
+Presidente Prudente
+Queimados
+Recife
+Resende
+Ribeirão das Neves
+Ribeirão Pires
+Ribeirão Preto
+Rio Branco
+Rio Claro
+Rio das Ostras
+Rio de Janeiro
+Rio Grande
+Rio Verde
+Rondonópolis
+Sabará
+Salto
+Salvador
+Santa Bárbara D'Oeste
+Santa Cruz do Sul
+Santa Luzia
+Santa Maria
+Santa Rita
+Santana
+Santana de Parnaíba
+Santarém
+Santo André
+Santos
+Sapucaia do Sul
+Serra
+Sertãozinho
+Sete Lagoas
+Simões Filho
+Sinop
+Sobral
+Sorocaba
+Sumaré
+Suzano
+São Bernardo do Campo
+São Caetano do Sul
+São Carlos
+São Gonçalo
+São José
+São José de Ribamar
+São José do Rio Preto
+São José dos Campos
+São José dos Pinhais
+São João de Meriti
+São Leopoldo
+São Lourenço da Mata
+São Luís
+São Mateus
+São Paulo
+São Vicente
+Taboão da Serra
+Tatuí
+Taubaté
+Teixeira de Freitas
+Teresina
+Teresópolis
+Teófilo Otoni
+Timon
+Toledo
+Trindade
+Três Lagoas
+Uberaba
+Uberlândia
+Ubá
+Umuarama
+Uruguaiana
+Valinhos
+Valparaíso de Goiás
+Varginha
+Vespasiano
+Viamão
+Vila Velha
+Vitória
+Vitória da Conquista
+Vitória de Santo Antão
+Volta Redonda
+Votorantim
+Várzea Grande
+Várzea Paulista
+Águas Lindas de Goiás

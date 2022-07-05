@@ -25,6 +25,7 @@ const requestSchema = mongoose.Schema({
   '1_1': Number,
   '1_2': Number,
   '1_3': Number,
+  '1_4': Number,
   'bandwidth': Number
 });
 requestSchema.index({date: 1}, {unique: true});

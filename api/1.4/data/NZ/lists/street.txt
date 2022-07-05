@@ -1,0 +1,272 @@
+Abbotts Way
+Ahuriri Bypass
+Albany Expressway
+Aldwins Road
+Alexandra Street
+Andersons Bay Road
+Anglesea Street
+Anzac Drive
+Anzac Parade
+Armagh Street
+Atkinson Avenue
+Avalon Drive
+Bairds Road
+Balmoral Road
+Bank Street
+Barbadoes Street
+Bay View Road
+Beach Road
+Bealey Avenue
+Blenheim Road
+Botany Road
+Bridge Street
+Broadway
+Broadway Avenue
+Brockville Road
+Brougham Street
+Buckleys Road
+Cambridge Terrace
+Cameron Road
+Carlton Avenue
+Carrington Road
+Cashel Street
+Castle Street
+Cavendish Drive
+Caversham Valley Road
+Chadwick Road
+Chatham Road
+Church Street
+Clark Avenue
+Clyde Street
+Cobham Drive
+College Road
+Collingwood Street
+Colombo Street
+Coronation Avenue
+Courtenay Place
+Cranford Street
+Crawford Street
+Cuba Street
+Cumberland Street
+Customs Street
+Deans Avenue
+Dee Street
+Devon Street
+Devonport Road
+Dickens Street
+Domain Road
+Dominion Road
+Durham Street
+Dyers Road
+East Coast Road
+East Tamaki Road
+Edmonton Road
+Elizabeth Street
+Ellerslie-Panmure Highway
+Elles Road
+Elliot Street
+Emerson Street
+Esk Street
+Esmonde Road
+Evans Street
+Fendalton Road
+Fenton Street
+Ferguson Street
+Fergusson Drive
+Ferry Road
+Fitzgerald Avenue
+Fitzherbert Avenue
+Flaxmere Ave
+Forbury Road
+Fraser Street
+Frederick Street
+George Street
+Gladstone Road
+Glenfield Road
+Gloucester Street
+Great King Street
+Great North Road
+Great South Road
+Green Lane West
+Greenwood St
+Grey Street
+Grove Road
+Guyton Street
+Halifax Street
+Hanover Street
+Hardy Street
+Harewood Road
+Henderson Road
+Herbert Street
+Hereford Street
+Heretaunga Street
+High Street
+Highbrook Drive
+Highcliff Road
+Highgate
+Hillsborough Road
+Hillside Road
+Hilton Highway
+Hoon Hay Road
+Hugh Watt Drive
+Innes Road
+Kahikatea Drive
+Kaikorai Valley Road
+Kamo Road
+Karamu Road
+Karangahape Road
+Kennedy Road
+Kilmore Street
+King Edward Street
+Lake Road
+Lake Terrace
+Lambie Drive
+Lambton Quay
+Lichfield Street
+Lincoln Road
+Linwood Avenue
+Lunn Avenue
+Lyttelton Avenue
+Madras Street
+Mahia Road
+Mailer Street
+Main North Road
+Main South Road
+Main Street
+Main Street East
+Main Street West
+Manchester Street
+Manners Street
+Manukau Road
+Maraekakaho Road
+Marine Parade
+Market Street
+Marshland Road
+Maunganui Road
+Maxwell Road
+Memorial Avenue
+Mokoia Road
+Montreal Street
+Moorhouse Avenue
+Moray Place
+Mornington Road
+Mt Albert Road
+Mt Eden Road
+Mt Wellington Highway
+Napier Road
+Napier-Hastings Expressway
+Nelson Quay
+Nelson Street
+New Brighton Road
+New North Road
+North Road
+North Street
+Northcote Road
+Northgate
+Old Taupo Road
+Omahu Road
+Opawa Road
+Opoho Road
+Otipua Road
+Oxford Terrace
+Pages Road
+Pah Road
+Pakowhai Road
+Pakuranga Road
+Panama Road
+Papanui Road
+Peachgrove Road
+Penrose Road
+Pine Hill Road
+Pioneer Highway
+Pitt Street
+Ponsonby Road
+Port Hills Road
+Portobello Road
+Portsmouth Drive
+Prebensen Drive
+Prestons Road
+Prince Albert Road
+Princes Street
+Princess Street
+Pt Chevalier Road
+Puhinui Road
+Queen Elizabeth Ii Drive
+Queen Street
+Queens Drive
+Queenstown Road
+Railway Road
+Rangitikei Street
+Rankin Avenue
+Rattray Street
+Ravensbourne Road
+Redoubt Road
+Remuera Road
+Riccarton Road
+Riverside Drive
+Ronwood Avenue
+Roscommon Road
+Royal Road
+Russell Street
+Rutherford Street
+Saint Aubyn Street
+Seymour Street
+Sherborne Street
+Sinclair Street
+South Eastern Highway
+South Road
+South Western Arterial
+Southampton Street
+Spey Street
+Springs Road
+St Aubyn Street
+Stafford Street
+Stuart Street
+Symonds Street
+Taharoto Road
+Taieri Road
+Tamaki Drive
+Taradale Road
+Target Road
+Taupo Quay
+Tay Street
+Te Atatu Road
+Te Irirangi Drive
+Te Mata Road
+Te Rapa Road
+Tennent Drive
+Tennyson Street
+The Square
+The Strand
+Theodosia Street
+Ti Rakau Drive
+Titahi Bay Road
+Tongariro Street
+Totara Avenue
+Trafalgar Street
+Tremaine Avenue
+Tuam Street
+Tweed Street
+Universal Drive
+Victoria Avenue
+Victoria Road
+Victoria Street
+Wai-Iti Road
+Wainoni Road
+Waipuna Road
+Wairakei Road
+Wairau Road
+Wairere Drive
+Walton Street
+Ward Street
+Wellesley Street
+West Coast Road
+West Quay
+Western Hills Drive
+Weymouth Road
+Whakatu Drive
+White Swan Road
+Willis Street
+Wilson Road
+Wiri Station Road
+Worcester Street

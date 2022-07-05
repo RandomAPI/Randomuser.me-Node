@@ -1,0 +1,53 @@
+15th St
+20th Ave
+22nd Ave
+36th Ave
+3rd St
+9th St
+Alfred St
+Arctic Way
+Argyle St
+Balmoral St
+Bay Ave
+Brock Rd
+Cedar St
+Charles St
+Coastal Highway
+College Ave
+Concession Road 23
+Concession Road 6
+Dalhousie Ave
+Dieppe Ave
+Disputed Rd
+Dufferin St
+Duke St
+Dundas Rd
+Elgin St
+Frederick Ave
+George St
+Grand Ave
+Grand Marais Ave
+King St
+Lake of Bays Road
+Lakeview Ave
+Main St
+Maple Ave
+Oak St
+Park Rd
+Parliament St
+Peel St
+Pierre Ave
+Pine Rd
+Queen St
+Regent Ave
+Richmond Ave
+Simcoe St
+St. Catherine St
+St. Lawrence Ave
+Stanley Way
+Tecumseh Rd
+Victoria Ave
+Vimy St
+Wellington St
+West Ave
+York St
