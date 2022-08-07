@@ -402,6 +402,7 @@ class Generator {
       NL: "Netherlands",
       NO: "Norway",
       NZ: "New Zealand",
+      PL: "Poland",
       RS: "Serbia",
       TR: "Turkey",
       UA: "Ukraine",
