@@ -374,7 +374,7 @@ body.active {
 .frame {
   max-width: 730px;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .horizontal_center {
   position: relative;
