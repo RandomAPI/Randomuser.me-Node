@@ -19,8 +19,13 @@ module.exports = (server, version=defVersion) => {
   ];
 
   // Include NO nat for versions 1.2+
-  if (version !== "1.0" && version !== "1.1") {
+  if (parseFloat(version) >= 1.2) {
     nats.push('NO');
+  }
+
+  // Include IN, MX, RS, UA for versions 1.4+
+  if (parseFloat(version) >= 1.4) {
+    nats.push('IN', 'MX', 'RS', 'UA')
   }
 
   // Include fields
