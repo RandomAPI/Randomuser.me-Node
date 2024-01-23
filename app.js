@@ -7,7 +7,7 @@ const http         = require('http');
 const compress     = require('compression');
 const cors         = require('cors');
 
-const db       = require('./models/db')(process.env.spec);
+const db       = require('./models/db')
 const index    = require('./routes/index');
 const api      = require('./routes/api');
 const stats    = require('./routes/stats');
@@ -16,7 +16,6 @@ const store    = require('./store');
 
 const app    = express();
 const server = http.createServer(app);
-require('./sockets.js')(server);
 
 // view engine setup
 app.set('views', path.join(__dirname, '.viewsMin'));
@@ -53,7 +52,9 @@ app.use((err, req, res, next) => {
 
 // Load and initialize generators before starting server
 (async() => {
+  await db(process.env.spec);
   await require('./loadGenerators')();
+  require('./sockets.js')(server);
   startServer();
 })();
 
