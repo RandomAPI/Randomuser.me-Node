@@ -11,7 +11,7 @@
     <section id="1.4">
       <h2>Version 1.4</h2>
       <span>7/4/2022</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Fix US Social Security Number Generation</li>
         <li>Add India data</li>
         <li>Add Mexico data</li>
@@ -29,7 +29,7 @@
     <section id="1.3">
       <h2>Version 1.3</h2>
       <span>9/27/2019</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Use native JS dates instead of moment for ~60% speed increase in date calculation</li>
         <li>Email addresses are now transliterated</li>
         <li>More street/city names for NL dataset</li>
@@ -46,7 +46,7 @@
     <section id="1.2">
       <h2>Version 1.2</h2>
       <span>6/17/2018</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Fixed DOB and Registration dates to use ISO 8601 standard (yyyy-mm-ddThh:mm:ssZ)</li>
         <li>DOB and Registration dates are now objects that include age</li>
         <li>Street numbers range from 1-9999</li>
@@ -61,7 +61,7 @@
     <section id="1.1">
       <h2>Version 1.1</h2>
       <span>8/18/2016</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Fixed HETU for FI</li>
         <li>Fixed salt not being used in calculation for hashes (also hotfixed 1.0)</li>
         <li>DOB and Registered use ISO 8601 time standards</li>
@@ -72,7 +72,7 @@
     <section id="1.0">
       <h2>Version 1.0</h2>
       <span>4/7/2016</span>
-      <ul>
+      <ul class="doc-ul">
         <li>The Randomuser.me website and API are now running on Node.js!</li>
         <li>Added <span id="color">inc</span> & <span id="color">exc</span> parameters to include/exclude specific fields</li>
         <li>Multiple nats can be requested at a time in a comma separated list</li>
@@ -86,7 +86,7 @@
     <section id="0.8">
       <h2>Version 0.8</h2>
       <span>2/4/2016</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Random User Generator is <a href="https://github.com/RandomAPI">open source</a>!</li>
         <li>Added BR, CA, CH, DE, IR, and NZ</li>
       </ul>
@@ -94,7 +94,7 @@
     <section id="0.7">
       <h2>Version 0.7</h2>
       <span>7/27/2015</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Huge performance update</li>
         <li>You can now generate up to 2,000 users per request now</li>
       </ul>
@@ -102,7 +102,7 @@
     <section id="0.6">
       <h2>Version 0.6</h2>
       <span>5/8/2015</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Fixed seed bug that didn't respect nationalities</li>
         <li>Seed is returned on 1st result only and is meant to regenerate a request with multiple results</li>
         <li>Added AU, ES, FI, FR, IE, and NL</li>
@@ -113,14 +113,14 @@
     <section id="0.5">
       <h2>Version 0.5</h2>
       <span>3/3/2015</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Added nationalities</li>
       </ul>
     </section>
     <section id="0.4.1">
       <h2>Version 0.4.1</h2>
       <span>9/12/2014</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Added new picture options (medium and thumbnail)</li>
         <li><a href="documentation#format">New formats</a> added (sql, csv, and yaml)</li>
       </ul>
@@ -129,7 +129,7 @@
     <section id="0.4">
       <h2>Version 0.4</h2>
       <span>5/3/2014</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Redesigned and rebranded the Random User API website and platform</li>
         <li>We doubled our profile photo database! We now return 100 male and 100 female portraits</li>
         <li>Salts now use strictly alphanumeric characters</li>
@@ -141,7 +141,7 @@
     <section id="0.3">
       <h2>Version 0.3</h2>
       <span>1/14/2014</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Added Usernames, Salts, SHA-256 hash, registration date, and DoB fields</li>
         <li>md5_hash and sha1_hash have been changed to md5 and sha1 respectively</li>
       </ul>
@@ -150,7 +150,7 @@
     <section id="0.2.1">
       <h2>Version 0.2.1</h2>
       <span>9/10/2013</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Fixed seed generation bug</li>
       </ul>
     </section>
@@ -158,7 +158,7 @@
     <section id="0.2">
       <h2>Version 0.2</h2>
       <span>9/5/2013</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Request a specific gender using the `gender` parameter</li>
       </ul>
     </section>
@@ -166,7 +166,7 @@
     <section id="0.1">
       <h2>Version 0.1</h2>
       <span>8/6/2013</span>
-      <ul>
+      <ul class="doc-ul">
         <li>Initial public release</li>
       </ul>
     </section>
@@ -175,4 +175,5 @@
   <% include ../snippets/footer %>
   <% include ../snippets/analytics %>
 </body>
+<script type="text/javascript" src="js/light-dark-mode.js"></script>
 </html>

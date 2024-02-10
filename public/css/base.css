@@ -374,7 +374,7 @@ body.active {
 .frame {
   max-width: 730px;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .horizontal_center {
   position: relative;
@@ -429,6 +429,40 @@ header a.twitter img {
   margin-left: -25px;
   position: absolute;
 }
+
+/* 
+ Dark Mode Styles
+*/
+/* style for Dark Mode Button */
+.mode{
+  color: #fff;
+  height: 30px;
+  width: 133px;
+  border-radius: 6px;
+  margin-right: 20px;
+  background: #2c2e31;
+  border: solid #83ba43 2px;
+ }
+ /* dark class for body of page */
+ .dark{
+  background-color: #212121 !important;
+  color: #a6a6a6 !important;
+}
+/* color in dark mode */
+.dark-content{
+  color: #a6a6a6 !important;
+}
+/* color of heading in dark mode */
+.h-dark{
+  color: #ffffff !important;
+}
+/* color of card in dark node */
+.card-dark{
+  background-color: #2c2e31 !important;
+  z-index: auto !important;
+} 
+
+
 
 @media screen and (max-width: 320px) {
   header h1 {
@@ -734,8 +768,11 @@ html {
   width: 100%;
   background: #fff;
   border-radius: 3px;
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 9px 3px rgba(131,186,67,1);
+  -moz-box-shadow: 0px 0px 9px  3px rgba(131,186,67,1);
+  box-shadow: 0px 0px 9px 3px rgba(131,186,67,1);
+  /* -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.5); */
   overflow: hidden;
   text-align: center;
   z-index: 5;

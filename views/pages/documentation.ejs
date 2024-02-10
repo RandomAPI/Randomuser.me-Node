@@ -197,7 +197,7 @@ https://randomuser.me/api/<span>?seed=foobar</span>
     <section id="format">
       <h2>Formats</h2>
       <p>We currently offer the following data formats:
-      <ul>
+      <ul class="doc-ul">
         <li>JSON (default)</li>
         <li>PrettyJSON or pretty</li>
         <li>CSV</li>
@@ -224,7 +224,7 @@ https://randomuser.me/api/<span>?format=csv</span>
       <p>You can request a different nationality of a randomuser.</p>
       <p>Pictures won't be affected by this, but data such as location, cell/home phone, id, etc. will be more appropriate.</p>
       <p>Currently, randomuser offers these nationalities:</p>
-      <ul>
+      <ul class="doc-ul">
         <li>v1.0: AU, BR, CA, CH, DE, DK, ES, FI, FR, GB, IE, IR, NL, NZ, TR, US</li>
         <li>v1.1: AU, BR, CA, CH, DE, DK, ES, FI, FR, GB, IE, IR, NL, NZ, TR, US</li>
         <li>v1.2: AU, BR, CA, CH, DE, DK, ES, FI, FR, GB, IE, IR, NO, NL, NZ, TR, US</li>
@@ -256,7 +256,7 @@ https://randomuser.me/api/<span>?page=3&results=10&seed=abc</span>
       Using the <b>inc</b> and <b>exc</b> parameters, you can specify which fields to include or exclude respectively.</p>
       <p>By specifying only the fields you want, the generator can save time by skipping CPU intensive fields like "login" for example.</p>
       <p>These parameters accept the following values in a comma delimited list</p>
-      <ul>
+      <ul class="doc-ul">
         <li>gender</li>
         <li>name</li>
         <li>location</li>
@@ -283,7 +283,7 @@ https://randomuser.me/api/<span>?exc=login</span>
     <section id="misc">
       <h2>Miscellaneous</h2>
       <p>Some extra parameters that you can add to a request.</p>
-      <ul>
+      <ul class="doc-ul">
         <li><b>dl</b> - Download the results with the appropriate format extension.</li>
 <pre>
 https://randomuser.me/api/?results=25&nat=gb,us,es&format=csv&<span>dl</span>
@@ -303,4 +303,5 @@ https://randomuser.me/api/?results=5&<span>callback=randomuserdata</span>
   <% include ../snippets/footer %>
   <% include ../snippets/analytics %>
 </body>
+<script type="text/javascript" src="js/light-dark-mode.js"></script>
 </html>
